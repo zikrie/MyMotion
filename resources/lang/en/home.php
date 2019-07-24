@@ -1,0 +1,30 @@
+<?php
+ 
+return [
+
+	'title' => 'Notification',
+	'total_task' => 'Total Task',
+	'list_claim' => 'List of Claim',
+	'search' => 'Search',
+	'no' => 'No.',
+	'date' => 'Date',
+	'aging' => 'Aging',
+	'scheme_ref_no' => 'Scheme Ref No.',
+	'case_id' => 'Case Id',
+	'revision_ref_no' => 'Revision Ref No.',
+	'med_ref_no' => 'Medical Ref No.',
+	'rtw_ref_no' => 'Rtw Ref No.',
+	'desc' => 'Task Description',
+	'action' => 'Action',
+	'total_task' => 'Total Task',
+	'bil' => 'BIL.',
+	'datereg' => 'Date Register',
+	'caseref' => 'Case Reference No',
+	'name' => 'Name',
+	'icno' => 'Ic No',
+	'benefittype' => 'BENEFIT TYPE',
+	'casestatus' => 'Case Status',
+	'rtwrefno' => 'RTW Reference No',
+	'select' => 'Select',
+	'delete' => 'Delete',
+];

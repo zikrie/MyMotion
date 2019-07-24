@@ -1,0 +1,68 @@
+<?php
+ 
+return [
+
+	'title1' => 'Insured Person Details',
+    'title2' => 'Employer Details',
+    'title3' => 'Supporting Document',
+    'title4' => 'RTW Insured Person Info',
+    'postal_address' => 'Postal Address',
+
+    'attr' => [
+    	'name' => 'Name',
+        'id_type' => 'Identification Type',
+        'new_ic' => 'New IC',
+        'old_ic' => 'Old IC',
+        'army_id' => 'Army ID',
+        'police_id' => 'Police ID ',
+        'ssn_id' => 'Social Security Number ID(SSN)',
+        'cid' => 'CID',
+        'acceptance_stamp' => 'Acceptance Stamp Date',
+        'id_no' => 'Identification No.',
+        'dateOfBirth' => 'Date of Birth',
+        'race' => 'Race',
+        'malay' => 'Malay',
+        'chinese' => 'Chinese',
+        'indian' => 'Indian',
+        'others' => 'Others',
+        'gender' => 'Gender',
+        'male' => 'Male',
+        'female' => 'Female',
+        'occupation' => 'Occupation',
+        'postal_address1' => 'Postal Address 1',
+        'postal_address2' => 'Postal Address 2',
+        'postal_address3' => 'Postal Address 3',
+        'city' => 'City',
+        'state' => 'State',
+        'postcode' => 'Postcode',
+        'telNo' => 'Telephone No.',
+        'mobileNo' => 'Mobile No.',
+        'email' => 'Email',
+        'citizen' => 'Citizen',
+        'inservice' => 'Insured Person are still in Service?',
+        'yes' => 'Yes',
+        'no' => 'No',
+        'address' => 'Address',
+        'pbox' => 'P.O Box',
+        'lockbag' => 'Locked Bag',
+        'wdt' => 'W.D.T',
+        'docdesc' => 'Document Description',
+        'docpath' => 'Document Path',
+        'docview' => 'Document View',
+        'supdoc'=> 'Supporting Document',
+        'save' => 'Save',
+        'reset' => 'Reset',
+        'submit' => 'Submit',
+        'select' => 'Please Select',
+        'faxno' => 'Fax No.',
+        'compname' => 'Company Name',
+        
+
+
+    ],
+
+    'save' => 'Save',
+    'cancel' => 'Cancel',
+    'clear' => 'Clear',
+ 
+];

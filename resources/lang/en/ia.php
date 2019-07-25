@@ -17,7 +17,7 @@ return [
     'title13' => 'VASS Assessment Information (Vas Scale)',
     'title14' => 'DASS21 Details',
     'title15' => 'Activity of daily living Details',
-    'title16' => 'Remedy Details',
+    'title16' => 'Leisure Activity Details',
     'title17' => 'Before Accident Details',
     'title18' => 'After Accident Details',
     'title19' => 'Work Motivation Details',

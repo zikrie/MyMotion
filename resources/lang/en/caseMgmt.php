@@ -280,6 +280,7 @@ return [
         'on_rehab' => 'On Rehab',
         'ready_work' => 'Ready to Work',
         'sexual_capability' => 'Sexual Capability',
+        'normal' => 'Normal',
         
         //treatmentMedicineDetails
         'treatment_type' => 'Treatment Type',
@@ -287,6 +288,7 @@ return [
         'conservative' => 'Conservative',
         'therapy' => 'Therapy',
         'alternative_treatment' => 'Alternative Treatment',
+        'treatment_specify' => 'Please State',
         
         //limitationDetails
         'face_limitation' => 'Limitation Details',
@@ -301,6 +303,7 @@ return [
         'appointment_date' => 'Appointment Date',
         'treatment_place' => 'Treatment Place',
         'department_name' => 'Department',
+        'treatment_Dr_name' => 'Doctor Name',
         'general_department' => 'Department of General Medicine ',
         'rehab_department' => 'Department of Rehabilitation Medicine',
         'mental_department' => 'Department of Psychiatric and Mental Health',
@@ -332,6 +335,27 @@ return [
         'depression' => 'Depression',
         'anxiety' => 'Anxiety',
         'stress' => 'Stress',
+        'ques1' => 'I found it hard to wind down',
+        'ques2' => 'I was aware of dryness of my mouth',
+        'ques3' => 'I couldnt seem to experience any positive feeling at all',
+        'ques4' => 'I experienced breathing difficulty (eg, excessively rapid breathing, breathlessness in the absence of physical exertion)',
+        'ques5' => 'I found it difficult to work up the initiative to do things',
+        'ques6' => 'I tended to over-react to situations',
+        'ques7' => 'I experienced trembling (eg, in the hands)',
+        'ques8' => 'I felt that I was using a lot of nervous energy',
+        'ques9' => 'I was worried about situations in which I might panic and make a fool of myself ',
+        'ques10' => 'I felt that I had nothing to look forward to',
+        'ques11' => 'I found myself getting agitated',
+        'ques12' => 'I found it difficult to relax',
+        'ques13' => 'I felt down-hearted and blue',
+        'ques14' => 'I was intolerant of anything that kept me from getting on with what I was doing',
+        'ques15' => 'I felt I was close to panic',
+        'ques16' => 'I was unable to become enthusiastic about anything',
+        'ques17' => 'I felt I wasnt worth much as a person',
+        'ques18' => 'I felt that I was rather touchy',
+        'ques19' => 'I was aware of the action of my heart in the absence of physical exertion (eg, sense of heart rate increase, heart missing a beat)',
+        'ques20' => 'I felt scared without any good reason',
+        'ques21' => 'I felt that life was meaningless',
 
         //adlDetails
         'toilet_use' => 'Toilet Use',
@@ -354,9 +378,7 @@ return [
         'needTool' => 'Need Help from Other People and Tools',
         'independent' => 'Independent',
 
-        //remedyDetails
-        'stillActivity' => 'Does before Accident Insured Person(OB) still doing Activity',
-
+    //remedyDetails
         //beforeAccident
         'leisure_ques' => 'Does insured person still doing leisure activties before accident?',
         'leisure_ques1' => 'Does insured person still doing leisure activties after accident?',
@@ -371,6 +393,14 @@ return [
         'National' => 'National',
         'district' => 'District',
         'local' => 'Local',
+        'indoor' => 'Indoor',
+        'outdoor' => 'Outdoor',
+        'international' => 'International',
+        'nationality' => 'Nationality',
+        'state' => 'State',
+        'area' => 'Area',
+        'local' => 'Local',
+
         
 
         //ipAgreement
@@ -379,7 +409,11 @@ return [
         'date_agreement' => 'Date',
         'casemgr_name' => 'Case Manager Name',
         
-
+        //workMotivation
+        'age' => 'Age',
+        'workAlone' => 'Prefer to Work Alone',
+        'others' => 'Others',
+        
         
 
 

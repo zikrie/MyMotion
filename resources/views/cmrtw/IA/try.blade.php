@@ -1,97 +1,16 @@
-<div class="row">
-    <div class="col-sm-12">
-        <div class="card">
-            <div class="card-body">
-                <h4 class="card-title">@lang('offerconfirmation.title1')</h4>
-                <form class="form">
-                    <div class="form-group mt-5 row">
-                        <div class="col-2">
-                            <label for="example-text-input" class="col-form-label">@lang('offerconfirmation.attr.name')</label>
-                        </div>
-                        <div class="col-8">
-                            <input class="form-control" type="text"  id="name" value="@if(!empty($casertw)){{ $casertw->name }} @endif" readonly>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-2">
-                            <label for="example-text-input" class="col-form-label">@lang('offerconfirmation.attr.ictype')</label>
-                        </div>
-                        <div class="col-8">
-                            <select class="form-control" value="@if(!empty($casertw)){{ $casertw->idtype }} @endif" readonly>
-                                        <option>Please Select</option>
-                                         @foreach($idtype as $id)
-                                            @if (!empty($casertw) && $id->refcode == $casertw->idtype)
-                                                <option value="{{$id->refcode}}" selected>{{$id->descen}}</option>
-                                            @else
-                                                <option value="{{$id->refcode}}">{{$id->descen}}</option>
+@extends('layouts.app')
 
-                                            @endif
-                                        @endforeach
-                                    </select>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-2">
-                            <label for="example-text-input" class="col-form-label">@lang('offerconfirmation.attr.idno')</label>
-                        </div>
-                        <div class="col-8">
-                            <input class="form-control" type="text"  id="idno" value="@if(!empty($casertw)){{ $casertw->idno }} @endif" readonly>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-2">
-                            <label for="example-text-input" class="col-form-label">@lang('offerconfirmation.attr.dob')</label>
-                        </div>
-                        <div class="col-8">
-                          @if(!empty($casertw) && $casertw->dob !='')
-                          <input type="date" id="dob" name="dob" value="{{substr($casertw->dob,0,4)}}-{{substr($casertw->dob,4,2)}}-{{substr($casertw->dob,6,2)}}" class="form-control" readonly>
-                          @else
-                          <input type="date" id="dob" name="dob" value="" class="form-control" readonly>
-                          @endif
-                      </div>
-                  </div>
-                  <div class="form-group row">
-                    <div class="col-2">
-                        <label for="example-text-input" class="col-form-label">@lang('offerconfirmation.attr.race')</label>
-                    </div>
-                    <div class="col-8">
-                        <select class="form-control" name="race" readonly> 
-                            {{-- <option>@lang('insuredPerson.attr.choose_race')</option> --}}
-                            <option>Please Select</option>
-                            @foreach($race as $id)
-                            @if (!empty($casertw) && $casertw->race == $id->refcode)
-                            <option value="{{$id->refcode}}" selected>{{$id->descen}}</option>
-                            @else
-                            <option value="{{$id->refcode}}">{{$id->descen}}</option>
-                            @endif
-                            @endforeach
-                        </select>
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <div class="col-2">
-                        <label for="example-text-input" class="col-form-label">@lang('offerconfirmation.attr.gender')</label>
-                    </div>
-                    <div class="col-8">
-                        <select class="form-control" name="gender" readonly>
-                            <!--option value="">@if(!empty($obprofile)){{ $obprofile->gender }} @endif</option-->
-                            <option>Please Select</option>
-                            @if (!empty($casertw) && $casertw->gender == 'F')
-                            <option value="F" selected>Female</option>
-                            <option value="M">Male</option>
-                            @elseif (!empty($casertw) && $casertw->gender == 'M')
-                            <option value="F">Female</option>
-                            <option value="M" selected>Male</option>
-                            @else
-                            <option value="F">Female</option>
-                            <option value="M">Male</option>
-                            @endif
-                        </select>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div class="card-body">
+@section('maintitle', 'Tab Screen')
+
+@section('desc', 'Form')
+
+@section('head')
+<link href="{{ asset("bower_components/footable/css/footable.standalone.min.css")}}" rel="stylesheet" type="text/css" />
+<link href="{{asset("PERKESO_UI/assets/node_modules/calendar/dist/fullcalendar.css")}}" rel="stylesheet" />
+
+@endsection
+
+<div class="card-body">
             <h4 class="card-title">@lang('offerconfirmation.title')</h4>
             <form class="form">
                 <div class="form-group mt-5 row">
@@ -226,54 +145,12 @@
                 </div>
             </div>
         </div>
-
-
-{{--             <select id="mySelect" onchange="myFunction()">
-  <option value="Audi">Audi</option>
-  <option value="BMW">BMW</option>
-  <option value="Mercedes">Mercedes</option>
-  <option value="Volvo">Volvo</option>
-</select> --}}
-{{-- 
-<p>When you select a new car, a function is triggered which outputs the value of the selected car.</p> --}}
-
-{{-- <p id="demo"></p> --}}
-
-
-    
-                             {{--    <div>
-                                    <label class="control-label">@lang('confirmation.attr.bank_location')</label>
-                                        <select class="form-control select" id="bankloc" name='bankloc'
-                                        onchange="myFunction()">
-                                          
-                                          <option value="Audi" selected>Audi</option>
-                                          <option value="Mercedes">Mercedes</option>
- {{--  <option value="Mercedes">Mercedes</option>
-  <option value="Volvo">Volvo</option> --}}
-                                    {{-- </select>
-                                    <div id="Audi">
-                                        <div class="form-group">
-                                            <label>@lang('offerconfirmation.attr.obname')</label>
-                                            <input type="text" class="form-control selectAudi"  >
-                                        </div>
-                                    </div>
-                                    <div id="Mercedes">
-                                        <div class="form-group">
-                                            <label>This Mercedes</label>
-                                            <input type="text" class="form-control Mercedes"  >
-                                        </div>
-                                    </div>
-                                </div>
- --}} 
-
             <div class="form-actions">
                 
                {{--  <button type="button" class="btn btn waves-effect waves-light btn-secondary">@lang('offerconfirmation.attr.reset')</button> --}}
                 <button type="submit" class="btn btn waves-effect waves-light btn-success"> <i class="fa fa-check"></i>
                 @lang('offerconfirmation.attr.submit')</button>
-            </div>
-            
-            
+            </div>  
         </form>
     </div>
 </div>
@@ -309,7 +186,7 @@
             $('#hideResult').show();   
         }
         else {
-            $('#hideResult').show(); 
+            $('#hideResult').hide(); 
         }
     }
 </script>

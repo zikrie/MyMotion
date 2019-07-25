@@ -7,40 +7,36 @@
 
                      <input type="hidden" name="_token" value="{{csrf_token()}}">
 
-                     <div class="row p-t-20">
+                    <div class="row p-t-20">
                         <div class="col-md-6"> 
                             <div class="form-group">
                                 <label class="control-label">@lang('caseMgmt.attr.appointment_confirm')</label>
                                  <select class="form-control">
-
                                     <option value="">Please Select</option>
                                     <option value="yes">@lang('caseMgmt.attr.yes')</option>
                                     <option value="no">@lang('caseMgmt.attr.no')</option>
-
-                                </select>
-                                
-                                
+                                </select>    
                             </div>
                         </div>
-
-                        <div class="col-md-6"> 
+                    </div>
+                    <div class="row p-t-20">
+                        <!-- allow multiple -->
+                        <div class="col-md-3"> 
                             <div class="form-group">
                                 <label class="control-label">@lang('caseMgmt.attr.appointment_date')</label>
-                                <input type="date" id="appointment_date" class="form-control">
-                                
-                                
+                                <input type="date" id="appointment_date" class="form-control"> 
                             </div>
                         </div>
-
-                       <div class="col-md-6">
+                        <!-- allow multiple -->
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label class="control-label">@lang('caseMgmt.attr.treatment_place')</label>
-                                <input type="date" id="treatment_place" class="form-control">
+                                <input type="text" id="treatment_place" class="form-control">
                                
                             </div>
                         </div>
-
-                        <div class="col-md-6"> 
+                        <!-- allow multiple -->
+                        <div class="col-md-3"> 
                             <div class="form-group">
                                 <label class="control-label">@lang('caseMgmt.attr.department_name')</label>
                                 <select class="form-control" tabindex="1">
@@ -58,18 +54,23 @@
                                     <option value="emergency_department">@lang('caseMgmt.attr.emergency_department')</option>
                                     <option value="otorhino_department">@lang('caseMgmt.attr.otorhino_department')</option>
                                     <option value="radio_department">@lang('caseMgmt.attr.radio_department')</option>
-                                    <option value="patho_department">@lang('caseMgmt.attr.patho_department')</option>
-                                    
-                                    
-                                </select>
-                                
-                                
+                                    <option value="patho_department">@lang('caseMgmt.attr.patho_department')</option>  
+                                </select>   
                             </div>
                         </div>
-
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="control-label">@lang('caseMgmt.attr.treatment_Dr_name')</label>
+                                <div class="input-group">
+                                    <input type="text" id="treatment_Dr_name" class="form-control">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-success" type="button" onclick="treatmentAppointment();"><i class="fa fa-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-
+                    <div id="treatmentAppointmentDetails"></div>
                 </div>
             </form>
         </div>

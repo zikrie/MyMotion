@@ -9,7 +9,7 @@ return [
     'title5' => 'OB Employment',
     'title6' => 'Education and Skills Details',
     'title7' => 'Mobility Details',
-    'title8' => 'Dependent Living Details',
+    'title8' => 'Dependents and Expenses Details',
     'title9' => 'Disabled Details',
     'title10' => 'Treatment Details',
     'title11' => 'Limitation Details',

@@ -229,6 +229,7 @@ return [
         'education_loan' => 'Education Loan',
         'other_expenditure' => 'Other Expenditure',
         'other_loan' => 'Other Loan',
+        'flat' => 'Flat',
         'apartment' => 'Apartment',
         'terrace_house' => 'Terrace House',
         'bungalow' => 'Bungalow',
@@ -280,9 +281,12 @@ return [
         'current_healthy' => 'Current Healthy Level',
         'acute' => 'acute',
         'on_rehab' => 'On Rehab',
+        'health_ques' => 'Are you ..',
         'ready_work' => 'Ready to Work',
+        'not_ready_work' => 'Not Ready to Work',
         'sexual_capability' => 'Sexual Capability',
         'normal' => 'Normal',
+        'disabledOther' => 'Others',
         
         //treatmentMedicineDetails
         'treatment_type' => 'Treatment Type',

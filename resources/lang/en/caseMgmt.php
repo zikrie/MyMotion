@@ -254,7 +254,8 @@ return [
         'physical' => 'Physical Disability',
         'learning' => 'Learning Disabilities',
         'mental' => 'Mental Disabilities',
-        'injury' => 'Injury',
+        'injury_ques' => 'Do you have any Injury ?',
+        'injury' => 'Injury Location',
         'head' => 'Head',
         'neck' => 'Neck',
         'trunk' => 'Trunk/Back',
@@ -268,6 +269,7 @@ return [
         'icd_10' => 'ICD10',
         'injury_date' => 'Date of Injury/Illness',
         'disease' => 'Disease',
+        'disease_ques' => 'Do you have any Disease ?',
         'stroke' => 'Stroke',
         'cancer' => 'Cancer',
         'hypetension' => 'Hypertension',
@@ -292,8 +294,8 @@ return [
         
         //limitationDetails
         'face_limitation' => 'Limitation Details',
-        'ob_equipment' => 'Does insured person needs equipment or recovery member?',
-        'equipment' => 'Equipment',
+        'ob_equipment' => 'Does insured person needs equipment or recovery parts ?',
+        'equipment' => 'Equipment needed ?',
         'orthotic' => 'Orthotic',
         'prosthetic' => 'Prosthetic',
         'recovery_equipment' => 'Recovery Equipment',

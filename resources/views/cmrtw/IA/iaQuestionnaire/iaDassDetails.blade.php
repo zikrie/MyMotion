@@ -2,7 +2,7 @@
     <div class="col-12">
         <div class="card">
             <div class="card-body">
-                <form action="/registrationrtw">
+                <form>
                     <div class="form-body">
 
                        <input type="hidden" name="_token" value="{{csrf_token()}}">

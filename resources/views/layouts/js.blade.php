@@ -56,7 +56,7 @@
 <script src="/PERKESO_UI/assets/node_modules/bootstrap-select/bootstrap-select.min.js" type="text/javascript"></script>
 <script src="/PERKESO_UI/assets/node_modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
 <script src="/PERKESO_UI/assets/node_modules/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.js" type="text/javascript"></script>
-<script src="/PERKESO_UI/assets/node_modules/dff/dff.js" type="text/javascript"></script>
+<!-- <script src="/PERKESO_UI/assets/node_modules/dff/dff.js" type="text/javascript"></script> -->
 <script type="text/javascript" src="/PERKESO_UI/assets/node_modules/multiselect/js/jquery.multi-select.js"></script>
 
 <script src="{{ asset('/js/validation/noticedeath.js') }}"></script>
@@ -232,17 +232,127 @@
                 win.focus();
             }
     
-    </script>
+</script>
+<script>
+	var room = 1;
 
+    function education_fields() {
 
+        room++;
+        var objTo = document.getElementById('education_fields')
+        var divtest = document.createElement("div");
+        divtest.setAttribute("class", "removeclass" + room);
+        var rdiv = 'removeclass' + room;
+        divtest.innerHTML = '<div class="row"><div class="col-sm-3 nopadding"><div class="form-group"><label class="control-label">@lang('ia.attr.job')</label><input type="text" class="form-control" id="job" name="job[]" value="" placeholder="Job of interest"></div></div><div class="col-sm-3 nopadding"><div class="form-group"><label class="control-label">@lang('registrationRTW.attr.state')</label><select class="form-control" tabindex="1"><option value="Johor">Please Select State</option><option value="Johor">Johor</option> <option value="Kedah">Kedah</option><option value="Kelantan">Kelantan</option><option value="Melaka">Melaka</option><option value="NegeriSembilan">Negeri Sembilan</option><option value="Pahang">Pahang</option><option value="Penang">Penang</option><option value="Perak">Perak</option><option value="Perlis">Perlis</option><option value="Sabah">Sabah</option> <option value="Sarawak">Sarawak</option><option value="Selangor">Selangor</option><option value="Terengganu">Terengganu</option><option value="KualaLumpur">W.P Kuala Lumpur</option><option value="Labuan">W.P Labuan</option><option value="Putrajaya">W.P Putrajaya</option></select></div></div><div class="col-sm-3 nopadding"><div class="form-group"><label class="control-label">@lang('registrationRTW.attr.city')</label><div class="input-group"><select class="form-control" tabindex="1"><option value="Johor">Please Select State</option><option value="Johor">Johor</option><option value="Kedah">Kedah</option> <option value="Kelantan">Kelantan</option><option value="Melaka">Melaka</option><option value="NegeriSembilan">Negeri Sembilan</option><option value="Pahang">Pahang</option><option value="Penang">Penang</option><option value="Perak">Perak</option><option value="Perlis">Perlis</option><option value="Sabah">Sabah</option><option value="Sarawak">Sarawak</option><option value="Selangor">Selangor</option><option value="Terengganu">Terengganu</option><option value="KualaLumpur">W.P Kuala Lumpur</option><option value="Labuan">W.P Labuan</option><option value="Putrajaya">W.P Putrajaya</option></select><div class="input-group-append"><button class="btn btn-danger" type="button" onclick="remove_education_fields(' + room + ');"><i class="fa fa-minus"></i></button> </div></div></div></div></div>';
 
-    <script>
-            function buttonAlert() {
-              var txt;
-              if (confirm("Are You Sure Want To Submit ?")) {
-                document.location.href='Rtw_eligibility';
-              } else {
-                txt = "You pressed Cancel!";
-              }
-            }
-    </script> 
+        objTo.appendChild(divtest)
+    }
+
+    function remove_education_fields(rid) {
+        $('.removeclass' + rid).remove();
+        room--;
+    }
+</script>
+<script>
+
+var room = 1;
+
+function education() {
+
+    room++;
+    var objTo = document.getElementById('eduSkills')
+    var divtest = document.createElement("div");
+    divtest.setAttribute("class", "removeclass" + room);
+    var rdiv = 'removeclass' + room;
+    divtest.innerHTML = '<div class="row p-t-20"><div class="col-sm-3 nopadding"><div class="form-group"><label class="control-label">@lang('caseMgmt.attr.language_proficiency')</label><select class="form-control" tabindex="1"><option value="">Please Select</option><option value="speak">@lang('caseMgmt.attr.speaking')</option><option value="write">@lang('caseMgmt.attr.writing')</option><option value="read">@lang('caseMgmt.attr.reading')</option></select></div></div><div class="col-sm-3 nopadding"><div class="form-group"><label class="control-label">@lang('caseMgmt.attr.language')</label><select class="select2 m-b-10 select2-multiple" style="width: 100%" onchange="showfield1(this.options[this.selectedIndex].value)" multiple="multiple" data-placeholder="Please Select"><optgroup class="form-control" label=""><option value="">Please Select</option><option value="bm">@lang('caseMgmt.attr.bm')</option><option value="eng">@lang('caseMgmt.attr.eng')</option><option value="tamil">@lang('caseMgmt.attr.tamil')</option><option value="other">@lang('caseMgmt.attr.others')</option></optgroup></select></div></div><div class="col-sm-3 nopadding"><div class="form-group" id="divspecify2" style="display:none;"><label class="control-label">@lang('caseMgmt.attr.specify')</label><input type="text" id="specify" class="form-control"></div></div><div class="col-sm-3 nopadding"><div class="form-group"><label class="control-label">@lang('caseMgmt.attr.grade')</label><div class="input-group"><select class="form-control" tabindex="1"><option value="">Please Select</option><option value="good">@lang('caseMgmt.attr.good')</option><option value="intermediate">@lang('caseMgmt.attr.intermediate')</option><option value="low">@lang('caseMgmt.attr.low')</option></select><div class="input-group-append"><button class="btn btn-danger" type="button" onclick="remove_education('+room+');"><i class="fa fa-minus"></i></button></div></div></div></div></div>';
+
+    objTo.appendChild(divtest)
+}
+
+function remove_education(rid) {
+    $('.removeclass' + rid).remove();
+    room--;
+}
+
+</script>
+<script>
+    $(document).ready(function(){
+        // Add minus icon for collapse element which is open by default
+        $(".collapse.show").each(function(){
+        $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+        });
+        
+        // Toggle plus minus icon on show hide of collapse element
+        $(".collapse").on('show.bs.collapse', function(){
+        $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+        }).on('hide.bs.collapse', function(){
+        $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+        });
+    });
+</script>
+<script>
+
+var treat = 1;
+
+function treatmentAppointment() {
+
+    treat++;
+    var objTo = document.getElementById('treatmentAppointmentDetails')
+    var divtest = document.createElement("div");
+    divtest.setAttribute("class", "removeclass" + treat);
+    var rdiv = 'removeclass' + treat;
+    divtest.innerHTML = '<div class="row p-t-20"><!-- allow multiple --><div class="col-md-3"> <div class="form-group"><label class="control-label">@lang('caseMgmt.attr.appointment_date')</label><input type="date" id="appointment_date" class="form-control"> </div></div><!-- allow multiple --><div class="col-md-3"><div class="form-group"><label class="control-label">@lang('caseMgmt.attr.treatment_place')</label><input type="text" id="treatment_place" class="form-control"></div></div><!-- allow multiple --><div class="col-md-3"> <div class="form-group"><label class="control-label">@lang('caseMgmt.attr.department_name')</label><select class="form-control" tabindex="1"><option value="">Please Select</option><option value="general_department">@lang('caseMgmt.attr.general_department')</option><option value="rehab_department">@lang('caseMgmt.attr.rehab_department')</option><option value="mental_department">@lang('caseMgmt.attr.mental_department')</option><option value="surgery_department">@lang('caseMgmt.attr.surgery_department')</option><option value="intensive_department">@lang('caseMgmt.attr.intensive_department')</option><option value="nuerosurgery_department">@lang('caseMgmt.attr.nuerosurgery_department')</option><option value="ortho_department">@lang('caseMgmt.attr.ortho_department')</option><option value="plastic_department">@lang('caseMgmt.attr.plastic_department')</option><option value="oftal_department">@lang('caseMgmt.attr.oftal_department')</option><option value="oral_department">@lang('caseMgmt.attr.oral_department')</option><option value="emergency_department">@lang('caseMgmt.attr.emergency_department')</option><option value="otorhino_department">@lang('caseMgmt.attr.otorhino_department')</option><option value="radio_department">@lang('caseMgmt.attr.radio_department')</option><option value="patho_department">@lang('caseMgmt.attr.patho_department')</option>  </select>   </div></div><div class="col-md-3"><div class="form-group"><label class="control-label">@lang('caseMgmt.attr.treatment_Dr_name')</label><div class="input-group"><input type="text" id="treatment_Dr_name" class="form-control"><div class="input-group-append"><button class="btn btn-danger" type="button" onclick="remove_treatmentAppointment('+treat+');"><i class="fa fa-minus"></i></button></div></div></div></div></div>';
+
+    objTo.appendChild(divtest)
+}
+
+function remove_treatmentAppointment(rid) {
+    $('.removeclass' + rid).remove();
+    treat--;
+}
+
+</script>
+<script>
+
+var treatD = 1;
+
+function treatmentDetails() {
+
+    treatD++;
+    var objTo = document.getElementById('treatmentDetail')
+    var divtest = document.createElement("div");
+    divtest.setAttribute("class", "removeclass" + treatD);
+    var rdiv = 'removeclass' + treatD;
+    divtest.innerHTML = '<div class="row p-t-20"><div class="col-md-4"><div class="form-group"><label class="control-label">@lang('caseMgmt.attr.treatment_type')</label><select class="form-control" tabindex="1"><option value="">Please Select</option><option value="operation">@lang('caseMgmt.attr.operation')</option><option value="conservative">@lang('caseMgmt.attr.conservative')</option><option value="therapy">@lang('caseMgmt.attr.therapy')</option><option value="alternative_treatment">@lang('caseMgmt.attr.alternative_treatment')</option><option value="others_option">@lang('caseMgmt.attr.others_option')</option>   </select> </div></div><div class="col-md-4"><div class="form-group"><label class="control-label">@lang('caseMgmt.attr.treatment_specify')</label><input type="text" id="treatment_specify" class="form-control"></div></div><div class="col-md-4"><div class="form-group"><label class="control-label">@lang('caseMgmt.attr.remarks')</label><div class="input-group"><input type="text" id="remarks" class="form-control"><div class="input-group-append"><button class="btn btn-danger" type="button" onclick="remove_treatmentDetails('+treatD+');"><i class="fa fa-minus"></i></button></div></div></div></div></div>';
+
+    objTo.appendChild(divtest)
+}
+
+function remove_treatmentDetails(rid) {
+    $('.removeclass' + rid).remove();
+    treatD--;
+}
+
+</script>
+<script>
+
+var disabled = 1;
+
+function addDisabled() {
+
+    disabled++;
+    var objTo = document.getElementById('addDis')
+    var divtest = document.createElement("div");
+    divtest.setAttribute("class", "removeclass" + disabled);
+    var rdiv = 'removeclass' + disabled;
+    divtest.innerHTML = '<div class="row p-t-20"><div class="col-md-4"><div class="form-group"><label class="control-label">@lang('caseMgmt.attr.diagnosis')</label><input type="text" id="diagnosis" class="form-control"></div></div><div class="col-md-4"><div class="form-group"><label class="control-label">@lang('caseMgmt.attr.icd_10')</label><input type="text" id="icd_10" class="form-control"></div></div><div class="col-md-4"><div class="form-group"><label class="control-label">@lang('caseMgmt.attr.injury_date')</label><div class="input-group"><input type="date" id="injury_date" class="form-control"><div class="input-group-append"><button class="btn btn-danger" type="button" onclick="remove_addDisabled('+disabled+');"><i class="fa fa-minus"></i></button></div></div></div></div></div>';
+
+    objTo.appendChild(divtest)
+}
+
+function remove_addDisabled(rid) {
+    $('.removeclass' + rid).remove();
+    disabled--;
+}
+
+</script>

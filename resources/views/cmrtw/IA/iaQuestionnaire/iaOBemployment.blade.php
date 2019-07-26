@@ -14,7 +14,6 @@
                     <div class="form-group">
                         <label class="control-label">@lang('registrationRTW.attr.state')</label>
                             <select class="form-control" tabindex="1">
-                            {{-- <option>@lang('insuredPerson.attr.choose_state')</option> --}}
                                 <option value="Johor">Please Select State</option>
                                 <option value="Johor">Johor</option>
                                 <option value="Kedah">Kedah</option>
@@ -40,7 +39,6 @@
                         <label class="control-label">@lang('registrationRTW.attr.city')</label>
                         <div class="input-group">
                             <select class="form-control" tabindex="1">
-                            {{-- <option>@lang('insuredPerson.attr.choose_state')</option> --}}
                                 <option value="Johor">Please Select State</option>
                                 <option value="Johor">Johor</option>
                                 <option value="Kedah">Kedah</option>

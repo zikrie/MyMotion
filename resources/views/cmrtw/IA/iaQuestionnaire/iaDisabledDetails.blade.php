@@ -39,7 +39,7 @@
                         <div class="row p-t-20">   
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.disabled_card')</label>
+                                    <label class="control-label">@lang('caseMgmt.attr.injury_ques')</label>
                                     <select class="form-control" onchange="DCYesNo(this.options[this.selectedIndex].value)" required>
                                         <option value="">Please Select</option>
                                         <option value="DCyes">@lang('caseMgmt.attr.yes')</option>
@@ -51,7 +51,8 @@
                                 <div class="form-group">
                                     <div id="hideInjury" class="form-group" style="display:none">
                                         <label class="control-label">@lang('caseMgmt.attr.injury')</label>
-                                        <select class="form-control" tabindex="1">
+                                        <select class="select2 m-b-10 select2-multiple" style="width: 100%;border:1px" multiple="multiple" data-placeholder="Please Select">
+                                        <optgroup class="form-control" label="">
                                             <option value="">Please Select</option>
                                             <option value="head">@lang('caseMgmt.attr.head')</option>
                                             <option value="neck">@lang('caseMgmt.attr.neck')</option>
@@ -62,7 +63,8 @@
                                             <option value="psychology">@lang('caseMgmt.attr.psychology')</option>
                                             <option value="general_injuries">@lang('caseMgmt.attr.general_injuries')</option>
                                             <option value="unspecified_location">@lang('caseMgmt.attr.unspecified_location')</option>
-                                        </select>
+                                        </optgroup>   
+                                    </select>
                                     </div>
                                 </div>
                             </div>
@@ -84,15 +86,32 @@
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label class="control-label">@lang('caseMgmt.attr.injury_date')</label>
-                                    <input type="date" id="injury_date" class="form-control">
+                                    <div class="input-group">
+                                        <input type="date" id="injury_date" class="form-control">
+                                        
+                                        <div class="input-group-append">
+                                            <button class="btn btn-success" type="button" onclick="addDisabled();"><i class="fa fa-plus"></i></button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div id="addDis"></div>
                         <div class="row p-t-20">
                             <div class="col-md-4">
                                 <div class="form-group">
+                                    <label class="control-label">@lang('caseMgmt.attr.disease_ques')</label>
+                                    <select class="form-control" onchange="diseaseFunc(this.options[this.selectedIndex].value)" required>
+                                        <option value="">Please Select</option>
+                                        <option value="diseaseYes">@lang('caseMgmt.attr.yes')</option>
+                                        <option value="diseaseNo">@lang('caseMgmt.attr.no')</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
                                     <label class="control-label">@lang('//caseMgmt.attr.disease')</label>
-                                <select class="form-control" tabindex="1">
+                                    <select class="form-control" tabindex="1">
                                         <option value="">Please Select</option>
                                         <option value="head">@lang('caseMgmt.attr.head')</option>
                                         <option value="neck">@lang('caseMgmt.attr.neck')</option>
@@ -107,6 +126,8 @@
                                     </select>
                                 </div>
                             </div>
+                        </div>
+                        <div class="row p-t-20">
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label class="control-label">@lang('caseMgmt.attr.current_healthy')</label>

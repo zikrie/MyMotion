@@ -313,10 +313,10 @@
                     </div>
                 </div> 
                 <div class="form-actions">
-                    {{--   <button type="button" class="btn btn waves-effect waves-light btn-secondary">@lang('offerconfirmation.attr.reset')</button> --}}
                     <button type="submit" class="btn btn waves-effect waves-light btn-success"> <i class="fa fa-check"></i>
                     @lang('offerconfirmation.attr.submit')</button>
                 </div>  
+                </div>
             </form>
         </div>
     </div>

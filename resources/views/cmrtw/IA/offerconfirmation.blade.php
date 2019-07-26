@@ -272,8 +272,6 @@
                 <button type="submit" class="btn btn waves-effect waves-light btn-success"> <i class="fa fa-check"></i>
                 @lang('offerconfirmation.attr.submit')</button>
             </div>
-            
-            
         </form>
     </div>
 </div>
@@ -309,7 +307,7 @@
             $('#hideResult').show();   
         }
         else {
-            $('#hideResult').show(); 
+            $('#hideResult').hide(); 
         }
     }
 </script>

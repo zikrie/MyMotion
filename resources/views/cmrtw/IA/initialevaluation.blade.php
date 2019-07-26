@@ -1,15 +1,3 @@
-@extends('layouts.app')
-
-@section('maintitle', 'Tab Screen')
-
-@section('desc', 'Form')
-
-@section('head')
-<link href="{{ asset("bower_components/footable/css/footable.standalone.min.css")}}" rel="stylesheet" type="text/css" />
-<link href="{{asset("PERKESO_UI/assets/node_modules/calendar/dist/fullcalendar.css")}}" rel="stylesheet" />
-
-@endsection
-
 <div class="row">
     <div class="col-sm-12">
         <div class="card">

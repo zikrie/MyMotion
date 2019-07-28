@@ -11,34 +11,32 @@
 @section('content')
 <div class="row">
     <div class="col-md-12">
-            <div class="card-body">
-                <h4 class="card-title">@lang('index.attr.rtw_registration')</h4>
-                @include('PK.RegistrationRTW')
+        <div class="card-body">
+            <h4 class="card-title">@lang('index.attr.rtw_registration')</h4>
+            
+            <ul class="nav customtab" role="tablist" id="tabMenu">
 
+                <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#obform" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span><span class="hidden-xs-down"> @lang('index.attr.insured_details')</span></a> </li>
 
-                <!-- Nav tabs -->
-                {{-- < --}}{{-- ul class="nav customtab" role="tablist">
-              
-                    <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#register" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('index.attr.registration_application')</span></a> </li>
-                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#employer_details" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('index.attr.supporting_document')</span></a> </li>
-                  
-                </ul>
+                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#employer" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down"> @lang('index.attr.employer_details')</span></a> </li>
 
-                <div class="tab-content tabcontent-border" --}}>
+                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#supdoc" role="tab"><span class="hidden-sm-up"><i class="ti-pencil-alt"></i></span> <span class="hidden-xs-down"> @lang('index.attr.supporting_document')</span></a> </li>
+            </ul>
+            <div class="tab-content tabcontent-border">
 
-                    <!-- Registration RTW -->
-                    {{-- <div class="tab-pane p-20 active" id="register" role="tabpanel">
-                      @include('PK.RegistrationRTW')
-                    </div> --}}
-
-                    <!-- accident details tab -->
-                   
-
-               
+                <div class="tab-pane p-20 active" id="obform" role="tabpanel">
+                    @include('PK.RegistrationRTW')
                 </div>
+
+                <div class="tab-pane p-20" id="employer" role="tabpanel">
+                    @include('PK.employerinfo')
+                </div>
+                <div class="tab-pane p-20" id="supdoc" role="tabpanel">
+                    @include('PK.supportingDoc')
+                </div>
+
             </div>
+        </div>
     </div>
 </div>
-
-<!-- row -->
 @endsection

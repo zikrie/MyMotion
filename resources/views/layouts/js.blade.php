@@ -233,6 +233,33 @@
             }
     
 </script>
+
+<script>
+    function buttonAlert() {
+      var txt;
+      if (confirm("Are You Sure Want To Submit ?")) {
+        document.location.href='Rtw_eligibility';
+      } else {
+        txt = "You pressed Cancel!";
+      }
+    }
+</script>
+
+<script>
+  function submitform()
+    {
+        $('#reset').find('form').submit();
+        $('.clearFields').val('');
+    }
+</script>
+
+<script>
+ //redirect to specific tab
+ $(document).ready(function () {
+ $('#tabMenu a[href="#{{ old('tab') }}"]').tab('show')
+ });
+</script>
+
 <script>
 	var room = 1;
 
@@ -253,6 +280,7 @@
         room--;
     }
 </script>
+
 <script>
 
 var room = 1;

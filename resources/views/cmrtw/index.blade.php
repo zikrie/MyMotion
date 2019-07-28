@@ -23,26 +23,30 @@
            <!-- Nav tabs -->
                  <div class="tab-content tabcontent-border">
                     <div class="tab-pane p-20 active" id="registerrtw" role="tabpanel">
-                        @include('cmrtw.rtwcase')
+                        
 
-                         {{--     <ul class="nav customtab" role="tablist">
+                             <ul class="nav customtab" role="tablist">
                     
                                 <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#registrationrtw" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('index.attr.registration_application')</span></a> </li>
+                                     <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#employerinfo" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Employer Info</span></a> </li>
                                  <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#supportingdocument" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('index.attr.supporting_document')</span></a> </li>
                   
-                             </ul> --}}
-{{-- 
-                            <div class="tab-content tabcontent-border"> --}}
-                                 <!-- RegistrationRTW details tab -->
-                                {{--  <div class="tab-pane p-20 active" id="registrationrtw" role="tabpanel">
-                                   
-                                </div> --}}
+                             </ul>
 
+                            <div class="tab-content tabcontent-border">
+                                 <!-- RegistrationRTW details tab -->
+                                 <div class="tab-pane p-20 active" id="registrationrtw" role="tabpanel">
+                                   @include('cmrtw.rtwcase')
+                                </div>
+
+                                <div class="tab-pane p-20" id="employerinfo" role="tabpanel">
+                                   @include('cmrtw.employerinfo')
+                               </div>
                                <!-- supporting details tab -->
-                               {{-- <div class="tab-pane p-20" id="supportingdocument" role="tabpanel">
-                                   @include('PK.supportingDoc')
-                               </div> --}}
-                          {{--  </div> --}}
+                               <div class="tab-pane p-20" id="supportingdocument" role="tabpanel">
+                                   @include('cmrtw.uploaddoc')
+                               </div>
+                           </div> 
                     </div>     
                     <div class="tab-pane p-20" id="ia" role="tabpanel">
 
@@ -72,7 +76,7 @@
                               @include('cmrtw.IA.initialevaluation')
                           </div>
 
-              {{--              <div class="tab-pane p-20 " id="initialevaluation" role="tabpanel">
+                           <div class="tab-pane p-20 " id="initialevaluation" role="tabpanel">
                                 <ul class="nav nav-tabs customtab2" role="tablist">
 
                                 <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#iarecovery" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Initial Assessment Recovery</span></a> </li>
@@ -91,7 +95,7 @@
                                       @include('cmrtw.IA.appointment')
                                     </div>
                                  </div>
-                            </div> --}}
+                            </div>
 
                              <div class="tab-pane p-20 " id="recoveryplannning" role="tabpanel">
                               {{--  @include('cmrtw.IA.recoveryplanning') --}}

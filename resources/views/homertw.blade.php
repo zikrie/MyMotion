@@ -33,7 +33,7 @@
                             <div class="d-flex flex-row">
                                 <div class="round align-self-center round-info"><i class="fas fa-list fa-lg"></i></div>
                                 <div class="m-l-10 align-self-center">
-                                    <h3 class="m-b-0">@if (empty($workbasketrtw)){{0}}@else{{count($workbasketrtw)}}@endif</h3>
+                                    <h3 class="m-b-0"> @isset($workbasketrtw->wbid) @if(empty($workbasketrtw)){{0}}@else{{count($workbasketrtw)}}@endif @endisset </h3>
                                     <h5 class="text-muted m-b-0">New Case</h5>
                                 </div>
                             </div>
@@ -172,13 +172,14 @@
                                                 <tr>
                                                     <th>@lang('home.select')</th>
                                                     <th>@lang('home.delete')</th>
-                                                    <th>Workbasket ID</th>
+                                                    <th>WB Id</th>
                                                     <th>@lang('home.aging')</th>
                                                     <th>@lang('home.datereg')</th>
                                                     <th>@lang('home.rtwrefno')</th>
                                                     <th>@lang('home.name')</th>
                                                     <th>@lang('home.icno')</th>
                                                     <th>@lang('home.casestatus')</th>
+                                                    <th>Benefit Type</th>
 
                                                 </tr>
                                             </thead>
@@ -203,10 +204,11 @@
                                                     <td>{{ $wbrtw->rtwrefno }}</td>
                                                     <td>{{ $wbrtw->name }}</td>
                                                     <td>{{ $wbrtw->idno }}</td>
-                                                    <td>{{ $wbrtw->descen }}</td>
+                                                    <td>{{ $wbrtw->descen }}</td> 
+                                                    <td><a href="/cmrtw.obForm">Claim Info</a></td>
                                                 </tr>
-                                                @endisset
-                                                @endforeach
+                                               @endisset @endforeach
+                                               
                                             </tbody>
                                         </table>
                                     </div>

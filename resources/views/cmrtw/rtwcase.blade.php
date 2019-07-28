@@ -171,230 +171,19 @@
                 </div>
               
             </div>
-        {{-- </div> --}}
-        {{-- <div class="form-body"> --}}
-                    <h4 class="card-title">@lang('registrationRTW.title2')</h4>
-                    <hr>
-                    <div class="row p-t-20">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label class="control-label">@lang('registrationRTW.attr.compname')</label>
-                                    <input type="text" id="name" class="form-control" value="@if(!empty($casertw)){{ $casertw->empname }} @endif">
-                                </div>
-                            </div>
-                    </div>
-                    <div class="row p-t-20">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label>@lang('registrationRTW.attr.address')</label>
-                                <input type="text" class="form-control"  value="@if(!empty($casertw)){{ $casertw->empadd1 }} @endif">
-                            </div>
+   
+                                    <div class="form-action">
+                                     {{--     <button type="submit" class="btn btn waves-effect waves-light btn-success"> <i class="fa fa-check"></i>@lang('registrationRTW.attr.submit')</button> --}}
+                                     <button type="submit" class="btn waves-effect waves-light btn-success"  >NEXT</button>
+                     <button type="button" class="btn waves-effect waves-light btn-success text-white" onclick="window.location='/homertw'">@lang('rtw_eligibility.cancel')</button>
+                    <button type="submit" class="btn waves-effect waves-light btn-success">
+                            SAVE</button>
                         </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                
-                                <input type="text" class="form-control" value="@if(!empty($casertw)){{ $casertw->empadd2 }} @endif">
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                
-                                <input type="text" class="form-control">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label>@lang('registrationRTW.attr.city')</label>
-                                <input type="text" class="form-control" value="@if(!empty($casertw)){{ $casertw->empcity}} @endif">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label class="control-label">@lang('registrationRTW.attr.state')</label>
-                               <select name='state' id='state' class='form-control'>
-                                    <option>Please Select</option>
-                                        @foreach($state as $s)
-                                        @if(!empty($casertw) && $casertw->statecode == $s->refcode)
-                                        <option value='{{$s->refcode}}' selected>{{$s->descen}}</option>
-                                        @else
-                                        <option value='{{$s->refcode}}'>{{$s->descen}}</option>
-                                        @endif
-                                        @endforeach
-                                    </select>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>@lang('registrationRTW.attr.postcode')</label>
-                            <input type="text" class="form-control" value="@if(!empty($casertw)){{ $casertw->emppostcode }} @endif">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>@lang('registrationRTW.attr.telNo')</label>
-                            <input type="text" class="form-control" value="@if(!empty($casertw)){{ $casertw->emptelno }} @endif">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>@lang('registrationRTW.attr.faxno')</label>
-                            <input type="text" class="form-control" value="@if(!empty($casertw)){{ $casertw->empfaxno }} @endif">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>@lang('registrationRTW.attr.email')</label>
-                            <input type="text" class="form-control" value="@if(!empty($casertw)){{ $casertw->empemail }} @endif">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-7"> 
-                                            <label for="example-text-input" class="col-form-label">@lang('registrationRTW.attr.inservice')</label>
-                                        </div>
-                                         <label class="btn btn-primary">
-                                                <div class="custom-control custom-radio">
-                                                    <input type="radio" id="yes" name="yesno" class="custom-control-input">
-                                                    <label class="custom-control-label" for="yes">@lang('registrationRTW.attr.yes')</label>
-                                                </div>
-                                            </label>
-                                            <label class="btn btn-primary">
-                                                <div class="custom-control custom-radio">
-                                                    <input type="radio" id="no" name="yesno" class="custom-control-input">
-                                                    <label class="custom-control-label" for="no">@lang('registrationRTW.attr.no')</label>
-                                                </div>
-                                            </label>
-                    </div>
-                </div>
-                
-                
-              {{--   <div class="form-actions">
-                        <button type="button" class="btn btn waves-effect waves-light btn-secondary">@lang('registrationRTW.cancel')</button>
-                       <button type="submit" class="btn btn waves-effect waves-light btn-success"> <i class="fa fa-check"></i>
-                        @lang('registrationRTW.save')</button>
-                    </div> --}}
-                </div>
 
             
             {{-- </form>
             <form action="{{ route('claim.upload') }}" method="POST" enctype="multipart/form-data"> --}}
-                    <input type="hidden" name="_token" value="{{csrf_token()}}">
-                    <div class="form-body">
-                        <h4 class="card-title">@lang('registrationRTW.title3')</h4>
-                        {{--<hr class="m-t-0 m-b-40">--}}
-                        <hr>
-                        @if(Session::get('messagedoc'))
-                        <div class="card-footer">
-
-                            <div class="alert alert-warning">
-                                {{Session::get('messagedoc')}}
-                            </div>
-
-                        </div>
-                        <br>
-
-                        @elseif (!empty($messagedoc))
-                        <div class="card-footer">
-
-                            <div class="alert alert-warning">
-                                {{$messagedoc}}
-                            </div>
-
-                        </div>
-                        <br>
-                        <br>
-                        @endif
-
-                        <div class="form-actions">
-
-                            <div class="row">
-                                <div class="col-12">
-
-                                    <div class="table-responsive">
-                                        @if(count($errors)>0)
-                                        <ul>
-                                            @foreach($errors->all() as $error)
-
-                                            <li class="alert alert danger">{{$error}}</li>
-
-                                            @endforeach
-
-                                        </ul>
-
-                                        @endif
-                                        <table class="table" id="table_upload_doc">
-                                            <col width="50%">
-                                            <col width="30%">
-                                            <col width="20%">
-                                            <thead>
-                                                <tr>
-                                                    
-                                                    <th>@lang('registrationRTW.attr.docdesc')</th>
-                                                    <th>@lang('registrationRTW.attr.docpath')</th>
-                                                    <th>@lang('registrationRTW.attr.docview')</th>
-
-
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                               
-                                             
-                                                
-                                            
-
-                                              
-                                                <tr>
-                                                   
-                                             
-                                                <td>@lang('registrationRTW.attr.supdoc')</td>
-                                                        
-                                                <td><span class="choosefile"><input type="file" name="pdf[1]"
-                                                        id="pdf_cancel_">
-                                                    {{--<div class="preview btn_cancel_{{$cnt}}"> --}}
-                                                        <i class=" preview btn_cancel_ icon-close"></i>
-                                                    {{--</div>--}}
-                                                    </span>
-                                                </td>
-                                               
-                                                    <td>
-                                                        {{--  @if (!empty($docinfo))
-                                                          @foreach ($docinfo as $d) --}}
-                                                         
-                                                         <a href='/viewdoc' target="_blank"><i class="far fa-file-alt"></i>
-                                                       </a>
-                                                     
-                                               {{--  @endforeach
-                                                @endif --}}
-
-
-                                                   </td>
-                                            </tbody>
-
-
-                                        </table>
-                                   {{--      <table>
-                                            <tr>
-                                                <td id="select_database" style="display:none;">
-                                                    <select id="idtype_doc" class="form-control" name="idtype">
-                                                        <option value="" selected disable hidden></option>
-                                                        @foreach($doclist_select as $data)
-                                                        <option value="{{ $data -> doctype}}|{{ $data -> doccat}}">
-                                                            {{ $data -> docdescen}}
-                                                        </option>
-                                                        @endforeach
-                                                    </select>
-                                                </td>
-
-                                            </tr>
-
-
-                                        </table>  --}}
-                                    </div>
-
-
-
-                                    <div class="form-action">
-                                         <button type="submit" class="btn btn waves-effect waves-light btn-success"> <i class="fa fa-check"></i>@lang('registrationRTW.attr.submit')</button>
-                                        <a href=/homertw><button type="button" class="btn btn waves-effect waves-light btn-secondary">Back</button></a>
+                   
                                        
                                        {{--  <button type="submit"
                                             class="btn btn waves-effect waves-light btn-success">@lang('registrationRTW.attr.submit')</button>
@@ -408,7 +197,7 @@
                                             class="btn btn-rounded btn-block btn-outline-success ">Upload All</button-->
                                         
                                     </div>
-
+</form>
 
 
 
@@ -416,16 +205,13 @@
 
                                 </div>
                             </div>
-                            <br />
+                        
 
 
                         </div>
                     </div>
-                </form>
-        </div>
-    </div>
-</div>
-</div>
+                
+
 
           
 

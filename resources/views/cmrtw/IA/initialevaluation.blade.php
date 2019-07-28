@@ -38,6 +38,17 @@
                             <input class="form-control" type="text"  id="telephone" value="@if(!empty($casertw)){{ $casertw->telno }} @endif" readonly>
                         </div>
                     </div>
+                    <!-- <form action="{{ route('image.upload.post') }}" method="POST" enctype="multipart/form-data"> -->
+                        <div class="form-group row">
+                            <div class="col-2">
+                                <label for="example-text-input" class="col-form-label">@lang('appointment.attr.picture')</label>
+                            </div>
+                            <div class="col-8">
+                            <input type="file" name="image" id="image">
+                            <button type="submit" class="btn btn waves-effect waves-light btn-success">@lang('ia.attr.upload')</button>
+                        </div>
+                        </div>
+                    <!-- </form> -->
                 </div>
                 <!-- Initial Assessment question -->
 

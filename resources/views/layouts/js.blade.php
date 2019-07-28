@@ -356,3 +356,65 @@ function remove_addDisabled(rid) {
 }
 
 </script>
+<script>
+    var work = 1;
+
+    function multiple_work() {
+
+        work++;
+        var objTo = document.getElementById('multiple_work')
+        var divtest = document.createElement("div");
+        divtest.setAttribute("class", "removeclass" + work);
+        var rdiv = 'removeclass' + work;
+        divtest.innerHTML = '<div class="row p-t-20"><div class="col-md-6"><div class="form-group"><label class="control-label">Nama Jawatan</label><input type="text" id="name" class="form-control"></div></div><div class="col-md-6"><div class="form-group"><label class="control-label">Jenis Kategori(OSI)</label><input type="text" id="name" class="form-control"></div></div></div><div class="row p-t-20"><div class="col-md-4"><div class="form-group"><label class="control-label">Industri</label><select class="form-control select" id="bankloc" name="bankloc" onchange="industry1(this.options[this.selectedIndex].value)" required><option value="">Please Select State</option><option value="pertanian">Pertanian</option><option value="perhutanan">Perhutanan</option><option value="perikanan">Perikanan</option><option value="perlombongan">Perlombongan</option><option value="pembuatan">Pembuatan</option><option value="perkhidmatan">Perkhidmatan</option><option value="pembinaan">Pembinaan</option><option value="pengangkutan">Pengangkutan</option><option value="perkidmatanair">Perkhidmatan Air Dan Pembentungan</option><option value="elektrik">Elektrik dan Elektronik</option><option value="minyak">Minyak dan Gas</option><option value="perdagangan">Perdagangan, Peniagaan dan Peruncitan</option><option value="perkhidmatanawam">Perkhidmatan Awam</option><option value="industrikewangan">Institusi Kewangan dan Insurans</option><option value="kerjasendiri">Kerja Sendiri</option><option value="others">Lain-lain (Nyatakan)</option></select></div></div> <div class="col-md-4"><div class="form-group"><div id="othersHide1" class="form-group" style="display:none"><label class="control-label">@lang('caseMgmt.attr.specify')</label><input type="text" id="otherMulti" class="form-control"></div></div></div><div class="col-md-4"><div class="form-group"><label class="control-label">Bilangan Hari Bekerja(Seminggu)</label><input type="text" id="name" class="form-control"></div></div><div class="col-md-4"><div class="form-group"><label class="control-label">Waktu Bekerja</label><select class="form-control select"  required><option value="">--Please Select State--</option><option value="">Waktu Kerja Biasa</option><option value="">Syif</option></select></div></div><div class="col-md-4"><div class="form-group"><label for="example-text-input" class="col-form-label">Kemampuan Bekerja Sepenuh Masa</label><div class="custom-control custom-radio"><input type="radio" id="yes123" name="yes223" class="custom-control-input"><label class="custom-control-label" for="yes123">Yes</label></div><div class="custom-control custom-radio"><input type="radio" id="no123" name="yes223" class="custom-control-input" ><label class="custom-control-label" for="no123">No</label></div></div></div><div class="col-md-4"><div class="form-group"><label class="control-label">Bilangan Jam Sehari (Jam)</label><input type="text" id="jam" class="form-control"></div></div><div class="col-md-4"><div class="form-group"><label class="control-label">Skop Tugas</label><input type="text" id="skop" class="form-control"></div></div><div class="col-md-4"><div class="form-group"><label class="control-label">Pembayaran Gaji</label><select class="form-control select"  required><option value="">Please Select State</option><option value="">Kadar Bulanan</option><option value="">Kadar Harian</option></select></div></div><div class="col-md-4"><div class="form-group"><label class="control-label">Gaji Terakhir</label><input type="text" id="gaji" class="form-control" value="RM"></div></div><div class="col-md-4"><div class="form-group"><label for="example-text-input" class="col-form-label">Adakah Menerima Cuti Sakit</label><div class="custom-control custom-radio"><input type="radio" id="yes11111" name="yes2222" class="custom-control-input"><label class="custom-control-label" for="yes11111">Yes</label></div><div class="custom-control custom-radio"><input type="radio" id="no11111" name="yes2222" class="custom-control-input" ><label class="custom-control-label" for="no11111">No</label></div></div></div> <div class="col-md-4"><div class="form-group"><label class="control-label">Status Pembayaran Gaji</label><select class="form-control select"  required><option value="">Please Select State</option><option value="">Menerima Gaji Penuh</option><option value="">Menerima Gaji Separuh</option><option value="">Tidak Menerima Gaji</option></select></div></div><div class="col-md-4"><div class="form-group"><label class="control-label">Remarks</label><input type="text" id="remarks" class="form-control"></div></div><div class="col-md-4"><label class="control-label">Add Other Employment Details</label><div class="input-group"><div class="input-group-append"><button class="btn btn-danger" type="button" onclick="remove_multiple_work('+work+');"><i class="fa fa-minus"></i></button></div></div></div></div>';
+
+        objTo.appendChild(divtest)
+    }
+
+    function remove_multiple_work(rid) {
+        $('.removeclass' + rid).remove();
+        work--;
+    }
+</script>
+<script>
+    
+    //not_multiple_work
+    var workHistory1 = 1;
+
+    function multiple_workHistory1() {
+
+    workHistory1++;
+    var objTo = document.getElementById('multiple_workHistory1')
+    var divtest = document.createElement("div");
+    divtest.setAttribute("class", "removeclass" + workHistory1);
+    var rdiv = 'removeclass' + workHistory1;
+    divtest.innerHTML = '<div class="row p-t-20"><div class="col-md-4"><div class="form-group"><label class="control-label">Nama Majikan</label><input type="text" id="majikan" class="form-control"></div></div><div class="col-md-4"><div class="form-group"><label class="control-label">Jawatan</label><input type="text" id="jawatan" class="form-control"></div></div><div class="col-md-4"><div class="form-group"><label class="control-label">Pendapatan</label><input type="text" id="pendapatan" class="form-control"></div></div><div class="col-md-4"><div class="form-group"><label class="control-label">Tempoh Pekerjaan</label><select class="form-control select"  required><option value="">Kurang Setahun</option><option value="">1-5 Tahun</option><option value="">6-10 Tahun</option>  <option value="">Lebih Dari 10 Tahun</option></select></div></div><div class="col-md-4"><div class="form-group"><label class="control-label">Sebab Berhenti</label><select class="form-control select"  required><option value="">Peningkatan Kerjaya</option><option value="">Kesihatan</option><option value="">VSS/MSS</option>  <option value="">Lain-Lain</option>                               </select></div></div><div class="col-md-4"><label class="control-label">Add Work History</label><div class="input-group"><div class="input-group-append"><button class="btn btn-danger" type="button" onclick="remove_multiple_workHistory1('+workHistory1+');"><i class="fa fa-minus"></i></button></div></div></div></div>';
+
+    objTo.appendChild(divtest)
+    }
+
+    function remove_multiple_workHistory1(rid) {
+        $('.removeclass' + rid).remove();
+        workHistory1--;
+    }
+    //multiple_work
+    var workHistory = 1;
+
+    function multiple_workHistory() {
+
+        workHistory++;
+        var objTo = document.getElementById('multiple_workHistory')
+        var divtest = document.createElement("div");
+        divtest.setAttribute("class", "removeclass" + workHistory);
+        var rdiv = 'removeclass' + workHistory;
+        divtest.innerHTML = '<div class="row p-t-20"><div class="col-md-4"><div class="form-group"><label class="control-label">Nama Majikan</label><input type="text" id="majikan" class="form-control"></div></div><div class="col-md-4"><div class="form-group"><label class="control-label">Jawatan</label><input type="text" id="jawatan" class="form-control"></div></div><div class="col-md-4"><div class="form-group"><label class="control-label">Pendapatan</label><input type="text" id="pendapatan" class="form-control"></div></div><div class="col-md-4"><div class="form-group"><label class="control-label">Tempoh Pekerjaan</label><select class="form-control select"  required><option value="">Kurang Setahun</option><option value="">1-5 Tahun</option><option value="">6-10 Tahun</option>  <option value="">Lebih Dari 10 Tahun</option></select></div></div><div class="col-md-4"><div class="form-group"><label class="control-label">Sebab Berhenti</label><select class="form-control select"  required><option value="">Peningkatan Kerjaya</option><option value="">Kesihatan</option><option value="">VSS/MSS</option>  <option value="">Lain-Lain</option>                               </select></div></div><div class="col-md-4"><label class="control-label">Add Work History</label><div class="input-group"><div class="input-group-append"><button class="btn btn-danger" type="button" onclick="remove_multiple_workHistory('+workHistory+');"><i class="fa fa-minus"></i></button></div></div></div></div>';
+
+        objTo.appendChild(divtest)
+    }
+
+    function remove_multiple_workHistory(rid) {
+        $('.removeclass' + rid).remove();
+        workHistory--;
+    }
+
+</script>

@@ -158,4 +158,8 @@ Route::get('/Rtw_eligibility', function () {
     return view('Rtw_eligibility');
 });
 
+Route::get('image-upload', 'ImageUploadController@imageUpload')->name('image.upload');
+
+Route::post('image-upload', 'ImageUploadController@imageUploadPost')->name('image.upload.post');
+
 

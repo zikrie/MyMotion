@@ -29,6 +29,8 @@ return [
         'idno' => 'Identification Number',
         'email' => 'Email',
         'telephone' => 'Telephone',
+        'picture' => 'Upload Picture',
+        'upload' => 'Upload',
         'work' => 'Working',
         'yes' => 'Yes',
         'no' => 'No',

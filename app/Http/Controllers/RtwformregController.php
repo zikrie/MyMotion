@@ -30,6 +30,8 @@ class RtwformregController extends Controller
             $medrefno = '';
             $msrefno = '';
 
+            // dd($caserefno);
+
             // session(['uniquerefno'=>$uniquerefno, 'rtwcaserefno'=>$rtwcaserefno, 'schemerefno'=>$schemerefno]);
 
             //    $operid = session('loginname');
@@ -49,8 +51,11 @@ class RtwformregController extends Controller
 
             $jsondata = json_encode($datatosend);
 
+            // dd($datatosend);
+
             $url = 'http://'.env('WS_IP', 'localhost').'/api/wsmotion/rtw/regconfirm';
             $ch = curl_init();
+        
         
             curl_setopt($ch,CURLOPT_URL, $url);
             curl_setopt($ch, CURLOPT_PROXY, '');
@@ -67,6 +72,7 @@ class RtwformregController extends Controller
             curl_close($ch);
 
             $jsondecode = json_decode($result);
+            // dd($jsondecode);
 
             // dd($jsondecodereg);
 

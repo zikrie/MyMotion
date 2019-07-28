@@ -114,11 +114,11 @@ Route::get('locale/{locale}', function ($locale) {
 
 
 // --------------- RTW Screen (AYU) ------------
-Route::get('/rtweligibilty', function()
-{
-    return view('Rtw_eligibility');
-
-});
+//Route::get('/rtweligibilty', function()
+//{
+//    return view('Rtw_eligibility');
+//
+//});
   // Route::get('/PK.index','RtwformregController@index');
 // Route::get('/noticetype', 'NoticeTypeController@index');
 // Route::post('/idno', 'NoticeTypeController@noticeType');
@@ -152,7 +152,7 @@ Route::get('/cmrtw.index', 'RtwCaseController@index');
 
 Route::get('/preview', 'previewController@preview')->name('preview');
 
-
+Route::get('/cmrtw.obForm', 'previewController@claim');
 
 Route::get('/Rtw_eligibility', function () {
     return view('Rtw_eligibility');

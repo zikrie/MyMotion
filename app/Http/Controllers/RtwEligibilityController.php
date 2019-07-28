@@ -33,10 +33,18 @@ class RtwEligibilityController extends Controller
         }
         $jsondecodeData=""; //jsondecodeData equal to null
         $this->getData($jsondecodeData);
+        // dd($jsondecodeData);
+
+        // if($errorcode != 0)
+        // {
+        //     return redirect()->back()->with('message');
+        // }
 
         if ($jsondecodeData && $jsondecodeData!='')//irina
         {
             $errorcode = $jsondecodeData->{'errorcode'};
+            $message = $jsondecodeData->{'message'};
+            // dd($message);
             if ($errorcode == 0)
             {
                 // $message = $jsondecodeData->{'message'};
@@ -52,14 +60,22 @@ class RtwEligibilityController extends Controller
                 {
                     return redirect('/cmrtw.index');  
                 }
+                else
+                {
+                    return redirect()->back()->with('messageid',$message);
+                }
             }
             else
             {
-                // $rtwdata = null;
-                return redirect()->back()->with('messageid', 'Record not found');
+                // // $rtwdata = null;
+                //  return redirect()->back()->with('messageid', 'Record not found');
+                 return redirect()->back()->with('messageid',$message);
+                
             }
             
         }
+
+
 
         $loginrole=session('loginrole');
         if($loginrole== 'PKRTW')

@@ -47,7 +47,7 @@ class RtwCaseController extends Controller
 
         // dd($workbasketrtw);
         
-      return view ('cmrtw.index', ['casertw'=>$casertw,'idtype'=>$idtype, 'race' => $race, 'state' => $state, 'national' => $national]);
+      return view ('cmrtw.index', ['casertw'=>$casertw, 'race' => $race, 'state' => $state, 'national' => $national, 'idtype'=>$idtype, 'doclist' => $doclist]);
         
 
     }
@@ -85,6 +85,8 @@ class RtwCaseController extends Controller
         curl_close($ch);
     
         $jsondecodeData =json_decode($result);
+
+        // dd($jsondecodeData);
        
 
     }

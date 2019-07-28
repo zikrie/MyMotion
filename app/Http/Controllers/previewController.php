@@ -11,72 +11,83 @@ use DB;
 
 class previewController extends Controller
 {
-// public function preview() 
-// 	{
-//  // Your logic here
-// 		$jsondecodeData="";
-//         $this->getData($jsondecodeData); 
+public function preview() 
+	{
 
-//         $data = $jsondecodeData->{'data'};
-//         // dd($data);
 
-//         // dd($data);
-//         // $empcode = session('$empcode');
-//         // dd($empcode);
-//         $state=DB::select('Select refcode, descen from reftable where tablerefcode=? order by refcode', ['state']);
-//         $national=DB::select('Select refcode, descen from reftable where tablerefcode=? order by refcode', ['national']);
-//         $idtype=DB::select('Select refcode, descen from reftable where tablerefcode=? order by refcode', ['idtype']);
-//         $race=DB::select('Select refcode, descen from reftable where tablerefcode=? order by refcode', ['race']);
-//         $sql = 's   elect d.docdescen,d.doctype,d.docdescbm, d.doccat from doctype d, noticedoc n '
-//                 . 'where  n.doctype = d.doctype';
-//         $doclist = DB::select($sql);
-//         $emptype = DB::select('Select refcode, descen from reftable where tablerefcode=? order by refcode', ['emptype']);
+    $state=DB::select('Select refcode, descen from reftable where tablerefcode=? order by refcode', ['state']);
+        $national=DB::select('Select refcode, descen from reftable where tablerefcode=? order by refcode', ['national']);
+        $idtype=DB::select('Select refcode, descen from reftable where tablerefcode=? order by refcode', ['idtype']);
+        $race=DB::select('Select refcode, descen from reftable where tablerefcode=? order by refcode', ['race']);
+          $sql = 'select d.docdescen,d.doctype,d.docdescbm, d.doccat from doctype d, noticedoc n '
+                . 'where  n.doctype = d.doctype';
+        $doclist = DB::select($sql);
         
-//  		return view('preview', ['data'=>$data,'idtype'=>$idtype, 'doclist'=>$doclist, 'race' => $race, 'state' => $state, 'national' => $national, 'emptype' =>$emptype]);
-// 	}
+            // dd($data);
+            return view ('preview', ['idtype'=>$idtype, 'doclist'=>$doclist, 'race' => $race, 'state' => $state, 'national' => $national]);
 
-// 	public function getData(&$jsondecodeData)
-//     {
-//     	$idno = session('idno');
-//         $brcode = session('loginbranchcode');
-//         $operid = session('loginname');
-//         $idtype = session('idtype');
 
-//         $url = 'http://'.env('WS_IP', 'localhost').'/api/wsmotion/rtw/reg?idno='.$idno.'&brcode='.$brcode.'&operid='.$operid;//rtw
+    // return view('preview');
+ // // Your logic here
+	// 	$jsondecodeData="";
+ //        $this->getData($jsondecodeData); 
+
+ //        $data = $jsondecodeData->{'data'};
+ //        // dd($data);
+
+ //        // dd($data);
+ //        // $empcode = session('$empcode');
+ //        // dd($empcode);
+ //         $state=DB::select('Select refcode, descen from reftable where tablerefcode=? order by refcode', ['state']);
+ //        $national=DB::select('Select refcode, descen from reftable where tablerefcode=? order by refcode', ['national']);
+ //        $idtype=DB::select('Select refcode, descen from reftable where tablerefcode=? order by refcode', ['idtype']);
+ //        $race=DB::select('Select refcode, descen from reftable where tablerefcode=? order by refcode', ['race']);
+ //          $sql = 'select d.docdescen,d.doctype,d.docdescbm, d.doccat from doctype d, noticedoc n '
+ //                . 'where  n.doctype = d.doctype';
+ //        $doclist = DB::select($sql);
+ //        $emptype = DB::select('Select refcode, descen from reftable where tablerefcode=? order by refcode', ['emptype']);
+        
+ // 		return view('preview', ['data'=>$data,'idtype'=>$idtype, 'doclist'=>$doclist, 'race' => $race, 'state' => $state, 'national' => $national, 'emptype' =>$emptype]);
+	}
+
+  // public function submitsuccess()
+  // {
+  //     return view('Rtw_eligibility');
+  // }
+  public function claim()
+  {
+    return view('cmrtw.obForm');
+  }
+
+	// public function getData(&$jsondecodeData)
+ //    {
+ //    	$idno = session('idno');
+ //        $brcode = session('loginbranchcode');
+ //        $operid = session('loginname');
+ //        $idtype = session('idtype');
+
+ //        $url = 'http://'.env('WS_IP', 'localhost').'/api/wsmotion/rtw/reg?idno='.$idno.'&brcode='.$brcode.'&operid='.$operid;//rtw
                           
-//         // return $url;
+ //        // return $url;
 
-//         $ch = curl_init();
+ //        $ch = curl_init();
     
-//        curl_setopt($ch,CURLOPT_URL, $url);
-//        curl_setopt($ch, CURLOPT_PROXY, '');
+ //       curl_setopt($ch,CURLOPT_URL, $url);
+ //       curl_setopt($ch, CURLOPT_PROXY, '');
     
-//        curl_setopt($ch, CURLOPT_HTTPGET, TRUE);
-//        curl_setopt( $ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
+ //       curl_setopt($ch, CURLOPT_HTTPGET, TRUE);
+ //       curl_setopt( $ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
     
-//        curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-//         $result = curl_exec($ch);
-//         // $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);    
+ //       curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+ //        $result = curl_exec($ch);
+ //        // $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);    
 
-//         curl_close($ch);
-//         // return $result;
-//         $jsondecodeData =json_decode($result);
+ //        curl_close($ch);
+ //        // return $result;
+ //        $jsondecodeData =json_decode($result);
 
-//         // return $jsondecodeData;
+ //        // return $jsondecodeData;
 
-//     }
-
-
-public function preview() {
-    // Your logic here
-    return view('preview');
-   }
-
-  
+ //    }
 }
-
-
-
-
-
 

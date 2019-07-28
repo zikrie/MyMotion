@@ -40,12 +40,63 @@ class RtwController extends Controller
                 $rtwcaserefno = $data->rtwcaserefno;
                 $schemerefno = $data->schemerefno;
                 $caserefno = $data->caserefno;
+                $name = $data->name;
+                $dob = $data->dob;
+                $race =$data->race;
+                $gender = $data->gender;
+                $occupation = $data->occupation;
+                $add1 = $data->add1;
+                $add2 = $data->add2;
+                $postcode = $data->postcode;
+                $city = $data->city;
+                $statecode = $data->statecode;
+                $telno = $data->telno;
+                $mobileno = $data->mobileno;
+                $email = $data->email;
+                $nationality = $data->nationality;
+                $name = $data->name;
+                $empcode = $data->empcode;
+                $empname = $data->empname;
+                $empadd1 = $data->empadd1;
+                $empadd2 = $data->empadd2;
+                $emppostcode = $data->emppostcode;
+                $empcity = $data->empcity;
+                $empstatecode = $data->empstatecode;
+                $emptelno = $data->emptelno;
+                $empfaxno = $data->empfaxno;
+                $empemail = $data->empemail;
                 session(['uniquerefno' => $uniquerefno]);
                 session(['rtwcaserefno' => $rtwcaserefno]);
                 session(['schemerefno' => $schemerefno]);
                 session(['caserefno' => $caserefno]);
+                session(['name' => $name]);
+                session(['dob' => $dob]);
+                session(['race' => $race]);
+                session(['gender' => $gender]);
+                session(['occupation' => $occupation]);
+                session(['add1' => $add1]);
+                session(['add2' => $add2]);
+                session(['postcode' => $postcode]);
+                session(['city' => $city]);
+                session(['statecode' => $statecode]);
+                session(['telno' => $telno]);
+                session(['mobileno' => $mobileno]);
+                session(['email' => $email]);
+                session(['nationality' => $nationality]);
+                session(['empcode' => $empcode]);
+                session(['empname' => $empname]);
+                session(['empadd1' => $empadd1]);
+                session(['emppostcode' => $emppostcode]);
+                session(['empcity' => $empcity]);
+                session(['empstatecode' => $empstatecode]);
+                session(['emptelno' => $emptelno]);
+                session(['empfaxno' => $empfaxno]);
+                session(['empemail' => $empemail]);
+
+
 
                 // dd($data);
+                // dd($rtwcaserefno);
             }
             else
             {

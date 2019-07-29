@@ -8,8 +8,8 @@ return [
         'od_notice' => 'Occupational Disease Notice',
         'invalidity_notice' => 'Invalidity Notice',
         'death_notice' => 'Death Notice',
-        'insured_details' => 'Insured Person Details',
-        'employer_details' => 'Employer Details',
+        'insured_details' => 'Insured Person Info',
+        'employer_details' => 'Employer Info',
         'wages_details' => 'Wages Details',
         'death_details' => 'Death Details',
         'pension_details' => 'Pension Details',
@@ -24,7 +24,7 @@ return [
         'dependant_profiles' => 'Dependant Profiles',
         'rtw_registration' => 'RTW Registration',
         'registration_application' => 'Registration Application',
-        'supporting_document' => 'Supporting Document',
+        'supporting_document' => 'Upload Document',
     ],
 
  

@@ -2,9 +2,9 @@
  
 return [
 
-	'title1' => 'Insured Person Details',
-    'title2' => 'Employer Details',
-    'title3' => 'Supporting Document',
+	'title1' => 'Insured Person Info',
+    'title2' => 'Employer Info',
+    'title3' => 'Upload Document',
     'title4' => 'RTW Insured Person Info',
     'postal_address' => 'Postal Address',
 

@@ -5,7 +5,7 @@
                 <form action="{{ route('claim.upload') }}" method="POST" enctype="multipart/form-data">
                     <input type="hidden" name="_token" value="{{csrf_token()}}">
                     <div class="form-body">
-                        <h5 class="card-title">@lang('uploaddoc.title')</h5>
+                        <h5 class="card-title">@lang('rtwupload.title')</h5>
                         {{--<hr class="m-t-0 m-b-40">--}}
                         @if(Session::get('messagedoc'))
                         <div class="card-footer">
@@ -53,9 +53,9 @@
                                             <thead>
                                                 <tr>
                                                     
-                                                    <th>@lang('uploaddoc.attr.docdesc')</th>
-                                                    <th>@lang('uploaddoc.attr.docpath')</th>
-                                                    <th>@lang('uploaddoc.attr.view')</th>
+                                                    <th>@lang('rtwupload.attr.docdesc')</th>
+                                                    <th>@lang('rtwupload.attr.docpath')</th>
+                                                    <th>@lang('rtwupload.attr.view')</th>
 
 
                                                 </tr>

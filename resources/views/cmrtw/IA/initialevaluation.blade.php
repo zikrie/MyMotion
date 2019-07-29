@@ -41,7 +41,7 @@
                     <!-- <form action="{{ route('image.upload.post') }}" method="POST" enctype="multipart/form-data"> -->
                         <div class="form-group row">
                             <div class="col-2">
-                                <label for="example-text-input" class="col-form-label">@lang('appointment.attr.picture')</label>
+                                <label for="example-text-input" class="col-form-label">@lang('ia.attr.picture')</label>
                             </div>
                             <div class="col-8">
                             <input type="file" name="image" id="image">

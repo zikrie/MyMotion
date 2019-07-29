@@ -2,7 +2,7 @@
  
 return [
 
-	'title' => 'Insured Person Details',
+	'title' => 'Return To Work',
     'postal_address' => 'Postal Address',
 
     'attr' => [

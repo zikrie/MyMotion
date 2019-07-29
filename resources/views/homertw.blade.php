@@ -179,8 +179,6 @@
                                                     <th>@lang('home.name')</th>
                                                     <th>@lang('home.icno')</th>
                                                     <th>@lang('home.casestatus')</th>
-                                                    <th>Benefit Type</th>
-
                                                 </tr>
                                             </thead>
 
@@ -205,7 +203,6 @@
                                                     <td>{{ $wbrtw->name }}</td>
                                                     <td>{{ $wbrtw->idno }}</td>
                                                     <td>{{ $wbrtw->descen }}</td> 
-                                                    <td><a href="/cmrtw.obForm">Claim Info</a></td>
                                                 </tr>
                                                @endisset @endforeach
                                                

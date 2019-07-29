@@ -21,6 +21,8 @@
                 <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#employer" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down"> @lang('index.attr.employer_details')</span></a> </li>
 
                 <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#supdoc" role="tab"><span class="hidden-sm-up"><i class="ti-pencil-alt"></i></span> <span class="hidden-xs-down"> @lang('index.attr.supporting_document')</span></a> </li>
+
+                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#benefit" role="tab"><span class="hidden-sm-up"><i class="ti-pencil-alt"></i></span> <span class="hidden-xs-down"> @lang('index.attr.benefit')</span></a> </li>
             </ul>
             <div class="tab-content tabcontent-border">
 
@@ -34,7 +36,9 @@
                 <div class="tab-pane p-20" id="supdoc" role="tabpanel">
                     @include('PK.supportingDoc')
                 </div>
-
+                <div class="tab-pane p-20" id="benefit" role="tabpanel">
+                    @include('PK.benefitClaimPK')
+                </div>
             </div>
         </div>
     </div>

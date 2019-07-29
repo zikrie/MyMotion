@@ -162,4 +162,3 @@ Route::get('image-upload', 'ImageUploadController@imageUpload')->name('image.upl
 
 Route::post('image-upload', 'ImageUploadController@imageUploadPost')->name('image.upload.post');
 
-

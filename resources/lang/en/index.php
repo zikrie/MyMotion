@@ -25,6 +25,7 @@ return [
         'rtw_registration' => 'RTW Registration',
         'registration_application' => 'Registration Application',
         'supporting_document' => 'Upload Document',
+        'benefit' => 'Benefit Claim Info',
     ],
 
  

@@ -121,7 +121,7 @@
                                         <button type="submit"
                                             class="btn btn waves-effect waves-light btn-success">UPLOAD DOCUMENT</button>
                                   {{--       <button type="button" id="add_doc"
-                                            class="btn btn-secondary">@lang('uploaddoc.adddoc')</button> --}}
+                                            class="btn btn-secondary">@lang('rtwupload.attr.adddoc')</button> --}}
                                              <a class="btn waves-effect waves-light btn-success text-white" href="{{ route('preview') }}">PREVIEW</a>
                                              <a href=/homertw><button type="submit" class="btn btn waves-effect waves-light btn-success"> </i>SUBMIT</button></a>
                                         </div>

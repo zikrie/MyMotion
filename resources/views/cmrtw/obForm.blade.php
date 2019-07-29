@@ -1,17 +1,3 @@
-@extends('layouts.app')
-
-@section('maintitle', 'Tab Screen')
-
-@section('desc', 'Form')
-
-@section('head')
-<link href="{{ asset("bower_components/footable/css/footable.standalone.min.css")}}" rel="stylesheet" type="text/css" />
-<link href="{{asset("PERKESO_UI/assets/node_modules/calendar/dist/fullcalendar.css")}}" rel="stylesheet" />
-
-@endsection
-
-@section('content')
-
 <div class="row">
     <div class="col-12">
         <div class="card">
@@ -124,7 +110,7 @@
                                                 <td>12/9/2018</td>
                                                 <td>BK</td>
                                                 <td><span class="label label-table label-success">Active</span></a>
-                                                    <td><button type="button"class="btn btn-warning" data-toggle="modal" data-target="#myModal" id="viewBtn" onclick="buttonClick()">View</button></td>
+                                                    <td><button type="button"class="btn btn-warning" data-toggle="modal" data-target="#myModal" id="viewBtn" onclick="buttonClick1()">View</button></td>
                                                     <td><div class="custom-control custom-radio"><input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
                                                         <label class="custom-control-label" for="customRadio2"></label></div></td>
                                             </tr>
@@ -196,11 +182,11 @@
                 </div>
                 <div class="form-group row">
                     <div class="col-2">
-                        <label for="email"><b>No. Rujukan</b></label>
+                        <label for="email"><b>Notice ID</b></label>
                     </div>
                     <div class="col-md-8">
                         <div class="form-group">
-                            <input type="text" name="Rujukan" id="Rujukan" class="form-control" required>
+                            <input type="text" name="notice_id" id="notice_id" class="form-control" required>
                         </div>
                     </div>
                 </div>
@@ -543,6 +529,7 @@
     function buttonClick(){
       document.getElementById("viewBtn").style.backgroundColor = "green";
     }
+    function buttonClick1(){
+      document.getElementById("viewBtn").style.backgroundColor = "green";
+    }
 </script>
-
-  @endsection

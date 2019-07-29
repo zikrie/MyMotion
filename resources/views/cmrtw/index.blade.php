@@ -17,7 +17,7 @@
             <h4 class="card-title">RTW Insured Person Info</h4>
 
             <ul class="nav nav-tabs" role="tablist" >
-               <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#registerrtw" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Insured Person Details</span></a> </li>
+               <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#registerrtw" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('index.attr.registration_application')</span></a> </li>
                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#ia" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Initial Assessment</span></a> </li>
            </ul>
            <!-- Nav tabs -->
@@ -27,9 +27,10 @@
 
                              <ul class="nav customtab" role="tablist">
                     
-                                <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#registrationrtw" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('index.attr.registration_application')</span></a> </li>
-                                     <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#employerinfo" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Employer Info</span></a> </li>
-                                 <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#supportingdocument" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('index.attr.supporting_document')</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#registrationrtw" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Insured Person Details</span></a></li>
+                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#employerinfo" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Employer Info</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#supportingdocument" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('index.attr.supporting_document')</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#benefitCM" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Benefit Claim Info</span></a> </li>
                   
                              </ul>
 
@@ -46,8 +47,11 @@
                                <div class="tab-pane p-20" id="supportingdocument" role="tabpanel">
                                    @include('cmrtw.uploaddoc')
                                </div>
+                               <div class="tab-pane p-20" id="benefitCM" role="tabpanel">
+                                    @include('cmrtw.obForm')
+                                </div>
                            </div> 
-                    </div>     
+                    </div>
                     <div class="tab-pane p-20" id="ia" role="tabpanel">
 
                         <ul class="nav customtab" role="tablist" id="calendarTab">

@@ -4,11 +4,7 @@
             <div class="card-body">
                 <form action="/registrationrtw" method="POST">
                     <div class="form-body">
-<<<<<<< HEAD
-                        <h4 class="card-title">Insured Person Information</h4>
-=======
                         <h4 class="card-title">@lang('registrationRtw.title4')</h4>
->>>>>>> 0fc4e4edabc27a78cc4e42c0067c669cbff73463
                          <input type="hidden" name="_token" value="{{csrf_token()}}">
                         <hr>
                         <div class="row p-t-20">

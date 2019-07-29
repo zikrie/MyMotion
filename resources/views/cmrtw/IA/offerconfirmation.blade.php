@@ -226,8 +226,7 @@
                 </div>
             </div>
             <div class="form-actions">
-                <button type="submit" class="btn btn waves-effect waves-light btn-success"> <i class="fa fa-check"></i>
-                @lang('offerconfirmation.attr.submit')</button>
+                <button type="submit" class="btn btn waves-effect waves-light btn-success">@lang('offerconfirmation.attr.submit')</button>
             </div>
         </form>
     </div>

@@ -93,6 +93,43 @@ return [
         'idp' => 'International Driving Permit (IDP)',
         'nolicense' => 'Do not have license',
         'licenseClass' => 'Class of License',
+        'positionName' => 'Position Name',
+        'categoryType' => 'Category Type (OSI)',
+        'industry' => 'Industry',
+        'numbersOfWorking' => 'Number of Working Days (Per Week)',
+        'workingHours' => 'Working hours',
+        'fulltimeWorkingAbility' => 'Full-Time Working Ability',
+        'yes' => 'Yes',
+        'no' => 'No',
+        'hoursOfDay' => 'Hours of Day (Hours)',
+        'scopeOfTasks' => 'Scope of Tasks',
+        'wagesPayment' => 'Wages Payment',
+        'finalSalary' => 'Final Salary',
+        'medicalLeave' => 'Have You Received Any Medical Leave',
+        'statusSalary' => 'Status Salary',
+        'workingHistory' => 'Working History',
+        'employersName' => 'Employers Name',
+        'position' => 'Position',
+        'income' => 'Income',
+        'durationOfEmployment' => 'Duration Of Employment',
+        'reasonToQuit' => 'Reason To Quit',
+
+        
+
+        
+
+        
+        
+
+        
+
+        
+        
+        
+        
+
+        
+        
 
 
     ],

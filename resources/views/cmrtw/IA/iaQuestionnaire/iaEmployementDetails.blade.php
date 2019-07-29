@@ -174,13 +174,13 @@
                 <div class="row p-t-20">
                     <div class="col-md-6">
                         <div class="form-group">
-                                <label class="control-label">Nama Jawatan</label>
+                                <label class="control-label">@lang('ia.attr.positionName')</label>
                                 <input type="text" id="name" class="form-control">
                         </div>
                     </div>     
                     <div class="col-md-6">
                         <div class="form-group">                     
-                            <label class="control-label">Jenis Kategori(OSI)</label>
+                            <label class="control-label">@lang('ia.attr.categoryType')</label>
                             <input type="text" id="name" class="form-control">
                         </div>
                     </div>
@@ -189,25 +189,25 @@
                 <div class="row p-t-20">                  
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label class="control-label">Industri</label>
+                            <label class="control-label">@lang('ia.attr.industry')</label>
                             <select class="form-control select" id="industri" name='industri' onchange="industry(this.options[this.selectedIndex].value)" required>
-                                <option value="">Please Select State</option>
-                                <option value="pertanian">Pertanian</option>
-                                <option value="perhutanan">Perhutanan</option>
-                                <option value="perikanan">Perikanan</option>
-                                <option value="perlombongan">Perlombongan</option>
-                                <option value="pembuatan">Pembuatan</option>
-                                <option value="perkhidmatan">Perkhidmatan</option>
-                                <option value="pembinaan">Pembinaan</option>
-                                <option value="pengangkutan">Pengangkutan</option>
-                                <option value="perkidmatanair">Perkhidmatan Air Dan Pembentungan</option>
-                                <option value="elektrik">Elektrik dan Elektronik</option>
-                                <option value="minyak">Minyak dan Gas</option>
-                                <option value="perdagangan">Perdagangan, Peniagaan dan Peruncitan</option>
-                                <option value="perkhidmatanawam">Perkhidmatan Awam</option>
-                                <option value="industrikewangan">Institusi Kewangan dan Insurans</option>
-                                <option value="kerjasendiri">Kerja Sendiri</option>
-                                <option value="others">Lain-lain (Nyatakan)</option>
+                                <option value="">Please Select</option>
+                                <option value="pertanian">Agriculture</option>
+                                <option value="perhutanan">Forestry</option>
+                                <option value="perikanan">Fishery</option>
+                                <option value="perlombongan">Mining</option>
+                                <option value="pembuatan">Manufacturing</option>
+                                <option value="perkhidmatan">Services</option>
+                                <option value="pembinaan">Construction</option>
+                                <option value="pengangkutan">Transportation</option>
+                                <option value="perkidmatanair">Water and Sewerage Services</option>
+                                <option value="elektrik">Electric and Electronics</option>
+                                <option value="minyak">Oil and Gas</option>
+                                <option value="perdagangan">Trade, Commerce and Retail</option>
+                                <option value="perkhidmatanawam">Public services</option>
+                                <option value="industrikewangan">Financial Institutions and Insurance</option>
+                                <option value="kerjasendiri">Self-work</option>
+                                <option value="others">Other (Specify)</option>
                             </select>
                         </div>
                     </div> 
@@ -224,83 +224,83 @@
                 <div class="row p-t-20">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label class="control-label">Bilangan Hari Bekerja(Seminggu)</label>
+                            <label class="control-label">@lang('ia.attr.numbersOfWorking')</label>
                             <input type="text" id="name" class="form-control">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label class="control-label">Waktu Bekerja</label>
+                            <label class="control-label">@lang('ia.attr.workingHours')</label>
                             <select class="form-control select"  required>
-                                <option value="">--Please Select State--</option>
-                                <option value="">Waktu Kerja Biasa</option>
-                                <option value="">Syif</option>                                
+                                <option value="">Please Select</option>
+                                <option value="">Normal Working Hours</option>
+                                <option value="">Shif</option>                                
                             </select>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">   
-                            <label for="example-text-input" class="col-form-label">Kemampuan Bekerja Sepenuh Masa</label>
+                            <label for="example-text-input" class="col-form-label">@lang('ia.attr.fulltimeWorkingAbility')</label>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="yes111" name="yes22" class="custom-control-input">
-                                <label class="custom-control-label" for="yes111">Yes</label>
+                                <label class="custom-control-label" for="yes111">@lang('ia.attr.yes')</label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="no111" name="yes22" class="custom-control-input" >
-                                <label class="custom-control-label" for="no111">No</label>
+                                <label class="custom-control-label" for="no111">@lang('ia.attr.no')</label>
                             </div>
                         </div>
                     </div> 
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label class="control-label">Bilangan Jam Sehari (Jam)</label>
+                            <label class="control-label">@lang('ia.attr.hoursOfDay')</label>
                             <input type="text" id="jam" class="form-control">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label class="control-label">Skop Tugas</label>
+                            <label class="control-label">@lang('ia.attr.scopeOfTasks')</label>
                             <input type="text" id="skop" class="form-control">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label class="control-label">Pembayaran Gaji</label>
+                            <label class="control-label">@lang('ia.attr.wagesPayment')</label>
                             <select class="form-control select"  required>
-                                <option value="">Please Select State</option>
-                                <option value="">Kadar Bulanan</option>
-                                <option value="">Kadar Harian</option>                                
+                                <option value="">Please Select</option>
+                                <option value="">Monthly Rate</option>
+                                <option value="">Daily Rate</option>                                
                             </select>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label class="control-label">Gaji Terakhir</label>
+                            <label class="control-label">@lang('ia.attr.finalSalary')</label>
                             <input type="text" id="gaji" class="form-control" value="RM">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">   
-                            <label for="example-text-input" class="col-form-label">Adakah Menerima Cuti Sakit</label>
+                            <label for="example-text-input" class="col-form-label">@lang('ia.attr.medicalLeave')</label>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="yes1111" name="yes222" class="custom-control-input">
-                                <label class="custom-control-label" for="yes1111">Yes</label>
+                                <label class="custom-control-label" for="yes1111">@lang('ia.attr.yes')</label>
                             </div>
         
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="no1111" name="yes222" class="custom-control-input" >
-                                <label class="custom-control-label" for="no1111">No</label>
+                                <label class="custom-control-label" for="no1111">@lang('ia.attr.no')</label>
                             </div>
                         </div>
                     </div> 
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label class="control-label">Status Pembayaran Gaji</label>
+                            <label class="control-label">@lang('ia.attr.statusSalary')</label>
                             <select class="form-control select"  required>
-                                <option value="">Please Select State</option>
-                                <option value="">Menerima Gaji Penuh</option>
-                                <option value="">Menerima Gaji Separuh</option>  
-                                <option value="">Tidak Menerima Gaji</option>                               
+                                <option value="">Please Select</option>
+                                <option value="">Full Salary</option>
+                                <option value="">Half Salary</option>  
+                                <option value="">No Salary</option>                               
                             </select>
                         </div>
                     </div>
@@ -313,50 +313,52 @@
                 </div>
                 <!-- sejarah pekerjaan -->
                 <div class="card-header" style="background-color: #98cb5b;" role="tab" id="headingAA">
-                    <h4 class="mb-0">Sejarah Pekerjaan</h4>
+                    <h4 class="mb-0">@lang('ia.attr.workingHistory')</h4>
                 </div>
                 <div class="row p-t-20">
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label class="control-label">Nama Majikan</label>
+                            <label class="control-label">@lang('ia.attr.employersName')</label>
                             <input type="text" id="majikan" class="form-control">
                         </div>
                     </div>
 
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label class="control-label">Jawatan</label>
+                            <label class="control-label">@lang('ia.attr.position')</label>
                             <input type="text" id="jawatan" class="form-control">
                         </div>
                     </div>
 
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label class="control-label">Pendapatan</label>
+                            <label class="control-label">@lang('ia.attr.income')</label>
                             <input type="text" id="pendapatan" class="form-control">
                         </div>
                     </div>
 
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label class="control-label">Tempoh Pekerjaan</label>
+                            <label class="control-label">@lang('ia.attr.durationOfEmployment')</label>
                             <select class="form-control select"  required>
-                                <option value="">Kurang Setahun</option>
-                                <option value="">1-5 Tahun</option>
-                                <option value="">6-10 Tahun</option>  
-                                <option value="">Lebih Dari 10 Tahun</option>                               
+                                <option value="">Please Select</option>
+                                <option value="">Less than a year</option>
+                                <option value="">1-5 Years</option>
+                                <option value="">6-10 Years</option>  
+                                <option value="">More than 10 Years</option>                               
                             </select>
                         </div>
                     </div>
 
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label class="control-label">Sebab Berhenti</label>
+                            <label class="control-label">@lang('ia.attr.reasonToQuit')</label>
                             <select class="form-control select"  required>
-                                <option value="">Peningkatan Kerjaya</option>
-                                <option value="">Kesihatan</option>
+                                <option value="">Please Select</option>
+                                <option value="">Career advancement</option>
+                                <option value="">Health</option>
                                 <option value="">VSS/MSS</option>  
-                                <option value="">Lain-Lain</option>                               
+                                <option value="">Others</option>                               
                             </select>
                         </div>
                     </div>
@@ -377,13 +379,13 @@
                 <div class="row p-t-20">
                     <div class="col-md-6">
                         <div class="form-group">
-                                <label class="control-label">Nama Jawatan</label>
+                                <label class="control-label">@lang('ia.attr.positionName')</label>
                                 <input type="text" id="name" class="form-control">
                         </div>
                     </div>     
                     <div class="col-md-6">
                         <div class="form-group">                     
-                            <label class="control-label">Jenis Kategori(OSI)</label>
+                            <label class="control-label">@lang('ia.attr.categoryType')</label>
                             <input type="text" id="name" class="form-control">
                         </div>
                     </div>
@@ -391,25 +393,25 @@
                 <div class="row p-t-20">                  
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label class="control-label">Industri</label>
+                            <label class="control-label">@lang('ia.attr.industry')</label>
                             <select class="form-control select" id="bankloc" name='bankloc' onchange="industry1(this.options[this.selectedIndex].value)" required>
-                                <option value="">Please Select State</option>
-                                <option value="pertanian">Pertanian</option>
-                                <option value="perhutanan">Perhutanan</option>
-                                <option value="perikanan">Perikanan</option>
-                                <option value="perlombongan">Perlombongan</option>
-                                <option value="pembuatan">Pembuatan</option>
-                                <option value="perkhidmatan">Perkhidmatan</option>
-                                <option value="pembinaan">Pembinaan</option>
-                                <option value="pengangkutan">Pengangkutan</option>
-                                <option value="perkidmatanair">Perkhidmatan Air Dan Pembentungan</option>
-                                <option value="elektrik">Elektrik dan Elektronik</option>
-                                <option value="minyak">Minyak dan Gas</option>
-                                <option value="perdagangan">Perdagangan, Peniagaan dan Peruncitan</option>
-                                <option value="perkhidmatanawam">Perkhidmatan Awam</option>
-                                <option value="industrikewangan">Institusi Kewangan dan Insurans</option>
-                                <option value="kerjasendiri">Kerja Sendiri</option>
-                                <option value="others">Lain-lain (Nyatakan)</option>
+                                <option value="">Please Select</option>
+                                <option value="pertanian">Agriculture</option>
+                                <option value="perhutanan">Forestry</option>
+                                <option value="perikanan">Fishery</option>
+                                <option value="perlombongan">Mining</option>
+                                <option value="pembuatan">Manufacturing</option>
+                                <option value="perkhidmatan">Services</option>
+                                <option value="pembinaan">Construction</option>
+                                <option value="pengangkutan">Transportation</option>
+                                <option value="perkidmatanair">Water and Sewerage Services</option>
+                                <option value="elektrik">Electric and Electronics</option>
+                                <option value="minyak">Oil and Gas</option>
+                                <option value="perdagangan">Trade, Commerce and Retail</option>
+                                <option value="perkhidmatanawam">Public services</option>
+                                <option value="industrikewangan">Financial Institutions and Insurance</option>
+                                <option value="kerjasendiri">Self-work</option>
+                                <option value="others">Other (Specify)</option>
                             </select>
                         </div>
                     </div> 
@@ -424,83 +426,83 @@
                     </div>                      
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label class="control-label">Bilangan Hari Bekerja(Seminggu)</label>
+                            <label class="control-label">@lang('ia.attr.numbersOfWorking')</label>
                             <input type="text" id="name" class="form-control">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label class="control-label">Waktu Bekerja</label>
+                            <label class="control-label">@lang('ia.attr.workingHours')</label>
                             <select class="form-control select"  required>
-                                <option value="">--Please Select State--</option>
-                                <option value="">Waktu Kerja Biasa</option>
-                                <option value="">Syif</option>                                
+                                <option value="">Please Select</option>
+                                <option value="">Normal Working Hours</option>
+                                <option value="">Shif</option>                                
                             </select>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">   
-                            <label for="example-text-input" class="col-form-label">Kemampuan Bekerja Sepenuh Masa</label>
+                            <label for="example-text-input" class="col-form-label">@lang('ia.attr.fulltimeWorkingAbility')</label>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="yes123" name="yes223" class="custom-control-input">
-                                <label class="custom-control-label" for="yes123">Yes</label>
+                                <label class="custom-control-label" for="yes123">@lang('ia.attr.yes')</label>
                             </div>
         
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="no123" name="yes223" class="custom-control-input" >
-                                <label class="custom-control-label" for="no123">No</label>
+                                <label class="custom-control-label" for="no123">@lang('ia.attr.no')</label>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label class="control-label">Bilangan Jam Sehari (Jam)</label>
+                            <label class="control-label">@lang('ia.attr.hoursOfDay')</label>
                             <input type="text" id="jam" class="form-control">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label class="control-label">Skop Tugas</label>
+                            <label class="control-label">@lang('ia.attr.scopeOfTasks')</label>
                             <input type="text" id="skop" class="form-control">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label class="control-label">Pembayaran Gaji</label>
+                            <label class="control-label">@lang('ia.attr.wagesPayment')</label>
                             <select class="form-control select"  required>
-                                <option value="">Please Select State</option>
-                                <option value="">Kadar Bulanan</option>
-                                <option value="">Kadar Harian</option>                                
+                                <option value="">Please Select</option>
+                                <option value="">Monthly Rate</option>
+                                <option value="">Daily Rate</option>                                
                             </select>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label class="control-label">Gaji Terakhir</label>
+                            <label class="control-label">@lang('ia.attr.finalSalary')</label>
                             <input type="text" id="gaji" class="form-control" value="RM">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">   
-                            <label for="example-text-input" class="col-form-label">Adakah Menerima Cuti Sakit</label>
+                            <label for="example-text-input" class="col-form-label">@lang('ia.attr.medicalLeave')</label>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="yes11111" name="yes2222" class="custom-control-input">
-                                <label class="custom-control-label" for="yes11111">Yes</label>
+                                <label class="custom-control-label" for="yes11111">@lang('ia.attr.yes')</label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="no11111" name="yes2222" class="custom-control-input" >
-                                <label class="custom-control-label" for="no11111">No</label>
+                                <label class="custom-control-label" for="no11111">@lang('ia.attr.no')</label>
                             </div>
                         </div>
                     </div> 
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label class="control-label">Status Pembayaran Gaji</label>
+                            <label class="control-label">@lang('ia.attr.statusSalary')</label>
                             <select class="form-control select"  required>
-                                <option value="">Please Select State</option>
-                                <option value="">Menerima Gaji Penuh</option>
-                                <option value="">Menerima Gaji Separuh</option>  
-                                <option value="">Tidak Menerima Gaji</option>                               
+                                <option value="">Please Select</option>
+                                <option value="">Full Salary</option>
+                                <option value="">Half Salary</option>  
+                                <option value="">No Salary</option>                                
                             </select>
                         </div>
                     </div>
@@ -523,50 +525,52 @@
                 <br>
                 <!-- sejarah pekerjaan -->
                 <div class="card-header" style="background-color: #98cb5b;" role="tab" id="headingAA">
-                    <h4 class="mb-0">Sejarah Pekerjaan</h4>
+                    <h4 class="mb-0">@lang('ia.attr.workingHistory')</h4>
                 </div>
                 <div class="row p-t-20">
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label class="control-label">Nama Majikan</label>
+                            <label class="control-label">@lang('ia.attr.employersName')</label>
                             <input type="text" id="majikan" class="form-control">
                         </div>
                     </div>
 
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label class="control-label">Jawatan</label>
+                            <label class="control-label">@lang('ia.attr.position')</label>
                             <input type="text" id="jawatan" class="form-control">
                         </div>
                     </div>
 
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label class="control-label">Pendapatan</label>
+                            <label class="control-label">@lang('ia.attr.income')</label>
                             <input type="text" id="pendapatan" class="form-control">
                         </div>
                     </div>
 
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label class="control-label">Tempoh Pekerjaan</label>
+                            <label class="control-label">@lang('ia.attr.durationOfEmployment')</label>
                             <select class="form-control select"  required>
-                                <option value="">Kurang Setahun</option>
-                                <option value="">1-5 Tahun</option>
-                                <option value="">6-10 Tahun</option>  
-                                <option value="">Lebih Dari 10 Tahun</option>                               
+                                <option value="">Please Select</option>
+                                <option value="">Less than a year</option>
+                                <option value="">1-5 Years</option>
+                                <option value="">6-10 Years</option>  
+                                <option value="">More than 10 Years</option>                                 
                             </select>
                         </div>
                     </div>
 
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label class="control-label">Sebab Berhenti</label>
+                            <label class="control-label">@lang('ia.attr.reasonToQuit')</label>
                             <select class="form-control select"  required>
-                                <option value="">Peningkatan Kerjaya</option>
-                                <option value="">Kesihatan</option>
+                                <option value="">Please Select</option>
+                                <option value="">Career advancement</option>
+                                <option value="">Health</option>
                                 <option value="">VSS/MSS</option>  
-                                <option value="">Lain-Lain</option>                               
+                                <option value="">Others</option>                               
                             </select>
                         </div>
                     </div>

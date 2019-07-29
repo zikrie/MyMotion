@@ -100,7 +100,7 @@
                                                         <label class="custom-control-label" for="customRadio1"></label></div></td>
                                             </tr>
                                             <tr>
-                                                <td>1</td>
+                                                <td>2</td>
                                                 <td>Kuala Lumpur</td>
                                                 {{-- <td>{{ $datediff }}</td> --}}
                                                 <td>22/03/2019</td>

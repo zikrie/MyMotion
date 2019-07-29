@@ -5,7 +5,7 @@ return [
 	'title1' => 'Insured Person Info',
     'title2' => 'Employer Info',
     'title3' => 'Upload Document',
-    'title4' => 'RTW Insured Person Info',
+    'title4' => 'Insured Person Info',
     'postal_address' => 'Postal Address',
 
     'attr' => [
@@ -56,9 +56,6 @@ return [
         'select' => 'Please Select',
         'faxno' => 'Fax No.',
         'compname' => 'Company Name',
-        
-
-
     ],
 
     'save' => 'Save',

@@ -100,7 +100,7 @@
                                                         <label class="custom-control-label" for="customRadio1"></label></div></td>
                                             </tr>
                                             <tr>
-                                                <td>2</td>
+                                                <td>1</td>
                                                 <td>Kuala Lumpur</td>
                                                 {{-- <td>{{ $datediff }}</td> --}}
                                                 <td>22/03/2019</td>
@@ -139,8 +139,6 @@
         </div>
     </div>
 </div>
-
-
 <!--button View-->
 <div class="modal fade" id="myModal">
     <div class="modal-dialog modal-lg">

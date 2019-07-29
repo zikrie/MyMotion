@@ -23,8 +23,9 @@ return [
         'bank_information' => 'Bank Information',
         'dependant_profiles' => 'Dependant Profiles',
         'rtw_registration' => 'RTW Registration',
-        'registration_application' => 'Registration Application',
+        'registration_application' => 'Case Registration',
         'supporting_document' => 'Upload Document',
+        'benefit' => 'Benefit Claim Info',
     ],
 
  

@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-sm-12">
         <div class="card">
-            <div class="card-body">
+            <!-- <div class="card-body">
                 <h4 class="card-title">@lang('offerconfirmation.title1')</h4>
                 <form class="form">
                     <div class="form-group mt-5 row">
@@ -49,48 +49,48 @@
                           <input type="date" id="dob" name="dob" value="" class="form-control" readonly>
                           @endif
                       </div>
-                  </div>
-                  <div class="form-group row">
-                    <div class="col-2">
-                        <label for="example-text-input" class="col-form-label">@lang('offerconfirmation.attr.race')</label>
                     </div>
-                    <div class="col-8">
-                        <select class="form-control" name="race" readonly> 
-                            {{-- <option>@lang('insuredPerson.attr.choose_race')</option> --}}
-                            <option>Please Select</option>
-                            @foreach($race as $id)
-                            @if (!empty($casertw) && $casertw->race == $id->refcode)
-                            <option value="{{$id->refcode}}" selected>{{$id->descen}}</option>
-                            @else
-                            <option value="{{$id->refcode}}">{{$id->descen}}</option>
-                            @endif
-                            @endforeach
-                        </select>
+                    <div class="form-group row">
+                        <div class="col-2">
+                            <label for="example-text-input" class="col-form-label">@lang('offerconfirmation.attr.race')</label>
+                        </div>
+                        <div class="col-8">
+                            <select class="form-control" name="race" readonly> 
+                                {{-- <option>@lang('insuredPerson.attr.choose_race')</option> --}}
+                                <option>Please Select</option>
+                                @foreach($race as $id)
+                                @if (!empty($casertw) && $casertw->race == $id->refcode)
+                                <option value="{{$id->refcode}}" selected>{{$id->descen}}</option>
+                                @else
+                                <option value="{{$id->refcode}}">{{$id->descen}}</option>
+                                @endif
+                                @endforeach
+                            </select>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group row">
-                    <div class="col-2">
-                        <label for="example-text-input" class="col-form-label">@lang('offerconfirmation.attr.gender')</label>
+                    <div class="form-group row">
+                        <div class="col-2">
+                            <label for="example-text-input" class="col-form-label">@lang('offerconfirmation.attr.gender')</label>
+                        </div>
+                        <div class="col-8">
+                            <select class="form-control" name="gender" readonly>
+                                
+                                <option>Please Select</option>
+                                @if (!empty($casertw) && $casertw->gender == 'F')
+                                <option value="F" selected>Female</option>
+                                <option value="M">Male</option>
+                                @elseif (!empty($casertw) && $casertw->gender == 'M')
+                                <option value="F">Female</option>
+                                <option value="M" selected>Male</option>
+                                @else
+                                <option value="F">Female</option>
+                                <option value="M">Male</option>
+                                @endif
+                            </select>
+                        </div>
                     </div>
-                    <div class="col-8">
-                        <select class="form-control" name="gender" readonly>
-                            <!--option value="">@if(!empty($obprofile)){{ $obprofile->gender }} @endif</option-->
-                            <option>Please Select</option>
-                            @if (!empty($casertw) && $casertw->gender == 'F')
-                            <option value="F" selected>Female</option>
-                            <option value="M">Male</option>
-                            @elseif (!empty($casertw) && $casertw->gender == 'M')
-                            <option value="F">Female</option>
-                            <option value="M" selected>Male</option>
-                            @else
-                            <option value="F">Female</option>
-                            <option value="M">Male</option>
-                            @endif
-                        </select>
-                    </div>
-                </div>
-            </form>
-        </div>
+                </form>
+            </div> -->
         <div class="card-body">
             <h4 class="card-title">@lang('offerconfirmation.title')</h4>
             <form class="form">

@@ -15,30 +15,29 @@
     <div class="col-md-12">
         <div class="card-body">
             <h4 class="card-title">Return To Work</h4>
-            <div class="row">
-                <div class="col-md-11">
+            <!-- <div class="row">
+                <div class="col-md-12">
                     <div class="card text-left"  style="float:right;width:350px;" >
                             <div class="card-body">
                                 <table>
                                     <thead>
                                     <tr>
-                                        <th><label>Name</label></th>
-                                                    
+                                        <th><label>Name</label></th>         
                                         <th>:</th>
-                                        <th></th>
+                                        <th>@if(!empty($casertw)){{ $casertw->name }} @endif</th>
+                                    </tr>
+                                    <tr>
+                                        <th><label>ID Type</label></th>
+                                        <th>:</th>
+                                        <th>@if(!empty($casertw)){{ $casertw->idtype }} @endif</th>
                                     </tr>
                                     <tr>
                                         <th><label>ID No</label></th>
                                         <th>:</th>
-                                        <th></th>
+                                        <th>@if(!empty($casertw)){{ $casertw->idno }} @endif</th>
                                     </tr>
                                     <tr>
-                                        <th><label>Schemeref No</label></th>
-                                        <th>:</th>
-                                        <th></th>
-                                    </tr>
-                                    <tr>
-                                        <th><label>Accident Date</label></th>
+                                        <th><label>RTW Ref No</label></th>
                                         <th>:</th>
                                         <th></th>
                                     </tr>
@@ -47,7 +46,43 @@
                             </div>
                     </div>
                 </div>
+            </div> -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card" >
+                    <div class="card-body">
+                        <div class="row p-t-20">
+                            <div class="col-md-3">
+                                <label class="control-label">@lang('registrationRtw.attr.name')</label>
+                                <input type="text" id="name" class="form-control" value="@if(!empty($casertw)){{ $casertw->name }} @endif" readonly>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="example-text-input" class="control-label">@lang('offerconfirmation.attr.ictype')</label>
+                                <select class="form-control" value="@if(!empty($casertw)){{ $casertw->idtype }} @endif" disabled>
+                                    <option>Please Select</option>
+                                        @foreach($idtype as $id)
+                                        @if (!empty($casertw) && $id->refcode == $casertw->idtype)
+                                            <option value="{{$id->refcode}}" selected>{{$id->descen}}</option>
+                                        @else
+                                            <option value="{{$id->refcode}}">{{$id->descen}}</option>
+
+                                        @endif
+                                    @endforeach
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="example-text-input" class="control-label">@lang('offerconfirmation.attr.idno')</label>
+                                <input class="form-control" type="text"  id="idno" value="@if(!empty($casertw)){{ $casertw->idno }} @endif" readonly>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="example-text-input" class="control-label">@lang('home.rtwrefno')</label>
+                                <input class="form-control" type="text"  id="idno" value="" readonly>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
             </div>
+        </div>
 
 
             <ul class="nav nav-tabs" role="tablist" >

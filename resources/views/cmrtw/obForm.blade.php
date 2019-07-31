@@ -4,48 +4,6 @@
             <div class="card-body">
                 <div class="p-20">
                     <form action="#">
-                        <h3 class="card-title">@lang('benefitDetails.title')</h3>
-                        <hr>
-                        <div class="row p-t-20">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label class="control-label">@lang('benefitDetails.attr.resource')</label>
-                                    <input type="text" id="resource" class="form-control" >
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label class="control-label">@lang('benefitDetails.attr.rtwcaserefno')</label>
-                                    <input type="text" id="rtwcaserefno" class="form-control">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label class="control-label">@lang('benefitDetails.attr.officer_name')</label>
-                                    <input type="text" id="officer_name" class="form-control">
-                                  
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label class="control-label">@lang('benefitDetails.attr.service_details')</label>
-                                    <input type="text" id="service_details" class="form-control">
-                                </div>
-                            </div>
-                             <div class="col-md-6">
-                                <div class="form-group">
-                                    <label class="control-label">@lang('benefitDetails.attr.ob_name')</label>
-                                    <input type="text" id="ob_name" class="form-control">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label class="control-label">@lang('benefitDetails.attr.accident_details')</label>
-                                    <input type="text" id="accident_details" class="form-control">
-                                </div>
-                            </div>
-                        </div>
                         <h3 class="card-title">@lang('benefitDetails.title1')</h3>    
                         <hr>
                         <!-- Column -->

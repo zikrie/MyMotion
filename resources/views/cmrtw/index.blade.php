@@ -15,6 +15,40 @@
     <div class="col-md-12">
         <div class="card-body">
             <h4 class="card-title">Return To Work</h4>
+            <div class="row">
+                <div class="col-md-11">
+                    <div class="card text-left"  style="float:right;width:350px;" >
+                            <div class="card-body">
+                                <table>
+                                    <thead>
+                                    <tr>
+                                        <th><label>Name</label></th>
+                                                    
+                                        <th>:</th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <th><label>ID No</label></th>
+                                        <th>:</th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <th><label>Schemeref No</label></th>
+                                        <th>:</th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <th><label>Accident Date</label></th>
+                                        <th>:</th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
 
             <ul class="nav nav-tabs" role="tablist" >
                <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#registerrtw" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('index.attr.registration_application')</span></a> </li>

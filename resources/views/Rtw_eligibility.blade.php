@@ -59,25 +59,6 @@
                             </div>
                         </div>
                     </div>
-                    <!--/row-->
-            {{--         <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="control-label">@lang('noticetype.attr.notice_type')</label>
-                                 <select  name="notice_type" class="form-control">
-                                     @foreach ($noticetype as $nt)
-                                        <option value="{{$nt->refcode}}">{{$nt->descen}}</option>
-                                        @endforeach
-                                    option value="Accident Notice">@lang('noticetype.attr.accident_notice')</option>
-                                    <option value="Occupational Decease Notice">@lang('noticetype.attr.od_notice')</option>
-                                    <option value="Invalidity Notice">@lang('noticetype.attr.invalidity_notice')</option>
-                                    <option value="Death Notice">@lang('noticetype.attr.death_notice')</option
-                                   
-                                </select>
-
-                            </div>
-                        </div>
-                    </div> --}}
                     <div class="form-actions">
                         <button type="submit" class="btn btn-success"> <i class="fa fa-check"></i>
                             @lang('rtw_eligibility.next')</button>

@@ -16,8 +16,8 @@
         <div class="card-body">
         <div class="row">
                 <div class="col-md-12">
-                    <div class="card text-left " style="float:right;width:400px;" >
-                            <div class="card-body bg-success">
+                    <div class="card text-left " style="float:right;width:500px;" >
+                            <div class="card-body" style="background-color: #98cb5b;">
                                 <table >
                                     <thead>
                                     <tr>

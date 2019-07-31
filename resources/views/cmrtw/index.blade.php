@@ -14,22 +14,16 @@
 <div class="row">
     <div class="col-md-12">
         <div class="card-body">
-            <h4 class="card-title">Return To Work</h4>
-            <!-- <div class="row">
+        <div class="row">
                 <div class="col-md-12">
-                    <div class="card text-left"  style="float:right;width:350px;" >
-                            <div class="card-body">
-                                <table>
+                    <div class="card text-left " style="float:right;width:400px;" >
+                            <div class="card-body bg-success">
+                                <table >
                                     <thead>
                                     <tr>
                                         <th><label>Name</label></th>         
                                         <th>:</th>
                                         <th>@if(!empty($casertw)){{ $casertw->name }} @endif</th>
-                                    </tr>
-                                    <tr>
-                                        <th><label>ID Type</label></th>
-                                        <th>:</th>
-                                        <th>@if(!empty($casertw)){{ $casertw->idtype }} @endif</th>
                                     </tr>
                                     <tr>
                                         <th><label>ID No</label></th>
@@ -41,13 +35,19 @@
                                         <th>:</th>
                                         <th></th>
                                     </tr>
+                                    <tr>
+                                        <th><label>Receive Date/Submission Date</label></th>
+                                        <th>:</th>
+                                        <th></th>
+                                    </tr>
                                     </thead>
                                 </table>
                             </div>
                     </div>
                 </div>
-            </div> -->
-        <div class="row">
+            </div>
+            <h4 class="card-title">Return To Work</h4>
+        <!-- <div class="row">
             <div class="col-md-12">
                 <div class="card" >
                     <div class="card-body">
@@ -82,7 +82,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
 
             <ul class="nav nav-tabs" role="tablist" >

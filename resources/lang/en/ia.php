@@ -21,8 +21,12 @@ return [
     'title17' => 'Before Accident Details',
     'title18' => 'After Accident Details',
     'title19' => 'Work Motivation Details',
+    'title20' => 'Rehab Planning',
+    'title21' => 'Rehab Planning Details',
+    'title22' => 'Insured Person Approval',
+    'title23' => 'Insured Person Approval Details',
 
-
+    
 
     'attr' => [
     	'name' => 'Name',
@@ -113,11 +117,31 @@ return [
         'income' => 'Income',
         'durationOfEmployment' => 'Duration Of Employment',
         'reasonToQuit' => 'Reason To Quit',
-
+        'caseReferenceNo' => 'Case Reference No',
+        'newICNo' => 'New IC No',
+        'address' => 'Address',
+        'postcode' => 'Postcode',
+        'city' => 'City',
+        'state' => 'State',
+        'rehabPlan' => 'Rehab Plan',
+        'startTimeSuggestions' => 'Start Time Suggestions',
+        'estimatedCost' => 'Estimated Cost',
+        'communicationFrequency' => 'Communication Frequency',
+        'justificationCommunication' => 'Communication Frequency Conversion Justification',
+        'reasonForCancel' => 'Reason for Cancellation',
+        'insuredPersonResult' => 'Insured Person Result',
+        'permit' => 'Permit',
+        'date' => 'Date',
+        'nameOfCaseManager' => 'Name Of Case Manager',
+        
         
 
         
-
+        
+        
+        
+        
+        
         
         
 

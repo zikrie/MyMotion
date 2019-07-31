@@ -17,8 +17,8 @@
             <h4 class="card-title">Return To Work</h4>
 
             <ul class="nav nav-tabs" role="tablist" >
-               <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#registerrtw" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Insured Person Information</span></a> </li>
-               <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#ia" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Initial Assessment</span></a> </li>
+               <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#registerrtw" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('index.attr.registration_application')</span></a> </li>
+               <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#ia" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Initial Assessment</span></a></li>
            </ul>
            <!-- Nav tabs -->
                  <div class="tab-content tabcontent-border">
@@ -57,7 +57,7 @@
                             <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#offerconfirmation" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Offer Confirmation</span></a> </li>
                             <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#appointment" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Appointment</span></a> </li>
                             <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#iarecovery" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Initial Assessment</span></a> </li>
-                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#recoveryplannning" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Rehab Plan</span></a> </li>
+                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#rehabplan" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Rehab Plan</span></a> </li>
 
 
                         </ul>
@@ -99,8 +99,8 @@
                                  </div>
                             </div>
 
-                             <div class="tab-pane p-20 " id="recoveryplannning" role="tabpanel">
-                              {{--  @include('cmrtw.IA.recoveryplanning') --}}
+                             <div class="tab-pane p-20 " id="rehabplan" role="tabpanel">
+                                     @include('cmrtw.IA.rehabplan')
                              </div>
                         </div>
                     </div>

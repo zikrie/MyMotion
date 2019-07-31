@@ -25,7 +25,7 @@
                         <div class="card-footer">
 
                             <div class="alert alert-warning">
-                                {{Session::get('messageid')}}
+                                {{Session::get('messageid')}} 
                             </div>
 
                         </div>
@@ -53,7 +53,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label class="control-label">@lang('rtw_eligibility.attr.enter_ic')</label>
-                                    <input type="text" name="idno" id="idno" class="form-control" required data-validation-containsnumber-regex="(\d)+" data-validation-containsnumber-message="No Characters Allowed, Only Numbers">{{-- {{Session::get('idno')}} --}}
+                                    <input type="text" name="idno" id="idno" class="form-control" required data-validation-containsnumber-regex="(\d)+" data-validation-containsnumber-message="No Characters Allowed, Only Numbers" maxlength="12">{{-- {{Session::get('idno')}} --}}
                                     <label class="" >{{Session::get('error')}}</label>
                                 </div>
                             </div>

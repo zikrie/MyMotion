@@ -24,7 +24,7 @@ return [
         'dependant_profiles' => 'Dependant Profiles',
         'rtw_registration' => 'RTW Registration',
         'registration_application' => 'Case Registration',
-        'supporting_document' => 'Upload Document',
+        'supporting_document' => 'Supporting Document',
         'benefit' => 'Benefit Claim Info',
     ],
 

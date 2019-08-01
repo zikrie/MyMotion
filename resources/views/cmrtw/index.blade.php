@@ -97,22 +97,20 @@
            <!-- Nav tabs -->
                 <div class="tab-content tabcontent-border">
                     <div class="tab-pane p-20 active" id="registerrtw" role="tabpanel">
-                        <ul class="nav customtab" role="tablist">
-                            <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#registrationrtw" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Insured Person Info</span></a></li>
-                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#employerinfo" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Employer Info</span></a> </li>
-                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#supportingdocument" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('index.attr.supporting_document')</span></a> </li>
-                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#benefitCM" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Benefit Claim Info</span></a> </li>
-                        </ul>
+                             <ul class="nav customtab" role="tablist">
+                    
+                                <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#registrationrtw" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Application Info</span></a></li>
+                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#supportingdocument" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('index.attr.supporting_document')</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#benefitCM" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Benefit Claim Info</span></a> </li>
+                  
+                             </ul>
 
                             <div class="tab-content tabcontent-border">
                                  <!-- RegistrationRTW details tab -->
                                  <div class="tab-pane p-20 active" id="registrationrtw" role="tabpanel">
                                    @include('cmrtw.rtwcase')
+                                   
                                 </div>
-
-                                <div class="tab-pane p-20" id="employerinfo" role="tabpanel">
-                                   @include('cmrtw.employerinfo')
-                               </div>
                                <!-- supporting details tab -->
                                <div class="tab-pane p-20" id="supportingdocument" role="tabpanel">
                                    @include('cmrtw.uploaddoc')
@@ -144,6 +142,11 @@
         });
     });
 
+
+    //redirect to specific tab
+    $(document).ready(function () {
+    $('#tabMenu a[href="#{{ old('tab') }}"]').tab('show')
+    });
 </script>
 @endsection
 

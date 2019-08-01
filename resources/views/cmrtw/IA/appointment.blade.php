@@ -1,10 +1,10 @@
 <div class="row">
-                    <div class="col-sm-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">@lang('appointment.title')</h4>
-                                <form class="form">
-                                    <div class="form-group mt-5 row">
+    <div class="col-sm-12">
+        <div class="card">
+            <div class="card-body"> 
+                <form class="form">
+                                    <!-- <h4 class="card-title">@lang('appointment.title')</h4>
+                                     <div class="form-group mt-5 row">
                                         <div class="col-2">
                                             <label for="example-text-input" class="col-form-label">@lang('appointment.attr.name')</label>
                                         </div>
@@ -44,7 +44,7 @@
                                         <div class="col-8">
                                             <input class="form-control" type="text"  id="email" value="@if(!empty($casertw)){{ $casertw->email }} @endif" readonly>
                                         </div>
-                                    </div>
+                                    </div> -->
                                   
               <div class="page-wrapper">
             <!-- ============================================================== -->

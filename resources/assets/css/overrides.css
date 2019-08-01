@@ -678,3 +678,6 @@ body#login{
     padding-top:20px !important;
     
 }
+.btn{
+    line-height:2rem !important;
+}

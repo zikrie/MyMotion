@@ -69,8 +69,9 @@
                                 <div class="form-group">
                                     <label class="control-label">@lang('caseMgmt.attr.career')</label>
                                     <div class="row p-t-20">
-                                        <div class="col-md-4">
-                                            <div class="custom-control custom-radio">
+                                        <div class="col-md-12">
+                                            <input type="range" class="form-control" id="rangeCareer" value="10">
+                                            <!-- <div class="custom-control custom-radio">
                                                 <input type="radio" id="career0" name="career" class="custom-control-input">
                                                 <label class="custom-control-label" for="career0">0</label>
                                             </div>
@@ -85,9 +86,9 @@
                                             <div class="custom-control custom-radio">
                                                 <input type="radio" id="career3" name="career" class="custom-control-input">
                                                 <label class="custom-control-label" for="career3">3</label>
-                                            </div>
+                                            </div> -->
                                         </div>
-                                        <div class="col-md-4">
+                                        <!-- <div class="col-md-4">
                                             <div class="custom-control custom-radio">
                                                 <input type="radio" id="career4" name="career" class="custom-control-input">
                                                 <label class="custom-control-label" for="career4">4</label>
@@ -118,14 +119,14 @@
                                                 <input type="radio" id="career10" name="career" class="custom-control-input">
                                                 <label class="custom-control-label" for="career10">10</label>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div> 
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label class="control-label">@lang('caseMgmt.attr.independence')</label>
-                                                                     <div class="row p-t-20">
+                                    <div class="row p-t-20">
                                         <div class="col-md-4">
                                             <div class="custom-control custom-radio">
                                                 <input type="radio" id="independence0" name="independence" class="custom-control-input">
@@ -420,5 +421,11 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+function myFunction() {
+  var x = document.getElementById("myRange").value;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
 
 

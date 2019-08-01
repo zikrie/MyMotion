@@ -18,14 +18,12 @@
             </select>
         </div>
     </div>
-
     <div class="col-md-4">
         <div class="form-group">
             <label for="example-text-input" class="col-form-label">@lang('ia.attr.startTimeSuggestions')</label>
             <input class="form-control" type="date"  id="cdgnMasaMula">
         </div>
     </div>
-
     <div class="col-md-4">
         <div class="form-group">
             <label for="example-text-input" class="col-form-label">@lang('ia.attr.estimatedCost')</label>
@@ -33,10 +31,6 @@
         </div>
     </div>
 </div>
-
-
-
-
 <div class="row p-t-20">
     <div class="col-md-4">
         <div class="form-group">
@@ -71,9 +65,6 @@
         </div>
     </div>
 </div>
-
-
-
 <div class="row p-t-20">
     <div class="col-md-4">
         <div class="form-group">

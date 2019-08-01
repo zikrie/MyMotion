@@ -126,7 +126,7 @@
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label class="control-label">@lang('caseMgmt.attr.independence')</label>
-                                                                     <div class="row p-t-20">
+                                    <div class="row p-t-20">
                                         <div class="col-md-4">
                                             <div class="custom-control custom-radio">
                                                 <input type="radio" id="independence0" name="independence" class="custom-control-input">
@@ -421,5 +421,11 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+function myFunction() {
+  var x = document.getElementById("myRange").value;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
 
 

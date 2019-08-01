@@ -60,12 +60,12 @@
                         </div>
                     </div>
                     <div class="row">
-                    <div class="form-actions">
-                       <button type="submit" class="btn waves-effect waves-light btn-success" id='btnsubmitacc' >@lang('rtw_eligibility.next')</button>
-                       <button type="button" class="btn btn waves-effect waves-light btn-info" onclick="submitform()">@lang('rtw_eligibility.reset')</button>
-                       <button type="button" class="btn waves-effect waves-light btn-secondary" id='btncancelacc' onclick="window.location='/homertw'">@lang('rtw_eligibility.cancel')</button>
+                        <div class="form-actions">
+                        <button type="submit" class="btn waves-effect waves-light btn-success" id='btnsubmitacc' >@lang('rtw_eligibility.next')</button>
+                        <button type="button" class="btn btn waves-effect waves-light btn-info" onclick="submitform()">@lang('rtw_eligibility.reset')</button>
+                        <button type="button" class="btn waves-effect waves-light btn-secondary" id='btncancelacc' onclick="window.location='/homertw'">@lang('rtw_eligibility.cancel')</button>
+                        </div>
                     </div>
-                </div>
                 </form>
             </div>
         </div>

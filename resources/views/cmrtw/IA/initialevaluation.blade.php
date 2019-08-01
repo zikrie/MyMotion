@@ -3,9 +3,9 @@
         <div class="card">
             <form class="form">
                 <div class="card-body">
-                    <h4 class="card-title">@lang('ia.title1')</h4>
+                    <!-- <h4 class="card-title">@lang('ia.title1')</h4> -->
                     
-                    <div class="form-group mt-5 row">
+                    <!-- <div class="form-group mt-5 row">
                         <div class="col-2">
                             <label for="example-text-input" class="col-form-label">@lang('ia.attr.name')</label>
                         </div>
@@ -37,27 +37,42 @@
                         <div class="col-8">
                             <input class="form-control" type="text"  id="telephone" value="@if(!empty($casertw)){{ $casertw->telno }} @endif" readonly>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- <form action="{{ route('image.upload.post') }}" method="POST" enctype="multipart/form-data"> -->
-                        <div class="form-group row">
-                            <div class="col-2">
-                                <label for="example-text-input" class="col-form-label">@lang('ia.attr.picture')</label>
-                            </div>
-                            <div class="col-8">
-                            <input type="file" name="image" id="image">
-                            <button type="submit" class="btn btn waves-effect waves-light btn-success">@lang('ia.attr.upload')</button>
-                        </div>
-                        </div>
+                        
                     <!-- </form> -->
                 </div>
                 <!-- Initial Assessment question -->
 
                 <div id="accordion2" role="tablist" class="accordion" >
+                    <!-- Initial Assessment Insured person upload pic-->    
+                    <div class="card m-b-0">
+                        <div class="card-header" role="tab" id="headingZero0">
+                            <h5 class="mb-0">                           
+                                <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapseZero0" aria-expanded="true" aria-controls="collapseZero0"><h4 class="card-title"><i class="fa fa-plus"></i>
+                                @lang('ia.title1')</h4>
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapseZero0" class="collapse" role="tabpanel" aria-labelledby="headingZero0">
+                            <div class="card-body">
+                                <div class="form-group row">
+                                    <div class="col-2">
+                                        <label for="example-text-input" class="col-form-label">@lang('ia.attr.picture')</label>
+                                    </div>
+                                    <div class="col-4">
+                                        <input type="file" name="image" id="image">
+                                        <button type="submit" class="btn btn waves-effect waves-light btn-success">@lang('ia.attr.upload')</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
                     <!-- Initial Assessment appointmentdetails-->
                     <div class="card m-b-0">
                         <div class="card-header" role="tab" id="headingOne1">
                             <h5 class="mb-0">                           
-                                <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1"><h4 class="card-title"><i class="fa fa-plus"></i>
+                                <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne1" aria-expanded="false" aria-controls="collapseOne1"><h4 class="card-title"><i class="fa fa-plus"></i>
                                 @lang('ia.title2')</h4>
                                 </a>
                             </h5>

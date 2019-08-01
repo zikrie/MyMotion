@@ -1,4 +1,5 @@
-
+<div class="row">
+    <div class="col-sm-12">
             <form class="form">
                 <div class="card-body">
                     <!-- <h4 class="card-title">@lang('ia.title1')</h4> -->
@@ -336,9 +337,10 @@
                             </div>
                         </div>
                         
-                    </div>
-                </div> 
-            </form>
-
+                </div>
+            </div> 
+        </form>
+    </div>
+</div> 
 
 

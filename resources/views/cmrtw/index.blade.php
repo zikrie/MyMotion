@@ -18,36 +18,36 @@
                 <div class="col-md-12">
                     <div class="card text-left " style="float:right;width:500px;" >
                         <div class="card-body" style="background-color: #98cb5b;">
-                                <table >
-                                    <thead>
-                                    <tr>
-                                        <th><label>Name</label></th>         
-                                        <th>:</th>
-                                        <th>@if(!empty($casertw)){{ $casertw->name }} @endif</th>
-                                    </tr>
-                                    <tr>
-                                        <th><label>ID No</label></th>
-                                        <th>:</th>
-                                        <th>@if(!empty($casertw)){{ $casertw->idno }} @endif</th>
-                                    </tr>
-                                    <tr>
-                                        <th><label>RTW Ref No</label></th>
-                                        <th>:</th>
-                                        <th></th>
-                                    </tr>
-                                    <tr>
-                                        <th><label>Receive Date/Submission Date</label></th>
-                                        <th>:</th>
-                                        <th></th>
-                                    </tr>
-                                    <tr>
-                                        <th><label>Source From</label></th>
-                                        <th>:</th>
-                                        <th></th>
-                                    </tr>
-                                    </thead>
-                                </table>
-                            </div>
+                            <table >
+                                <thead>
+                                <tr>
+                                    <th><label>Name</label></th>         
+                                    <th>:</th>
+                                    <th>@if(!empty($casertw)){{ $casertw->name }} @endif</th>
+                                </tr>
+                                <tr>
+                                    <th><label>ID No</label></th>
+                                    <th>:</th>
+                                    <th>@if(!empty($casertw)){{ $casertw->idno }} @endif</th>
+                                </tr>
+                                <tr>
+                                    <th><label>RTW Ref No</label></th>
+                                    <th>:</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th><label>Receive Date/Submission Date</label></th>
+                                    <th>:</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th><label>Source From</label></th>
+                                    <th>:</th>
+                                    <th></th>
+                                </tr>
+                                </thead>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -58,45 +58,41 @@
                 <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#ia" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Initial Assessment</span></a></li>
             </ul>
            <!-- Nav tabs -->
-                 <div class="tab-content tabcontent-border">
+                <div class="tab-content tabcontent-border">
                     <div class="tab-pane p-20 active" id="registerrtw" role="tabpanel">
-                             <ul class="nav customtab" role="tablist">
-                    
-                                <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#registrationrtw" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Insured Person Info</span></a></li>
-                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#employerinfo" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Employer Info</span></a> </li>
-                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#supportingdocument" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('index.attr.supporting_document')</span></a> </li>
-                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#benefitCM" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Benefit Claim Info</span></a> </li>
-                  
-                             </ul>
+                        <ul class="nav customtab" role="tablist">
+            
+                        <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#registrationrtw" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Insured Person Info</span></a></li>
+                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#employerinfo" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Employer Info</span></a> </li>
+                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#supportingdocument" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('index.attr.supporting_document')</span></a> </li>
+                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#benefitCM" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Benefit Claim Info</span></a> </li>
+            
+                        </ul>
 
-                            <div class="tab-content tabcontent-border">
-                                 <!-- RegistrationRTW details tab -->
-                                 <div class="tab-pane p-20 active" id="registrationrtw" role="tabpanel">
-                                   @include('cmrtw.rtwcase')
-                                </div>
+                        <div class="tab-content tabcontent-border">
+                                <!-- RegistrationRTW details tab -->
+                                <div class="tab-pane p-20 active" id="registrationrtw" role="tabpanel">
+                                @include('cmrtw.rtwcase')
+                            </div>
 
-                                <div class="tab-pane p-20" id="employerinfo" role="tabpanel">
-                                   @include('cmrtw.employerinfo')
-                               </div>
-                               <!-- supporting details tab -->
-                               <div class="tab-pane p-20" id="supportingdocument" role="tabpanel">
-                                   @include('cmrtw.uploaddoc')
-                               </div>
-                               <div class="tab-pane p-20" id="benefitCM" role="tabpanel">
-                                    @include('cmrtw.obForm')
-                                </div>
-                           </div> 
+                            <div class="tab-pane p-20" id="employerinfo" role="tabpanel">
+                                @include('cmrtw.employerinfo')
+                            </div>
+                            <!-- supporting details tab -->
+                            <div class="tab-pane p-20" id="supportingdocument" role="tabpanel">
+                                @include('cmrtw.uploaddoc')
+                            </div>
+                            <div class="tab-pane p-20" id="benefitCM" role="tabpanel">
+                                @include('cmrtw.obForm')
+                            </div>
+                        </div> 
                     </div>
                     <div class="tab-pane p-20" id="ia" role="tabpanel">
-
                         <ul class="nav customtab" role="tablist" id="calendarTab">
-
                             <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#offerconfirmation" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Offer Confirmation</span></a> </li>
                             <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#appointment" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Appointment</span></a> </li>
                             <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#iarecovery" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Initial Assessment</span></a> </li>
                             <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#rehabplan" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Rehab Plan</span></a> </li>
-
-
                         </ul>
 
                         <div class="tab-content tabcontent-border">
@@ -115,30 +111,9 @@
                               @include('cmrtw.IA.initialevaluation')
                           </div>
 
-                           <div class="tab-pane p-20 " id="initialevaluation" role="tabpanel">
-                                <ul class="nav nav-tabs customtab2" role="tablist">
-
-                                <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#iarecovery" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Initial Assessment Recovery</span></a> </li>
-                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#supdoc" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('index.attr.supporting_document')</span></a> </li>
-
-                                </ul>
-                                <div class="tab-content tabcontent-border">
-
-                               <!-- RegistrationRTW details tab -->
-                                     <div class="tab-pane p-20 active" id="iarecovery" role="tabpanel">
-                                          @include('cmrtw.IA.initialevaluation')
-                                    </div>
-
-                               <!-- supporting details tab -->
-                                    <div class="tab-pane p-20" id="supdoc" role="tabpanel">
-                                      @include('cmrtw.IA.appointment')
-                                    </div>
-                                 </div>
+                            <div class="tab-pane p-20 " id="rehabplan" role="tabpanel">
+                                @include('cmrtw.IA.rehabplan')
                             </div>
-
-                             <div class="tab-pane p-20 " id="rehabplan" role="tabpanel">
-                                     @include('cmrtw.IA.rehabplan')
-                             </div>
                         </div>
                     </div>
                 </div>
@@ -159,15 +134,6 @@
         });
     });
 
-<<<<<<< HEAD
-
-    //redirect to specific tab
-    $(document).ready(function () {
-    $('#tabMenu a[href="#{{ old('tab') }}"]').tab('show')
-    });
-
-=======
->>>>>>> 3554e7332952b07d96d6ea7f4a6b6c5c59e45dff
 </script>
 @endsection
 

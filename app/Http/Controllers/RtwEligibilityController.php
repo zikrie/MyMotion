@@ -16,6 +16,7 @@ class RtwEligibilityController extends Controller
             return redirect('/login');
         }
         $idtype=DB::select('Select refcode, descen from reftable where tablerefcode=? order by refcode', ['idtype']);
+        
         return view('Rtw_eligibility', ['idtype'=>$idtype]);
     }
 

@@ -469,12 +469,21 @@ function remove_addDisabled(rid) {
 </script>
 <script type="text/javascript">
 
-    function myFunction(aval) {
+    function myFunctionOther(aval) {
         if (aval == "others") {
             $('#hideOthers').show();   
         }
         else {
             $('#hideOthers').hide(); 
+        }
+    }
+
+       function myFunction(aval) {
+        if (aval == "No") {
+            $('#hideResult').show();   
+        }
+        else {
+            $('#hideResult').hide(); 
         }
     }
 </script>

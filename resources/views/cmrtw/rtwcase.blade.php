@@ -143,7 +143,7 @@
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label class="control-label">Reference Purpose</label>
-                                <select class="form-control select" id="reference" name='reference' onchange="myFunction(this.options[this.selectedIndex].value)">
+                                <select class="form-control select" id="reference" name='reference' onchange="myFunctionOther(this.options[this.selectedIndex].value)">
                                     <option>Please Select</option>
                                     <option value="rehab">Rehab</option>
                                     <option value="peralatanpemulihan">Recovery Equipment</option>

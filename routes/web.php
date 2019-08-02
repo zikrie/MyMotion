@@ -85,7 +85,7 @@ Route::post('/wagesdetails', 'NoticeAccidentController@postWages');
 Route::get('/indexobprofile', 'ObprofileController@index')->name('obprofile.index');
 Route::get('/indexclaiminfo', 'ClaimController@index')->name('claim.index');
 Route::post('insertlola', 'UploadobprofileController@upload')->name('obprofile.upload');
-Route::post('insert', 'UploadclaimController@upload')->name('claim.upload');
+// Route::post('insert', 'UploadclaimController@upload')->name('claim.upload');
 
 //irina
 Route::post('/noticeaccident', 'NoticeAccidentController@postAccident');

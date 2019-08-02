@@ -467,7 +467,7 @@ function remove_addDisabled(rid) {
     }
 
 </script>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 
     function myFunction(aval) {
         if (aval == "others") {
@@ -477,4 +477,4 @@ function remove_addDisabled(rid) {
             $('#hideOthers').hide(); 
         }
     }
-</script>
+</script> -->

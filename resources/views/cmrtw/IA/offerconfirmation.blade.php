@@ -4,7 +4,7 @@
                 <form class="form">
                     <h4 class="card-title">@lang('offerconfirmation.title')</h4>
                     <hr>
-                     <div class="row p-t-5">
+                    <div class="row p-t-5">
                         <div class="col-2">
                             <label for="example-text-input" class="col-form-label">@lang('offerconfirmation.attr.resource')</label>
                         </div>
@@ -129,22 +129,23 @@
                             </div>
                         </div>
 
-                    <div id="hideResult" class="form-group" style="display:none">
+                    
                         <div class="form-group row">
-                            <div class="col-2">
-                                <label for="example-text-input" class="col-form-label">@lang('offerconfirmation.attr.reasons')</label>
-                            </div>
-                            <div class="col-8">
-                                <textarea class="form-control clearFields" rows="5" type="textarea"  id="reasons"></textarea>
+                            <div id="hideResult" class="form-group" style="display:none">
+                                <div class="col-2">
+                                    <label for="example-text-input" class="col-form-label">@lang('offerconfirmation.attr.reasons')</label>
+                                </div>
+                                <div class="col-8">
+                                    <textarea class="form-control clearFields" rows="5" type="textarea"  id="reasons"></textarea>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="form-actions">
-             <button type="submit" class="btn btn waves-effect waves-light btn-success">
-             SAVE & NEXT</button>
-             <button type="button" onclick="submitform()" class="btn btn waves-effect waves-light btn-success">RESET</button>
-             <button type="button" class="btn waves-effect waves-light btn-success"  onclick="window.location='/homertw'">@lang('rtw_eligibility.cancel')</button>
-         </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn waves-effect waves-light btn-success">
+                            SAVE & NEXT</button>
+                            <button type="button" onclick="submitform()" class="btn btn waves-effect waves-light btn-success">RESET</button>
+                            <button type="button" class="btn waves-effect waves-light btn-success"  onclick="window.location='/homertw'">@lang('rtw_eligibility.cancel')</button>
+                        </div>
                 </form>
             </div>
         </div>

@@ -129,9 +129,8 @@
                             </div>
                         </div>
 
-                    
-                        <div class="form-group row">
-                            <div id="hideResult" class="form-group" style="display:none">
+                        <div id="hideResult" class="form-group" style="display:none">
+                            <div class="form-group row">
                                 <div class="col-2">
                                     <label for="example-text-input" class="col-form-label">@lang('offerconfirmation.attr.reasons')</label>
                                 </div>

@@ -467,7 +467,7 @@ function remove_addDisabled(rid) {
     }
 
 </script>
-<!-- <script type="text/javascript">
+<script type="text/javascript">
 
     function myFunctionOther(aval) {
         if (aval == "others") {

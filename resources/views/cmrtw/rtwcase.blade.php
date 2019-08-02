@@ -5,10 +5,10 @@
                 <form action="/registrationrtw" method="POST" id="reset">
                     <input type="hidden" name="_token" value="{{csrf_token()}}">
                     <div class="form-body">
-                       <h4 class="card-title">@lang('registrationRTW.title1')</h4>
-                       <hr>
-                       @if(Session::get('messageob')) 
-                       <div class="card-footer">
+                     <h4 class="card-title">@lang('registrationRTW.title1')</h4>
+                     <hr>
+                     @if(Session::get('messageob')) 
+                     <div class="card-footer">
 
                         <div class="alert alert-warning">
                             {{Session::get('messageob')}}
@@ -134,19 +134,37 @@
                                 <input type="text" id="email" class="form-control" id="email" value="">
                             </div>
                         </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+
+                                <input type="hidden" id="email" class="form-control" id="email" value="">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                        <div class="form-group">
+                            <label class="control-label">Reference Purpose</label>
+                            <select class="form-control" value="@if(!empty($casertw)){{ $casertw->idtype }} @endif">
+                                <option>Please Select</option>
+                                <option value="rehab">Rehab</option>
+                                <option value="peralatanpemulihan">Recovery Equipment</option>
+                                <option value="jobplacement">Job Placement</option>
+                            </select>
+                        </div>
                     </div>
+                    </div>
+
                     
                     <h5 class="card-title">@lang('registrationrtw.title4')</h5>
                     <hr>
 
                     <div class="row p-t-20">
                         <div class="col-md-12">
-                         <div class="form-group">
+                           <div class="form-group">
                             <label class="control-label">@lang('registrationRtw.attr.name')<span class="text-danger">*</span></label>
                             <input type="text" id="name" class="form-control"  value="@if(!empty($casertw)){{ $casertw->name }} @endif" required>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                     </div>
                 <div class='row'>
                     <div class="col-md-4">
                         <div class="form-group">
@@ -185,21 +203,8 @@
                     <div class="col-md-4">
                         <div class="form-group">
                             <label class="control-label">@lang('registrationRtw.attr.race')<span class="text-danger">*</span></label>
-                            {{--  <input type="text" id="race" value="{{ $obprofile->race }}" class="form-control"> --}}
-                                   {{--  <select class="form-control clearFields" name="race" id="race"> 
-                                        <!option value="">@if(!empty($obprofile)){{ $obprofile->race }} @endif</option>
-                                        @foreach($race as $id)
-                                        @if (!empty($obprofile) && $obprofile->race == $id->refcode)
-                                        <option value="{{$id->refcode}}" selected>{{$id->descen}}</option>
-                                        @elseif (!empty($obformassist) && $obformassist->race == $id->refcode)
-                                        <option value="{{$id->refcode}}" selected>{{$id->descen}}</option>
-                                        @else
-                                        <option value="{{$id->refcode}}">{{$id->descen}}</option>
-                                        @endif
-                                        @endforeach
-                                    </select> --}}
                                     <select class="form-control clearFields" name="race" id="race"> 
-                                        {{--  <option>@lang('insuredPerson.attr.choose_race')</option>  --}}
+                                       
                                         <option>Please Select</option>
                                         @foreach($race as $id)
                                         @if (!empty($casertw) && $casertw->race == $id->refcode)
@@ -214,10 +219,7 @@
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label class="control-label">@lang('registrationRtw.attr.gender')<span class="text-danger">*</span></label>
-                                    {{--  <input type="text" id="gender" value="{{ $obprofile->gender }}" class="form-control"> --}}
                                     <select class="form-control clearFields" name="gender">
-                                        {{-- <option>Please select</option> --}}
-                                        <!--option value="">@if(!empty($obprofile)){{ $obprofile->gender }} @endif</option-->
                                         <option>Please Select</option>
                                         @if (!empty($casertw) && $casertw->gender == 'F')
                                         <option value="F" selected>Female</option>
@@ -243,14 +245,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!--div class='row'>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label class="control-label">Date of Death</label>
-                                    <input type="date" name="dodeath" id="dodeath" value="@if(!empty($obprofile)){{ $obprofile->dodeath }} @endif" class="form-control">
-                                </div>
-                            </div>
-                        </div-->
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
@@ -264,21 +258,16 @@
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                   {{--  <label>@lang('insuredPerson.attr.postal_address2')</label> --}}
-                                   @if(!empty($casertw) && $casertw->add2 != '')
-                                   <input type="text" id="add2" name="add2" value="{{ $casertw->add2 }}" class="form-control clearFields">
-                                   @else
-                                   <input type="text" id="add2" name="add2" value="" class="form-control clearFields">
-                                   @endif
-                               </div>
-                           </div>
-                           <div class="col-md-12">
+                                 @if(!empty($casertw) && $casertw->add2 != '')
+                                 <input type="text" id="add2" name="add2" value="{{ $casertw->add2 }}" class="form-control clearFields">
+                                 @else
+                                 <input type="text" id="add2" name="add2" value="" class="form-control clearFields">
+                                 @endif
+                             </div>
+                         </div>
+                         <div class="col-md-12">
                             <div class="form-group">
-
-
-
                                 <input type="text" id="add3" name="add3" value="" class="form-control clearFields">
-
                             </div>
                         </div>
                     </div>
@@ -296,7 +285,6 @@
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label class="control-label">@lang('insuredPerson.attr.state')<span class="text-danger">*</span></label>
-                                <!--input type="text" name="state" id="state" value="@if(!empty($obcontact)){{ $obcontact->statecode }} @endif" class="form-control"-->
                                 <select name='state' id='state' class='form-control'>
                                     @foreach($state as $s)
                                     @if(!empty($obprofile) && $obprofile->statecode == $s->refcode)
@@ -348,10 +336,7 @@
                                 @endif
                             </div>
                         </div>
-
-
                     </div>
-
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
@@ -389,9 +374,7 @@
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label class="control-label">@lang('registrationrtw.attr.citizen')</label>
-                                {{-- <input type="text" id="citizen" value="@if(!empty($obprofile)){{ $obprofile->nationality }} @endif" class="form-control"> --}}
                                 <select class="form-control" tabindex="1" name='nationality' id='nationality'>
-                                    <!--option value="">@if(!empty($obcontact)){{ $obcontact->nationality }} @endif</option-->
                                     @foreach($national as $N)
                                     @if (!empty($obprofile) && $obprofile->nationality == $N->refcode)
                                     <option value="{{$N->refcode}}" selected>{{$N->descen}}</option>
@@ -403,7 +386,6 @@
                             </div>
                         </div>
                     </div>
-
                     <h4 class="card-title">@lang('registrationRTW.title2')</h4>
                     <hr>
                     <div class="row p-t-20">
@@ -528,11 +510,11 @@
 
                     </div>
                     <div class="form-actions">
-                                <!--button type="button" class="btn btn waves-effect waves-light btn-secondary">@lang('insuredPerson.cancel')</button>
-                                    <button type="button" class="btn btn waves-effect waves-light btn-secondary">@lang('insuredPerson.clear')</button-->
+                                         <button type="button" class="btn waves-effect waves-light btn-secondary" id='btncancelacc' onclick="window.location='/homertw'">@lang('rtw_eligibility.cancel')</button>
+                                         <button type="submit" class="btn waves-effect waves-light btn-success" id='btnsubmitacc' >@lang('rtw_eligibility.next')</button>
                                         <button type="submit" class="btn btn waves-effect waves-light btn-success">
-                                        @lang('insuredPerson.save')</button>
-                                        <button type="button" onclick="submitform()" class="btn btn waves-effect waves-light btn-info">@lang('insuredPerson.reset')</button>
+                                       SAVE</button>
+                                        <button type="button" onclick="submitform()" class="btn btn waves-effect waves-light btn-info">RESET</button>
                                     </div>
                                 </div>
                             </form>

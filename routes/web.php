@@ -134,7 +134,7 @@ Route::get('/PK.index', 'RtwController@index');
  // Route::get('/homertw', 'WorkbasketRTWController@wblist');
 
 // ------------------- UPLOAD SUPPORTING DOCUMENT RTW------------
-Route::post('insert', 'UploadrtwController@upload')->name('claim.upload');
+Route::post('insert', 'UploadrtwController@upload')->name('claimAyu.upload');
 Route::get('/viewdoc', 'UploadrtwController@viewstorage');
 Route::get('/PK.supportingDoc', 'UploadrtwController@index');
 
@@ -161,4 +161,7 @@ Route::get('/Rtw_eligibility', function () {
 Route::get('image-upload', 'ImageUploadController@imageUpload')->name('image.upload');
 
 Route::post('image-upload', 'ImageUploadController@imageUploadPost')->name('image.upload.post');
+
+Route::post('/uploaddoc', 'UploadclaimController@upload')->name('claim.upload');
+
 

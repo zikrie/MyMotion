@@ -42,5 +42,6 @@ return [
     'save' => 'Save',
     'cancel' => 'Cancel',
     'clear' => 'Clear',
+    'reset' => 'Reset',
  
 ];

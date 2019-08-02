@@ -26,6 +26,9 @@ return [
         'registration_application' => 'Registration Application',
         'supporting_document' => 'Supporting Document',
 
+        'statutory' =>'Statutory Body',
+        'private' => 'Private Sector',
+        'government' => 'Government',
         'ia' => 'Initial Assessement',
         'casemgmt' => 'Case Management',
         'rtw' => 'Return to Work',

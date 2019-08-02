@@ -130,13 +130,13 @@
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label class="control-label">@lang('registrationRTW.attr.email')</label>
+                                <label class="control-label">@lang('registrationRTW.attr.emailDoc')</label>
                                 <input type="text" id="email" class="form-control" id="email" value="">
                             </div>
                         </div>
                     </div>
                     
-                    <h5 class="card-title">@lang('registrationrtw.title4')</h5>
+                    <h5 class="card-title">@lang('registrationRtw.title4')</h5>
                     <hr>
 
                     <div class="row p-t-20">
@@ -320,7 +320,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label>@lang('registrationrtw.attr.pobox')</label>
+                                <label>@lang('registrationRtw.attr.pobox')</label>
                                 @if(!empty($obprofile) && $obprofile->pobox != '')
                                 <input type="text" id="pobox" name="pobox" value="{{ $obprofile->pobox }}" class="form-control clearFields">
                                 @else
@@ -330,7 +330,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label>@lang('registrationrtw.attr.lockedbag')</label>
+                                <label>@lang('registrationRtw.attr.lockedbag')</label>
                                 @if(!empty($obprofile) && $obprofile->lockedbag != '')
                                 <input type="text" id="lockedbag" name="lockedbag" value="{{ $obprofile->lockedbag }}" class="form-control clearFields">
                                 @else
@@ -340,7 +340,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label>@lang('registrationrtw.attr.wdt')</label>
+                                <label>@lang('registrationRtw.attr.wdt')</label>
                                 @if(!empty($obprofile) && $obprofile->wdt != '')
                                 <input type="text" id="wdt" name="wdt" value="{{ $obprofile->wdt }}" class="form-control clearFields">
                                 @else
@@ -388,7 +388,7 @@
 
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label class="control-label">@lang('registrationrtw.attr.citizen')</label>
+                                <label class="control-label">@lang('registrationRtw.attr.citizen')</label>
                                 {{-- <input type="text" id="citizen" value="@if(!empty($obprofile)){{ $obprofile->nationality }} @endif" class="form-control"> --}}
                                 <select class="form-control" tabindex="1" name='nationality' id='nationality'>
                                     <!--option value="">@if(!empty($obcontact)){{ $obcontact->nationality }} @endif</option-->
@@ -416,7 +416,12 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label class="control-label">@lang('registrationRTW.attr.emptype')</label>
-                                <input type="text" id="name" class="form-control" value="">
+                                <select class="form-control">
+                                    <option value="">Please Select</option>
+                                    <option value="statutory">@lang('caseMgmt.attr.statutory')</option>
+                                    <option value="private">@lang('caseMgmt.attr.private')</option>
+                                    <option value="government">@lang('caseMgmt.attr.government')</option>
+                                </select>
                             </div>
                         </div>
                         <div class="col-md-12">
@@ -474,7 +479,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label>@lang('registrationrtw.attr.pobox')</label>
+                                <label>@lang('registrationRtw.attr.pobox')</label>
                                 @if(!empty($obprofile) && $obprofile->pobox != '')
                                 <input type="text" id="pobox" name="pobox" value="{{ $obprofile->pobox }}" class="form-control clearFields">
                                 @else
@@ -484,7 +489,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label>@lang('registrationrtw.attr.lockedbag')</label>
+                                <label>@lang('registrationRtw.attr.lockedbag')</label>
                                 @if(!empty($obprofile) && $obprofile->lockedbag != '')
                                 <input type="text" id="lockedbag" name="lockedbag" value="{{ $obprofile->lockedbag }}" class="form-control clearFields">
                                 @else
@@ -494,7 +499,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label>@lang('registrationrtw.attr.wdt')</label>
+                                <label>@lang('registrationRtw.attr.wdt')</label>
                                 @if(!empty($obprofile) && $obprofile->wdt != '')
                                 <input type="text" id="wdt" name="wdt" value="{{ $obprofile->wdt }}" class="form-control clearFields">
                                 @else

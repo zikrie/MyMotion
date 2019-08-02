@@ -41,7 +41,7 @@ class RtwCaseController extends Controller
         $race=DB::select('Select refcode, descen from reftable where tablerefcode=? order by refcode', ['race']);
           $sql = 'select d.docdescen,d.doctype,d.docdescbm, d.doccat from doctype d, noticedoc n '
                 . 'where  n.doctype = d.doctype';
-         $alldoclist = DB::select('SELECT doccat, doctype, docdescbm, docdescen FROM doctype where doctype = ?', ['C16']);
+         $alldoclist = DB::select('SELECT doccat, doctype, docdescbm, docdescen FROM doctype where doctype = ?', ['C16']   ) ;
         //  $alldoclist = DB::select('select docdescen,doctype,docdescbm, doccat from doctype order by doccat desc, doctype');
 
          // dd($casertw);

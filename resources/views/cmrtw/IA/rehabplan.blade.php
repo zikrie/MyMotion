@@ -52,7 +52,7 @@
                 {{-- <div class="card-header" style="background-color: #98cb5b;" role="tab" id="headingAA">
                     <h4 class="mb-0">@lang('ia.title23')</h4>
                 </div> --}}
-                <br/>
+                
                 <form class="form">
                     @include('cmrtw.IA.rehabPlan.insuredPersonApproval')  
                 </form>

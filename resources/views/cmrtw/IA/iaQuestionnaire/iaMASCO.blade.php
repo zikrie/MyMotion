@@ -3,6 +3,7 @@
         <div class="form-group">   
                 <label for="example-text-input" class="col-form-label">@lang('ia.attr.mainGroup')</label>
                 <select class="form-control">
+                    <option value="" >Please select</option>
                     <option value="">Rujuk Senarai MASCO Kod 2008</option>
                 </select>
         </div>
@@ -11,6 +12,7 @@
         <div class="form-group">   
                 <label for="example-text-input" class="col-form-label">@lang('ia.attr.subMainGroup')</label>
                 <select class="form-control">
+                    <option value="" >Please select</option>
                     <option value="">Rujuk Senarai MASCO</option>
                 </select>
         </div>
@@ -19,6 +21,7 @@
         <div class="form-group">   
                 <label for="example-text-input" class="col-form-label">@lang('ia.attr.subGroup')</label>
                 <select class="form-control">
+                    <option value="" >Please select</option>
                     <option value="">Rujuk Senarai MASCO</option>
                 </select>
         </div>
@@ -27,6 +30,7 @@
         <div class="form-group">   
                 <label for="example-text-input" class="col-form-label">@lang('ia.attr.catTypeOSI')</label>
                 <select class="form-control">
+                    <option value="" >Please select</option>
                     <option value="">select OSI</option>
                 </select>
         </div>
@@ -35,6 +39,7 @@
         <div class="form-group">   
                 <label for="example-text-input" class="col-form-label">@lang('ia.attr.catIndustry')</label>
                 <select class="form-control">
+                    <option value="" >Please select</option>
                     <option value="">select industry</option>
                 </select>
         </div>
@@ -43,6 +48,7 @@
         <div class="form-group">   
                 <label for="example-text-input" class="col-form-label">@lang('ia.attr.subCatIndustry')</label>
                 <select class="form-control">
+                    <option value="" >Please select</option>
                     <option value="">select sub industry</option>
                 </select>
         </div>
@@ -57,8 +63,9 @@
         <div class="form-group">   
                 <label for="example-text-input" class="col-form-label">@lang('ia.attr.workTime')</label>
                 <select class="form-control">
-                    <option value="">1. @lang('ia.attr.normal')</option>
-                    <option value="">2. @lang('ia.attr.shift')</option>
+                    <option value="" >Please select</option>
+                    <option value="">@lang('ia.attr.normal')</option>
+                    <option value="">@lang('ia.attr.shift')</option>
                 </select>
         </div>
     </div>
@@ -85,8 +92,9 @@
         <div class="form-group">   
                 <label for="example-text-input" class="col-form-label">@lang('ia.attr.salary')</label>
                 <select class="form-control">
-                    <option value="">1. @lang('ia.attr.monthly')</option>
-                    <option value="">2. @lang('ia.attr.daily')</option>
+                    <option value="" >Please select</option>
+                    <option value="">@lang('ia.attr.monthly')</option>
+                    <option value="">@lang('ia.attr.daily')</option>
                 </select>
         </div>
     </div>
@@ -126,9 +134,10 @@
         <div class="form-group">   
                 <label for="example-text-input" class="col-form-label">@lang('ia.attr.paymentStatus')</label>
                 <select class="form-control">
-                    <option value="">1. @lang('ia.attr.fullpay')</option>
-                    <option value="">2. @lang('ia.attr.halfpay')</option>
-                    <option value="">3. @lang('ia.attr.nopay')</option>
+                    <option value="" >Please select</option>
+                    <option value="full">@lang('ia.attr.fullpay')</option>
+                    <option value="half">@lang('ia.attr.halfpay')</option>
+                    <option value="nopay">@lang('ia.attr.nopay')</option>
                 </select>
         </div>
     </div>

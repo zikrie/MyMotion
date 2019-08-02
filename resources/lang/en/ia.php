@@ -6,7 +6,7 @@ return [
     'title2' => 'Appointment Details',
     'title3' => 'Employment Details',
     'title4' => 'MASCO Code Occupations',
-    'title5' => 'Insured Person Employment Alternative',
+    'title5' => 'Insured Person Employment Option',
     'title6' => 'Education and Skills Details',
     'title7' => 'Mobility Details',
     'title8' => 'Dependents and Expenses Details',

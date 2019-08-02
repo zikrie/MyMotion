@@ -119,7 +119,7 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="form-group">
-                                    <select class="form-control select clearFields" id="result" name='result' onchange="myFunction(this.options[this.selectedIndex].value)" required>
+                                    <select class="form-control select " id="result" name='result' onchange="myFunction(this.options[this.selectedIndex].value)" required>
                                         <option value="">@lang('offerconfirmation.attr.result')</option>
                                         <option value="Yes">@lang('offerconfirmation.attr.yes')</option>
                                         <option value="No">@lang('offerconfirmation.attr.no')</option>
@@ -164,14 +164,6 @@
         else {
             $('#emailHide').hide();
             $('#letterHide').hide();
-        }
-    }
-    function myFunction(aval) {
-        if (aval == "No") {
-            $('#hideResult').show();   
-        }
-        else {
-            $('#hideResult').hide(); 
         }
     }
       function submitform(){

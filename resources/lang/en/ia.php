@@ -2,7 +2,7 @@
  
 return [
 
-    'title1' => 'Insured Person Details',
+    'title1' => 'Insured Person Photo',
     'title2' => 'Appointment Details',
     'title3' => 'Employment Details',
     'title4' => 'MASCO Code Occupations',

@@ -53,7 +53,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label class="control-label">@lang('rtw_eligibility.attr.enter_ic')</label>
-                                    <input type="text" name="idno" id="idno" class="form-control clearFields" required data-validation-containsnumber-regex="(\d)+" data-validation-containsnumber-message="No Characters Allowed, Only Numbers" maxlength="12">{{-- {{Session::get('idno')}} --}}
+                                    <input type="text" name="idno" id="idno" class="form-control clearFields" requiredmaxlength="12">{{-- {{Session::get('idno')}} --}}
                                     <label class="" >{{Session::get('error')}}</label>
                                 </div>
                             </div>
@@ -62,8 +62,8 @@
                     <div class="row">
                         <div class="form-actions">
                         <button type="submit" class="btn waves-effect waves-light btn-success" id='btnsubmitacc' >@lang('rtw_eligibility.next')</button>
-                        <button type="button" class="btn btn waves-effect waves-light btn-info" onclick="submitform()">@lang('rtw_eligibility.reset')</button>
-                        <button type="button" class="btn waves-effect waves-light btn-secondary" id='btncancelacc' onclick="window.location='/homertw'">@lang('rtw_eligibility.cancel')</button>
+                        <button type="button" class="btn btn waves-effect waves-light btn-success" onclick="submitform()">@lang('rtw_eligibility.reset')</button>
+                        <button type="button" class="btn waves-effect waves-light btn-success" id='btncancelacc' onclick="window.location='/homertw'">@lang('rtw_eligibility.cancel')</button>
                         </div>
                     </div>
                 </form>

@@ -2,7 +2,7 @@
  
 return [
 
-    'title1' => 'Insured Person Details',
+    'title1' => 'Follow Up',
 	'title' => 'Offer Confirmation',
 
 

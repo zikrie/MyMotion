@@ -467,3 +467,14 @@ function remove_addDisabled(rid) {
     }
 
 </script>
+<script type="text/javascript">
+
+    function myFunction(aval) {
+        if (aval == "others") {
+            $('#hideOthers').show();   
+        }
+        else {
+            $('#hideOthers').hide(); 
+        }
+    }
+</script>

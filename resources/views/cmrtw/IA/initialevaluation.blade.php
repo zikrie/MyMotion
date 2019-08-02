@@ -339,13 +339,40 @@
                     </div>
                 </div> 
                 <div class="form-actions">
-                    <button type="submit" class="btn btn waves-effect waves-light btn-success">@lang('offerconfirmation.attr.submit')</button>
+                    <!-- <button type="submit" class="btn btn waves-effect waves-light btn-success">@lang('offerconfirmation.attr.submit')</button> -->
+                    <button type="button"class="btn btn waves-effect waves-light btn-success" data-toggle="modal" data-target="#iaModal" id="iaResult" onclick="viewIAresult()">@lang('offerconfirmation.attr.submit')</button>
                 </div>  
                 </div>
             </form>
         </div>
     </div>
 </div>
-
-
+<!--button View-->
+<div class="modal fade" id="iaModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="/PERKESO_UI/assets/images/perkeso.jpg" class="dark-logo" style="width:50px;height:50px;"/>
+                <h4 class="modal-title" id="myLargeModalLabel">Summary of Initial Rehabilitation Assessment</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                @include('cmrtw.IA.iaResult')
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="nextTab()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function viewIAresult(){
+      document.getElementById("iaResult").style.backgroundColor = "green";
+    }
+    function nextTab(){
+      document.getElementById("#rehabplan");
+    }
+</script>
 

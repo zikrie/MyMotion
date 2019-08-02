@@ -52,7 +52,7 @@
                                         <div class="col-sm-6 nopadding">
                                             <div class="form-group">
                                                 <div class="input-group">
-                                                    <input type="text" class="form-control" id="rm_value" name="rm_value" value="" placeholder="RM">
+                                                    <input type="text" class="form-control" id="noLiving" name="noLiving" value="" placeholder="Number of person">
                                                     
                                                     <div class="input-group-append">
                                                         <button class="btn btn-success" type="button" onclick="dependentCost();"><i class="fa fa-plus"></i></button>
@@ -193,7 +193,7 @@
         var divtest = document.createElement("div");
         divtest.setAttribute("class", "removeclass" + dependent);
         var rdiv = 'removeclass' + dependent;
-        divtest.innerHTML = '<div class="row p-t-20"><div class="col-md-12"><div class="form-group"><label class="control-label">@lang('caseMgmt.attr.dependent_number')</label><div class="row"><div class="col-sm-6 nopadding"><div class="form-group"><select class="form-control"><option value="">Please Select</option><option value="wife">@lang('caseMgmt.attr.wife')</option><option value="not_school">@lang('caseMgmt.attr.not_school')</option><option value="primary_school">@lang('caseMgmt.attr.primary_school')</option><option value="secondary_school">@lang('caseMgmt.attr.secondary_school')</option><option value="university">@lang('caseMgmt.attr.university')</option><option value="disabled">@lang('caseMgmt.attr.disabled')</option></select></div></div><div class="col-sm-6 nopadding"><div class="form-group"><div class="input-group"><input type="text" class="form-control" id="rm_value" name="rm_value" value="" placeholder="RM"><div class="input-group-append"><button class="btn btn-danger" type="button" onclick="remove_dependentCost('+dependent+');"><i class="fa fa-minus"></i></button></div></div></div></div></div></div></div></div>';
+        divtest.innerHTML = '<div class="row p-t-20"><div class="col-md-12"><div class="form-group"><label class="control-label">@lang('caseMgmt.attr.dependent_number')</label><div class="row"><div class="col-sm-6 nopadding"><div class="form-group"><select class="form-control"><option value="">Please Select</option><option value="wife">@lang('caseMgmt.attr.wife')</option><option value="not_school">@lang('caseMgmt.attr.not_school')</option><option value="primary_school">@lang('caseMgmt.attr.primary_school')</option><option value="secondary_school">@lang('caseMgmt.attr.secondary_school')</option><option value="university">@lang('caseMgmt.attr.university')</option><option value="disabled">@lang('caseMgmt.attr.disabled')</option></select></div></div><div class="col-sm-6 nopadding"><div class="form-group"><div class="input-group"><input type="text" class="form-control" id="noLiving" name="noLiving" value="" placeholder="Number of person"><div class="input-group-append"><button class="btn btn-danger" type="button" onclick="remove_dependentCost('+dependent+');"><i class="fa fa-minus"></i></button></div></div></div></div></div></div></div></div>';
 
         objTo.appendChild(divtest)
     }

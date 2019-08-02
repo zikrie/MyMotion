@@ -2,7 +2,7 @@
  
 return [
 
-    'title1' => 'Insured Person Details',
+    'title1' => 'Insured Person Photo',
     'title2' => 'Appointment Details',
     'title3' => 'Employment Details',
     'title4' => 'MASCO Code Occupations',
@@ -129,10 +129,10 @@ return [
         'communicationRate' => 'Communication Rate',
         'justificationCommunicationRate' => 'Justification Communication Rate',
         'reasonForCancel' => 'Reason for Cancellation',
-        'insuredPersonResult' => 'Insured Person Result',
-        'permit' => 'Permit',
-        'date' => 'Date',
-        'nameOfCaseManager' => 'Name Of Case Manager',
+        'insuredPersonConsent' => 'Insured Person Consent',
+        'uploadConsentForm' => 'Upload Consent Form',
+        'dateOfConsent' => 'Date Of Consent',
+        'caseManagerName' => 'Case Manager Name',
         
         
 

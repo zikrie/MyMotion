@@ -301,7 +301,7 @@
                             </div>
                         </div>
                     
-                        <div class="col-md-4">
+                        <div class="col-md-8">
                             <div class="form-group">
                                 <label for="example-text-input" class="col-form-label">@lang('ia.attr.remarks')</label>
                                 <input class="form-control" type="text"  id="remarks">

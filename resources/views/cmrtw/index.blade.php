@@ -92,6 +92,7 @@
             <ul class="nav nav-tabs" role="tablist" >
                <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#registerrtw" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('index.attr.registration_application')</span></a> </li>
                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#ia" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Initial Assessment</span></a></li>
+               <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#ipDetails" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Case Management</span></a></li>
            </ul>
            <!-- Nav tabs -->
                 <div class="tab-content tabcontent-border">
@@ -148,6 +149,20 @@
                             </div>
                         </div>       
                     </div>
+
+                    {{-- Case Management Tab --}}
+                    <div class="tab-pane p-20" id="ipDetails" role="tabpanel">
+                            
+                        <div class="tab-content tabcontent-border">
+                          <!-- insured details tab -->
+                          <div class="tab-pane p-20 active" id="ipDetails" role="tabpanel">
+                            @include('cmrtw.caseMgmt.ipDetails')
+                          </div>
+
+                          
+                        </div>
+
+                      </div>
                 </div>
             </div>
         </div>

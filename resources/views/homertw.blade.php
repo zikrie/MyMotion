@@ -167,7 +167,7 @@
                                <div class="col-12">
                                 <div class="card">
                                     <div class="table-responsive m-t-40">
-                                        <table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
+                                        <table id="workbasketRTW" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
                                             <thead>
                                                 <tr>
                                                     <th>@lang('home.select')</th>

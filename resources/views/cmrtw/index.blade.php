@@ -51,7 +51,6 @@
                     </div>
                 </div>
             </div>
-            <h4 class="card-title">Return To Work</h4>
             <!-- <div class="row">
             <div class="col-md-12">
                 <div class="card" >

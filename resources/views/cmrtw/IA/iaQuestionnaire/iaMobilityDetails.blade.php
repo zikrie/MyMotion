@@ -9,8 +9,8 @@
                         <div class="row p-t-20">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.transportation')</label>
-                                    <select class="form-control">
+                                    <label class="control-label">@lang('caseMgmt.attr.transportation') <span class="text-danger">*</span></label>
+                                    <select class="form-control" required>
                                         <option value="">Please Select</option>
                                         <option value="yes">@lang('caseMgmt.attr.yes')</option>
                                         <option value="no">@lang('caseMgmt.attr.no')</option>
@@ -19,7 +19,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.own_vehicles')</label>
+                                    <label class="control-label">@lang('caseMgmt.attr.own_vehicles') <span class="text-danger">*</span></label>
                                     <select name="select_opt" id="select_opt" class="form-control" onchange="showfield(this.options[this.selectedIndex].value)" required> 
                                         <option value="">Please Select</option>
                                         <option value="car">@lang('caseMgmt.attr.car')</option>
@@ -31,14 +31,14 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group" id="divspecify" style="display:none;">
-                                    <label class="control-label">@lang('caseMgmt.attr.specify')</label>
-                                    <input type="text" id="specify" class="form-control">
+                                    <label class="control-label">@lang('caseMgmt.attr.specify') <span class="text-danger">*</span></label>
+                                    <input type="text" id="specify" class="form-control" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.modified_vehicles')</label>
-                                    <select class="form-control">
+                                    <label class="control-label">@lang('caseMgmt.attr.modified_vehicles') <span class="text-danger">*</span></label>
+                                    <select class="form-control" required>
                                         <option value="">Please Select</option>
                                         <option value="yes">@lang('caseMgmt.attr.yes')</option>
                                         <option value="no">@lang('caseMgmt.attr.no')</option>
@@ -47,8 +47,8 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.driving_capabilities')</label>
-                                    <select class="form-control">
+                                    <label class="control-label">@lang('caseMgmt.attr.driving_capabilities') <span class="text-danger">*</span></label>
+                                    <select class="form-control" required>
                                         <option value="">Please Select</option>
                                         <option value="yes">@lang('caseMgmt.attr.yes')</option>
                                         <option value="no">@lang('caseMgmt.attr.no')</option>
@@ -57,8 +57,8 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.trans_support')</label>
-                                    <select class="form-control">
+                                    <label class="control-label">@lang('caseMgmt.attr.trans_support') <span class="text-danger">*</span></label>
+                                    <select class="form-control" required>
                                         <option value="">Please Select</option>
                                         <option value="yes">@lang('caseMgmt.attr.yes')</option>
                                         <option value="no">@lang('caseMgmt.attr.no')</option>

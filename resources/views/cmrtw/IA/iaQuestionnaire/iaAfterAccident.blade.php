@@ -10,26 +10,26 @@
                         <div class="row p-t-20">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.hobby')</label>
+                                    <label class="control-label">@lang('caseMgmt.attr.hobby') <span class="text-danger">*</span></label>
                                     <div class="custom-control custom-radio">
-                                        <input type="radio" id="hobby1" name="hobby" class="custom-control-input">
+                                        <input type="radio" id="hobby1" name="hobby" class="custom-control-input" required>
                                         <label class="custom-control-label" for="hobby1">@lang('caseMgmt.attr.yes')</label>
                                     </div>
                                     <div class="custom-control custom-radio">
-                                        <input type="radio" id="hobby2" name="hobby" class="custom-control-input">
+                                        <input type="radio" id="hobby2" name="hobby" class="custom-control-input" required>
                                         <label class="custom-control-label" for="hobby2">@lang('caseMgmt.attr.no')</label>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.category')</label>
+                                    <label class="control-label">@lang('caseMgmt.attr.category') <span class="text-danger">*</span></label>
                                     <div class="custom-control custom-radio">
-                                        <input type="radio" id="category11" name="category1" class="custom-control-input">
+                                        <input type="radio" id="category11" name="category1" class="custom-control-input" required>
                                         <label class="custom-control-label" for="category11">@lang('caseMgmt.attr.indoor')</label>
                                     </div>
                                     <div class="custom-control custom-radio">
-                                        <input type="radio" id="category22" name="category1" class="custom-control-input">
+                                        <input type="radio" id="category22" name="category1" class="custom-control-input" required>
                                         <label class="custom-control-label" for="category22">@lang('caseMgmt.attr.outdoor')</label>
                                     </div>
                                 </div>
@@ -38,26 +38,26 @@
                         <div class="row p-t-20">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.sport')</label>
+                                    <label class="control-label">@lang('caseMgmt.attr.sport') <span class="text-danger">*</span></label>
                                     <div class="custom-control custom-radio">
-                                        <input type="radio" id="sport11" name="sport1" class="custom-control-input">
+                                        <input type="radio" id="sport11" name="sport1" class="custom-control-input" required>
                                         <label class="custom-control-label" for="sport11">@lang('caseMgmt.attr.yes')</label>
                                     </div>
                                     <div class="custom-control custom-radio">
-                                        <input type="radio" id="sport22" name="sport1" class="custom-control-input">
+                                        <input type="radio" id="sport22" name="sport1" class="custom-control-input" required>
                                         <label class="custom-control-label" for="sport22">@lang('caseMgmt.attr.no')</label>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.category')</label>
+                                    <label class="control-label">@lang('caseMgmt.attr.category') <span class="text-danger">*</span></label>
                                     <div class="custom-control custom-radio">
-                                        <input type="radio" id="cate12" name="category2" class="custom-control-input">
+                                        <input type="radio" id="cate12" name="category2" class="custom-control-input" required>
                                         <label class="custom-control-label" for="cate12">@lang('caseMgmt.attr.indoor')</label>
                                     </div>
                                     <div class="custom-control custom-radio">
-                                        <input type="radio" id="cate21" name="category2" class="custom-control-input">
+                                        <input type="radio" id="cate21" name="category2" class="custom-control-input" required>
                                         <label class="custom-control-label" for="cate21">@lang('caseMgmt.attr.outdoor')</label>
                                     </div>
                                 </div>
@@ -66,21 +66,21 @@
                         <div class="row p-t-20">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.social_activity')</label>
+                                    <label class="control-label">@lang('caseMgmt.attr.social_activity') <span class="text-danger">*</span></label>
                                     <div class="custom-control custom-radio">
-                                        <input type="radio" id="social_activity11" name="social_activity1" class="custom-control-input">
+                                        <input type="radio" id="social_activity11" name="social_activity1" class="custom-control-input" required>
                                         <label class="custom-control-label" for="social_activity11">@lang('caseMgmt.attr.yes')</label>
                                     </div>
                                     <div class="custom-control custom-radio">
-                                        <input type="radio" id="social_activity22" name="social_activity1" class="custom-control-input">
+                                        <input type="radio" id="social_activity22" name="social_activity1" class="custom-control-input" required>
                                         <label class="custom-control-label" for="social_activity22">@lang('caseMgmt.attr.no')</label>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.level')</label>
-                                    <select class="form-control">
+                                    <label class="control-label">@lang('caseMgmt.attr.level') <span class="text-danger">*</span></label>
+                                    <select class="form-control" required>
                                         <option value="">Please Select</option>
                                         <option value="international1">@lang('caseMgmt.attr.international')</option>
                                         <option value="nationality1">@lang('caseMgmt.attr.nationality')</option>

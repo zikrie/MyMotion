@@ -10,8 +10,8 @@
                     <div class="row p-t-20">
                         <div class="col-md-4"> 
                             <div class="form-group">
-                                <label class="control-label">@lang('caseMgmt.attr.treatment_type')</label>
-                                <select class="form-control" tabindex="1">
+                                <label class="control-label">@lang('caseMgmt.attr.treatment_type') <span class="text-danger">*</span></label>
+                                <select class="form-control" tabindex="1" required>
                                     <option value="">Please Select</option>
                                     <option value="operation">@lang('caseMgmt.attr.operation')</option>
                                     <option value="conservative">@lang('caseMgmt.attr.conservative')</option>
@@ -23,8 +23,8 @@
                         </div>
                        <div class="col-md-4">
                             <div class="form-group">
-                                <label class="control-label">@lang('caseMgmt.attr.treatment_specify')</label>
-                                <input type="text" id="treatment_specify" class="form-control">
+                                <label class="control-label">@lang('caseMgmt.attr.treatment_specify') <span class="text-danger">*</span></label>
+                                <input type="text" id="treatment_specify" class="form-control" required>
                             </div>
                         </div>
                         <div class="col-md-4">

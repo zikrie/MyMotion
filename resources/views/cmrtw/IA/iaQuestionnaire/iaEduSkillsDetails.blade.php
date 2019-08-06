@@ -10,7 +10,7 @@
                        <div class="row p-t-20">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.highest_edu')</label>
+                                    <label class="control-label">@lang('caseMgmt.attr.highest_edu') <span class="text-danger">*</span></label>
                                     <select name="select_opt" id="select_opt" class="form-control" onchange="showfield1(this.options[this.selectedIndex].value)" required> 
                                         <option value="">Please Select</option>
                                         <option value="no_formaledu">@lang('caseMgmt.attr.no_formaledu')</option>
@@ -26,14 +26,14 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group" id="divspecify1" style="display:none;">
-                                    <label class="control-label">@lang('caseMgmt.attr.specify')</label>
+                                    <label class="control-label">@lang('caseMgmt.attr.specify') <span class="text-danger">*</span></label>
                                     <input type="text" id="specify" class="form-control">
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.pro_qualification')</label>
-                                    <select class="form-control">
+                                    <label class="control-label">@lang('caseMgmt.attr.pro_qualification') <span class="text-danger">*</span></label>
+                                    <select class="form-control" required>
 
                                         <option value="">Please Select</option>
                                         <option value="yes">@lang('caseMgmt.attr.yes')</option>
@@ -46,8 +46,8 @@
                         <div class="row p-t-20">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('ia.attr.license')</label>
-                                    <select class="select2 m-b-10 select2-multiple" style="width: 100%;border:1px" multiple="multiple" data-placeholder="Please Select">
+                                    <label class="control-label">@lang('ia.attr.license') <span class="text-danger">*</span></label>
+                                    <select class="select2 m-b-10 select2-multiple" style="width: 100%;border:1px" multiple="multiple" data-placeholder="Please Select" required>
                                         <optgroup class="form-control" label="">
                                             <option value="ldl">@lang('ia.attr.ldl')</option>
                                             <option value="pdl">@lang('ia.attr.pdl')</option>
@@ -61,8 +61,8 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('ia.attr.licenseClass')</label>
-                                    <select class="select2 m-b-10 select2-multiple" style="width: 100%" multiple="multiple" data-placeholder="Please Select">
+                                    <label class="control-label">@lang('ia.attr.licenseClass') <span class="text-danger">*</span></label>
+                                    <select class="select2 m-b-10 select2-multiple" style="width: 100%" multiple="multiple" data-placeholder="Please Select" required>
                                         <optgroup class="form-control" label="">
                                             <option value="a_type">@lang('caseMgmt.attr.a_type')</option>
                                             <option value="a1_type">@lang('caseMgmt.attr.a1_type')</option>
@@ -85,8 +85,8 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.license_vocational')</label>
-                                    <select class="select2 m-b-10 select2-multiple" style="width: 100%;border:1px" multiple="multiple" data-placeholder="Please Select">
+                                    <label class="control-label">@lang('caseMgmt.attr.license_vocational') <span class="text-danger">*</span></label>
+                                    <select class="select2 m-b-10 select2-multiple" style="width: 100%;border:1px" multiple="multiple" data-placeholder="Please Select" required>
                                         <optgroup class="form-control" label="">
                                             <option value="gdl">@lang('caseMgmt.attr.gdl_license')</option>
                                             <option value="psv">@lang('caseMgmt.attr.psv_license')</option>
@@ -99,8 +99,8 @@
                         <div class="row p-t-20">
                             <div class="col-sm-3 nopadding">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.language_proficiency')</label>
-                                        <select class="form-control" tabindex="1">
+                                    <label class="control-label">@lang('caseMgmt.attr.language_proficiency') <span class="text-danger">*</span></label>
+                                        <select class="form-control" tabindex="1" required>
                                             <option value="">Please Select</option>
                                             <option value="speak">@lang('caseMgmt.attr.speaking')</option>
                                             <option value="write">@lang('caseMgmt.attr.writing')</option>
@@ -110,8 +110,8 @@
                             </div>
                             <div class="col-sm-3 nopadding">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.language')</label>
-                                    <select class="select2 m-b-10 select2-multiple" style="width: 100%" onchange="showfield1(this.options[this.selectedIndex].value)" multiple="multiple" data-placeholder="Please Select">
+                                    <label class="control-label">@lang('caseMgmt.attr.language') <span class="text-danger">*</span></label>
+                                    <select class="select2 m-b-10 select2-multiple" style="width: 100%" onchange="showfield1(this.options[this.selectedIndex].value)" multiple="multiple" data-placeholder="Please Select" required>
                                         <optgroup class="form-control" label="">
                                             <option value="">Please Select</option>
                                             <option value="bm">@lang('caseMgmt.attr.bm')</option>
@@ -130,9 +130,9 @@
                             </div>
                             <div class="col-sm-3 nopadding">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.grade')</label>
+                                    <label class="control-label">@lang('caseMgmt.attr.grade') <span class="text-danger">*</span></label>
                                     <div class="input-group">
-                                        <select class="form-control" tabindex="1">
+                                        <select class="form-control" tabindex="1" required>
                                             <option value="">Please Select</option>
                                             <option value="good">@lang('caseMgmt.attr.good')</option>
                                             <option value="intermediate">@lang('caseMgmt.attr.intermediate')</option>
@@ -149,8 +149,8 @@
                         <div class="row p-t-20">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.add_skills')</label>
-                                    <input type="text" id="add_skills" class="form-control">
+                                    <label class="control-label">@lang('caseMgmt.attr.add_skills') <span class="text-danger">*</span></label>
+                                    <input type="text" id="add_skills" class="form-control" required>
                                 </div>
                             </div>
                             <div class="col-md-4">

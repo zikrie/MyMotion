@@ -9,8 +9,8 @@
                         <div class="row p-t-20"> 
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.marriage_status')</label>
-                                    <select class="form-control">
+                                    <label class="control-label">@lang('caseMgmt.attr.marriage_status') <span class="text-danger">*</span></label>
+                                    <select class="form-control" required>
                                         <option value="">Please Select</option>
                                         <option value="yes">@lang('caseMgmt.attr.single')</option>
                                         <option value="no">@lang('caseMgmt.attr.married')</option>
@@ -22,8 +22,8 @@
 
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.partner_working')</label>
-                                    <select class="form-control">
+                                    <label class="control-label">@lang('caseMgmt.attr.partner_working') <span class="text-danger">*</span></label>
+                                    <select class="form-control" required>
                                         <option value="">Please Select</option>
                                         <option value="yes">@lang('caseMgmt.attr.yes')</option>
                                         <option value="no">@lang('caseMgmt.attr.no')</option>
@@ -34,11 +34,11 @@
                         <div class="row p-t-20">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.dependent_number')</label>
+                                    <label class="control-label">@lang('caseMgmt.attr.dependent_number') <span class="text-danger">*</span></label>
                                     <div class="row">
                                         <div class="col-sm-6 nopadding">
                                             <div class="form-group">
-                                               <select class="form-control">
+                                               <select class="form-control" required>
                                                     <option value="">Please Select</option>
                                                     <option value="wife">@lang('caseMgmt.attr.wife')</option>
                                                     <option value="not_school">@lang('caseMgmt.attr.not_school')</option>
@@ -52,7 +52,7 @@
                                         <div class="col-sm-6 nopadding">
                                             <div class="form-group">
                                                 <div class="input-group">
-                                                    <input type="text" class="form-control" id="noLiving" name="noLiving" value="" placeholder="Number of person">
+                                                    <input type="text" class="form-control" id="noLiving" name="noLiving" value="" placeholder="Number of person" required>
                                                     
                                                     <div class="input-group-append">
                                                         <button class="btn btn-success" type="button" onclick="dependentCost();"><i class="fa fa-plus"></i></button>
@@ -68,11 +68,11 @@
                         <div class="row p-t-20"> 
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.estimate_living_cost')</label>
+                                    <label class="control-label">@lang('caseMgmt.attr.estimate_living_cost') <span class="text-danger">*</span></label>
                                     <div class="row">
                                         <div class="col-sm-6 nopadding">
                                             <div class="form-group">
-                                                <select class="form-control">
+                                                <select class="form-control" required>
                                                     <option value="">Please Select</option>
                                                     <option value="accomodation">@lang('caseMgmt.attr.accomodation')</option>
                                                     <option value="education_loan">@lang('caseMgmt.attr.education_loan')</option>
@@ -84,7 +84,7 @@
                                         <div class="col-sm-6 nopadding">
                                             <div class="form-group">
                                                 <div class="input-group">
-                                                    <input type="text" class="form-control" id="rm_value" name="rm_value" value="" placeholder="RM">
+                                                    <input type="text" class="form-control" id="rm_value" name="rm_value" value="" placeholder="RM" required>
                                                     <div class="input-group-append">
                                                         <button class="btn btn-success" type="button" onclick="livingCost();"><i class="fa fa-plus"></i></button>
                                                     </div>
@@ -99,7 +99,7 @@
                         <div class="row p-t-20"> 
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.residence')</label>
+                                    <label class="control-label">@lang('caseMgmt.attr.residence') <span class="text-danger">*</span></label>
                                     <select name="select_opt" id="select_opt" class="form-control" onchange="showfield2(this.options[this.selectedIndex].value)" required> 
                                         <option value="">Please Select</option>
                                         <option value="yes">@lang('caseMgmt.attr.yes')</option>
@@ -109,12 +109,12 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group" id="divspecify3" style="display:none;">
-                                    <label class="control-label">If No, Please specify</label>
-                                    <input type="text" id="specify" class="form-control">
+                                    <label class="control-label">If No, Please specify<span class="text-danger">*</span></label>
+                                    <input type="text" id="specify" class="form-control" required>
                                 </div>
                                 <div class="form-group" id="divspecify4" style="display:none;">
-                                    <label class="control-label">@lang('caseMgmt.attr.residence_type')</label>
-                                    <select class="form-control">
+                                    <label class="control-label">@lang('caseMgmt.attr.residence_type') <span class="text-danger">*</span></label>
+                                    <select class="form-control" required>
                                         <option value="">Please Select</option>
                                         <option value="apartment">@lang('caseMgmt.attr.apartment')</option>
                                         <option value="terrace_house">@lang('caseMgmt.attr.terrace_house')</option>
@@ -129,8 +129,8 @@
                         <div class="row p-t-20"> 
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.monthly_finance')</label>
-                                    <select class="form-control">
+                                    <label class="control-label">@lang('caseMgmt.attr.monthly_finance') <span class="text-danger">*</span></label>
+                                    <select class="form-control" required>
                                         <option value="">Please Select</option>
                                         <option value="partner_income">@lang('caseMgmt.attr.partner_income')</option>
                                         <option value="baitulmal">@lang('caseMgmt.attr.baitulmal')</option>

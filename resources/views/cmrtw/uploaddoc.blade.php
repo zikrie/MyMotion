@@ -86,6 +86,7 @@
                                                             <i class=" preview btn_cancel_{{$cnt}} icon-close"></i>
                                                         </span>
                                                     </td>
+                                                    <td><a href='/viewdoc?docname='target="_blank"><i class="far fa-file-alt"></i></a></td>
                                                    
                                                    
                                                 </tr>
@@ -115,11 +116,12 @@
                                 <td id="select_database" style="display:none;">
                                     <select id="idtype_doc" class="form-control" name="idtype">
                                         <option value="" selected disable hidden></option>
-                                            @foreach($doclist as $data)
+                                            @foreach($alldoclist as $data)
                                                 <option value="{{ $data -> doctype}}|{{ $data -> doccat}}"> {{ $data -> docdescen}}</option>
                                             @endforeach
                                     </select>
                                 </td>
+                                
                             </tr>
                         </table>
                     </div>
@@ -130,6 +132,8 @@
                         <button type="submit" class="btn btn waves-effect waves-light btn-success">Upload </button>
                         <button type="button" id="add_doc" class="btn btn-secondary">Add Document</button>
                     </div>
+                
+                    
 
                 </div>
                 </div>
@@ -137,6 +141,16 @@
                 </div>
 
             </div>
+
+
+                <div class="form-actions">
+                <div class="row">
+                <div class="col-12">
+                        <button type="submit" class="btn btn waves-effect waves-light btn-success">Submit </button>
+                </div>
+                </div>
+                </div>
+
         </form>
 </div>
 </div>

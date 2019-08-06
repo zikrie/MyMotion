@@ -6,13 +6,13 @@
         <div class="row p-t-20">
             <div class="col-md-4">
                 <div class="form-group">
-                    <label for="example-text-input" class="col-form-label">@lang('ia.attr.work')</label>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="yes1" name="yes1" class="custom-control-input">
+                    <label for="example-text-input" class="col-form-label">@lang('ia.attr.work') <span class="text-danger">*</span></label>
+                    <div class="custom-control custom-radio" >
+                        <input type="radio" id="yes1" name="yes1" class="custom-control-input" required>
                         <label class="custom-control-label" for="yes1">@lang('caseMgmt.attr.yes')</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="no1" name="yes1" class="custom-control-input">
+                        <input type="radio" id="no1" name="yes1" class="custom-control-input" required>
                         <label class="custom-control-label" for="no1">@lang('caseMgmt.attr.no')</label>
                     </div>
                 </div>
@@ -22,8 +22,8 @@
             
             {{-- <div class="col-md-4">
                 <div class="form-group">   
-                    <label for="example-text-input" class="col-form-label">@lang('ia.attr.multiple')</label>
-                    <div class="custom-control custom-radio">
+                    <label for="example-text-input" class="col-form-label">@lang('ia.attr.multiple')<span class="text-danger">*</span></label>
+                    <div class="custom-control custom-radio" required>
                         <input type="radio" id="yes11" name="yes2" class="custom-control-input">
                         <label class="custom-control-label" for="yes11">@lang('caseMgmt.attr.yes')</label>
                     </div>
@@ -36,14 +36,14 @@
 
             <div class="col-md-4">
                 <div class="form-group">   
-                    <label for="example-text-input" class="col-form-label">@lang('ia.attr.multiple')</label>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="yes11" name="yes2" class="custom-control-input" onclick="show1();">
+                    <label for="example-text-input" class="col-form-label">@lang('ia.attr.multiple') <span class="text-danger">*</span></label>
+                    <div class="custom-control custom-radio" >
+                        <input type="radio" id="yes11" name="yes2" class="custom-control-input" onclick="show1();" required>
                         <label class="custom-control-label" for="yes11">@lang('caseMgmt.attr.yes')</label>
                     </div>
 
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="no11" name="yes2" class="custom-control-input" onclick="show2();">
+                    <div class="custom-control custom-radio" >
+                        <input type="radio" id="no11" name="yes2" class="custom-control-input" onclick="show2();" required>
                         <label class="custom-control-label" for="no11">@lang('caseMgmt.attr.no')</label>
                     </div>
                 </div>
@@ -55,14 +55,14 @@
                 <div class="row p-t-20">
                     <div class="col-md-6">
                         <div class="form-group">
-                                <label class="control-label">@lang('ia.attr.positionName')</label>
-                                <input type="text" id="name" class="form-control">
+                                <label class="control-label">@lang('ia.attr.positionName') <span class="text-danger">*</span></label>
+                                <input type="text" id="name" class="form-control" required>
                         </div>
                     </div>     
                     <div class="col-md-6">
                         <div class="form-group">                     
-                            <label class="control-label">@lang('ia.attr.categoryType')</label>
-                            <input type="text" id="name" class="form-control">
+                            <label class="control-label">@lang('ia.attr.categoryType') <span class="text-danger">*</span></label>
+                            <input type="text" id="name" class="form-control" required>
                         </div>
                     </div>
                 </div>
@@ -70,7 +70,7 @@
                 <div class="row p-t-20">                  
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label class="control-label">@lang('ia.attr.industry')</label>
+                            <label class="control-label">@lang('ia.attr.industry') <span class="text-danger">*</span></label>
                             <select class="form-control select" id="industri" name='industri' onchange="industry(this.options[this.selectedIndex].value)" required>
                                 <option value="">Please Select</option>
                                 <option value="pertanian">Agriculture</option>
@@ -96,8 +96,8 @@
                     <div class="col-md-6">
                         <div class="form-group"> 
                             <div id="othersHide" class="form-group" style="display:none">                   
-                                <label class="control-label">@lang('caseMgmt.attr.specify')</label>
-                                <input type="text" id="otherNotMulti" class="form-control">
+                                <label class="control-label">@lang('caseMgmt.attr.specify') <span class="text-danger">*</span></label>
+                                <input type="text" id="otherNotMulti" class="form-control" required>
                             </div>
                         </div>
                     </div>                      
@@ -105,13 +105,13 @@
                 <div class="row p-t-20">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label class="control-label">@lang('ia.attr.numbersOfWorking')</label>
-                            <input type="text" id="name" class="form-control">
+                            <label class="control-label">@lang('ia.attr.numbersOfWorking') <span class="text-danger">*</span></label>
+                            <input type="text" id="name" class="form-control" required>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label class="control-label">@lang('ia.attr.workingHours')</label>
+                            <label class="control-label">@lang('ia.attr.workingHours') <span class="text-danger">*</span></label>
                             <select class="form-control select"  required>
                                 <option value="">Please Select</option>
                                 <option value="">Normal Working Hours</option>
@@ -121,32 +121,32 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">   
-                            <label for="example-text-input" class="col-form-label">@lang('ia.attr.fulltimeWorkingAbility')</label>
+                            <label for="example-text-input" class="col-form-label">@lang('ia.attr.fulltimeWorkingAbility') <span class="text-danger">*</span></label>
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="yes111" name="yes22" class="custom-control-input">
+                                <input type="radio" id="yes111" name="yes22" class="custom-control-input" required>
                                 <label class="custom-control-label" for="yes111">@lang('ia.attr.yes')</label>
                             </div>
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="no111" name="yes22" class="custom-control-input" >
+                                <input type="radio" id="no111" name="yes22" class="custom-control-input"required>
                                 <label class="custom-control-label" for="no111">@lang('ia.attr.no')</label>
                             </div>
                         </div>
                     </div> 
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label class="control-label">@lang('ia.attr.hoursOfDay')</label>
-                            <input type="text" id="jam" class="form-control">
+                            <label class="control-label">@lang('ia.attr.hoursOfDay') <span class="text-danger">*</span></label>
+                            <input type="text" id="jam" class="form-control" required>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label class="control-label">@lang('ia.attr.scopeOfTasks')</label>
-                            <input type="text" id="skop" class="form-control">
+                            <label class="control-label">@lang('ia.attr.scopeOfTasks') <span class="text-danger">*</span></label>
+                            <input type="text" id="skop" class="form-control" required>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label class="control-label">@lang('ia.attr.wagesPayment')</label>
+                            <label class="control-label">@lang('ia.attr.wagesPayment') <span class="text-danger">*</span></label>
                             <select class="form-control select"  required>
                                 <option value="">Please Select</option>
                                 <option value="">Monthly Rate</option>
@@ -156,27 +156,27 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label class="control-label">@lang('ia.attr.finalSalary')</label>
-                            <input type="text" id="gaji" class="form-control" value="RM">
+                            <label class="control-label">@lang('ia.attr.finalSalary') <span class="text-danger">*</span></label>
+                            <input type="text" id="gaji" class="form-control" value="RM" required>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">   
-                            <label for="example-text-input" class="col-form-label">@lang('ia.attr.medicalLeave')</label>
+                            <label for="example-text-input" class="col-form-label">@lang('ia.attr.medicalLeave') <span class="text-danger">*</span></label>
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="yes1111" name="yes222" class="custom-control-input">
+                                <input type="radio" id="yes1111" name="yes222" class="custom-control-input" required>
                                 <label class="custom-control-label" for="yes1111">@lang('ia.attr.yes')</label>
                             </div>
         
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="no1111" name="yes222" class="custom-control-input" >
+                                <input type="radio" id="no1111" name="yes222" class="custom-control-input" required>
                                 <label class="custom-control-label" for="no1111">@lang('ia.attr.no')</label>
                             </div>
                         </div>
                     </div> 
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label class="control-label">@lang('ia.attr.statusSalary')</label>
+                            <label class="control-label">@lang('ia.attr.statusSalary') <span class="text-danger">*</span></label>
                             <select class="form-control select"  required>
                                 <option value="">Please Select</option>
                                 <option value="">Full Salary</option>
@@ -199,28 +199,28 @@
                 <div class="row p-t-20">
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label class="control-label">@lang('ia.attr.employersName')</label>
-                            <input type="text" id="majikan" class="form-control">
+                            <label class="control-label">@lang('ia.attr.employersName') <span class="text-danger">*</span></label>
+                            <input type="text" id="majikan" class="form-control" required>
                         </div>
                     </div>
 
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label class="control-label">@lang('ia.attr.position')</label>
-                            <input type="text" id="jawatan" class="form-control">
+                            <label class="control-label">@lang('ia.attr.position') <span class="text-danger">*</span></label>
+                            <input type="text" id="jawatan" class="form-control" required>
                         </div>
                     </div>
 
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label class="control-label">@lang('ia.attr.income')</label>
-                            <input type="text" id="pendapatan" class="form-control">
+                            <label class="control-label">@lang('ia.attr.income') <span class="text-danger">*</span></label>
+                            <input type="text" id="pendapatan" class="form-control" required>
                         </div>
                     </div>
 
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label class="control-label">@lang('ia.attr.durationOfEmployment')</label>
+                            <label class="control-label">@lang('ia.attr.durationOfEmployment') <span class="text-danger">*</span></label>
                             <select class="form-control select"  required>
                                 <option value="">Please Select</option>
                                 <option value="">Less than a year</option>
@@ -233,7 +233,7 @@
 
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label class="control-label">@lang('ia.attr.reasonToQuit')</label>
+                            <label class="control-label">@lang('ia.attr.reasonToQuit') <span class="text-danger">*</span></label>
                             <select class="form-control select"  required>
                                 <option value="">Please Select</option>
                                 <option value="">Career advancement</option>
@@ -244,7 +244,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <label class="control-label">Add Work History</label>
+                        <label class="control-label">Add Work History</label><span class="text-danger">*</span>
                         <div class="input-group">
                             <div class="input-group-append">
                                 <button class="btn btn-success" type="button" onclick="multiple_workHistory1();"><i class="fa fa-plus"></i></button>
@@ -260,13 +260,13 @@
                 <div class="row p-t-20">
                     <div class="col-md-6">
                         <div class="form-group">
-                                <label class="control-label">@lang('ia.attr.positionName')</label>
+                                <label class="control-label">@lang('ia.attr.positionName') <span class="text-danger">*</span></label>
                                 <input type="text" id="name" class="form-control">
                         </div>
                     </div>     
                     <div class="col-md-6">
                         <div class="form-group">                     
-                            <label class="control-label">@lang('ia.attr.categoryType')</label>
+                            <label class="control-label">@lang('ia.attr.categoryType') <span class="text-danger">*</span></label>
                             <input type="text" id="name" class="form-control">
                         </div>
                     </div>
@@ -274,7 +274,7 @@
                 <div class="row p-t-20">                  
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label class="control-label">@lang('ia.attr.industry')</label>
+                            <label class="control-label">@lang('ia.attr.industry') <span class="text-danger">*</span></label>
                             <select class="form-control select" id="bankloc" name='bankloc' onchange="industry1(this.options[this.selectedIndex].value)" required>
                                 <option value="">Please Select</option>
                                 <option value="pertanian">Agriculture</option>
@@ -300,20 +300,20 @@
                     <div class="col-md-4">
                         <div class="form-group">
                             <div id="othersHide1" class="form-group" style="display:none">                    
-                                <label class="control-label">@lang('caseMgmt.attr.specify')</label>
+                                <label class="control-label">@lang('caseMgmt.attr.specify') <span class="text-danger">*</span></label>
                                 <input type="text" id="otherMulti" class="form-control">
                             </div>
                         </div>
                     </div>                      
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label class="control-label">@lang('ia.attr.numbersOfWorking')</label>
+                            <label class="control-label">@lang('ia.attr.numbersOfWorking') <span class="text-danger">*</span></label>
                             <input type="text" id="name" class="form-control">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label class="control-label">@lang('ia.attr.workingHours')</label>
+                            <label class="control-label">@lang('ia.attr.workingHours') <span class="text-danger">*</span></label>
                             <select class="form-control select"  required>
                                 <option value="">Please Select</option>
                                 <option value="">Normal Working Hours</option>
@@ -323,33 +323,33 @@
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">   
-                            <label for="example-text-input" class="col-form-label">@lang('ia.attr.fulltimeWorkingAbility')</label>
+                            <label for="example-text-input" class="col-form-label">@lang('ia.attr.fulltimeWorkingAbility') <span class="text-danger">*</span></label>
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="yes123" name="yes223" class="custom-control-input">
+                                <input type="radio" id="yes123" name="yes223" class="custom-control-input" required>
                                 <label class="custom-control-label" for="yes123">@lang('ia.attr.yes')</label>
                             </div>
         
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="no123" name="yes223" class="custom-control-input" >
+                                <input type="radio" id="no123" name="yes223" class="custom-control-input" required >
                                 <label class="custom-control-label" for="no123">@lang('ia.attr.no')</label>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label class="control-label">@lang('ia.attr.hoursOfDay')</label>
+                            <label class="control-label">@lang('ia.attr.hoursOfDay') <span class="text-danger">*</span></label>
                             <input type="text" id="jam" class="form-control">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label class="control-label">@lang('ia.attr.scopeOfTasks')</label>
+                            <label class="control-label">@lang('ia.attr.scopeOfTasks') <span class="text-danger">*</span></label>
                             <input type="text" id="skop" class="form-control">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label class="control-label">@lang('ia.attr.wagesPayment')</label>
+                            <label class="control-label">@lang('ia.attr.wagesPayment') <span class="text-danger">*</span></label>
                             <select class="form-control select"  required>
                                 <option value="">Please Select</option>
                                 <option value="">Monthly Rate</option>
@@ -359,26 +359,26 @@
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label class="control-label">@lang('ia.attr.finalSalary')</label>
+                            <label class="control-label">@lang('ia.attr.finalSalary') <span class="text-danger">*</span></label>
                             <input type="text" id="gaji" class="form-control" value="RM">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">   
-                            <label for="example-text-input" class="col-form-label">@lang('ia.attr.medicalLeave')</label>
+                            <label for="example-text-input" class="col-form-label">@lang('ia.attr.medicalLeave') <span class="text-danger">*</span></label>
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="yes11111" name="yes2222" class="custom-control-input">
+                                <input type="radio" id="yes11111" name="yes2222" class="custom-control-input" required>
                                 <label class="custom-control-label" for="yes11111">@lang('ia.attr.yes')</label>
                             </div>
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="no11111" name="yes2222" class="custom-control-input" >
+                                <input type="radio" id="no11111" name="yes2222" class="custom-control-input" required >
                                 <label class="custom-control-label" for="no11111">@lang('ia.attr.no')</label>
                             </div>
                         </div>
                     </div> 
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label class="control-label">@lang('ia.attr.statusSalary')</label>
+                            <label class="control-label">@lang('ia.attr.statusSalary') <span class="text-danger">*</span></label>
                             <select class="form-control select"  required>
                                 <option value="">Please Select</option>
                                 <option value="">Full Salary</option>
@@ -394,7 +394,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <label class="control-label">Add Other Employment Details</label>
+                        <label class="control-label">Add Other Employment Details <span class="text-danger">*</span></label>
                         <div class="input-group">
                             <div class="input-group-append">
                                 <button class="btn btn-success" type="button" onclick="multiple_work();"><i class="fa fa-plus"></i></button>

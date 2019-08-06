@@ -10,18 +10,18 @@
                         <div class="row p-t-20">
                             <div class="col-md-4"> 
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.face_limitation')</label>
-                                    <input type="text" id="face_limitation" class="form-control">
+                                    <label class="control-label">@lang('caseMgmt.attr.face_limitation') <span class="text-danger">*</span></label>
+                                    <input type="text" id="face_limitation" class="form-control" required>
                                 </div>
                             </div>
                             <div class="col-md-4"> 
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.ob_equipment')</label>
-                                    <div class="custom-control custom-radio">
+                                    <label class="control-label">@lang('caseMgmt.attr.ob_equipment')<span class="text-danger">*</span></label>
+                                    <div class="custom-control custom-radio" required>
                                         <input type="radio" id="yes22" name="yes21" class="custom-control-input" onclick="DCYesNo1()">
                                         <label class="custom-control-label" for="yes22">@lang('caseMgmt.attr.yes')</label>
                                     </div>
-                                    <div class="custom-control custom-radio">
+                                    <div class="custom-control custom-radio" required>
                                         <input type="radio" id="no22" name="yes21" class="custom-control-input" onclick="DCYesNo2()">
                                         <label class="custom-control-label" for="no22">@lang('caseMgmt.attr.no')</label>
                                     </div>
@@ -30,8 +30,8 @@
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <div id="hideEquip" class="form-group" style="display:none">
-                                        <label class="control-label">@lang('caseMgmt.attr.equipment')</label>
-                                        <select class="form-control" tabindex="1">
+                                        <label class="control-label">@lang('caseMgmt.attr.equipment')<span class="text-danger">*</span></label>
+                                        <select class="form-control" tabindex="1" required>
                                             <option value="">Please Select</option>
                                             <option value="orthotic">@lang('caseMgmt.attr.orthotic')</option>
                                             <option value="prosthetic">@lang('caseMgmt.attr.prosthetic')</option>

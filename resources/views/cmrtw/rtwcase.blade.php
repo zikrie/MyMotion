@@ -268,6 +268,7 @@
                     </div>
                     <div class="col-md-12">
                         <div class="form-group">
+<<<<<<< HEAD
                            @if(!empty($casertw) && $casertw->add2 != '')
                            <input type="text" id="add2" name="add2" value="{{ $casertw->add2 }}" class="form-control clearFields">
                            @else
@@ -278,9 +279,21 @@
                    <div class="col-md-12">
                     <div class="form-group">
                         <input type="text" id="add3" name="add3" value="" class="form-control clearFields">
+=======
+                            @if(!empty($casertw) && $casertw->add2 != '')
+                            <input type="text" id="add2" name="add2" value="{{ $casertw->add2 }}" class="form-control clearFields">
+                            @else
+                            <input type="text" id="add2" name="add2" value="" class="form-control clearFields">
+                            @endif
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <input type="text" id="add3" name="add3" value="" class="form-control clearFields">
+                        </div>
+>>>>>>> f3b63c834ff04ef861a5ac8d23794f58b957017e
                     </div>
                 </div>
-            </div>
             <div class='row'>
                 <div class="col-md-4">
                     <div class="form-group">

@@ -10,8 +10,8 @@
                     <div class="row p-t-20">
                         <div class="col-md-6"> 
                             <div class="form-group">
-                                <label class="control-label">@lang('caseMgmt.attr.appointment_confirm')</label>
-                                 <select class="form-control">
+                                <label class="control-label">@lang('caseMgmt.attr.appointment_confirm') <span class="text-danger">*</span></label>
+                                 <select class="form-control" required>
                                     <option value="">Please Select</option>
                                     <option value="yes">@lang('caseMgmt.attr.yes')</option>
                                     <option value="no">@lang('caseMgmt.attr.no')</option>
@@ -23,23 +23,23 @@
                         <!-- allow multiple -->
                         <div class="col-md-3"> 
                             <div class="form-group">
-                                <label class="control-label">@lang('caseMgmt.attr.appointment_date')</label>
-                                <input type="date" id="appointment_date" class="form-control"> 
+                                <label class="control-label">@lang('caseMgmt.attr.appointment_date') <span class="text-danger">*</span></label>
+                                <input type="date" id="appointment_date" class="form-control" required> 
                             </div>
                         </div>
                         <!-- allow multiple -->
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label class="control-label">@lang('caseMgmt.attr.treatment_place')</label>
-                                <input type="text" id="treatment_place" class="form-control">
+                                <label class="control-label">@lang('caseMgmt.attr.treatment_place') <span class="text-danger">*</span></label>
+                                <input type="text" id="treatment_place" class="form-control" required>
                                
                             </div>
                         </div>
                         <!-- allow multiple -->
                         <div class="col-md-3"> 
                             <div class="form-group">
-                                <label class="control-label">@lang('caseMgmt.attr.department_name')</label>
-                                <select class="form-control" tabindex="1">
+                                <label class="control-label">@lang('caseMgmt.attr.department_name') <span class="text-danger">*</span></label>
+                                <select class="form-control" tabindex="1" required>
                                     <option value="">Please Select</option>
                                     <option value="general_department">@lang('caseMgmt.attr.general_department')</option>
                                     <option value="rehab_department">@lang('caseMgmt.attr.rehab_department')</option>
@@ -60,9 +60,9 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label class="control-label">@lang('caseMgmt.attr.treatment_Dr_name')</label>
-                                <div class="input-group">
-                                    <input type="text" id="treatment_Dr_name" class="form-control">
+                                <label class="control-label">@lang('caseMgmt.attr.treatment_Dr_name') <span class="text-danger">*</span></label>
+                                <div class="input-group" required>
+                                    <input type="text" id="treatment_Dr_name" class="form-control" required>
                                     <div class="input-group-append">
                                         <button class="btn btn-success" type="button" onclick="treatmentAppointment();"><i class="fa fa-plus"></i></button>
                                     </div>

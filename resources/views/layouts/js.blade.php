@@ -223,6 +223,12 @@
             'copy', 'csv', 'excel', 'pdf', 'print'
         ]
     });
+    $('#workbasketRTW').DataTable({
+        dom: 'Bfrtip',
+        buttons: [
+            'copy', 'csv', 'excel', 'pdf', 'print'
+        ]
+    });
     $('.buttons-copy, .buttons-csv, .buttons-print, .buttons-pdf, .buttons-excel').addClass('btn btn-primary mr-1');
 
 
@@ -486,6 +492,7 @@ function remove_addDisabled(rid) {
             $('#hideResult').hide(); 
         }
     }
+<<<<<<< HEAD
 
     function myFunctionReport(aval) {
         if (aval == "Others") {
@@ -503,3 +510,6 @@ function remove_addDisabled(rid) {
         }
     }
 </script>
+=======
+</script>
+>>>>>>> f3b63c834ff04ef861a5ac8d23794f58b957017e

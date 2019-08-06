@@ -2,7 +2,7 @@
  
 return [
 
-    'title1' => 'Follow Up',
+    'title1' => 'Confirmation',
 	'title' => 'Offer Confirmation',
 
 
@@ -24,9 +24,9 @@ return [
         'chinese' => 'Chinese',
         'indian' => 'Indian',
         'others' => 'Others',
-          'male' => 'Male',
+        'male' => 'Male',
         'female' => 'Female',
-        'resource' => 'Resource',
+        'resource' => 'Source Offer Method',
         'letter' => 'Letter',
         'email' => 'Email',
         'telephone' => 'Telephone',

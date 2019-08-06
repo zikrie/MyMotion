@@ -35,23 +35,12 @@
                                         <th>:</th>
                                         <th></th>
                                     </tr>
-                                    <tr>
-                                        <th><label>Receive Date/Submission Date</label></th>
-                                        <th>:</th>
-                                        <th></th>
-                                    </tr>
-                                    <tr>
-                                        <th><label>Source From</label></th>
-                                        <th>:</th>
-                                        <th></th>
-                                    </tr>
                                     </thead>
                                 </table>
                             </div>
                     </div>
                 </div>
             </div>
-            <h4 class="card-title">Return To Work</h4>
             <!-- <div class="row">
             <div class="col-md-12">
                 <div class="card" >
@@ -93,6 +82,9 @@
             <ul class="nav nav-tabs" role="tablist" >
                <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#registerrtw" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('index.attr.registration_application')</span></a> </li>
                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#ia" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Initial Assessment</span></a></li>
+               <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#ipDetails" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Case Management</span></a></li>
+               <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#contact_act" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Contact Activity</span></a></li>
+               <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#generalRemarks" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Remarks</span></a></li>
            </ul>
            <!-- Nav tabs -->
                 <div class="tab-content tabcontent-border">
@@ -149,8 +141,42 @@
                             </div>
                         </div>       
                     </div>
+
+                    {{-- Case Management Tab --}}
+                    <div class="tab-pane p-20" id="ipDetails" role="tabpanel">
+                            
+                        <div class="tab-content tabcontent-border">
+                          <!-- insured details tab -->
+                          <div class="tab-pane p-20 active" id="ipDetails" role="tabpanel">
+                            @include('cmrtw.caseMgmt.ipDetails')
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane p-20" id="contact_act" role="tabpanel">
+                            
+                        <div class="tab-content tabcontent-border">
+                          <!-- insured details tab -->
+                          <div class="tab-pane p-20 active" id="contact_act" role="tabpanel">
+                            @include('cmrtw.contact_activity')
+                          </div>
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane p-20" id="generalRemarks" role="tabpanel">
+                            
+                        <div class="tab-content tabcontent-border">
+                          <!-- insured details tab -->
+                          <div class="tab-pane p-20 active" id="generalRemarks" role="tabpanel">
+                            @include('cmrtw.cmrtwRemarks')
+                          </div>
+
+                        </div>
+                    </div>
+
                 </div>
-            </div>
+
         </div>
     </div>
 </div>

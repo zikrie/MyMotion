@@ -12,6 +12,7 @@
                     {{-- @include('cmrtw.IA.rehabPlan.summaryOfInitioalRehab')   --}}
                 </form>
             </div>
+            <div id="printAssessmentSummary">
             <br/>
             <br/>
             <br/>
@@ -22,9 +23,9 @@
             <br/>
             <br/>
             <br/>
-            
+            </div>
                 <div class="col-12">
-                    <button  onclick="printFunction()" style="margin:5px;" type="button" class="btn btn-primary" >Print Initial Assessment Summary</button>
+                    <button  onclick="printDiv('printAssessmentSummary')" style="margin:5px;" type="button" class="btn btn-primary" >Print Initial Assessment Summary</button>
                 </div>
            
 
@@ -89,11 +90,14 @@
 
 
 <script>
+    function printDiv(divName) {
+     var printContents = document.getElementById(divName).innerHTML;
+     var originalContents = document.body.innerHTML;
 
-function printFunction() 
-{
-  window.print();
+     document.body.innerHTML = printContents;
+
+     window.print();
+
+     document.body.innerHTML = originalContents;
 }
-
-
-</script> 
+</script>

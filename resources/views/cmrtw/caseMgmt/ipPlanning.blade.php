@@ -16,11 +16,12 @@
                                                     <table id="example231" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
                                                                 <thead>
                                                                     <tr>
-                                                                        <th>@lang('caseMgmt.attr.no')</th>
+                                                                         <th>@lang('caseMgmt.attr.no')</th>
                                                                         <th>@lang('caseMgmt.attr.rehab_plan')</th>
                                                                         <th>@lang('caseMgmt.attr.start_time_suggest')</th>
                                                                         <th>@lang('caseMgmt.attr.estimation_cost')</th>
-                                                                        <th>@lang('caseMgmt.attr.status')</th>
+                                                                        <th>@lang('caseMgmt.attr.status')</th> 
+                                                                        
                                                                     </tr>
                                                                 </thead>
                                                                 

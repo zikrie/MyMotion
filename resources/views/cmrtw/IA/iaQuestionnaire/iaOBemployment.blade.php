@@ -6,14 +6,14 @@
             <div class="row">
                 <div class="col-sm-3 nopadding">
                     <div class="form-group">
-                        <label class="control-label">@lang('ia.attr.job')</label>
-                        <input type="text" class="form-control" id="job" name="job[]" value="" placeholder="Job of interest">
+                        <label class="control-label">@lang('ia.attr.job') <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="job" name="job[]" value="" placeholder="Job of interest" required>
                     </div>
                 </div>
                 <div class="col-sm-3 nopadding">
                     <div class="form-group">
-                        <label class="control-label">@lang('registrationRTW.attr.state')</label>
-                            <select class="form-control" tabindex="1">
+                        <label class="control-label">@lang('registrationRTW.attr.state') <span class="text-danger">*</span></label>
+                            <select class="form-control" tabindex="1" required>
                                 <option value="Johor">Please Select State</option>
                                 <option value="Johor">Johor</option>
                                 <option value="Kedah">Kedah</option>
@@ -36,9 +36,9 @@
                 </div>
                 <div class="col-sm-3 nopadding">
                     <div class="form-group">
-                        <label class="control-label">@lang('registrationRTW.attr.city')</label>
+                        <label class="control-label">@lang('registrationRTW.attr.city') <span class="text-danger">*</span></label>
                         <div class="input-group">
-                            <input type="text" class="form-control" id="city" name="city[]" value="" placeholder="city">
+                            <input type="text" class="form-control" id="city" name="city[]" value="" placeholder="city" required>
                             <div class="input-group-append">
                                 <button class="btn btn-success" type="button" onclick="education_fields();"><i class="fa fa-plus"></i></button>
                             </div>

@@ -11,7 +11,7 @@
 
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.interested_work')</label>
+                                    <label class="control-label">@lang('caseMgmt.attr.interested_work') <span class="text-danger">*</span></label>
                                     <select class="form-control" onchange="workMotivationYesNo(this.options[this.selectedIndex].value)" required>
                                         
                                         <option value="">Please Select</option>
@@ -24,7 +24,7 @@
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <div id="hiddenDiv" class="form-group" style="display:none">
-                                        <label class="control-label">@lang('caseMgmt.attr.reason')</label>
+                                        <label class="control-label">@lang('caseMgmt.attr.reason') <span class="text-danger">*</span></label>
                                         <select class="form-control" onchange="workMotivation(this.options[this.selectedIndex].value)" required>
                                             <option value="">Please Select</option>
                                             <option value="age">@lang('caseMgmt.attr.age')</option>
@@ -37,8 +37,8 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group" id="workMotivationOther" style="display:none;">
-                                    <label class="control-label">@lang('caseMgmt.attr.specify')</label>
-                                    <input type="text" id="workMotivationSpecify" class="form-control">
+                                    <label class="control-label">@lang('caseMgmt.attr.specify') <span class="text-danger">*</span></label>
+                                    <input type="text" id="workMotivationSpecify" class="form-control" required >
                                 </div>
                             </div>
 

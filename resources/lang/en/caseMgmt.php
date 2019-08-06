@@ -414,14 +414,100 @@ return [
 
         //ipAgreement
         'ip_decision' => 'Insured Person Decision',
-        'permission_letter' => 'Permission Letter',
         'date_agreement' => 'Date',
-        'casemgr_name' => 'Case Manager Name',
         
         //workMotivation
         'age' => 'Age',
         'workAlone' => 'Prefer to Work Alone',
         'others' => 'Others',
+
+
+
+        //planList
+        'rehab_plan' => 'Rehab Plan',
+        'start_time_suggest' => 'Start Time Suggestion',
+        'estimation_cost' => 'Estimation Cost (RM)',
+        'status' => 'Status',
+        'wsa' => 'WSA',
+        'fce' => 'FCE',
+        'prm' => 'PRM',
+        'mm' => 'MM',
+        'vtm' => 'VTM',
+        'jp' => 'JP',
+        'financial' => 'Financial/Business Support',
+
+        //wsa
+        'general_details' => 'General Details',
+        'ipemp_permission' => 'Insured Person/Employer Permission',
+        'job_details' => 'Insured Person Job Details',
+        'wsa_permission' => 'Permission to do WSA',
+        'option_ip' => 'Insured Person does not allow',
+        'option_geo' => 'Geography and safety Issue',
+        'option_quit' => 'Insured Person quits his job',
+        'option_unreachable' => 'Insured Person is unreachable',
+        'position_name' => 'Position Name',
+        'category_osi' => 'Category Type (OSI)',
+        'industry' => 'Industry',
+        'total_working' => 'Total Working Days(one week)',
+        'working_time' => 'Working Time',
+        'ot_time' => 'Overtime',
+        'rest_time' => 'Rest Time',
+        'machinery' => 'Type of machinery used',
+        'total_hour' => 'Total hours per day',
+        'jobscope' => 'Jobscope',
+        'last_salary' => 'Last Salary(RM) ',
+        'job_history' => 'Job History ',
+        'describe_job_history' => 'Job History Description',
+        'm_question' => 'Do you accept medical leave?',
+        'payment_salary_status' => 'Salary Status',
+        
+        //guarantee_letter
+        'gl_letter' => 'Guarantee Letter Details',
+        'recommend_cm' => 'Recommendation by Case Manager',
+        'scm_approval' => 'SCM HQ Approval',
+
+
+        //recommend_cm
+
+        'action' => 'Action',
+        'proceed' => 'Proceed',
+        'close' => 'Close',
+        'query_report' => 'Query Report',
+        'gl_status' => 'Guarantee Letter Status',
+        'approved' => 'Approved',
+        'not_approved' => 'Not Approved',
+        'postponed' => 'Postponed',
+        'approval_officer' => 'Approval Officer',
+        'approval_date' => 'Approval Date',
+        'glrefno' => 'GL Reference Number',
+        'supplier' => 'Supplier Details',
+        'supplier_list' => 'Supplier List',
+        'justification' => 'Choice Justification',
+        'previous_gl' => 'Previous GL Details',
+        'plan_type' => 'Plan Type',
+        'gl_number' => 'Guarantee Letter Number',
+        'gl_type' => 'Type of Guarantee Letter',
+        'service_type' => 'Type of Service',
+        'ob_recovery' => 'Objective of Recovery',
+        'valid_from' => 'Valid From',
+        'valid_to' => 'Valid To',
+        'advanced_justification' => 'Advanced Justification',
+        'prepared_by' => 'Prepared By',
+        'prepared_for' => 'Prepared For',
+        'supplier_name' => 'Supplier Name',
+
+        //case_note
+        'activity_date' => 'Activity Date',
+        'title' => 'Title',
+        'description' => 'Description',
+
+
+        //case_status
+        'rtw_status' => 'RTW Status',
+        'case_status_details' => 'Case Status Details',
+        'rtw_date' => 'Return to Work Date',
+        'hierarchy_rtw' => 'Hierarchy RTW',
+
         
         
 

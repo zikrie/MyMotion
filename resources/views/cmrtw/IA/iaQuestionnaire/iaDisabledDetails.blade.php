@@ -10,7 +10,7 @@
                         <div class="row p-t-20">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.disabled_card')</label>
+                                    <label class="control-label">@lang('caseMgmt.attr.disabled_card') <span class="text-danger">*</span></label>
                                     <select class="form-control" onchange="DCCate(this.options[this.selectedIndex].value)" required>
                                         <option value="">Please Select</option>
                                         <option value="yes">@lang('caseMgmt.attr.yes')</option>
@@ -21,8 +21,8 @@
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <div id="hideCate" class="form-group" style="display:none">
-                                        <label class="control-label">@lang('caseMgmt.attr.disabled_category')</label>
-                                        <select class="form-control" tabindex="1">
+                                        <label class="control-label">@lang('caseMgmt.attr.disabled_category') <span class="text-danger">*</span></label>
+                                        <select class="form-control" tabindex="1" required>
                                             <option value="">Please Select</option>
                                             <option value="hearing">@lang('caseMgmt.attr.hearing')</option>
                                             <option value="vision">@lang('caseMgmt.attr.vision')</option>
@@ -39,7 +39,7 @@
                         <div class="row p-t-20">   
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.injury_ques')</label>
+                                    <label class="control-label">@lang('caseMgmt.attr.injury_ques') <span class="text-danger">*</span></label>
                                     <select class="form-control" onchange="DCYesNo(this.options[this.selectedIndex].value)" required>
                                         <option value="">Please Select</option>
                                         <option value="DCyes">@lang('caseMgmt.attr.yes')</option>
@@ -50,8 +50,8 @@
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <div id="hideInjury" class="form-group" style="display:none">
-                                        <label class="control-label">@lang('caseMgmt.attr.injury')</label>
-                                        <select class="form-control" tabindex="1">
+                                        <label class="control-label">@lang('caseMgmt.attr.injury') <span class="text-danger">*</span></label>
+                                        <select class="form-control" tabindex="1" required>
                                             <option value="">Please Select</option>
                                             <option value="head">@lang('caseMgmt.attr.head')</option>
                                             <option value="neck">@lang('caseMgmt.attr.neck')</option>
@@ -70,20 +70,20 @@
                         <div class="row p-t-20">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.diagnosis')</label>
-                                    <input type="text" id="diagnosis" class="form-control">
+                                    <label class="control-label">@lang('caseMgmt.attr.diagnosis') <span class="text-danger">*</span></label>
+                                    <input type="text" id="diagnosis" class="form-control" required>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.icd_10')</label>
-                                    <input type="text" id="icd_10" class="form-control">
+                                    <label class="control-label">@lang('caseMgmt.attr.icd_10') <span class="text-danger">*</span></label>
+                                    <input type="text" id="icd_10" class="form-control" required>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.injury_date')</label>
-                                    <div class="input-group">
+                                    <label class="control-label">@lang('caseMgmt.attr.injury_date') <span class="text-danger">*</span></label>
+                                    <div class="input-group" required>
                                         <input type="date" id="injury_date" class="form-control">
                                         <div class="input-group-append">
                                             <button class="btn btn-success" type="button" onclick="addDisabled();"><i class="fa fa-plus"></i></button>
@@ -96,7 +96,7 @@
                         <div class="row p-t-20">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.disease_ques')</label>
+                                    <label class="control-label">@lang('caseMgmt.attr.disease_ques') <span class="text-danger">*</span></label>
                                     <select class="form-control" onchange="diseaseFunc(this.options[this.selectedIndex].value)" required>
                                         <option value="">Please Select</option>
                                         <option value="diseaseYes">@lang('caseMgmt.attr.yes')</option>
@@ -107,7 +107,7 @@
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <div id="hideDisease" class="form-group" style="display:none">
-                                        <label class="control-label">@lang('caseMgmt.attr.disease')</label>
+                                        <label class="control-label">@lang('caseMgmt.attr.disease') <span class="text-danger">*</span></label>
                                         <select class="select2 m-b-10 select2-multiple" style="width: 100%;" multiple="multiple" onchange="diseaseSpec(this.options[this.selectedIndex].value)" required>
                                             <optgroup class="form-control" label="">
                                                 <option value="">Please Select</option>
@@ -128,7 +128,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div id="hideSpecifyD" class="form-group" style="display:none">
-                                    <label class="control-label">@lang('caseMgmt.attr.specify')</label>
+                                    <label class="control-label">@lang('caseMgmt.attr.specify') <span class="text-danger">*</span></label>
                                     <input type="text" id="disabledSpecify" class="form-control">
                                 </div>
                             </div>
@@ -136,7 +136,7 @@
                         <div class="row p-t-20">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.current_healthy')</label>
+                                    <label class="control-label">@lang('caseMgmt.attr.current_healthy') <span class="text-danger">*</span></label>
                                     <select class="form-control" tabindex="1" onchange="onRehabFunc(this.options[this.selectedIndex].value)" required>
                                         <option value="">Please Select</option>
                                         <option value="acute">@lang('caseMgmt.attr.acute')</option>
@@ -148,7 +148,7 @@
                             <div class="col-md-4">
                                 <div class="form-group">
                                 <div id="hideRehab" class="form-group" style="display:none">
-                                        <label class="control-label">@lang('caseMgmt.attr.health_ques')</label>
+                                        <label class="control-label">@lang('caseMgmt.attr.health_ques') <span class="text-danger">*</span></label>
                                         <select class="form-control" id="onRehabOptions" required>
                                             <option value="">Please Select</option>
                                             <option value="rtw">@lang('caseMgmt.attr.ready_work')</option>
@@ -161,7 +161,7 @@
                         <div class="row p-t-20">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.sexual_capability')</label>
+                                    <label class="control-label">@lang('caseMgmt.attr.sexual_capability') <span class="text-danger">*</span></label>
                                     <select class="form-control" id="sexual_capability" required>
                                         <option value="">Please Select</option>
                                         <option value="normal">@lang('caseMgmt.attr.normal')</option>

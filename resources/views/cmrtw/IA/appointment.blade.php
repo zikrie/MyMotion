@@ -3,101 +3,340 @@
         <div class="card">
             <div class="card-body"> 
                 <form class="form">
-                                    <!-- <h4 class="card-title">@lang('appointment.title')</h4>
-                                     <div class="form-group mt-5 row">
-                                        <div class="col-2">
-                                            <label for="example-text-input" class="col-form-label">@lang('appointment.attr.name')</label>
-                                        </div>
-                                        <div class="col-8">
-                                            <input class="form-control" type="text"  id="name" value="@if(!empty($casertw)){{ $casertw->name }} @endif" readonly>
-                                        </div>
-                                    </div>
-                                
-                                    <div class="form-group row">
-                                        <div class="col-2">
-                                            <label for="example-text-input" class="col-form-label">Identification No.</label>
-                                        </div>
-                                        <div class="col-8">
-                                            <input class="form-control" type="text"  id="idno" value="@if(!empty($casertw)){{ $casertw->idno }} @endif" readonly>
-                                        </div>
-                                    </div>
-                                      <div class="form-group row">
-                                        <div class="col-2">
-                                            <label for="example-text-input" class="col-form-label">@lang('appointment.attr.address')</label>
-                                        </div>
-                                        <div class="col-8">
-                                            <input class="form-control" type="text"  id="address" value="@if(!empty($casertw)){{ $casertw->add1 }} {{ $casertw->add2 }} {{ $casertw->city }}  @endif" readonly>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col-2">
-                                            <label for="example-text-input" class="col-form-label">@lang('appointment.attr.telephone')</label>
-                                        </div>
-                                        <div class="col-8">
-                                            <input class="form-control" type="text"  id="telephone" value="@if(!empty($casertw)){{ $casertw->telno }} @endif" readonly>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col-2">
-                                            <label for="example-text-input" class="col-form-label">@lang('appointment.attr.email')</label>
-                                        </div>
-                                        <div class="col-8">
-                                            <input class="form-control" type="text"  id="email" value="@if(!empty($casertw)){{ $casertw->email }} @endif" readonly>
-                                        </div>
-                                    </div> -->
+                    <h4 class="card-title">@lang('appointment.title')</h4>
+                        
+                    <div class="row p-t-20">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">@lang('appointment.attr.date')<span class="text-danger">*</span></label>
+                                <input class="form-control" type="date"  id="appointmentDate">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">@lang('appointment.attr.time')<span class="text-danger">*</span></label>
+                                <input class="form-control" type="time"  id="appointmentTime">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">@lang('appointment.attr.location')<span class="text-danger">*</span></label>
+                                <select class="form-control select " id="appointmentLocation" name='appointmentLocation' onchange="appointmentFunc(this.options[this.selectedIndex].value)">
+                                    <option value="">Please Select..</option>
+                                    <option value="insured_person_residential">@lang('appointment.attr.insured_person_residential')</option>
+                                    <option value="employer_premis">@lang('appointment.attr.employer_premis')</option>
+                                    <option value="socso_office">@lang('appointment.attr.socso_office')</option>
+                                    <option value="hospital">@lang('appointment.attr.hospital')</option>
+                                    <option value="appointmentOthers">@lang('appointment.attr.others')</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="hide_insured_person_residential" class="form-group " style="display:none">
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <label>@lang('registrationRtw.attr.address')<span class="text-danger">*</span></label>
+                                @if(!empty($casertw) && $casertw->add1 != '')
+                                <input type="text" id="add1" name="add1" value="{{ $casertw->add1 }}" class="form-control clearFields">
+                                @else
+                                <input type="text" id="add1" name="add1" value="" class="form-control clearFields">
+                                @endif
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                @if(!empty($casertw) && $casertw->add2 != '')
+                                <input type="text" id="add2" name="add2" value="{{ $casertw->add2 }}" class="form-control clearFields">
+                                @else
+                                <input type="text" id="add2" name="add2" value="" class="form-control clearFields">
+                                @endif
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <input type="text" id="add3" name="add3" value="" class="form-control clearFields">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-4">
+                                <label class="control-label">@lang('insuredPerson.attr.city')<span class="text-danger">*</span></label>
+                                <input type="text" id="city" name="city" value="" class="form-control clearFields">
+                            </div>
+                            <div class="col-md-4">
+                                <label class="control-label">@lang('insuredPerson.attr.state')<span class="text-danger">*</span></label>
+                                <select name='state' id='state' class='form-control'>
+                                    @foreach($state as $s)
+                                    @if(!empty($obprofile) && $obprofile->statecode == $s->refcode)
+                                    <option value='{{$s->refcode}}' selected>{{$s->descen}}</option>
+                                    @else
+                                    <option value='{{$s->refcode}}'>{{$s->descen}}</option>
+                                    @endif
+                                    @endforeach
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label>@lang('registrationRtw.attr.postcode')<span class="text-danger">*</span></label>
+                                @if(!empty($casertw) && $casertw->postcode != '')
+                                <input type="text" id="postcode" name="postcode" value="{{ $casertw->postcode }}" class="form-control clearFields">
+                                @else
+                                <input type="text" id="postcode" name="postcode" value="" class="form-control clearFields">
+                                @endif
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-4">
+                                <label>@lang('registrationRtw.attr.pobox')</label>
+                                @if(!empty($obprofile) && $obprofile->pobox != '')
+                                <input type="text" id="pobox" name="pobox" value="{{ $obprofile->pobox }}" class="form-control clearFields">
+                                @else
+                                <input type="text" id="pobox" name="pobox" value="" class="form-control clearFields">
+                                @endif
+                            </div>
+                            <div class="col-md-4">
+                                <label>@lang('registrationRtw.attr.lockedbag')</label>
+                                @if(!empty($obprofile) && $obprofile->lockedbag != '')
+                                <input type="text" id="lockedbag" name="lockedbag" value="{{ $obprofile->lockedbag }}" class="form-control clearFields">
+                                @else
+                                <input type="text" id="lockedbag" name="lockedbag" value="" class="form-control clearFields">
+                                @endif
+                            </div>
+                            <div class="col-md-4">
+                                <label>@lang('registrationRtw.attr.wdt')</label>
+                                @if(!empty($obprofile) && $obprofile->wdt != '')
+                                <input type="text" id="wdt" name="wdt" value="{{ $obprofile->wdt }}" class="form-control clearFields">
+                                @else
+                                <input type="text" id="wdt" name="wdt" value="" class="form-control clearFields">
+                                @endif
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="hide_employer_premis" class="form-group" style="display:none">
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <label class="control-label">@lang('registrationRTW.attr.compname')</label>
+                                <input type="text" id="name" class="form-control" value="@if(!empty($casertw)){{ $casertw->empname }} @endif">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <label>@lang('registrationRtw.attr.address')<span class="text-danger">*</span></label>
+                                @if(!empty($casertw) && $casertw->add1 != '')
+                                <input type="text" id="add1" name="add1" value="{{ $casertw->add1 }}" class="form-control clearFields">
+                                @else
+                                <input type="text" id="add1" name="add1" value="" class="form-control clearFields">
+                                @endif
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                @if(!empty($casertw) && $casertw->add2 != '')
+                                <input type="text" id="add2" name="add2" value="{{ $casertw->add2 }}" class="form-control clearFields">
+                                @else
+                                <input type="text" id="add2" name="add2" value="" class="form-control clearFields">
+                                @endif
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <input type="text" id="add3" name="add3" value="" class="form-control clearFields">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-4">
+                                <label class="control-label">@lang('insuredPerson.attr.city')<span class="text-danger">*</span></label>
+                                <input type="text" id="city" name="city" value="" class="form-control clearFields">
+                            </div>
+                            <div class="col-md-4">
+                                <label class="control-label">@lang('insuredPerson.attr.state')<span class="text-danger">*</span></label>
+                                <select name='state' id='state' class='form-control'>
+                                    @foreach($state as $s)
+                                    @if(!empty($obprofile) && $obprofile->statecode == $s->refcode)
+                                    <option value='{{$s->refcode}}' selected>{{$s->descen}}</option>
+                                    @else
+                                    <option value='{{$s->refcode}}'>{{$s->descen}}</option>
+                                    @endif
+                                    @endforeach
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label>@lang('registrationRtw.attr.postcode')<span class="text-danger">*</span></label>
+                                @if(!empty($casertw) && $casertw->postcode != '')
+                                <input type="text" id="postcode" name="postcode" value="{{ $casertw->postcode }}" class="form-control clearFields">
+                                @else
+                                <input type="text" id="postcode" name="postcode" value="" class="form-control clearFields">
+                                @endif
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-4">
+                                <label>@lang('registrationRtw.attr.pobox')</label>
+                                @if(!empty($obprofile) && $obprofile->pobox != '')
+                                <input type="text" id="pobox" name="pobox" value="{{ $obprofile->pobox }}" class="form-control clearFields">
+                                @else
+                                <input type="text" id="pobox" name="pobox" value="" class="form-control clearFields">
+                                @endif
+                            </div>
+                            <div class="col-md-4">
+                                <label>@lang('registrationRtw.attr.lockedbag')</label>
+                                @if(!empty($obprofile) && $obprofile->lockedbag != '')
+                                <input type="text" id="lockedbag" name="lockedbag" value="{{ $obprofile->lockedbag }}" class="form-control clearFields">
+                                @else
+                                <input type="text" id="lockedbag" name="lockedbag" value="" class="form-control clearFields">
+                                @endif
+                            </div>
+                            <div class="col-md-4">
+                                <label>@lang('registrationRtw.attr.wdt')</label>
+                                @if(!empty($obprofile) && $obprofile->wdt != '')
+                                <input type="text" id="wdt" name="wdt" value="{{ $obprofile->wdt }}" class="form-control clearFields">
+                                @else
+                                <input type="text" id="wdt" name="wdt" value="" class="form-control clearFields">
+                                @endif
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="hide_socso_office" class="form-group " style="display:none">
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label class="control-label">@lang('appointment.attr.socso_office')</label>
+                                <input class="form-control" type="text"  id="hosp_name">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="hide_hospital" class="form-group " style="display:none">
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label class="control-label">@lang('appointment.attr.hospital_name')</label>
+                                <input class="form-control" type="text"  id="hosp_name">
+                            </div>
+                            <div class="col-md-4">
+                                <label class="control-label">@lang('insuredPerson.attr.state')<span class="text-danger">*</span></label>
+                                <select name='state' id='state' class='form-control'>
+                                    @foreach($state as $s)
+                                    @if(!empty($obprofile) && $obprofile->statecode == $s->refcode)
+                                    <option value='{{$s->refcode}}' selected>{{$s->descen}}</option>
+                                    @else
+                                    <option value='{{$s->refcode}}'>{{$s->descen}}</option>
+                                    @endif
+                                    @endforeach
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="hide_others" class="form-group " style="display:none">
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <label>@lang('appointment.attr.name')<span class="text-danger">*</span></label>
+                                <input type="text" id="othersName" name="othersName" value="" class="form-control clearFields">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <label>@lang('registrationRtw.attr.address')<span class="text-danger">*</span></label>
+                                @if(!empty($casertw) && $casertw->add1 != '')
+                                <input type="text" id="add1" name="add1" value="{{ $casertw->add1 }}" class="form-control clearFields">
+                                @else
+                                <input type="text" id="add1" name="add1" value="" class="form-control clearFields">
+                                @endif
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                @if(!empty($casertw) && $casertw->add2 != '')
+                                <input type="text" id="add2" name="add2" value="{{ $casertw->add2 }}" class="form-control clearFields">
+                                @else
+                                <input type="text" id="add2" name="add2" value="" class="form-control clearFields">
+                                @endif
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <input type="text" id="add3" name="add3" value="" class="form-control clearFields">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-4">
+                                <label class="control-label">@lang('insuredPerson.attr.city')<span class="text-danger">*</span></label>
+                                <input type="text" id="city" name="city" value="" class="form-control clearFields">
+                            </div>
+                            <div class="col-md-4">
+                                <label class="control-label">@lang('insuredPerson.attr.state')<span class="text-danger">*</span></label>
+                                <select name='state' id='state' class='form-control'>
+                                    @foreach($state as $s)
+                                    @if(!empty($obprofile) && $obprofile->statecode == $s->refcode)
+                                    <option value='{{$s->refcode}}' selected>{{$s->descen}}</option>
+                                    @else
+                                    <option value='{{$s->refcode}}'>{{$s->descen}}</option>
+                                    @endif
+                                    @endforeach
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label>@lang('registrationRtw.attr.postcode')<span class="text-danger">*</span></label>
+                                @if(!empty($casertw) && $casertw->postcode != '')
+                                <input type="text" id="postcode" name="postcode" value="{{ $casertw->postcode }}" class="form-control clearFields">
+                                @else
+                                <input type="text" id="postcode" name="postcode" value="" class="form-control clearFields">
+                                @endif
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-4">
+                                <label>@lang('registrationRtw.attr.pobox')</label>
+                                @if(!empty($obprofile) && $obprofile->pobox != '')
+                                <input type="text" id="pobox" name="pobox" value="{{ $obprofile->pobox }}" class="form-control clearFields">
+                                @else
+                                <input type="text" id="pobox" name="pobox" value="" class="form-control clearFields">
+                                @endif
+                            </div>
+                            <div class="col-md-4">
+                                <label>@lang('registrationRtw.attr.lockedbag')</label>
+                                @if(!empty($obprofile) && $obprofile->lockedbag != '')
+                                <input type="text" id="lockedbag" name="lockedbag" value="{{ $obprofile->lockedbag }}" class="form-control clearFields">
+                                @else
+                                <input type="text" id="lockedbag" name="lockedbag" value="" class="form-control clearFields">
+                                @endif
+                            </div>
+                            <div class="col-md-4">
+                                <label>@lang('registrationRtw.attr.wdt')</label>
+                                @if(!empty($obprofile) && $obprofile->wdt != '')
+                                <input type="text" id="wdt" name="wdt" value="{{ $obprofile->wdt }}" class="form-control clearFields">
+                                @else
+                                <input type="text" id="wdt" name="wdt" value="" class="form-control clearFields">
+                                @endif
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row p-t-20">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="control-label">@lang('appointment.attr.remarks')</label>
+                                <textarea class="form-control clearFields" rows="5" type="textarea"  id="appointmentRemarks"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                
+                    
                                   
-              <div class="page-wrapper">
-            <!-- ============================================================== -->
-            <!-- Container fluid  -->
-            <!-- ============================================================== -->
+              <!-- <div class="page-wrapper">
+
             <div class="container-fluid">
-                <!-- ============================================================== -->
-                <!-- Bread crumb and right sidebar toggle -->
-                <!-- ============================================================== -->
+
                 <div class="row page-titles">
                     <div class="col-md-5 align-self-center">
                         <h4 class="text-themecolor">Calendar</h4>
                     </div>
               
                 </div>
-                <!-- ============================================================== -->
-                <!-- End Bread crumb and right sidebar toggle -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- Start Page Content -->
-                <!-- ============================================================== -->
+
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card">
                             <div class="">
                                 <div class="row">
-                                    {{-- <div class="col-lg-3">
-                                        <div class="card-body">
-                                            <h4 class="card-title m-t-10">Drag & Drop Event</h4>
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div id="calendar-events" class="">
-                                                        <div class="calendar-events" data-class="bg-info">
-                                                            <i class="fa fa-circle text-info"></i> My Event One</div>
-                                                        <div class="calendar-events" data-class="bg-success">
-                                                            <i class="fa fa-circle text-success"></i> My Event Two</div>
-                                                        <div class="calendar-events" data-class="bg-danger">
-                                                            <i class="fa fa-circle text-danger"></i> My Event Three</div>
-                                                        <div class="calendar-events" data-class="bg-warning">
-                                                            <i class="fa fa-circle text-warning"></i> My Event Four</div>
-                                                    </div>
-                                                    <!-- checkbox -->
-                                                    <div class="custom-control custom-checkbox m-l-10 m-t-10">
-                                                        <input type="checkbox" class="custom-control-input" id="drop-remove">
-                                                        <label class="custom-control-label" for="drop-remove">Remove after drop</label>
-                                                    </div>
-                                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#add-new-event" class="btn m-t-10 btn-info btn-block waves-effect waves-light">
-                                                        <i class="ti-plus"></i> Add New Event
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> --}}
                                     <div class="col-lg-12">
                                         <div class="card-body b-l calender-sidebar">
                                             <div id="calendar"></div>
@@ -108,7 +347,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- BEGIN MODAL -->
+
                 <div class="modal none-border" id="my-event">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -125,7 +364,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Modal Add Category -->
+
                 <div class="modal fade none-border" id="add-new-event">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -161,14 +400,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- END MODAL -->
-                <!-- ============================================================== -->
-                <!-- End PAge Content -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- Right sidebar -->
-                <!-- ============================================================== -->
-                <!-- .right-sidebar -->
+
                 <div class="right-sidebar">
                     <div class="slimscrollright">
                         <div class="rpanel-title"> Service Panel <span><i class="ti-close right-side-toggle"></i></span> </div>
@@ -219,18 +451,23 @@
                         </div>
                     </div>
                 </div>
-                <!-- ============================================================== -->
-                <!-- End Right sidebar -->
-                <!-- ============================================================== -->
             </div>
-            <!-- ============================================================== -->
-            <!-- End Container fluid  -->
-            <!-- ============================================================== -->
-        </div>
+        </div> -->
                         
                     <div class="form-actions">
-                        {{-- <button type="button" class="btn btn waves-effect waves-light btn-secondary">@lang('offerconfirmation.attr.reset')</button> --}}
-                        <button type="submit" class="btn btn waves-effect waves-light btn-success">@lang('offerconfirmation.attr.submit')</button>
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <button type="button" class="btn btn waves-effect waves-light btn-success">@lang('appointment.save')</button>
+                                <button type="button" class="btn btn waves-effect waves-light btn-success">@lang('appointment.reschedule')</button>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <button type="button" class="btn btn waves-effect waves-light btn-success">@lang('appointment.generate_appointment_schedule')</button>
+                                <button type="button" class="btn btn waves-effect waves-light btn-success">@lang('appointment.generate_appointment_letter')</button>
+                            </div>
+                        </div>
+                        
                     </div>   
                                 </form>
                             </div>
@@ -238,3 +475,54 @@
                     </div>
                 </div>
 
+<script type="text/javascript">
+    
+    function appointmentFunc(aval) {
+        if (aval == "insured_person_residential") {
+            $('#hide_insured_person_residential').show(); 
+            $('#hide_employer_premis').hide();
+            $('#hide_socso_office').hide();
+            $('#hide_hospital').hide();
+            $('#hide_others').hide();
+        } 
+        else if (aval == "employer_premis"){
+            $('#hide_employer_premis').show();
+            $('#hide_insured_person_residential').hide();
+            $('#hide_socso_office').hide();
+            $('#hide_hospital').hide();
+            $('#hide_others').hide();
+        }
+        else if (aval == "socso_office"){
+            $('#hide_socso_office').show();
+            $('#hide_insured_person_residential').hide();
+            $('#hide_employer_premis').hide();
+            $('#hide_hospital').hide();
+            $('#hide_others').hide();
+        }
+        else if (aval == "hospital"){
+            $('#hide_hospital').show();
+            $('#hide_insured_person_residential').hide();
+            $('#hide_employer_premis').hide();
+            $('#hide_socso_office').hide();
+            $('#hide_others').hide();
+        }
+        else if (aval == "appointmentOthers"){
+            $('#hide_others').show();
+            $('#hide_insured_person_residential').hide();
+            $('#hide_employer_premis').hide();
+            $('#hide_socso_office').hide();
+            $('#hide_hospital').hide();
+        }
+        else {
+            $('#hide_insured_person_residential').hide();
+            $('#hide_employer_premis').hide();
+            $('#hide_socso_office').hide();
+            $('#hide_hospital').hide();
+            $('#hide_others').hide();
+        }
+    }
+      function submitform(){
+        $('#reset').find('form').submit();
+        $('.clearFields').val('');
+    }
+</script>

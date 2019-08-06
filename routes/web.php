@@ -157,6 +157,9 @@ Route::get('/cmrtw.obForm', 'previewController@claim');
 Route::get('/Rtw_eligibility', function () {
     return view('Rtw_eligibility');
 });
+Route::get('/cmrtw.appointmentPlanning', function () {
+    return view('cmrtw.appointmentPlanning');
+});
 
 Route::get('image-upload', 'ImageUploadController@imageUpload')->name('image.upload');
 

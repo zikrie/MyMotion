@@ -258,7 +258,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-group">
-                            <label>@lang('registrationRtw.attr.address')<span class="text-danger">*</span></label>
+                            <label>@lang('registrationRtw.attr.add')<span class="text-danger">*</span></label>
                             @if(!empty($casertw) && $casertw->add1 != '')
                             <input type="text" id="add1" name="add1" value="{{ $casertw->add1 }}" class="form-control clearFields">
                             @else

@@ -508,4 +508,13 @@ function remove_addDisabled(rid) {
             $('#hideEmployer').hide(); 
         }
     }
+
+    function myAddress(aval) {
+        if (aval == "no") {
+            $('#hideAddress').show();   
+        }
+        else {
+            $('#hideAddress').hide(); 
+        }
+    }
 </script>

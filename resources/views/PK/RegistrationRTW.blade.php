@@ -4,9 +4,9 @@
             <div class="card-body">
                 <form action="/registrationrtw" method="POST">
                     <div class="form-body">
-                       <h4 class="card-title">@lang('registrationRTW.title1')</h4>
-                       <hr>
-                       <div class="row">
+                     <h4 class="card-title">@lang('registrationRTW.title1')</h4>
+                     <hr>
+                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label>@lang('registrationRTW.attr.refreceivedate')</label>
@@ -146,7 +146,7 @@
                             </div>
                         </div>
                         <div class="row p-t-20">
-                         <div class="col-md-12">
+                           <div class="col-md-12">
                             <div class="form-group">
                                 <label>@lang('registrationRTW.attr.address')<span class="text-danger">*</span></label>
                                 <input type="text" class="form-control" value="@if(!empty($data)){{ $data->add1 }} @endif" >
@@ -210,70 +210,92 @@
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label class="control-label">@lang('registrationRtw.attr.addresssame')</label>
-                                <select class="form-control select" id="reportby">
+                                <select class="form-control select" id="reference" name='address' onchange="myAddress(this.options[this.selectedIndex].value)">
                                     <option value="yes">@lang('registrationRtw.attr.yes')</option>
                                     <option value="no">@lang('registrationRtw.attr.no')</option>
                                 </select>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="form-group">
-                                <input type="hidden">
-                            </div>
+                        <div class="form-group">
+                            <input type="hidden">
                         </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <input type="hidden">
-                            </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input type="hidden">
                         </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label>@lang('registrationRTW.attr.telNo')</label>
-                                <input type="text" class="form-control" name="telno" value="@if(!empty($data)){{ $data->telno }} @endif">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label>@lang('registrationRTW.attr.mobileNo')<span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" name="mobileno" value="@if(!empty($data)){{ $data->mobileno }} @endif">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <input type="hidden" class="form-control" name="mobileno">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label>@lang('registrationRTW.attr.email')</label>
-                                <input type="text" name="email" class="form-control"  value="@if(!empty($data)){{ $data->email }} @endif">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label class="control-label">@lang('registrationRTW.attr.citizen')</label>
+                    </div>
+                        <div class="col-md-12">
+                            <div id="hideAddress" class="form-group" style="display:none">
 
-                                <select class="form-control" tabindex="1" name='nationality' id='nationality'>
-                                    <option>Please Select</option>
-                                    @foreach($national as $N)
-                                    @if (!empty($data) && $data->nationality == $N->refcode)
-                                    <option value="{{$N->refcode}}" selected>{{$N->descen}}</option>
-                                    @else
-                                    <option value="{{$N->refcode}}">{{$N->descen}}</option>
-                                    @endif
-                                    @endforeach
-                                </select>
+                               <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>@lang('registrationRTW.attr.add')<span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" value="" >
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" value="">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" >
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <input type="hidden" class="form-control" name="mobileno">
-                            </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>@lang('registrationRTW.attr.telNo')</label>
+                            <input type="text" class="form-control" name="telno" value="@if(!empty($data)){{ $data->telno }} @endif">
                         </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="example-text-input" class="col-form-label">@lang('registrationRtw.attr.unemployment')<span class="text-danger">*</span></label>
-                                <div class="row">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>@lang('registrationRTW.attr.mobileNo')<span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" name="mobileno" value="@if(!empty($data)){{ $data->mobileno }} @endif">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input type="hidden" class="form-control" name="mobileno">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>@lang('registrationRTW.attr.email')</label>
+                            <input type="text" name="email" class="form-control"  value="@if(!empty($data)){{ $data->email }} @endif">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label class="control-label">@lang('registrationRTW.attr.citizen')</label>
+
+                            <select class="form-control" tabindex="1" name='nationality' id='nationality'>
+                                <option>Please Select</option>
+                                @foreach($national as $N)
+                                @if (!empty($data) && $data->nationality == $N->refcode)
+                                <option value="{{$N->refcode}}" selected>{{$N->descen}}</option>
+                                @else
+                                <option value="{{$N->refcode}}">{{$N->descen}}</option>
+                                @endif
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input type="hidden" class="form-control" name="mobileno">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="example-text-input" class="col-form-label">@lang('registrationRtw.attr.unemployment')<span class="text-danger">*</span></label>
+                            <div class="row">
                                 <div class="custom-control custom-radio">
                                     <input type="radio" id="yes1" name="yes1" class="custom-control-input">
                                     <label class="custom-control-label" for="yes1">@lang('caseMgmt.attr.yes')</label>
@@ -283,21 +305,21 @@
                                     <label class="custom-control-label" for="no1">@lang('caseMgmt.attr.no')</label>
                                 </div>
                             </div>
-                            </div>
                         </div>
-
                     </div>
-                    <div class="form-actions">
-                     <button type="submit" class="btn btn waves-effect waves-light btn-success">
-                     SAVE & CONTINUE</button>
-                     <button type="button" onclick="submitform()" class="btn btn waves-effect waves-light btn-success">RESET</button>
-                     <button type="button" class="btn waves-effect waves-light btn-success"  onclick="window.location='/homertw'">@lang('rtw_eligibility.cancel')</button>
-                 </div>
 
-             </div>
-         </form>
-     </div>
- </div>
+                </div>
+                <div class="form-actions">
+                   <button type="submit" class="btn btn waves-effect waves-light btn-success">
+                   SAVE & CONTINUE</button>
+                   <button type="button" onclick="submitform()" class="btn btn waves-effect waves-light btn-success">RESET</button>
+                   <button type="button" class="btn waves-effect waves-light btn-success"  onclick="window.location='/homertw'">@lang('rtw_eligibility.cancel')</button>
+               </div>
+
+           </div>
+       </form>
+   </div>
+</div>
 </div>
 </div>
 

@@ -35,8 +35,6 @@
                                         <th>:</th>
                                         <th></th>
                                     </tr>
-                                    
-                                    
                                     </thead>
                                 </table>
                             </div>
@@ -152,7 +150,6 @@
                           <div class="tab-pane p-20 active" id="ipDetails" role="tabpanel">
                             @include('cmrtw.caseMgmt.ipDetails')
                           </div>
-
                         </div>
                     </div>
 

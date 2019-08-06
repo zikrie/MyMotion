@@ -7,7 +7,7 @@
     <div class="col-sm-12">
         <div class="card">
             <div class="card-body">
-                <h4 class="card-title">Summary Of Initial Rehabilitation Assesstment</h4>
+                <h4 class="card-title">Initial Assessment Summary</h4>
                 <form class="form">
                     {{-- @include('cmrtw.IA.rehabPlan.summaryOfInitioalRehab')   --}}
                 </form>
@@ -19,6 +19,14 @@
             <br/>
             <br/>
             <br/>
+            <br/>
+            <br/>
+            <br/>
+            
+                <div class="col-12">
+                    <button  onclick="printFunction()" style="margin:5px;" type="button" class="btn btn-primary" >Print Initial Assessment Summary</button>
+                </div>
+           
 
 
 
@@ -65,12 +73,12 @@
                 </div>
             </div> --}}
 
-            <div class="form-group row"> 
+            
                 <div class="col-12"> 
                     <button type="button" id="cetakRgksn" class="btn btn waves-effect waves-light btn-success  "> Save </button>
                     {{-- <button type="button" id="cetakCdgn" class="btn btn waves-effect waves-light  btn-success">Update</button>  --}}
                 </div>        
-            </div>
+           
 
 
 
@@ -80,5 +88,12 @@
 </div>
 
 
+<script>
+
+function printFunction() 
+{
+  window.print();
+}
 
 
+</script> 

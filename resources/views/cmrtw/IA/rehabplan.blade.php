@@ -7,7 +7,7 @@
     <div class="col-sm-12">
         <div class="card">
             <div class="card-body">
-                <h4 class="card-title">Summary Of Initial Rehabilitation Assesstment</h4>
+                <h4 class="card-title">Initial Assessment Summary</h4>
                 <form class="form">
                     {{-- @include('cmrtw.IA.rehabPlan.summaryOfInitioalRehab')   --}}
                 </form>
@@ -24,7 +24,7 @@
             <br/>
             
                 <div class="col-12">
-                    <button style="margin:5px;" type="button" class="btn btn-primary" >Generate Rehab Plan</button>
+                    <button style="margin:5px;" type="button" class="btn btn-primary" >Print Initial Assessment Summary</button>
                 </div>
            
 

@@ -100,12 +100,12 @@
 <div id="rehabPlanningDetails"></div>
  --}}
 
- <div class="form-group row">
+ {{-- <div class="form-group row">
     <div class="col-12">
         <button style="margin:5px;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Add Rehab Plan</button>
-        <button style="margin:5px;" type="button" class="btn btn-primary" >Generate Rehab Plan</button>
+        <button style="margin:5px;" type="button" class="btn btn-primary" >Print Rehab Plan</button>
     </div>
-</div>
+</div> --}}
 
 <div class="col-12">
     <div class="card">
@@ -208,6 +208,14 @@
         </div>
     </div>
 </div> 
+
+
+<div class="form-group row">
+    <div class="col-12">
+        <button style="margin:5px;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Add Rehab Plan</button>
+        <button style="margin:5px;" type="button" class="btn btn-primary" >Print Rehab Plan</button>
+    </div>
+</div>
 
 
     

@@ -35,16 +35,7 @@
                                         <th>:</th>
                                         <th></th>
                                     </tr>
-                                    <tr>
-                                        <th><label>Receive Date/Submission Date</label></th>
-                                        <th>:</th>
-                                        <th></th>
-                                    </tr>
-                                    <tr>
-                                        <th><label>Source From</label></th>
-                                        <th>:</th>
-                                        <th></th>
-                                    </tr>
+                                    
                                     </thead>
                                 </table>
                             </div>

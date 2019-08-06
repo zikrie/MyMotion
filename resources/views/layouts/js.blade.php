@@ -486,4 +486,20 @@ function remove_addDisabled(rid) {
             $('#hideResult').hide(); 
         }
     }
+
+    function myFunctionReport(aval) {
+        if (aval == "Others") {
+            $('#hideReport').show();
+            $('#hideEmployer').hide();
+
+        }
+        else if(aval == "employer"){
+            $('#hideReport').hide(); 
+            $('#hideEmployer').show(); 
+        }
+        else{
+            $('#hideReport').hide(); 
+            $('#hideEmployer').hide(); 
+        }
+    }
 </script>

@@ -34,16 +34,16 @@
                             @lang('noticetype.details')<br /><br />
                             <div class="form-group">
 
-                                <label class="control-label">@lang('noticetype.attr.id_type')</label>
+                                <label class="control-label">@lang('noticetype.attr.id_type')<span class="text-danger">*</span></label>
 
                                 <select required class="form-control clearFields" name='idtype' id='idtype'>
-                                    <span class="text-danger">*</span>
+                                    
                                        {{--  @foreach ($idtype as $id)
                                         <option value="{{$id->refcode}}">{{$id->descen}}</option>
                                         @endforeach --}}
                                         <option value="">Please Select </option>
-                                        <option value="newic">@lang('rtw_eligibility.attr.new_ic')</option>
-                                        <option value="ssn">@lang('rtw_eligibility.attr.ssn_id')</option>
+                                        <option value="New IC">@lang('rtw_eligibility.attr.new_ic')</option>
+                                        <option value="SSN">@lang('rtw_eligibility.attr.ssn_id')</option>
                                     </select>
                                 </div>
                             </div>
@@ -52,7 +52,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('rtw_eligibility.attr.enter_ic')</label>
+                                    <label class="control-label">@lang('rtw_eligibility.attr.enter_ic')<span class="text-danger">*</span></label>
                                     <input type="text" name="idno" id="idno" class="form-control clearFields" requiredmaxlength="12">{{-- {{Session::get('idno')}} --}}
                                     <label class="" >{{Session::get('error')}}</label>
                                 </div>

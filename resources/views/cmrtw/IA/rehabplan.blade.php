@@ -24,7 +24,7 @@
             <br/>
             
                 <div class="col-12">
-                    <button style="margin:5px;" type="button" class="btn btn-primary" >Print Initial Assessment Summary</button>
+                    <button  onclick="printFunction()" style="margin:5px;" type="button" class="btn btn-primary" >Print Initial Assessment Summary</button>
                 </div>
            
 
@@ -88,5 +88,12 @@
 </div>
 
 
+<script>
+
+function printFunction() 
+{
+  window.print();
+}
 
 
+</script> 

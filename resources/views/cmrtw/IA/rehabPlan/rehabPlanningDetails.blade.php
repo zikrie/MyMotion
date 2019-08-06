@@ -213,7 +213,7 @@
 <div class="form-group row">
     <div class="col-12">
         <button style="margin:5px;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Add Rehab Plan</button>
-        <button style="margin:5px;" type="button" class="btn btn-primary" >Print Rehab Plan</button>
+        <button style="margin:5px;" type="button" class="btn btn-primary" onclick="printFunction()">Print Rehab Plan</button>
     </div>
 </div>
 
@@ -380,6 +380,14 @@
     })
 
 
+
+
+
+
+function printFunction() 
+{
+  window.print();
+}
 
 
 </script> 

@@ -35,6 +35,16 @@
                                         <th>:</th>
                                         <th></th>
                                     </tr>
+                                    <tr>
+                                        <th><label>Receive Date/Submission Date</label></th>
+                                        <th>:</th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <th><label>Source From</label></th>
+                                        <th>:</th>
+                                        <th></th>
+                                    </tr>
                                     
                                     </thead>
                                 </table>
@@ -149,8 +159,6 @@
                           <div class="tab-pane p-20 active" id="ipDetails" role="tabpanel">
                             @include('cmrtw.caseMgmt.ipDetails')
                           </div>
-
-                          
                         </div>
 
                       </div>

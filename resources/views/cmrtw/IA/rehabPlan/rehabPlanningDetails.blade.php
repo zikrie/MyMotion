@@ -100,7 +100,12 @@
 <div id="rehabPlanningDetails"></div>
  --}}
 
-
+ <div class="form-group row">
+    <div class="col-12">
+        <button style="margin:5px;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Add Rehab Plan</button>
+        <button style="margin:5px;" type="button" class="btn btn-primary" >Generate Rehab Plan</button>
+    </div>
+</div>
 
 <div class="col-12">
     <div class="card">
@@ -117,7 +122,7 @@
                         <th>Justification Communication Rate</th>
                         <th>Status</th>
                         <th>Reason for Cancellation</th>
-                        <th>Remarks</th>
+                        {{-- <th>Remarks</th> --}}
                         <th>Action</th>                               
                     </tr>
                 </thead>
@@ -131,7 +136,7 @@
                         <td>Once a week</td>
                         <td>test</td>
                         <td>Cancel</td>
-                        <td>test</td>
+                        {{-- <td>test</td> --}}
                         <td>test</td>
                         <td> 
                             <div class= "btn-group">
@@ -155,7 +160,7 @@
                             <td>Two times a month</td>
                             <td>test</td>
                             <td>In Action</td>
-                            <td>test</td>
+                            {{-- <td>test</td> --}}
                             <td>test</td>
                             <td> 
                                 <div class= "btn-group">
@@ -179,7 +184,7 @@
                                 <td>Once in two months</td>
                                 <td>test</td>
                                 <td>New</td>
-                                <td>test</td>
+                                {{-- <td>test</td> --}}
                                 <td>test</td>
                                 <td> 
                                     <div class= "btn-group">
@@ -204,11 +209,7 @@
     </div>
 </div> 
 
-<div class="form-group row">
-    <div class="col-12">
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Add Rehab Plan</button>
-    </div>
-</div>
+
     
 
 {{-- Add --}}

@@ -19,6 +19,14 @@
             <br/>
             <br/>
             <br/>
+            <br/>
+            <br/>
+            <br/>
+            
+                <div class="col-12">
+                    <button style="margin:5px;" type="button" class="btn btn-primary" >Generate Rehab Plan</button>
+                </div>
+           
 
 
 
@@ -65,12 +73,12 @@
                 </div>
             </div> --}}
 
-            <div class="form-group row"> 
+            
                 <div class="col-12"> 
                     <button type="button" id="cetakRgksn" class="btn btn waves-effect waves-light btn-success  "> Save </button>
                     {{-- <button type="button" id="cetakCdgn" class="btn btn waves-effect waves-light  btn-success">Update</button>  --}}
                 </div>        
-            </div>
+           
 
 
 

@@ -492,7 +492,6 @@ function remove_addDisabled(rid) {
             $('#hideResult').hide(); 
         }
     }
-<<<<<<< HEAD
 
     function myFunctionReport(aval) {
         if (aval == "Others") {
@@ -510,6 +509,3 @@ function remove_addDisabled(rid) {
         }
     }
 </script>
-=======
-</script>
->>>>>>> f3b63c834ff04ef861a5ac8d23794f58b957017e

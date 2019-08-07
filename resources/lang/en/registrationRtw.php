@@ -92,6 +92,7 @@ return [
         'relation' => 'Relation',
         'addresssame' => 'Postal Address same as Residential Address ?',
         'unemployment' => 'Unemployment',
+        'add' => 'Address',
     ],
 
     'save' => 'Save',

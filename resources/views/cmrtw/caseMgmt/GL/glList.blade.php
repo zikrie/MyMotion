@@ -9,10 +9,10 @@
 
                         <div id="accordion2" role="tablist" class="minimal-faq" aria-multiselectable="true">
                             <div class="card m-b-0">
-                                <div class="card-header" role="tab" id="headingOne1">
+                                <div class="card-header" role="tab" id="headingOne1" style="background-color: #FFFFFF;">
                                     <h5 class="mb-0">
-                                        <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
-                                            @lang('caseMgmt.attr.gl_letter')
+                                        <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1"><h5 class="card-title"><i class="fa fa-plus"></i>
+                                            @lang('caseMgmt.attr.gl_letter')</h5>
                                         </a>
                                     </h5>
                                 </div>
@@ -23,7 +23,7 @@
 										<div class="card m-b-0">
                                                 <div class="card-header" role="tab" id="headingThree33">
                                                     <h6 class="mb-0">
-                                                        <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree33" aria-expanded="false" aria-controls="collapseThree33">
+                                                        <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree33" aria-expanded="false" aria-controls="collapseThree33"><i class="fa fa-plus"></i>
                                                             @lang('caseMgmt.attr.supplier')
                                                         </a>
                                                     </h6>
@@ -40,8 +40,8 @@
                                             <div class="card m-b-0">
                                                 <div class="card-header" role="tab" id="headingFour44">
                                                     <h6 class="mb-0">
-                                                        <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour44" aria-expanded="false" aria-controls="collapseFour44">
-                                                            @lang('caseMgmt.attr.gl_letter')
+                                                        <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour44" aria-expanded="false" aria-controls="collapseFour44"><i class="fa fa-plus"></i>
+                                                            @lang('caseMgmt.attr.gl_letter')</h5>
                                                         </a>
                                                     </h6>
                                                 </div>
@@ -55,9 +55,9 @@
                                             <br>
                                              {{-- third div --}}
                                              <div class="card m-b-0">
-                                                    <div class="card-header" role="tab" id="headingFive55">
+                                                    <div class="card-header" role="tab" id="headingFive55" >
                                                         <h6 class="mb-0">
-                                                            <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive55" aria-expanded="false" aria-controls="collapseFive55">
+                                                            <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive55" aria-expanded="false" aria-controls="collapseFive55"><i class="fa fa-plus"></i>
                                                                 @lang('caseMgmt.attr.previous_gl')
                                                             </a>
                                                         </h6>
@@ -74,10 +74,10 @@
                             </div>
                             
                             <div class="card m-b-0">
-                                <div class="card-header" role="tab" id="headingTwo2">
+                                <div class="card-header" role="tab" id="headingTwo2" style="background-color: #FFFFFF;">
                                     <h5 class="mb-0">
-                                        <a class="collapsed link" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
-                                            @lang('caseMgmt.attr.recommend_cm')
+                                        <a class="collapsed link" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2"><h5 class="card-title"><i class="fa fa-plus"></i>
+                                            @lang('caseMgmt.attr.recommend_cm')</h5>
                                         </a>
                                     </h5>
                                 </div>
@@ -89,10 +89,10 @@
                             </div>
 
                             <div class="card m-b-0">
-                                    <div class="card-header" role="tab" id="headingThree3">
+                                    <div class="card-header" role="tab" id="headingThree3" style="background-color: #FFFFFF;" >
                                         <h5 class="mb-0">
-                                            <a class="collapsed link" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
-                                                @lang('caseMgmt.attr.scm_approval')
+                                            <a class="collapsed link" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3"><h5 class="card-title"><i class="fa fa-plus"></i>
+                                                @lang('caseMgmt.attr.scm_approval')</h5>
                                             </a>
                                         </h5>
                                     </div>

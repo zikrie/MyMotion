@@ -11,13 +11,18 @@
                                 <div class="col-md-8">
                                     <div class="form-group">
                                         <label class="control-label">@lang('caseMgmt.attr.rtw_status')</label>
-                                        <input type="text" id="rtw_status" class="form-control"  value="@if(!empty($data)){{ $data->uniquerefno }} @endif" >
+                                        <select name="select_opt" id="select_opt" class="form-control" required> 
+                                            <option value="">Please Select</option>
+                                            <option value="yes">@lang('caseMgmt.attr.yes')</option>
+                                            <option value="no">@lang('caseMgmt.attr.no')</option>
+                                           
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="col-md-8">
                                     <div class="form-group">
                                         <label class="control-label">@lang('caseMgmt.attr.rtw_date')</label>
-                                        <input type="text" id="rtw_date" class="form-control">
+                                        <input type="date" id="rtw_date" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-md-8">
@@ -25,9 +30,10 @@
                                         <label class="control-label">@lang('caseMgmt.attr.hierarchy_rtw')</label>
                                         <select name="select_opt" id="select_opt" class="form-control" required> 
                                                 <option value="">Please Select</option>
-                                                <option value="proceed">@lang('caseMgmt.attr.proceed')</option>
-                                                <option value="close">@lang('caseMgmt.attr.close')</option>
-                                                <option value="query_report">@lang('caseMgmt.attr.query_report')</option>
+                                                <option value="hiera1">@lang('caseMgmt.attr.hiera1')</option>
+                                                <option value="hiera2">@lang('caseMgmt.attr.hiera2')</option>
+                                                <option value="hiera3">@lang('caseMgmt.attr.hiera3')</option>
+                                                <option value="hiera4">@lang('caseMgmt.attr.hiera4')</option>
                                             </select>
                                     </div>
                                 </div>

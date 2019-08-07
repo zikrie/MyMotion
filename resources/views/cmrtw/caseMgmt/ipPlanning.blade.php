@@ -51,24 +51,22 @@
                                     <div class="tab-pane p-20" id="wsa" role="tabpanel">
                                         <ul class="nav customtab" role="tablist">
                                                 <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#permission" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Permission</span></a> </li>
-                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#job_details" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Job Details</span></a> </li>
-                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#appointment" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Appointment Trip</span></a> </li>
+                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#jobDetails" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Job Details</span></a> </li>
+                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#appointmentTrip" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Appointment Trip</span></a> </li>
                                                 <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#wsa_form" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">WSA Form</span></a> </li>
                                                 <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#wsa_report" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">WSA Report</span></a> </li>
                                         </ul>
                                         <div class="tab-content tabcontent-border">
                                                 <div class="tab-pane p-20 active" id="permission" role="tabpanel">
-                                                @include('cmrtw.caseMgmt.PL.ipPermission')
+                                                    @include('cmrtw.caseMgmt.PL.ipPermission')
                                                 </div>
                             
-                                                <div class="tab-pane p-20" id="job_details" role="tabpanel">
-                                                        job_details
-                                                {{-- @include('cmrtw.caseMgmt.PL.jobDetails') --}}
+                                                <div class="tab-pane p-20" id="jobDetails" role="tabpanel">                                                  
+                                                    @include('cmrtw.caseMgmt.PL.jobDetails')  
                                                 </div>
                             
-                                                <div class="tab-pane p-20" id="appointment" role="tabpanel">
-                                                        appointment
-                                                {{-- @include('cmrtw.caseMgmt.PL.appointmentTrip') --}}                           
+                                                <div class="tab-pane p-20" id="appointmentTrip" role="tabpanel">                                  
+                                                     @include('cmrtw.caseMgmt.PL.appointmentTrip')
                                                 </div>
                             
                                                 <div class="tab-pane p-20" id="wsa_form" role="tabpanel">

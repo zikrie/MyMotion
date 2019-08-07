@@ -2,7 +2,7 @@
  
 return [
 
-	'title' => 'Registration RTW',
+	'title' => 'Registration RTW Status',
 	'details' => 'Please fill in these information',
 
     'attr' => [

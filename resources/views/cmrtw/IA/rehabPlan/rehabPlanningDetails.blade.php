@@ -107,7 +107,7 @@
     </div>
 </div> --}}
 
-<div class="col-12">
+<div id="printRehabPlan">
     <div class="card">
         <div class="table-responsive m-t-40">
             {{-- <table id="add-contact" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%"> --}}
@@ -213,7 +213,7 @@
 <div class="form-group row">
     <div class="col-12">
         <button style="margin:5px;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Add Rehab Plan</button>
-        <button style="margin:5px;" type="button" class="btn btn-primary" onclick="printFunction()">Print Rehab Plan</button>
+        <button style="margin:5px;" type="button" class="btn btn-primary" onclick="printDiv('printRehabPlan')">Print Rehab Plan</button>
     </div>
 </div>
 
@@ -381,13 +381,22 @@
 
 
 
+    function printDiv(divName) {
+     var printContents = document.getElementById(divName).innerHTML;
+     var originalContents = document.body.innerHTML;
 
+     document.body.innerHTML = printContents;
 
+     window.print();
 
-function printFunction() 
-{
-  window.print();
+     document.body.innerHTML = originalContents;
 }
+
+
+// function printFunction() 
+// {
+//   window.print();
+// }
 
 
 </script> 

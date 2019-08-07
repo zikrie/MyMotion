@@ -5,10 +5,10 @@
                 <form action="/registrationrtw" method="POST" id="reset">
                     <input type="hidden" name="_token" value="{{csrf_token()}}">
                     <div class="form-body">
-                     <h4 class="card-title">@lang('registrationRTW.title1')</h4>
-                     <hr>
-                     @if(Session::get('messageob')) 
-                     <div class="card-footer">
+                       <h4 class="card-title">@lang('registrationRTW.title1')</h4>
+                       <hr>
+                       @if(Session::get('messageob')) 
+                       <div class="card-footer">
 
                         <div class="alert alert-warning">
                             {{Session::get('messageob')}}
@@ -142,13 +142,13 @@
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label class="control-label">Reference Purpose</label>
+                                <label class="control-label">@lang('registrationRtw.attr.refpurpose')</label>
                                 <select class="form-control select" id="reference" name='reference' onchange="myFunctionOther(this.options[this.selectedIndex].value)">
-                                    <option>Please Select</option>
-                                    <option value="rehab">Rehab</option>
-                                    <option value="peralatanpemulihan">Recovery Equipment</option>
-                                    <option value="jobplacement">Job Placement</option>
-                                    <option value="others">Others</option>
+                                    <option>@lang('registrationRtw.attr.pleaseselect')</option>
+                                    <option value="rehab">@lang('registrationRtw.attr.rehab')</option>
+                                    <option value="peralatanpemulihan">@lang('registrationRtw.attr.recoveryequipment')</option>
+                                    <option value="jobplacement">@lang('registrationRtw.attr.jobplacement')</option>
+                                    <option value="others">@lang('registrationRtw.attr.others')</option>
                                 </select>
                             </div>
                         </div>
@@ -156,7 +156,7 @@
                             <div id="hideOthers" class="form-group" style="display:none">
 
                                 <div class="form-group">
-                                    <label class="control-label">Others Purpose</label>
+                                    <label class="control-label">@lang('registrationRtw.attr.otherpurpose')</label>
                                     <input class="form-control"  type="text"  value="" id="reference">
                                 </div>
                             </div>
@@ -169,7 +169,7 @@
 
                     <div class="row p-t-20">
                         <div class="col-md-12">
-                           <div class="form-group">
+                         <div class="form-group">
                             <label class="control-label">@lang('registrationRtw.attr.name')<span class="text-danger">*</span></label>
                             <input type="text" id="name" class="form-control"  value="@if(!empty($casertw)){{ $casertw->name }} @endif" required>
                         </div>
@@ -180,7 +180,7 @@
                         <div class="form-group">
                             <label class="control-label">@lang('registrationRTW.attr.id_type')<span class="text-danger">*</span></label>
                             <select class="form-control" value="@if(!empty($casertw)){{ $casertw->idtype }} @endif" required>
-                                <option>Please Select</option>
+                                <option>@lang('registrationRtw.attr.pleaseselect')</option>
                                 @foreach($idtype as $id)
                                 @if (!empty($casertw) && $id->refcode == $casertw->idtype)
                                 <option value="{{$id->refcode}}" selected>{{$id->descen}}</option>
@@ -215,7 +215,7 @@
                             <label class="control-label">@lang('registrationRtw.attr.race')<span class="text-danger">*</span></label>
                             <select class="form-control clearFields" name="race" id="race"> 
 
-                                <option>Please Select</option>
+                                <option>@lang('registrationRtw.attr.pleaseselect')</option>
                                 @foreach($race as $id)
                                 @if (!empty($casertw) && $casertw->race == $id->refcode)
                                 <option value="{{$id->refcode}}" selected>{{$id->descen}}</option>
@@ -230,7 +230,7 @@
                         <div class="form-group">
                             <label class="control-label">@lang('registrationRtw.attr.gender')<span class="text-danger">*</span></label>
                             <select class="form-control clearFields" name="gender">
-                                <option>Please Select</option>
+                                <option>@lang('registrationRtw.attr.pleaseselect')</option>
                                 @if (!empty($casertw) && $casertw->gender == 'F')
                                 <option value="F" selected>Female</option>
                                 <option value="M">Male</option>
@@ -258,7 +258,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-group">
-                            <label>@lang('registrationRtw.attr.address')<span class="text-danger">*</span></label>
+                            <label>@lang('registrationRtw.attr.add')<span class="text-danger">*</span></label>
                             @if(!empty($casertw) && $casertw->add1 != '')
                             <input type="text" id="add1" name="add1" value="{{ $casertw->add1 }}" class="form-control clearFields">
                             @else
@@ -386,6 +386,7 @@
                         <label class="control-label">@lang('registrationRtw.attr.citizen')</label>
                         {{-- <input type="text" id="citizen" value="@if(!empty($obprofile)){{ $obprofile->nationality }} @endif" class="form-control"> --}}
                         <select class="form-control" tabindex="1" name='nationality' id='nationality'>
+                            <option>@lang('registrationRtw.attr.pleaseselect')</option>
                             @foreach($national as $N)
                             @if (!empty($obprofile) && $obprofile->nationality == $N->refcode)
                             <option value="{{$N->refcode}}" selected>{{$N->descen}}</option>
@@ -410,7 +411,7 @@
                     <div class="form-group">
                         <label class="control-label">@lang('registrationRTW.attr.emptype')</label>
                         <select class="form-control">
-                            <option value="">Please Select</option>
+                            <option value="">@lang('registrationRtw.attr.pleaseselect')</option>
                             <option value="statutory">@lang('caseMgmt.attr.statutory')</option>
                             <option value="private">@lang('caseMgmt.attr.private')</option>
                             <option value="government">@lang('caseMgmt.attr.government')</option>
@@ -459,7 +460,7 @@
                     <div class="form-group">
                         <label class="control-label">@lang('registrationRTW.attr.state')</label>
                         <select name='state' id='state' class='form-control'>
-                            <option>Please Select</option>
+                            <option>@lang('registrationRtw.attr.pleaseselect')</option>
                             @foreach($state as $s)
                             @if(!empty($casertw) && $casertw->statecode == $s->refcode)
                             <option value='{{$s->refcode}}' selected>{{$s->descen}}</option>
@@ -526,13 +527,13 @@
 
             </div>
             <div class="form-actions">
-             <button type="submit" class="btn btn waves-effect waves-light btn-success">
-             SAVE & NEXT</button>
-             <button type="button" onclick="submitform()" class="btn btn waves-effect waves-light btn-success">RESET</button>
-             <button type="button" class="btn waves-effect waves-light btn-success"  onclick="window.location='/homertw'">@lang('rtw_eligibility.cancel')</button>
-         </div>
-     </div>
- </form>
+               <button type="submit" class="btn btn waves-effect waves-light btn-success">
+               SAVE & CONTINUE</button>
+               <button type="button" onclick="submitform()" class="btn btn waves-effect waves-light btn-success">RESET</button>
+               <button type="button" class="btn waves-effect waves-light btn-success"  onclick="window.location='/homertw'">@lang('rtw_eligibility.cancel')</button>
+           </div>
+       </div>
+   </form>
 </div>
 </div>
 </div>

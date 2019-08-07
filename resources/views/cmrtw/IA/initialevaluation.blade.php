@@ -45,29 +45,7 @@
                 <!-- Initial Assessment question -->
 
                 <div id="accordion2" role="tablist" class="accordion" >
-                    <!-- Initial Assessment Insured person upload pic-->    
-                    <div class="card m-b-0">
-                        <div class="card-header" role="tab" id="headingZero0">
-                            <h5 class="mb-0">                           
-                                <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapseZero0" aria-expanded="true" aria-controls="collapseZero0"><h4 class="card-title"><i class="fa fa-plus"></i>
-                                @lang('ia.title1')</h4>
-                                </a>
-                            </h5>
-                        </div>
-                        <div id="collapseZero0" class="collapse" role="tabpanel" aria-labelledby="headingZero0">
-                            <div class="card-body">
-                                <div class="form-group row">
-                                    <div class="col-2">
-                                        <label for="example-text-input" class="col-form-label">@lang('ia.attr.picture')</label>
-                                    </div>
-                                    <div class="col-4">
-                                        <input type="file" name="image" id="image">
-                                        <button type="submit" class="btn btn waves-effect waves-light btn-success">@lang('ia.attr.upload')</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>    
+                  
                     <!-- Initial Assessment appointmentdetails-->
                     <div class="card m-b-0">
                         <div class="card-header" role="tab" id="headingOne1">
@@ -96,23 +74,6 @@
                         <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2">
                             <div class="card-body">
                                 @include('cmrtw.IA.iaQuestionnaire.iaEmployementDetails')
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Initial Assessment MASCO Code Occupations--> 
-                    <div class="card m-b-0">
-                        <div class="card-header" role="tab" id="headingThree3">
-                            <h5 class="mb-0">                           
-                                <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
-                                    <h4 class="card-title"><i class="fa fa-plus"></i>
-                                        @lang('ia.title4')
-                                    </h4>
-                                </a>
-                            </h5>
-                        </div>
-                        <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3">
-                            <div class="card-body">
-                                @include('cmrtw.IA.iaQuestionnaire.iaMASCO')
                             </div>
                         </div>
                     </div>

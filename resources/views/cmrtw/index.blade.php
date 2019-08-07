@@ -14,30 +14,31 @@
 <div class="row">
     <div class="col-md-12">
         <div class="card-body">
+            
             <div class="row">
                 <div class="col-md-12">
                     <div class="card text-left " style="float:right;width:500px;" >
-                            <div class="card-body" style="background-color: #98cb5b;">
-                                <table >
-                                    <thead>
-                                    <tr>
-                                        <th><label>Name</label></th>         
-                                        <th>:</th>
-                                        <th>@if(!empty($casertw)){{ $casertw->name }} @endif</th>
-                                    </tr>
-                                    <tr>
-                                        <th><label>ID No</label></th>
-                                        <th>:</th>
-                                        <th>@if(!empty($casertw)){{ $casertw->idno }} @endif</th>
-                                    </tr>
-                                    <tr>
-                                        <th><label>RTW Ref No</label></th>
-                                        <th>:</th>
-                                        <th></th>
-                                    </tr>
-                                    </thead>
-                                </table>
-                            </div>
+                        <div class="card-body" style="background-color: #98cb5b;">
+                            <table >
+                                <thead>
+                                <tr>
+                                    <th><label>Name</label></th>         
+                                    <th>:</th>
+                                    <th>@if(!empty($casertw)){{ $casertw->name }} @endif</th>
+                                </tr>
+                                <tr>
+                                    <th><label>ID No</label></th>
+                                    <th>:</th>
+                                    <th>@if(!empty($casertw)){{ $casertw->idno }} @endif</th>
+                                </tr>
+                                <tr>
+                                    <th><label>RTW Ref No</label></th>
+                                    <th>:</th>
+                                    <th></th>
+                                </tr>
+                                </thead>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -86,8 +87,13 @@
                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#contact_act" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Contact Activity</span></a></li>
                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#generalRemarks" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Remarks</span></a></li>
            </ul>
+
+           
+
            <!-- Nav tabs -->
                 <div class="tab-content tabcontent-border">
+                    
+                    
                     <div class="tab-pane p-20 active" id="registerrtw" role="tabpanel">
                              <ul class="nav customtab" role="tablist">
                     
@@ -119,6 +125,7 @@
                             <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#appointment" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Appointment</span></a> </li>
                             <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#iarecovery" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Initial Assessment</span></a> </li>
                             <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#rehabplan" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Rehab Plan</span></a> </li>
+                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#supDoc" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Supporting Document</span></a> </li>
                         </ul>
 
                         <div class="tab-content tabcontent-border">
@@ -139,6 +146,9 @@
                             <div class="tab-pane p-20 " id="rehabplan" role="tabpanel">
                                 @include('cmrtw.IA.rehabplan')
                             </div>
+                            <div class="tab-pane p-20" id="supDoc" role="tabpanel">
+                                   @include('cmrtw.IA.supDoc')
+                               </div>
                         </div>       
                     </div>
 

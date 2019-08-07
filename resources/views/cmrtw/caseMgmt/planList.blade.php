@@ -9,10 +9,10 @@
 
                         <div id="accordion2" role="tablist" class="minimal-faq" aria-multiselectable="true">
                             <div class="card m-b-0">
-                                <div class="card-header" role="tab" id="headingOne11">
+                                <div class="card-header" role="tab" id="headingOne11" style="background-color: #FFFFFF;">
                                     <h5 class="mb-0">
-                                        <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne11" aria-expanded="true" aria-controls="collapseOne11">
-                                            @lang('index.attr.ip_agreement')
+                                        <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne11" aria-expanded="true" aria-controls="collapseOne11"><h5 class="card-title"><i class="fa fa-plus"></i>
+                                            @lang('index.attr.ip_agreement')</h5>
                                         </a>
                                     </h5>
                                 </div>
@@ -25,10 +25,10 @@
                             </div>
 
                             <div class="card m-b-0">
-                                <div class="card-header" role="tab" id="headingEight88">
+                                <div class="card-header" role="tab" id="headingEight88" style="background-color: #FFFFFF;">
                                     <h5 class="mb-0">
-                                        <a class="collapsed link" data-toggle="collapse" data-parent="#accordion2" href="#collapseEight88" aria-expanded="false" aria-controls="collapseEight88">
-                                            @lang('index.attr.rehab_planning')
+                                        <a class="collapsed link" data-toggle="collapse" data-parent="#accordion2" href="#collapseEight88" aria-expanded="false" aria-controls="collapseEight88"><h5 class="card-title"><i class="fa fa-plus"></i>
+                                            @lang('index.attr.rehab_planning')</h5>
                                         </a>
                                     </h5>
                                 </div>

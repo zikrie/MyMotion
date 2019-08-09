@@ -37,6 +37,7 @@ return [
         'benefit_details' => 'Benefit Details',
         'mo_details' => 'Medical Officer Details',
         
+        
 
         //serviceProvider
         'sp_name' => 'Service Provider Name',
@@ -415,6 +416,8 @@ return [
         //ipAgreement
         'ip_decision' => 'Insured Person Decision',
         'date_agreement' => 'Date',
+        'permission_letter' => 'Permission Letter',
+        'casemgr_name' => 'Case Manager',
         
         //workMotivation
         'age' => 'Age',
@@ -460,6 +463,7 @@ return [
         'describe_job_history' => 'Job History Description',
         'm_question' => 'Do you accept medical leave?',
         'payment_salary_status' => 'Salary Status',
+        'paycheck' => 'Paycheck',
         
         //guarantee_letter
         'gl_letter' => 'Guarantee Letter Details',
@@ -507,6 +511,27 @@ return [
         'case_status_details' => 'Case Status Details',
         'rtw_date' => 'Return to Work Date',
         'hierarchy_rtw' => 'Hierarchy RTW',
+        'hiera1' => 'Same job,same employer',
+        'hiera2' => 'Different job,same employer',
+        'hiera3' => 'Same job,different employer',
+        'hiera4' => 'Different job,different employer',
+        'case_status' => 'Case Status',
+        'pending_issue' => 'Is there any pending issue?',
+        'update_date' => 'Update Status Date',
+
+        //rehab_allowance
+        'rehab_claim' => 'Rehab Claim Details',
+        'phone_home' => 'Phone Number (Home)',
+        'phone_mobile' => 'Phone Number (Mobile)',
+        'claim_date' => 'Claim Date',
+        'total_presence' => 'Total Presence',
+        'upload_claimdoc' => 'Claim Document',
+        'previous_benefit' => 'Previous Benefit Claim History',
+        'total_claim' => 'Total Claim (RM)',
+        'total_balance_days' => 'Total Balance Days',
+        'recommendation' => 'Recommendation',
+        'recommendation_date' => 'Recommendation Date',
+        'recommended_by' => 'Recommended By',
 
         
         

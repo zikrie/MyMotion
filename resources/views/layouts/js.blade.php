@@ -83,6 +83,9 @@
 
 <script src="/PERKESO_UI/horizontal-nav-fullwidth/dist/js/pages/jasny-bootstrap.js"></script>
 
+  <!--Menu sidebar -->
+  <script src="/PERKESO_UI/horizontal-nav-fullwidth/dist/js/sidebarmenu.js"></script>
+  
 {{-- Calendar Appointment --}}
 <script src="/PERKESO_UI/assets/node_modules/sticky-kit-master/dist/sticky-kit.min.js"></script>
 <!-- Calendar JavaScript -->

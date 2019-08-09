@@ -144,13 +144,14 @@
 
 
                 <div class="form-actions">
-                <div class="row">
-                <div class="col-12">
-                        <button type="submit" class="btn btn waves-effect waves-light btn-success">Submit </button>
-                </div>
-                </div>
-                </div>
-
+                    <button type="submit" class="btn btn waves-effect waves-light btn-success">
+                   SUBMIT</button>
+                   <button type="submit" class="btn btn waves-effect waves-light btn-success">
+                   SAVE</button>
+                   <button type="button" onclick="submitform()" class="btn btn waves-effect waves-light btn-success">RESET</button>
+                   <button type="button" class="btn waves-effect waves-light btn-success"  onclick="window.location='/homertw'">@lang('rtw_eligibility.cancel')</button>
+                   <button type="button" class="btn waves-effect waves-light btn-success"  onclick="window.location='/homertw'">BACK</button>
+               </div>
         </form>
 </div>
 </div>

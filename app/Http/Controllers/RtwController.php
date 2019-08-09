@@ -115,14 +115,15 @@ class RtwController extends Controller
         $race=DB::select('Select refcode, descen from reftable where tablerefcode=? order by refcode', ['race']);
           $sql = 'select d.docdescen,d.doctype,d.docdescbm, d.doccat from doctype d, noticedoc n '
                 . 'where  n.doctype = d.doctype';
-        $doclist = DB::select($sql);
+        $doclist = DB::select('SELECT doccat, doctype, docdescbm, docdescen FROM doctype where doctype = ? OR doctype = ?', ['C16','C03']   ) ;
+        $alldoclist = DB::select('select docdescen,doctype,docdescbm, doccat from doctype order by doccat desc, doctype');
         
 
         $loginrole=session('loginrole');
         if($loginrole == 'PKRTW')
         {
             // dd($data);
-            return view ('PK.index', ['data'=>$data,'idtype'=>$idtype, 'doclist'=>$doclist,'docinfo'=>$docinfo, 'race' => $race, 'state' => $state, 'national' => $national]);
+            return view ('PK.index', ['data'=>$data,'idtype'=>$idtype, 'doclist'=>$doclist,'docinfo'=>$docinfo, 'race' => $race, 'state' => $state, 'national' => $national, 'alldoclist'=> $alldoclist]);
         }
         elseif($loginrole == 'CM')
         {

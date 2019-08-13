@@ -5,7 +5,7 @@
                 <form action="/registrationrtw" method="POST" id="reset">
                     <input type="hidden" name="_token" value="{{csrf_token()}}">
                     <div class="form-body">
-                       <h4 class="card-title">@lang('registrationRTW.title1')</h4>
+                       <h5 class="card-title">@lang('registrationRTW.title1')</h5>
                        <hr>
                        @if(Session::get('messageob')) 
                        <div class="card-footer">

@@ -136,7 +136,7 @@ Route::get('/PK.index', 'RtwController@index');
 // ------------------- UPLOAD SUPPORTING DOCUMENT RTW------------
 Route::post('insert', 'UploadrtwController@upload')->name('claimAyu.upload');
 Route::get('/viewdoc', 'UploadrtwController@viewstorage');
-Route::get('/PK.supportingDoc', 'UploadrtwController@index');
+// Route::get('/PK.supportingDoc', 'UploadrtwController@index');
 
 // ------------ CM RTW (IA)-----------------
 // Route::get('/cmrtw.index', 'RtwController@index');
@@ -167,5 +167,6 @@ Route::get('image-upload', 'ImageUploadController@imageUpload')->name('image.upl
 Route::post('image-upload', 'ImageUploadController@imageUploadPost')->name('image.upload.post');
 
 Route::post('/uploaddoc', 'UploadclaimController@upload')->name('claim.upload');
+// Route::post('/PK.supportingDoc', 'UploadclaimController@upload')->name('claim.upload');
 
 

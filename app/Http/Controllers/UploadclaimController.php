@@ -132,6 +132,7 @@ class UploadclaimController extends Controller
         // }
         return redirect()->back()->withInput(['tab'=>'uploaddoc'])->with('messagedoc','Upload successful');
         
+        
         //return $a;
         // DB::table('docrepository')->insert($dataSet);
 

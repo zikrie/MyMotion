@@ -12,7 +12,7 @@
 <div class="row">
     <div class="col-md-12">
         <div class="card-body">
-            <h4 class="card-title">@lang('index.attr.rtw_registration')</h4>
+            <h5 class="card-title">@lang('index.attr.rtw_registration')</h5>
             
             <ul class="nav customtab" role="tablist" id="tabMenu">
 

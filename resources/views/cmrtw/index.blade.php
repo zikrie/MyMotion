@@ -86,7 +86,7 @@
                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#ipDetails" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Case Management</span></a></li>
                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#contact_act" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Contact Activity</span></a></li>
                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#generalRemarks" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Remarks</span></a></li>
-               <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#supportingdocument" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('index.attr.supporting_document')</span></a> </li>
+               <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#caseclosure" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Case Closure</span></a></li>
            </ul>
 
            
@@ -210,11 +210,32 @@
 
                         </div>
                     </div>
+                    
+                    <div class="tab-pane p-20 active" id="caseclosure" role="tabpanel">
+                             <ul class="nav customtab" role="tablist">
+                    
+                                <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#insuredpersoninfo" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Insured Person Information</span></a></li>
+                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#defaultedrejected" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Defaulted/Rejected Case Closure Information</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#benefitCM" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Rtw Case Closure Information</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#benefitCM" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Vass/Dass21 Appraisal Information</span></a> </li>
+                  
+                  
+                             </ul>
 
-                    <div class="tab-pane p-20" id="supportingdocument" role="tabpanel">
-                        @include('cmrtw.uploaddoc')
+                            <div class="tab-content tabcontent-border">
+                                 <!-- Insured Person Information tab -->
+                                 <div class="tab-pane p-20 active" id="insuredpersoninfo" role="tabpanel">
+                                   @include('cmrtw.caseclosure.insuredpersoninfo')
+                                </div>
+                               <!-- supporting details tab -->
+                               <div class="tab-pane p-20" id="defaultedrejected" role="tabpanel">
+                                   @include('cmrtw.caseclosure.defaultedrejected')
+                               </div>
+                               <div class="tab-pane p-20" id="benefitCM" role="tabpanel">
+                                    @include('cmrtw.obForm')
+                                </div>
+                           </div> 
                     </div>
-
                 </div>
 
         </div>

@@ -1,7 +1,7 @@
 <div class="card">
     <div class="card-body">
         <form class="form">
-            <h4 class="card-title">@lang('offerconfirmation.title')</h4>
+            <h5 class="card-title">@lang('offerconfirmation.title')</h5>
                 <div class="row p-t-20">
                     <div class="col-md-6">
                         <div class="form-group">

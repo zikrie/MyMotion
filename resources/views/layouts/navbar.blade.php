@@ -66,7 +66,7 @@
          @elseif(Session::get('loginrole') == 'CM')
                 <li class="nav-small-cap">--- FORMS, TABLE &amp; WIDGETS</li>
                 <li><a href="/homertw"><i class="icon-home"></i>@lang('navbar.home')</a></li>
-                <li><a href="/cmrtw.appointmentPlanning"><i class="ti-layout-grid2"></i>Appointment Planning</a></li>
+                <!-- <li><a href="/cmrtw.appointmentPlanning"><i class="ti-layout-grid2"></i>Appointment Planning</a></li> -->
 
         
         

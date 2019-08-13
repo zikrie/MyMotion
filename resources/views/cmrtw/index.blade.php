@@ -88,6 +88,7 @@
                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#generalRemarks" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Remarks</span></a></li>
                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#caseclosure" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Case Closure</span></a></li>
                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#supporting_document" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('index.attr.supporting_document')</span></a> </li>
+               <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#assessment_form" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('index.attr.assessment_form')</span></a> </li>
            </ul>
 
            
@@ -233,8 +234,13 @@
                                 </div>
                            </div> 
                     </div>
+
                     <div class="tab-pane p-20" id="supporting_document" role="tabpanel">
                         @include('cmrtw.uploaddoc')
+                    </div>
+
+                    <div class="tab-pane p-20" id="assessment_form" role="tabpanel">
+                        @include('cmrtw.assessmentForm')
                     </div>
                 </div>
 

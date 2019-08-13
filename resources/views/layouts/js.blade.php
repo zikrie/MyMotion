@@ -279,7 +279,7 @@
         var divtest = document.createElement("div");
         divtest.setAttribute("class", "removeclass" + room);
         var rdiv = 'removeclass' + room;
-        divtest.innerHTML = '<div class="row"><div class="col-sm-3 nopadding"><div class="form-group"><label class="control-label">@lang('ia.attr.job')</label><input type="text" class="form-control" id="job" name="job[]" value="" placeholder="Job of interest"></div></div><div class="col-sm-3 nopadding"><div class="form-group"><label class="control-label">@lang('registrationRTW.attr.state')</label><select class="form-control" tabindex="1"><option value="Johor">Please Select</option><option value="Johor">Johor</option> <option value="Kedah">Kedah</option><option value="Kelantan">Kelantan</option><option value="Melaka">Melaka</option><option value="NegeriSembilan">Negeri Sembilan</option><option value="Pahang">Pahang</option><option value="Penang">Penang</option><option value="Perak">Perak</option><option value="Perlis">Perlis</option><option value="Sabah">Sabah</option> <option value="Sarawak">Sarawak</option><option value="Selangor">Selangor</option><option value="Terengganu">Terengganu</option><option value="KualaLumpur">W.P Kuala Lumpur</option><option value="Labuan">W.P Labuan</option><option value="Putrajaya">W.P Putrajaya</option></select></div></div><div class="col-sm-3 nopadding"><div class="form-group"><label class="control-label">@lang('registrationRTW.attr.city')</label><div class="input-group"><input type="text" class="form-control" id="city" name="city[]" value="" placeholder="city"><div class="input-group-append"><button class="btn btn-danger" type="button" onclick="remove_education_fields(' + room + ');"><i class="fa fa-minus"></i></button> </div></div></div></div></div>';
+        divtest.innerHTML = '<div class="row"><div class="col-sm-3 nopadding"><div class="form-group"><label class="control-label">@lang('ia.attr.job') '+room+'</label><input type="text" class="form-control" id="job" name="job[]" value="" placeholder="Job of interest"></div></div><div class="col-sm-3 nopadding"><div class="form-group"><label class="control-label">@lang('registrationRTW.attr.state')</label><select class="form-control" tabindex="1"><option value="Johor">Please Select</option><option value="Johor">Johor</option> <option value="Kedah">Kedah</option><option value="Kelantan">Kelantan</option><option value="Melaka">Melaka</option><option value="NegeriSembilan">Negeri Sembilan</option><option value="Pahang">Pahang</option><option value="Penang">Penang</option><option value="Perak">Perak</option><option value="Perlis">Perlis</option><option value="Sabah">Sabah</option> <option value="Sarawak">Sarawak</option><option value="Selangor">Selangor</option><option value="Terengganu">Terengganu</option><option value="KualaLumpur">W.P Kuala Lumpur</option><option value="Labuan">W.P Labuan</option><option value="Putrajaya">W.P Putrajaya</option></select></div></div><div class="col-sm-3 nopadding"><div class="form-group"><label class="control-label">@lang('registrationRTW.attr.city')</label><div class="input-group"><input type="text" class="form-control" id="city" name="city[]" value="" placeholder="city"><div class="input-group-append"><button class="btn btn-danger" type="button" onclick="remove_education_fields(' + room + ');"><i class="fa fa-minus"></i></button> </div></div></div></div></div>';
 
         objTo.appendChild(divtest)
     }
@@ -520,4 +520,25 @@ function remove_addDisabled(rid) {
             $('#hideAddress').hide(); 
         }
     }
+</script>
+<script type="text/javascript">
+    
+    var addskill = 1;
+    function add_newskills() 
+    {
+    addskill++;
+    var objTo = document.getElementById('add_newskill')
+    var divtest = document.createElement("div");
+    divtest.setAttribute("class", "removeclass" + addskill);
+    var rdiv = 'removeclass' + addskill;
+    divtest.innerHTML = '<div class="row p-t-20"><div class="col-md-4"><div class="form-group"><label class="control-label">@lang('caseMgmt.attr.add_skills') '+addskill+'</label><input type="text" id="add_skills" class="form-control" required></div></div><div class="col-md-4"><div class="form-group"><label class="control-label">@lang('caseMgmt.attr.grade')</label><div class="input-group"><select class="form-control" tabindex="1" required><option value="">Please Select</option><option value="good">@lang('caseMgmt.attr.good')</option><option value="intermediate">@lang('caseMgmt.attr.moderate')</option><option value="low">@lang('caseMgmt.attr.weak')</option></select><div class="input-group-append"><button class="btn btn-danger" type="button" onclick="remove_add_newskills('+addskill+');"><i class="fa fa-minus"></i></button></div></div></div></div></div>';
+
+    objTo.appendChild(divtest)
+    }
+
+    function remove_add_newskills(rid) {
+    $('.removeclass' + rid).remove();
+    addskill--;
+    }
+
 </script>

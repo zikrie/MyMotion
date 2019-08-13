@@ -39,12 +39,24 @@
                                                 </div>
 
                                                 <div class="row p-t-20">
-                                                    <div class="col-md-4">
+                                                    <div class="col-md-12">
                                                         <div class="form-group">
                                                             <label class="control-label">Address</label>
                                                             <input type="text" id="initialAssessLoc" class="form-control" readonly >
                                                         </div>
                                                     </div> 
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">       
+                                                            <input type="text" id="initialAssessLoc" class="form-control" readonly >
+                                                        </div>
+                                                    </div> 
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">                                                 
+                                                            <input type="text" id="initialAssessLoc" class="form-control" readonly >
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                                <div class="row p-t-20">
                                                     <div class="col-md-4">
                                                         <div class="form-group">
                                                             <label class="control-label">Postcode</label>
@@ -57,14 +69,14 @@
                                                             <input type="text" id="initialAssessLoc" class="form-control" readonly >
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="row p-t-20">
                                                     <div class="col-md-4">
                                                         <div class="form-group">
                                                             <label class="control-label">Ofiice Phone No.</label>
                                                             <input type="text" id="initialAssessLoc" class="form-control" readonly >
                                                         </div>
                                                     </div> 
+                                                </div>
+                                                <div class="row p-t-20">
                                                     <div class="col-md-4">
                                                         <div class="form-group">
                                                             <label class="control-label">Email</label>
@@ -77,14 +89,14 @@
                                                             <input type="date" id="initialAssessLoc" class="form-control" readonly >
                                                         </div>
                                                     </div> 
-                                                </div>
-                                                <div class="row p-t-20">
                                                     <div class="col-md-4">
                                                         <div class="form-group">
                                                             <label class="control-label">End Date</label>
                                                             <input type="date" id="initialAssessLoc" class="form-control" readonly >
                                                         </div>
                                                     </div> 
+                                                </div>
+                                                <div class="row p-t-20">
                                                     <div class="col-md-4">
                                                         <div class="form-group">
                                                             <label class="control-label">Justify Election</label>
@@ -97,14 +109,14 @@
                                                             <input type="text" id="initialAssessLoc" class="form-control" readonly >
                                                         </div>
                                                     </div> 
-                                                </div>
-                                                <div class="row p-t-20">
                                                     <div class="col-md-4">
                                                         <div class="form-group">
                                                             <label class="control-label">Total Price(RM)</label>
                                                             <input type="date" id="initialAssessLoc" class="form-control" readonly >
                                                         </div>
                                                     </div> 
+                                                </div>
+                                                <div class="row p-t-20"> 
                                                     <div class="col-md-4">
                                                         <div class="form-group">
                                                             <label class="control-label">Offer Acceptance</label>
@@ -119,11 +131,11 @@
                                                             </select>
                                                         </div>
                                                     </div> 
-                                                    <div class="col-md-4">
+                                                    <div class="col-md-8">
                                                         <div class="form-group">
                                                              <div id="hideOfferAccept" class="form-group" style="display:none">
                                                                 <label class="control-label">Rejection reason</label>
-                                                                <input type="text" id="initialAssessLoc" class="form-control" readonly >
+                                                                <textarea class="form-control clearFields" rows="2" type="textarea"  id="reasons"></textarea>
                                                              </div>
                                                         </div>
                                                     </div> 
@@ -167,16 +179,22 @@
                                                     <div class="col-md-4">
                                                         <div class="form-group">
                                                             <label class="control-label">Item</label>
-                                                            <input type="text" id="initialAssessTime" class="form-control" readonly >
+                                                            <input type="text" id="initialAssessTime" class="form-control"  >
                                                         </div>
                                                     </div>   
                                                     <div class="col-md-4">
                                                         <div class="form-group">
                                                             <label class="control-label">Price</label>
-                                                            <input type="text" id="initialAssessTime" class="form-control" readonly >
+                                                                <div class="input-group" required>
+                                                                    <input type="text" id="initialAssessTime" class="form-control"  >
+                                                                    <div class="input-group-append">
+                                                                        <button class="btn btn-success" type="button" onclick="addItemDetails();"><i class="fa fa-plus"></i></button>
+                                                                    </div>
+                                                                </div>
                                                         </div>
                                                     </div>                       
-                                                </div>  
+                                                </div> 
+                                                <div id="addItemDet"></div> 
                                             </div>
                                         </div>
                                     </div>

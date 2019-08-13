@@ -4,7 +4,7 @@
             <div class="card-body">
                 <form action="#">
                     <div class="form-body">
-                    
+
                         <div class="row p-t-20">
                             <div class="col-12">
                                 <div class="card">
@@ -35,140 +35,140 @@
                         </div>
 
 
-                                <ul class="nav nav-tabs" role="tablist">
-                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#wsa" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.wsa')</span></a> </li>
-                                
-                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#fce" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.fce')</span></a> </li>
-                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#prm" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.prm')</span></a> </li>
-                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#mm" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.mm')</span></a> </li>                 
-                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#vtm" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.vtm')</span></a> </li>
-                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#jp" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.jp')</span></a> </li>       
-                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#va" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">VA</span></a> </li>          
-                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#mobility" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Mobility</span></a> </li>              
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#wsa" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.wsa')</span></a> </li>
+
+                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#fce" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.fce')</span></a> </li>
+                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#prm" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.prm')</span></a> </li>
+                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#mm" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.mm')</span></a> </li>                 
+                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#vtm" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.vtm')</span></a> </li>
+                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#jp" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.jp')</span></a> </li>       
+                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#va" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">VA</span></a> </li>          
+                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#mobility" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Mobility</span></a> </li>              
+                        </ul>
+
+                        <div class="tab-content tabcontent-border">
+
+
+                            <div class="tab-pane p-20" id="wsa" role="tabpanel">
+                                <ul class="nav customtab" role="tablist">
+                                    <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#permission" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Permission</span></a> </li>
+                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#jobDetails" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Job Details</span></a> </li>
+                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#appointmentTrip" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Appointment Trip</span></a> </li>
+                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#wsa_form" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">WSA Form</span></a> </li>
+                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#wsa_report" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">WSA Report</span></a> </li>
                                 </ul>
-
                                 <div class="tab-content tabcontent-border">
+                                    <div class="tab-pane p-20 active" id="permission" role="tabpanel">
+                                        @include('cmrtw.caseMgmt.PL.ipPermission')
+                                    </div>
+
+                                    <div class="tab-pane p-20" id="jobDetails" role="tabpanel">                                                  
+                                        @include('cmrtw.caseMgmt.PL.jobDetails')  
+                                    </div>
+
+                                    <div class="tab-pane p-20" id="appointmentTrip" role="tabpanel">                                  
+                                       @include('cmrtw.caseMgmt.PL.appointmentTrip')
+                                   </div>
+
+                                   <div class="tab-pane p-20" id="wsa_form" role="tabpanel">
+                                    wsa_form
+                                    {{-- @include('cmrtw.caseMgmt.appointmentTrip') --}}
+                                </div>
+
+                                <div class="tab-pane p-20" id="wsa_report" role="tabpanel">
+                                    wsa_report
+                                    {{-- @include('cmrtw.caseMgmt.supportDoc') --}}
+                                </div>
+                            </div>
+                        </div>     
 
 
-                                    <div class="tab-pane p-20" id="wsa" role="tabpanel">
-                                        <ul class="nav customtab" role="tablist">
-                                                <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#permission" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Permission</span></a> </li>
-                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#jobDetails" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Job Details</span></a> </li>
-                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#appointmentTrip" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Appointment Trip</span></a> </li>
-                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#wsa_form" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">WSA Form</span></a> </li>
-                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#wsa_report" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">WSA Report</span></a> </li>
-                                        </ul>
-                                        <div class="tab-content tabcontent-border">
-                                                <div class="tab-pane p-20 active" id="permission" role="tabpanel">
-                                                    @include('cmrtw.caseMgmt.PL.ipPermission')
-                                                </div>
-                            
-                                                <div class="tab-pane p-20" id="jobDetails" role="tabpanel">                                                  
-                                                    @include('cmrtw.caseMgmt.PL.jobDetails')  
-                                                </div>
-                            
-                                                <div class="tab-pane p-20" id="appointmentTrip" role="tabpanel">                                  
-                                                     @include('cmrtw.caseMgmt.PL.appointmentTrip')
-                                                </div>
-                            
-                                                <div class="tab-pane p-20" id="wsa_form" role="tabpanel">
-                                                        wsa_form
-                                                    {{-- @include('cmrtw.caseMgmt.appointmentTrip') --}}
-                                                </div>
-                            
-                                                <div class="tab-pane p-20" id="wsa_report" role="tabpanel">
-                                                        wsa_report
-                                                    {{-- @include('cmrtw.caseMgmt.supportDoc') --}}
-                                                </div>
-                                        </div>
-                                    </div>     
-                                    
-                                    
 
-                                    <div class="tab-pane p-20" id="fce" role="tabpanel">
-                                        <ul class="nav customtab" role="tablist">
-                                                <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#jobDetailIP" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Job Details Insure Person</span></a> </li>
-                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#fceDetails" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">FCE Details</span></a> </li>
-                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#fceForm" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">FCE Form</span></a> </li>
-                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#fceReport" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">FCE Report</span></a> </li>
-                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#modifiOfWork" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Modification Of Work</span></a> </li>
-                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#caseNoteInfo" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Case Note Information</span></a> </li>
-                                        </ul>
-                                        <div class="tab-content tabcontent-border">
-                                                <div class="tab-pane p-20 active" id="jobDetailIP" role="tabpanel">
-                                                        jobDetailIP
-                                                {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}
-                                                </div>
-                            
-                                                <div class="tab-pane p-20" id="fceDetails" role="tabpanel">
-                                                        fceDetails
-                                                {{-- @include('cmrtw.caseMgmt.PL.jobDetails') --}}
-                                                </div>
-                            
-                                                <div class="tab-pane p-20" id="fceForm" role="tabpanel">
-                                                        fceForm
-                                                {{-- @include('cmrtw.caseMgmt.PL.appointmentTrip') --}}
-                                                </div>
-                            
-                                                <div class="tab-pane p-20" id="fceReport" role="tabpanel">
-                                                        fceReport
-                                                    {{-- @include('cmrtw.caseMgmt.appointmentTrip') --}}
-                                                </div>
-                            
-                                                <div class="tab-pane p-20" id="modifiOfWork" role="tabpanel">
-                                                        modifiOfWork
-                                                    {{-- @include('cmrtw.caseMgmt.supportDoc') --}}
-                                                </div>
-                                                <div class="tab-pane p-20" id="caseNoteInfo" role="tabpanel">
-                                                        caseNoteInfo
-                                                    {{-- @include('cmrtw.caseMgmt.supportDoc') --}}
-                                                </div>
-                                        </div>
-                                    </div>     
+                        <div class="tab-pane p-20" id="fce" role="tabpanel">
+                            <ul class="nav customtab" role="tablist">
+                                <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#jobDetailIP" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Job Details Insure Person</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#fceDetails" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">FCE Details</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#fceForm" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">FCE Form</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#fceReport" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">FCE Report</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#modifiOfWork" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Modification Of Work</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#caseNoteInfo" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Case Note Information</span></a> </li>
+                            </ul>
+                            <div class="tab-content tabcontent-border">
+                                <div class="tab-pane p-20 active" id="jobDetailIP" role="tabpanel">
+                                    jobDetailIP
+                                    {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}
+                                </div>
+
+                                <div class="tab-pane p-20" id="fceDetails" role="tabpanel">
+                                    fceDetails
+                                    {{-- @include('cmrtw.caseMgmt.PL.jobDetails') --}}
+                                </div>
+
+                                <div class="tab-pane p-20" id="fceForm" role="tabpanel">
+                                    fceForm
+                                    {{-- @include('cmrtw.caseMgmt.PL.appointmentTrip') --}}
+                                </div>
+
+                                <div class="tab-pane p-20" id="fceReport" role="tabpanel">
+                                    fceReport
+                                    {{-- @include('cmrtw.caseMgmt.appointmentTrip') --}}
+                                </div>
+
+                                <div class="tab-pane p-20" id="modifiOfWork" role="tabpanel">
+                                    modifiOfWork
+                                    {{-- @include('cmrtw.caseMgmt.supportDoc') --}}
+                                </div>
+                                <div class="tab-pane p-20" id="caseNoteInfo" role="tabpanel">
+                                    caseNoteInfo
+                                    {{-- @include('cmrtw.caseMgmt.supportDoc') --}}
+                                </div>
+                            </div>
+                        </div>     
 
 
 
 
-                                    <div class="tab-pane p-20" id="prm" role="tabpanel">
-                                            <ul class="nav customtab" role="tablist">
-                                                    <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#insurePersonDetailsPRM" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Insured Person Details</span></a> </li>
-                                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#recoveryInformation" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Recovery Information</span></a> </li>
-                                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#rehabReport" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Rehab Report</span></a> </li>
-                                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#sessInfo" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Session Information</span></a> </li>
-                                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#ipAttendanceInfo" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Insured Person Attendance Information</span></a> </li>
-                                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#caseNoteInfoPRM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Case Note Information</span></a> </li>
-                                            </ul>
-                                            <div class="tab-content tabcontent-border">
-                                                    <div class="tab-pane p-20 active" id="insurePersonDetailsPRM" role="tabpanel">
-                                                            insurePersonDetails
-                                                    {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}
-                                                    </div>
+                        <div class="tab-pane p-20" id="prm" role="tabpanel">
+                            <ul class="nav customtab" role="tablist">
+                                <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#insurePersonDetailsPRM" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Insured Person Details</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#recoveryInformation" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Recovery Information</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#rehabReport" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Rehab Report</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#sessInfo" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Session Information</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#ipAttendanceInfo" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Insured Person Attendance Information</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#caseNoteInfoPRM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Case Note Information</span></a> </li>
+                            </ul>
+                            <div class="tab-content tabcontent-border">
+                                <div class="tab-pane p-20 active" id="insurePersonDetailsPRM" role="tabpanel">
+                                    insurePersonDetails
+                                    {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}
+                                </div>
                                 
-                                                    <div class="tab-pane p-20" id="recoveryInformation" role="tabpanel">
-                                                            recoveryInformation
-                                                    {{-- @include('cmrtw.caseMgmt.PL.jobDetails') --}}
-                                                    </div>
+                                <div class="tab-pane p-20" id="recoveryInformation" role="tabpanel">
+                                    recoveryInformation
+                                    {{-- @include('cmrtw.caseMgmt.PL.jobDetails') --}}
+                                </div>
                                 
-                                                    <div class="tab-pane p-20" id="rehabReport" role="tabpanel">
-                                                            rehabReport
-                                                    {{-- @include('cmrtw.caseMgmt.PL.appointmentTrip') --}}
-                                                    </div>
+                                <div class="tab-pane p-20" id="rehabReport" role="tabpanel">
+                                    rehabReport
+                                    {{-- @include('cmrtw.caseMgmt.PL.appointmentTrip') --}}
+                                </div>
                                 
-                                                    <div class="tab-pane p-20" id="sessInfo" role="tabpanel">
-                                                            sessInfo
-                                                        {{-- @include('cmrtw.caseMgmt.appointmentTrip') --}}
-                                                    </div>
+                                <div class="tab-pane p-20" id="sessInfo" role="tabpanel">
+                                    sessInfo
+                                    {{-- @include('cmrtw.caseMgmt.appointmentTrip') --}}
+                                </div>
                                 
-                                                    <div class="tab-pane p-20" id="ipAttendanceInfo" role="tabpanel">
-                                                            ipAttendanceInfo
-                                                        {{-- @include('cmrtw.caseMgmt.supportDoc') --}}
-                                                    </div>
-                                                    <div class="tab-pane p-20" id="caseNoteInfoPRM" role="tabpanel">
-                                                            caseNoteInfoprm
-                                                        {{-- @include('cmrtw.caseMgmt.supportDoc') --}}
-                                                    </div>
-                                            </div>
-                                        </div>     
+                                <div class="tab-pane p-20" id="ipAttendanceInfo" role="tabpanel">
+                                    ipAttendanceInfo
+                                    {{-- @include('cmrtw.caseMgmt.supportDoc') --}}
+                                </div>
+                                <div class="tab-pane p-20" id="caseNoteInfoPRM" role="tabpanel">
+                                    caseNoteInfoprm
+                                    {{-- @include('cmrtw.caseMgmt.supportDoc') --}}
+                                </div>
+                            </div>
+                        </div>     
 
 
 
@@ -178,47 +178,47 @@
 
 
 
-                                        <div class="tab-pane p-20" id="mm" role="tabpanel">                          
-                                            <div class="tab-content tabcontent-border"> 
-                                                <div class="tab-content tabcontent-border">
-                                                    <div class="tab-pane p-20 active" id="insurePersonDetailsMM" role="tabpanel">
-                                                        @include('cmrtw.caseMgmt.MM.indexMM') 
-                                                    </div>
-                                
-                                                    <div class="tab-pane p-20" id="RTWplanningInfo" role="tabpanel">
-                                                            RTWplanningInfo
-                                                    </div>
-                                
-                                                    <div class="tab-pane p-20" id="modifiiHistoryInfo" role="tabpanel">
-                                                            modifiiHistoryInfo
-                                                    </div>
-                                
-                                                    <div class="tab-pane p-20" id="modifiInfo" role="tabpanel">
-                                                            modifiInfo
-                                                    </div>
-                                
-                                                    <div class="tab-pane p-20" id="scmSession" role="tabpanel">
-                                                            scmSession    
-                                                    </div>
+                        <div class="tab-pane p-20" id="mm" role="tabpanel">                          
+                            <div class="tab-content tabcontent-border"> 
+                                <div class="tab-content tabcontent-border">
+                                    <div class="tab-pane p-20 active" id="insurePersonDetailsMM" role="tabpanel">
+                                        @include('cmrtw.caseMgmt.MM.indexMM') 
+                                    </div>
 
-                                                    <div class="tab-pane p-20" id="JKKmeeting" role="tabpanel">
-                                                            JKKmeeting  
-                                                    </div>
+                                    <div class="tab-pane p-20" id="RTWplanningInfo" role="tabpanel">
+                                        RTWplanningInfo
+                                    </div>
 
-                                                    <div class="tab-pane p-20" id="SuppInfoSelected" role="tabpanel">
-                                                            SuppInfoSelected    
-                                                    </div>
+                                    <div class="tab-pane p-20" id="modifiiHistoryInfo" role="tabpanel">
+                                        modifiiHistoryInfo
+                                    </div>
 
-                                                    <div class="tab-pane p-20" id="modifiReport" role="tabpanel">
-                                                            modifiReport                                                 
-                                                    </div>
+                                    <div class="tab-pane p-20" id="modifiInfo" role="tabpanel">
+                                        modifiInfo
+                                    </div>
 
-                                                    <div class="tab-pane p-20" id="caseNoteInfoMM" role="tabpanel">
-                                                            caseNoteInfoMM    
-                                                    </div>
-                                                </div>                
-                                            </div>
-                                        </div>
+                                    <div class="tab-pane p-20" id="scmSession" role="tabpanel">
+                                        scmSession    
+                                    </div>
+
+                                    <div class="tab-pane p-20" id="JKKmeeting" role="tabpanel">
+                                        JKKmeeting  
+                                    </div>
+
+                                    <div class="tab-pane p-20" id="SuppInfoSelected" role="tabpanel">
+                                        SuppInfoSelected    
+                                    </div>
+
+                                    <div class="tab-pane p-20" id="modifiReport" role="tabpanel">
+                                        modifiReport                                                 
+                                    </div>
+
+                                    <div class="tab-pane p-20" id="caseNoteInfoMM" role="tabpanel">
+                                        caseNoteInfoMM    
+                                    </div>
+                                </div>                
+                            </div>
+                        </div>
 
 
                                         {{-- <div class="tab-pane p-20" id="mm" role="tabpanel">
@@ -283,226 +283,226 @@
 
 
 
-                                            <div class="tab-pane p-20" id="vtm" role="tabpanel">
-                                                    <ul class="nav customtab" role="tablist">
-                                                            <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#insurePersonDetailsVTM" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Insured Person Details</span></a> </li>
-                                                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#supplierApprovalVTM" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Supplier Approval</span></a> </li>
-                                                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#reqForQuotVTM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Request for quotation</span></a> </li>
-                                                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#quotationVTM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Quotation</span></a> </li>
-                                                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#suppInfoSelectedVTM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Supplier information selected</span></a> </li>
-                                                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#courseInfoVTM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Course Information</span></a> </li>
-                                                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#cmApprovedVTM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">CM - Approved</span></a> </li>
-                                                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#scmApprovedVTM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">SCM HQ - Approved</span></a> </li>
-                                                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#ipAttendanceInfoVTM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Insured Person Attendance Information</span></a> </li>
-                                                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#vtReportVTM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">VT Report</span></a> </li>
-                                                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#bussInfoVTM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Business Information Insured Person  </span></a> </li>
-                                                    </ul>
-                                                    <div class="tab-content tabcontent-border">
-                                                            <div class="tab-pane p-20 active" id="insurePersonDetailsVTM" role="tabpanel">
-                                                                    insurePersonDetailsVTM
-                                                            {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}
-                                                            </div>
-                                        
-                                                            <div class="tab-pane p-20" id="supplierApprovalVTM" role="tabpanel">
-                                                                    supplierApprovalVTM
-                                                            {{-- @include('cmrtw.caseMgmt.PL.jobDetails') --}}
-                                                            </div>
-                                        
-                                                            <div class="tab-pane p-20" id="reqForQuotVTM" role="tabpanel">
-                                                                    reqForQuotVTM
-                                                            {{-- @include('cmrtw.caseMgmt.PL.appointmentTrip') --}}
-                                                            </div>
-                                        
-                                                            <div class="tab-pane p-20" id="quotationVTM" role="tabpanel">
-                                                                    quotationVTM
-                                                                {{-- @include('cmrtw.caseMgmt.appointmentTrip') --}}
-                                                            </div>
-                                        
-                                                            <div class="tab-pane p-20" id="suppInfoSelectedVTM" role="tabpanel">
-                                                                    suppInfoSelectedVTM
-                                                                {{-- @include('cmrtw.caseMgmt.supportDoc') --}}
-                                                            </div>
-                                                           
-                                                            <div class="tab-pane p-20" id="courseInfoVTM" role="tabpanel">
-                                                                    courseInfoVTM
-                                                                {{-- @include('cmrtw.caseMgmt.supportDoc') --}}
-                                                            </div>
- 
-                                                            <div class="tab-pane p-20" id="cmApprovedVTM" role="tabpanel">
-                                                                    cmApprovedVTM
-                                                                {{-- @include('cmrtw.caseMgmt.supportDoc') --}}
-                                                            </div>
-         
-                                                            <div class="tab-pane p-20" id="scmApprovedVTM" role="tabpanel">
-                                                                    scmApprovedVTM
-                                                                {{-- @include('cmrtw.caseMgmt.supportDoc') --}}
-                                                            </div>
-          
-                                                            <div class="tab-pane p-20" id="ipAttendanceInfoVTM" role="tabpanel">
-                                                                    ipAttendanceInfoVTM
-                                                                {{-- @include('cmrtw.caseMgmt.supportDoc') --}}
-                                                            </div>
-                                                                
-                                                            <div class="tab-pane p-20" id="vtReportVTM" role="tabpanel">
-                                                                    vtReportVTM
-                                                                {{-- @include('cmrtw.caseMgmt.supportDoc') --}}
-                                                            </div>
+                                        <div class="tab-pane p-20" id="vtm" role="tabpanel">
+                                            <ul class="nav customtab" role="tablist">
+                                                <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#insurePersonDetailsVTM" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Insured Person Details</span></a> </li>
+                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#supplierApprovalVTM" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Supplier Approval</span></a> </li>
+                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#reqForQuotVTM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Request for quotation</span></a> </li>
+                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#quotationVTM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Quotation</span></a> </li>
+                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#suppInfoSelectedVTM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Supplier information selected</span></a> </li>
+                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#courseInfoVTM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Course Information</span></a> </li>
+                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#cmApprovedVTM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">CM - Approved</span></a> </li>
+                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#scmApprovedVTM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">SCM HQ - Approved</span></a> </li>
+                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#ipAttendanceInfoVTM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Insured Person Attendance Information</span></a> </li>
+                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#vtReportVTM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">VT Report</span></a> </li>
+                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#bussInfoVTM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Business Information Insured Person  </span></a> </li>
+                                            </ul>
+                                            <div class="tab-content tabcontent-border">
+                                                <div class="tab-pane p-20 active" id="insurePersonDetailsVTM" role="tabpanel">
+                                                    insurePersonDetailsVTM
+                                                    {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}
+                                                </div>
+
+                                                <div class="tab-pane p-20" id="supplierApprovalVTM" role="tabpanel">
+                                                    supplierApprovalVTM
+                                                    {{-- @include('cmrtw.caseMgmt.PL.jobDetails') --}}
+                                                </div>
+
+                                                <div class="tab-pane p-20" id="reqForQuotVTM" role="tabpanel">
+                                                    reqForQuotVTM
+                                                    {{-- @include('cmrtw.caseMgmt.PL.appointmentTrip') --}}
+                                                </div>
+
+                                                <div class="tab-pane p-20" id="quotationVTM" role="tabpanel">
+                                                    quotationVTM
+                                                    {{-- @include('cmrtw.caseMgmt.appointmentTrip') --}}
+                                                </div>
+
+                                                <div class="tab-pane p-20" id="suppInfoSelectedVTM" role="tabpanel">
+                                                    suppInfoSelectedVTM
+                                                    {{-- @include('cmrtw.caseMgmt.supportDoc') --}}
+                                                </div>
+
+                                                <div class="tab-pane p-20" id="courseInfoVTM" role="tabpanel">
+                                                    courseInfoVTM
+                                                    {{-- @include('cmrtw.caseMgmt.supportDoc') --}}
+                                                </div>
+
+                                                <div class="tab-pane p-20" id="cmApprovedVTM" role="tabpanel">
+                                                    cmApprovedVTM
+                                                    {{-- @include('cmrtw.caseMgmt.supportDoc') --}}
+                                                </div>
+
+                                                <div class="tab-pane p-20" id="scmApprovedVTM" role="tabpanel">
+                                                    scmApprovedVTM
+                                                    {{-- @include('cmrtw.caseMgmt.supportDoc') --}}
+                                                </div>
+
+                                                <div class="tab-pane p-20" id="ipAttendanceInfoVTM" role="tabpanel">
+                                                    ipAttendanceInfoVTM
+                                                    {{-- @include('cmrtw.caseMgmt.supportDoc') --}}
+                                                </div>
+
+                                                <div class="tab-pane p-20" id="vtReportVTM" role="tabpanel">
+                                                    vtReportVTM
+                                                    {{-- @include('cmrtw.caseMgmt.supportDoc') --}}
+                                                </div>
+
+                                                <div class="tab-pane p-20" id="bussInfoVTM" role="tabpanel">
+                                                    bussInfoVTM
+                                                    {{-- @include('cmrtw.caseMgmt.supportDoc') --}}
+                                                </div>
+                                            </div>
+                                        </div>     
+
+
+
+                                        <div class="tab-pane p-20" id="jp" role="tabpanel">
+                                            <ul class="nav customtab" role="tablist">
+                                                <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#permission" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">eeeeeeeeeeeeeeeeee</span></a> </li>
+                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#job_details" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">eeeeeeeeeeeeeeeeee</span></a> </li>
+                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#appointment" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">eeeeeeeeeeeeeeeeee</span></a> </li>
+                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#wsa_form" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">eeeeeeeeeeeeeeeeee</span></a> </li>
+                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#wsa_report" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">eeeeeeeeeeeeeeeeee</span></a> </li>
+                                            </ul>
+                                            <div class="tab-content tabcontent-border">
+                                                <div class="tab-pane p-20 active" id="permission" role="tabpanel">
+                                                    {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}
+                                                </div>
+
+                                                <div class="tab-pane p-20" id="job_details" role="tabpanel">
+                                                    {{-- @include('cmrtw.caseMgmt.PL.jobDetails') --}}
+                                                </div>
+
+                                                <div class="tab-pane p-20" id="appointment" role="tabpanel">
+                                                    {{-- @include('cmrtw.caseMgmt.PL.appointmentTrip') --}}
+                                                </div>
+
+                                                <div class="tab-pane p-20" id="wsa_form" role="tabpanel">
+                                                    {{-- @include('cmrtw.caseMgmt.appointmentTrip') --}}
+                                                </div>
+
+                                                <div class="tab-pane p-20" id="wsa_report" role="tabpanel">
+                                                    {{-- @include('cmrtw.caseMgmt.supportDoc') --}}
+                                                </div>
+                                            </div>
+                                        </div>     
+
+
+
+
+
+                                        <div class="tab-pane p-20" id="financial" role="tabpanel">
+                                            <ul class="nav customtab" role="tablist">
+                                                <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#permission" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">ffffffffffffffffff</span></a> </li>
+                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#job_details" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">ffffffffffffffffff</span></a> </li>
+                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#appointment" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">ffffffffffffffffff</span></a> </li>
+                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#wsa_form" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">ffffffffffffffffff</span></a> </li>
+                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#wsa_report" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">ffffffffffffffffff</span></a> </li>
+                                            </ul>
+                                            <div class="tab-content tabcontent-border">
+                                                <div class="tab-pane p-20 active" id="permission" role="tabpanel">
+                                                    {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}
+
+                                                    shahira
+                                                </div>
+                                                
+                                                <div class="tab-pane p-20" id="job_details" role="tabpanel">
+                                                    {{-- @include('cmrtw.caseMgmt.PL.jobDetails') --}}
+                                                    shahira
+                                                </div>
+                                                
+                                                <div class="tab-pane p-20" id="appointment" role="tabpanel">
+                                                    {{-- @include('cmrtw.caseMgmt.PL.appointmentTrip') --}}
+                                                    shahira
+                                                </div>
+                                                
+                                                <div class="tab-pane p-20" id="wsa_form" role="tabpanel">
+                                                    {{-- @include('cmrtw.caseMgmt.appointmentTrip') --}}
+                                                    shahira
+                                                </div>
+                                                
+                                                <div class="tab-pane p-20" id="wsa_report" role="tabpanel">
+                                                    {{-- @include('cmrtw.caseMgmt.supportDoc') --}}
+                                                    shahira
+                                                </div>
+                                            </div>
+                                        </div>     
+
+
+
+
+                                        <div class="tab-pane p-20" id="va" role="tabpanel">
+                                            <ul class="nav customtab" role="tablist">
+                                                <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#vaAssessment" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Vocational Assessment Details</span></a> </li>
+                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#ipVerifi" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Insured Person Verification</span></a> </li>
+                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#recomByCM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Recommendation By Case Manager</span></a> </li>
+                                            </ul>
+                                            <div class="tab-content tabcontent-border">
+                                                <div class="tab-pane p-20 active" id="vaAssessment" role="tabpanel">
+                                                     @include('cmrtw.caseMgmt.PL.vaAssessment')
+                                                </div>
+                                                <div class="tab-pane p-20 " id="ipVerifi" role="tabpanel">
+                                                    {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}
+                                                </div>
+                                                <div class="tab-pane p-20 " id="recomByCM" role="tabpanel">
+                                                     @include('cmrtw.caseMgmt.PL.vaRecommendation')
+                                                </div>
+                                            </div>
+                                        </div>  
+
+                                        <div class="tab-pane p-20" id="mobility" role="tabpanel">
+                                            <ul class="nav customtab" role="tablist">
+                                                <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#mobilityDetails" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Mobility Details</span></a> </li>
+                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#equipAndGuard" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Equipment and Guardian</span></a> </li>
+                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#trrcOffDetails" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down"></span>TRRC Officer Details</a> </li>
+                                                <li class="nav-item"> <a class="nav-link " data-toggle="tab" href="#caseNote" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Case Note</span></a> </li>
+                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#aomApproval" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">AOM Approval</span></a> </li>
+                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#JourVerifiReportCM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down"></span>Journey Verification Report - CM</a> </li>
+                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#JourVerifiReportHQSCM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down"></span>Journey Verification Report - HQ SCM</a> </li>
+                                            </ul>
+                                            <div class="tab-content tabcontent-border">
+                                                <div class="tab-pane p-20 active" id="mobilityDetails" role="tabpanel">
+                                                    {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}
+                                                </div>
+                                                <div class="tab-pane p-20 " id="equipAndGuard" role="tabpanel">
+                                                    {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}
+                                                </div>
+                                                <div class="tab-pane p-20 " id="trrcOffDetails" role="tabpanel">
+                                                    {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}
+                                                </div>
+                                                <div class="tab-pane p-20 " id="caseNote" role="tabpanel">
+                                                    {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}
+                                                </div>
+                                                <div class="tab-pane p-20 " id="aomApproval" role="tabpanel">
+                                                    {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}
+                                                </div>
+                                                <div class="tab-pane p-20 " id="JourVerifiReportCM" role="tabpanel">
+                                                    {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}
+                                                </div>
+                                                <div class="tab-pane p-20 " id="JourVerifiReportHQSCM" role="tabpanel">
+                                                    {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}
+                                                </div>
+                                                
+                                            </div>
+                                        </div>    
+
+
+
+
+
+
+
+                                    </div>
+
                                     
-                                                            <div class="tab-pane p-20" id="bussInfoVTM" role="tabpanel">
-                                                                    bussInfoVTM
-                                                                {{-- @include('cmrtw.caseMgmt.supportDoc') --}}
-                                                            </div>
-                                                    </div>
-                                                </div>     
 
 
 
-                                                <div class="tab-pane p-20" id="jp" role="tabpanel">
-                                                        <ul class="nav customtab" role="tablist">
-                                                                <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#permission" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">eeeeeeeeeeeeeeeeee</span></a> </li>
-                                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#job_details" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">eeeeeeeeeeeeeeeeee</span></a> </li>
-                                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#appointment" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">eeeeeeeeeeeeeeeeee</span></a> </li>
-                                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#wsa_form" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">eeeeeeeeeeeeeeeeee</span></a> </li>
-                                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#wsa_report" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">eeeeeeeeeeeeeeeeee</span></a> </li>
-                                                        </ul>
-                                                        <div class="tab-content tabcontent-border">
-                                                                <div class="tab-pane p-20 active" id="permission" role="tabpanel">
-                                                                {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}
-                                                                </div>
-                                            
-                                                                <div class="tab-pane p-20" id="job_details" role="tabpanel">
-                                                                {{-- @include('cmrtw.caseMgmt.PL.jobDetails') --}}
-                                                                </div>
-                                            
-                                                                <div class="tab-pane p-20" id="appointment" role="tabpanel">
-                                                                {{-- @include('cmrtw.caseMgmt.PL.appointmentTrip') --}}
-                                                                </div>
-                                            
-                                                                <div class="tab-pane p-20" id="wsa_form" role="tabpanel">
-                                                                    {{-- @include('cmrtw.caseMgmt.appointmentTrip') --}}
-                                                                </div>
-                                            
-                                                                <div class="tab-pane p-20" id="wsa_report" role="tabpanel">
-                                                                    {{-- @include('cmrtw.caseMgmt.supportDoc') --}}
-                                                                </div>
-                                                        </div>
-                                                    </div>     
-    
-                                                    
 
-
-
-                                                    <div class="tab-pane p-20" id="financial" role="tabpanel">
-                                                            <ul class="nav customtab" role="tablist">
-                                                                    <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#permission" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">ffffffffffffffffff</span></a> </li>
-                                                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#job_details" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">ffffffffffffffffff</span></a> </li>
-                                                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#appointment" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">ffffffffffffffffff</span></a> </li>
-                                                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#wsa_form" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">ffffffffffffffffff</span></a> </li>
-                                                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#wsa_report" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">ffffffffffffffffff</span></a> </li>
-                                                            </ul>
-                                                            <div class="tab-content tabcontent-border">
-                                                                    <div class="tab-pane p-20 active" id="permission" role="tabpanel">
-                                                                    {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}
-
-                                                                    shahira
-                                                                    </div>
-                                                
-                                                                    <div class="tab-pane p-20" id="job_details" role="tabpanel">
-                                                                    {{-- @include('cmrtw.caseMgmt.PL.jobDetails') --}}
-                                                                    shahira
-                                                                    </div>
-                                                
-                                                                    <div class="tab-pane p-20" id="appointment" role="tabpanel">
-                                                                    {{-- @include('cmrtw.caseMgmt.PL.appointmentTrip') --}}
-                                                                    shahira
-                                                                    </div>
-                                                
-                                                                    <div class="tab-pane p-20" id="wsa_form" role="tabpanel">
-                                                                        {{-- @include('cmrtw.caseMgmt.appointmentTrip') --}}
-                                                                        shahira
-                                                                    </div>
-                                                
-                                                                    <div class="tab-pane p-20" id="wsa_report" role="tabpanel">
-                                                                        {{-- @include('cmrtw.caseMgmt.supportDoc') --}}
-                                                                        shahira
-                                                                    </div>
-                                                            </div>
-                                                        </div>     
-
-
-
-                                                        
-                                                        <div class="tab-pane p-20" id="va" role="tabpanel">
-                                                                <ul class="nav customtab" role="tablist">
-                                                                        <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#vocaAssDetails" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Vocasional Assessment Details</span></a> </li>
-                                                                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#ipVerifi" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Insured Person Verification</span></a> </li>
-                                                                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#recomByCM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Recommendation By Case Manager</span></a> </li>
-                                                                </ul>
-                                                                <div class="tab-content tabcontent-border">
-                                                                        <div class="tab-pane p-20 active" id="vocaAssDetails" role="tabpanel">
-                                                                                {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}
-                                                                        </div>
-                                                                        <div class="tab-pane p-20 " id="ipVerifi" role="tabpanel">
-                                                                                {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}
-                                                                        </div>
-                                                                        <div class="tab-pane p-20 " id="recomByCM" role="tabpanel">
-                                                                                {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}
-                                                                        </div>
-                                                                </div>
-                                                        </div>  
-                                                        
-                                                        <div class="tab-pane p-20" id="mobility" role="tabpanel">
-                                                                <ul class="nav customtab" role="tablist">
-                                                                        <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#mobilityDetails" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Mobility Details</span></a> </li>
-                                                                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#equipAndGuard" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Equipment and Guardian</span></a> </li>
-                                                                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#trrcOffDetails" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down"></span>TRRC Officer Details</a> </li>
-                                                                        <li class="nav-item"> <a class="nav-link " data-toggle="tab" href="#caseNote" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Case Note</span></a> </li>
-                                                                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#aomApproval" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">AOM Approval</span></a> </li>
-                                                                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#JourVerifiReportCM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down"></span>Journey Verification Report - CM</a> </li>
-                                                                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#JourVerifiReportHQSCM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down"></span>Journey Verification Report - HQ SCM</a> </li>
-                                                                </ul>
-                                                                <div class="tab-content tabcontent-border">
-                                                                        <div class="tab-pane p-20 active" id="mobilityDetails" role="tabpanel">
-                                                                                {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}
-                                                                        </div>
-                                                                        <div class="tab-pane p-20 " id="equipAndGuard" role="tabpanel">
-                                                                                {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}
-                                                                        </div>
-                                                                        <div class="tab-pane p-20 " id="trrcOffDetails" role="tabpanel">
-                                                                                {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}
-                                                                        </div>
-                                                                        <div class="tab-pane p-20 " id="caseNote" role="tabpanel">
-                                                                                {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}
-                                                                        </div>
-                                                                        <div class="tab-pane p-20 " id="aomApproval" role="tabpanel">
-                                                                                {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}
-                                                                        </div>
-                                                                        <div class="tab-pane p-20 " id="JourVerifiReportCM" role="tabpanel">
-                                                                                {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}
-                                                                        </div>
-                                                                        <div class="tab-pane p-20 " id="JourVerifiReportHQSCM" role="tabpanel">
-                                                                                {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}
-                                                                        </div>
-                                                
-                                                                </div>
-                                                        </div>    
-                    
-            
-    
-
-
-
-                                    
                                 </div>
-
-                                    
-                            
-                                
-
-
+                            </form>
+                        </div>
                     </div>
-                </form>
+                </div>
             </div>
-        </div>
-    </div>
-</div>

@@ -93,7 +93,7 @@ a {
 }
 
 .card .card-title1 {
-    font-weight: 500;
+    font-weight: 900;
     background-color: #B0E1E7 !important;
     padding: 15px !important;
 }
@@ -153,6 +153,13 @@ output {
     background-color: #60d5dd !important;
     padding: 15px !important;
 }
+
+.card-title1 {
+    font-weight: 700 !important;
+    background-color: #60d5dd !important;
+    padding: 15px !important;
+}
+
 
 .message-box .message-widget a:last-child {
     float: right !important;
@@ -402,12 +409,13 @@ hr {
 
 
 .card .card-title1 {
-    font-weight: 500;
+    font-weight: 900;
     background-color: #B0E1E7 !important;
     padding: 5px 20px;
     /* padding: 15px !important;*/
     color: #111111 !important;
     border-bottom: 5px solid #98cb5b;
+   
     
 }
 

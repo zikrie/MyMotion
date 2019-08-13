@@ -64,7 +64,7 @@
         </div>
         <div class="col-md-4">
             <div class="form-group">
-                <label class="control-label">Telephone No.</label>
+                <label class="control-label">Mobile Phone No.</label>
                 <input type="text" id="initialAssessLoc" class="form-control" readonly>
             </div>
         </div>
@@ -73,7 +73,7 @@
  <div class="row p-t-20">
         <div class="col-md-4">
             <div class="form-group">
-                <label class="control-label">Mobile No.</label>
+                <label class="control-label">Office Phone No.</label>
                 <input type="text" id="initialAssessLoc" class="form-control" readonly>
             </div>
         </div>
@@ -121,11 +121,12 @@
 
 
  <div class="row p-t-20">
-    <div class="col-md-8">
+    <div class="col-md-4">
         <div class="form-group">
             <div id="aa" class="form-group" style="display:none">
                 <label class="control-label">Remarks</label>
-                <textarea class="form-control clearFields" rows="5" type="textarea"  id="reasons"></textarea> 
+                {{-- <textarea class="form-control clearFields" rows="5" type="textarea"  id="reasons"></textarea>  --}}
+                <input type="text" id="initialAssessLoc" class="form-control" >
             </div>
         </div>
     </div>

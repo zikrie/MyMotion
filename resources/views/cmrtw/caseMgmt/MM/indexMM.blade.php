@@ -95,7 +95,7 @@
                             <h5 class="mb-0">                           
                                 <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
                                     <h5 class="card-title1"><i class="fa fa-plus"></i>
-                                        Supplier Detail</h5>
+                                        Supplier Details</h5>
                                 </a>
                             </h5>
                         </div>

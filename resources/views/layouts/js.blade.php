@@ -521,3 +521,29 @@ function remove_addDisabled(rid) {
         }
     }
 </script>
+
+
+
+
+<script>
+
+        var itemDetailsMM = 1;
+        
+        function addItemDetails() {
+        
+            itemDetailsMM++;
+            var objTo = document.getElementById('addItemDet')
+            var divtest = document.createElement("div");
+            divtest.setAttribute("class", "removeclass" + itemDetailsMM);
+            var rdiv = 'removeclass' + itemDetailsMM;
+            divtest.innerHTML = '<div class="row p-t-20"><div class="col-md-4"><div class="form-group"><label class="control-label">Item</label><input type="text" id="initialAssessTime" class="form-control"></div></div><div class="col-md-4"><div class="form-group"><label class="control-label">Price</label><div class="input-group" required><input type="text" id="initialAssessTime" class="form-control"  ><div class="input-group-append"><button class="btn btn-danger" type="button" onclick="remove_addItemDetails('+itemDetailsMM+');"><i class="fa fa-minus"></i></button></div></div></div></div></div>';
+        
+            objTo.appendChild(divtest)
+        }
+        
+        function remove_addItemDetails(rid) {
+            $('.removeclass' + rid).remove();
+            itemDetailsMM--;
+        }
+        
+</script>

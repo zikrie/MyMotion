@@ -10,11 +10,11 @@
     </div>
     <div class="col-md-4">
         <div class="form-group">   
-                <label for="example-text-input" class="col-form-label">@lang('ia.attr.subMainGroup')</label>
-                <select class="form-control">
-                    <option value="" >Please select</option>
-                    <option value="">Rujuk Senarai MASCO</option>
-                </select>
+            <label for="example-text-input" class="col-form-label">@lang('ia.attr.subMainGroup')</label>
+            <select class="form-control">
+                <option value="" >Please select</option>
+                <option value="">Rujuk Senarai MASCO</option>
+            </select>
         </div>
     </div>
     <div class="col-md-4">

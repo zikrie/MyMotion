@@ -26,7 +26,7 @@
                         <div class="card-header" role="tab" id="headingTwo2">
                             <h5 class="mb-0">                           
                                 <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
-                                    <h5 class="card-title"><i class="fa fa-plus"></i>
+                                    <h5 class="card-title1" ><i class="fa fa-plus"></i>
                                         RTW Planning Information</h5>
                                 </a>
                             </h5>
@@ -43,7 +43,7 @@
                         <div class="card-header" role="tab" id="heading3">
                             <h5 class="mb-0">                           
                                 <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                    <h5 class="card-title"><i class="fa fa-plus"></i>
+                                    <h5 class="card-title1"><i class="fa fa-plus"></i>
                                         Modifications History Information</h5>
                                 </a>
                             </h5>
@@ -60,7 +60,7 @@
                         <div class="card-header" role="tab" id="heading4">
                             <h5 class="mb-0">                           
                                 <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                                    <h5 class="card-title"><i class="fa fa-plus"></i>
+                                    <h5 class="card-title1"><i class="fa fa-plus"></i>
                                        Modifications Information</h5>
                                 </a>
                             </h5>
@@ -77,7 +77,7 @@
                         <div class="card-header" role="tab" id="heading5">
                             <h5 class="mb-0">                           
                                 <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                                    <h5 class="card-title"><i class="fa fa-plus"></i>
+                                    <h5 class="card-title1"><i class="fa fa-plus"></i>
                                        Request For Quotation</h5>
                                 </a>
                             </h5>
@@ -94,8 +94,8 @@
                         <div class="card-header" role="tab" id="heading6">
                             <h5 class="mb-0">                           
                                 <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                                    <h5 class="card-title"><i class="fa fa-plus"></i>
-                                        Supplier Detail</h5>
+                                    <h5 class="card-title1"><i class="fa fa-plus"></i>
+                                        Supplier Details</h5>
                                 </a>
                             </h5>
                         </div>
@@ -110,7 +110,7 @@
                         <div class="card-header" role="tab" id="heading7">
                             <h5 class="mb-0">                           
                                 <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapse7" aria-expanded="false" aria-controls="collapse7">
-                                    <h5 class="card-title"><i class="fa fa-plus"></i>
+                                    <h5 class="card-title1"><i class="fa fa-plus"></i>
                                         SCM Session (HQ) for JKK Meeting</h5>
                                 </a>
                             </h5>
@@ -126,7 +126,7 @@
                         <div class="card-header" role="tab" id="heading8">
                             <h5 class="mb-0">                           
                                 <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapse8" aria-expanded="false" aria-controls="collapse8">
-                                    <h5 class="card-title"><i class="fa fa-plus"></i>
+                                    <h5 class="card-title1"><i class="fa fa-plus"></i>
                                         JKK Meeting (AM)</h5>
                                 </a>
                             </h5>
@@ -141,15 +141,48 @@
                     <div class="card m-b-0">
                         <div class="card-header" role="tab" id="heading9">
                             <h5 class="mb-0">                           
-                                <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#9" aria-expanded="false" aria-controls="collapse9">
-                                    <h5 class="card-title"><i class="fa fa-plus"></i>
+                                <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                                    <h5 class="card-title1"><i class="fa fa-plus"></i>
                                         Supplier Information Selected</h5>
                                 </a>
                             </h5>
                         </div>
                         <div id="collapse9" class="collapse" role="tabpanel" aria-labelledby="heading9">
                             <div class="card-body">
-                                    @include('cmrtw.caseMgmt.MM.suppInfoMeeting') 
+                                    @include('cmrtw.caseMgmt.MM.suppInfoSelected') 
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card m-b-0">
+                        <div class="card-header" role="tab" id="heading10">
+                            <h5 class="mb-0">                           
+                                <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                                    <h5 class="card-title1"><i class="fa fa-plus"></i>
+                                        Modifications Report</h5>
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapse10" class="collapse" role="tabpanel" aria-labelledby="heading10">
+                            <div class="card-body">
+                                    @include('cmrtw.caseMgmt.MM.modifiReport') 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card m-b-0">
+                        <div class="card-header" role="tab" id="heading11">
+                            <h5 class="mb-0">                           
+                                <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                                    <h5 class="card-title1"><i class="fa fa-plus"></i>
+                                        Case Note Information</h5>
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapse11" class="collapse" role="tabpanel" aria-labelledby="heading11">
+                            <div class="card-body">
+                                    @include('cmrtw.caseMgmt.MM.caseNoteInfo') 
                             </div>
                         </div>
                     </div>

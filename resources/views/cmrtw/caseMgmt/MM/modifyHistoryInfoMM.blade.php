@@ -1,4 +1,4 @@
-<div class="row p-t-20">
+{{-- <div class="row p-t-20">
     <div class="col-md-4">
         <div class="form-group">
             <label class="control-label">Modification Type</label>
@@ -20,22 +20,7 @@
             <label class="control-label">Price</label>
             <input type="text" id="initialAssessTime" class="form-control" readonly>
         </div> 
-    </div>
-
-    {{-- <div class="col-md-4">
-        <label class="control-label">Related Supporting Document</label>
-        <select class="form-control select" required>
-            <option value="">Please Selected</option>
-            <option value="idno">Identification No.</option>
-            <option value="okuCard">OKU Card (If Available)</option>
-            <option value="ipPermissLett">Insured Person Permission letter / Employer / Owner Permis</option>
-            <option value="specificSugg">Specification Suggestions</option>
-            <option value="modifyApprLetter">Modification approval letter by PBT (If Required)</option>
-            <option value="empConf">Employer confirmation / Job offer letter</option>
-            <option value="other">Others Specify</option>
-        </select>
-    </div> --}}
-
+    </div>  
 
 </div>
 
@@ -80,5 +65,94 @@
             <input type="text" id="initialAssessTime" class="form-control" readonly >
         </div>
     </div>
+</div> --}}
+
+       
+<div class="row p-t-20">
+    <div class="col-md-4">
+        <div class="form-group">
+            <label class="control-label">Modification Type</label>
+            <select class="form-control select" required>
+                <option value="">Please Selected</option>
+                <option value="">Workplace</option>
+                <option value="">Vehicle</option>  
+            </select>
+        </div>
+    </div>    
+</div>  
+
+
+<div class="table-responsive m-t-40">
+    {{-- <table id="add-contact" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%"> --}}
+    <table id="add-contact" class="display table table-hover table-striped table-bordered" text-align="center" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th align="top">Number</th>
+                <th>Application Date</th>
+                <th>Price</th>
+                <th>Application Status</th>
+                <th>Disapproval Reason</th>
+                <th>Supplier Name</th>
+                <th>Related Support Document</th>
+                <th>Date Result</th>
+                                                
+            </tr>
+        </thead>
+        <tbody id="add-contact-body">
+            <tr id= "addRehab_1" text-align="center">
+
+                    <td>test</td>
+                    <td>test</td>                      
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                
+                
+            </tr>
+
+            <tr id= "addRehab_2">
+                    <td>test</td>
+                        <td>test</td>                      
+                        <td>test</td>
+                        <td>test</td>
+                        <td>test</td>
+                        <td>test</td>
+                        <td>test</td>
+                        <td>test</td>
+                    
+                </tr>
+
+                <tr id= "addRehab_3">
+                        <td>test</td>
+                        <td>test</td>                      
+                        <td>test</td>
+                        <td>test</td>
+                        <td>test</td>
+                        <td>test</td>
+                        <td>test</td>
+                        <td>test</td>
+                        
+                    </tr> 
+                    
+                    
+
+            
+        </tbody>
+    </table>
 </div>
 
+<div class="row p-t-20">
+    <div class="col-md-4">
+        <div class="form-group">
+            <label class="control-label">Modification Status</label>
+            <select class="form-control select" required>
+                <option value="">Please Selected</option>
+                <option value="">Completed</option>
+                <option value="">Not Completed</option>  
+            </select>
+        </div>
+    </div>    
+</div>  

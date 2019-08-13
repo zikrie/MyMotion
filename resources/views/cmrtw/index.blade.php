@@ -87,6 +87,7 @@
                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#contact_act" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Contact Activity</span></a></li>
                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#generalRemarks" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Remarks</span></a></li>
                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#caseclosure" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Case Closure</span></a></li>
+               <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#supporting_document" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('index.attr.supporting_document')</span></a> </li>
            </ul>
 
            
@@ -157,8 +158,6 @@
                             <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#case_note" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('index.attr.case_note')</span></a> </li>
                             
                             <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#case_status" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('index.attr.case_status')</span></a> </li>
-
-                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#supporting_document" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('index.attr.supporting_document')</span></a> </li>
                         </ul>
 
                         <div class="tab-content tabcontent-border">
@@ -183,9 +182,7 @@
                                 @include('cmrtw.caseMgmt.caseStatus')
                             </div>
 
-                            <div class="tab-pane p-20" id="supporting_document" role="tabpanel">
-                                @include('cmrtw.caseMgmt.supportDoc')
-                            </div>
+                            
                         </div>       
                     </div>
 
@@ -235,6 +232,9 @@
                                     @include('cmrtw.obForm')
                                 </div>
                            </div> 
+                    </div>
+                    <div class="tab-pane p-20" id="supporting_document" role="tabpanel">
+                        @include('cmrtw.uploaddoc')
                     </div>
                 </div>
 

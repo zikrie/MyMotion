@@ -92,4 +92,7 @@ class RtwCaseController extends Controller
        
 
     }
+    public function offerC(){
+        return redirect()->back()->withInput(['tab'=>'offerconfirmation'])->with('messagemc','Save successful');
+    }
 }

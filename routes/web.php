@@ -148,6 +148,7 @@ Route::get('/homertw', 'WorkbasketRTWController@index');
 
 Route::post('/registrationrtw','RtwformregController@postConfirmationrtw');
 Route::get('/cmrtw.index', 'RtwCaseController@index');
+Route::post('/cmrtw.offer', 'RtwCaseController@offerC');
 // Route::get('/cmrtw.offerconfirmation', 'RtwCaseController@index');
 
 Route::get('/preview', 'previewController@preview')->name('preview');

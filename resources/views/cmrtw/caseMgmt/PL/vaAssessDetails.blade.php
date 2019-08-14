@@ -14,12 +14,12 @@
                                         <div class="row p-t-20">
                                             <div class="col-md-4">
                                                 <div class="custom-control custom-radio">
-                                                    <input type="radio" id="quesS11" name="quesS1" class="custom-control-input" value="0" required>
-                                                    <label class="custom-control-label" for="quesS11">Yes</label>
+                                                    <input type="radio" id="OquesS1" name="quesS1O" class="custom-control-input" value="0" required>
+                                                    <label class="custom-control-label" for="OquesS1">Yes</label>
                                                 </div>
                                                 <div class="custom-control custom-radio">
-                                                    <input type="radio" id="quesS12" name="quesS1" class="custom-control-input" value="1" required>
-                                                    <label class="custom-control-label" for="quesS12">No</label>
+                                                    <input type="radio" id="OquesS12" name="quesS1O" class="custom-control-input" value="1" required>
+                                                    <label class="custom-control-label" for="OquesS12">No</label>
                                                 </div>
                                                 
                                             </div>
@@ -51,7 +51,7 @@
                                                 <div class="col-md-4">
                                                         <div class="custom-control custom-radio">
                                                                 <input type="radio" id="quesS31I" name="quesS3I" class="custom-control-input" value="0" required>
-                                                                <label class="custom-control-label" for="quesS31">Yes</label>
+                                                                <label class="custom-control-label" for="quesS31I">Yes</label>
                                                             </div>
                                                             <div class="custom-control custom-radio">
                                                                 <input type="radio" id="quesS32I" name="quesS3I" class="custom-control-input" value="1" required>
@@ -69,7 +69,7 @@
                                                 <div class="col-md-4">
                                                         <div class="custom-control custom-radio">
                                                             <input type="radio" id="quesS41I" name="quesS4I" class="custom-control-input" value="0" required>
-                                                            <label class="custom-control-label" for="quesS41">Yes</label>
+                                                            <label class="custom-control-label" for="quesS41I">Yes</label>
                                                         </div>
                                                         <div class="custom-control custom-radio">
                                                             <input type="radio" id="quesS42I" name="quesS4I" class="custom-control-input" value="1" required>

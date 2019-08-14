@@ -17,8 +17,8 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label class="control-label">@lang('caseMgmt.attr.sub_cat')</label>
-                                                <input type="text" id="sub_cat" class="form-control" disabled >
+                                                <label class="control-label">@lang('caseMgmt.attr.visit_review')</label>
+                                                <input type="text" id="visit_review" class="form-control" >
                                             </div>
                                         </div>
                                     </div>

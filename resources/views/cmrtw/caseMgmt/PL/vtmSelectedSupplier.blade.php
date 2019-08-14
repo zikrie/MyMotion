@@ -47,38 +47,38 @@
                                                 <div class="col-md-4">
                                                         <div class="form-group">
                                                         <label>@lang('insuredPerson.attr.postcode')</label>
-                                                        <input type="text"  id="postcode" class="form-control">
+                                                        <input type="text"  id="postcode" class="form-control" disabled>
                                                  </div>
                                                     </div>
                                                 <div class="col-md-4">
                                                      <div class="form-group">
                                                          <label>@lang('insuredPerson.attr.telNo')</label>
-                                                         <input type="text" class="form-control">
+                                                         <input type="text" class="form-control" disabled>
                                                       </div>
                                                  </div>
                                                  <div class="col-md-4">
                                                          <div class="form-group">
                                                         <label>@lang('insuredPerson.attr.telNo')</label>
-                                                         <input type="text" class="form-control">
+                                                         <input type="text" class="form-control" disabled>
                                                      </div>
                                                  </div>
                                                 <div class="col-md-4">
                                                              <div class="form-group">
                                                              <label>@lang('insuredPerson.attr.email')</label>
-                                                             <input type="text" class="form-control">
+                                                             <input type="text" class="form-control" disabled>
                                                             </div>
                                                 </div>
 
                                                     <div class="col-md-4">
                                                              <div class="form-group">
                                                              <label>@lang('caseMgmt.attr.start_date')</label>
-                                                              <input type="date" class="form-control">
+                                                              <input type="date" class="form-control" disabled>
                                                           </div>
                                                                     </div>
                                                     <div class="col-md-4">
                                                              <div class="form-group">
                                                              <label>@lang('caseMgmt.attr.end_date')</label>
-                                                             <input type="date" class="form-control">
+                                                             <input type="date" class="form-control" disabled>
                                                               </div>
                                                       </div>
 

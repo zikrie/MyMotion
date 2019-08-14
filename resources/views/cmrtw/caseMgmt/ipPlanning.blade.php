@@ -120,7 +120,7 @@
 
                                         {{-- <div class="tab-pane p-20" id="fce" role="tabpanel">
                                             <ul class="nav customtab" role="tablist">
-                                                    <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#jobDetailIP" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Job Details Insure Person</span></a> </li>
+                                                    <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#jobDetailIP" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Job Details Insured Person</span></a> </li>
                                                     <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#fceDetails" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">FCE Details</span></a> </li>
                                                     <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#fceForm" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">FCE Form</span></a> </li>
                                                     <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#fceReport" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">FCE Report</span></a> </li>
@@ -177,7 +177,7 @@
                                                 <div class="tab-content tabcontent-border">
                                                       
                                     
-                                                        <div class="tab-pane p-20" id="recoveryInformation" role="tabpanel">
+                                                        <div class="tab-pane p-20 active" id="recoveryInformation" role="tabpanel">
                                                         @include('cmrtw.caseMgmt.PL.prmRecovery')
                                                         </div>
                                     
@@ -231,7 +231,7 @@
                                                         <ul class="nav customtab" role="tablist">
                                                                
                                                                 <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#supplierApprovalVTM" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Supplier Approval</span></a> </li>
-                                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#reqForQuotVTM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Request for quotation</span></a> </li>
+                                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#reqForQuotVTM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Request for Quotation</span></a> </li>
                                                                 <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#quotationVTM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Quotation</span></a> </li>
                                                                 <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#suppInfoSelectedVTM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Selected Supplier Information</span></a> </li>
                                                                 <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#courseInfoVTM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Course Information</span></a> </li>
@@ -306,7 +306,7 @@
                                                     
                                                     {{-- <div class="tab-pane p-20" id="jp" role="tabpanel">
                                                             <ul class="nav customtab" role="tablist">
-                                                                    <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#job_details" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Job Details</span></a> </li>
+                                                                    {{-- <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#job_details" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Job Details</span></a> </li> --}}
                                                                     <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#laser_assess" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">LASER Assessment</span></a> </li>
                                                                     <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#jp_ip" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Job Placement Insured Person Details</span></a> </li>
                                                                     <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#jp_report" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Job Placement Report</span></a> </li>
@@ -314,9 +314,9 @@
                                                                     <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#appreciation" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Appreciation Letter</span></a> </li>
                                                             </ul>
                                                             <div class="tab-content tabcontent-border">
-                                                                    <div class="tab-pane p-20 active" id="job_details" role="tabpanel">
+                                                                    {{-- <div class="tab-pane p-20 active" id="job_details" role="tabpanel">
                                                                     @include('cmrtw.caseMgmt.PL.jpIpDetails')
-                                                                    </div>
+                                                                    </div> --}}
                                                 
                                                                     <div class="tab-pane p-20" id="laser_assess" role="tabpanel">
                                                                     @include('cmrtw.caseMgmt.PL.jpLaserAssess')
@@ -503,7 +503,7 @@
                                                             {{-- <div class="tab-pane p-20" id="business" role="tabpanel">
                                                                             <ul class="nav customtab" role="tablist">
                                                                                     <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#support_doc_business" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Supporting Document Details</span></a> </li>
-                                                                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#business_case_note" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Case Note Information</span></a> </li>
+                                                                                    {{-- <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#business_case_note" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Case Note Information</span></a> </li> --}}
                                                                                    
                                                                                    
                                                                             </ul>

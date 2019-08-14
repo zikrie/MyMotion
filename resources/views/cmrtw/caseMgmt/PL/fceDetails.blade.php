@@ -15,12 +15,12 @@
                                                 <input type="text" id="name" class="form-control" disabled>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        {{-- <div class="col-md-6">
                                             <div class="form-group">                     
                                                 <label class="control-label">@lang('ia.attr.workingHours')</label>
                                                 <input type="text" id="name" class="form-control" disabled>
                                             </div>
-                                        </div>
+                                        </div> --}}
                                         <div class="col-md-6">
                                             <div class="form-group">                     
                                                 <label class="control-label">@lang('caseMgmt.attr.ot_time')</label>
@@ -42,13 +42,13 @@
                                         <div class="col-md-6">
                                             <div class="form-group">                     
                                                 <label class="control-label">@lang('caseMgmt.attr.job_req')</label>
-                                                <input type="text" id="job_req" class="form-control" disabled>
+                                                <input type="text" id="job_req" class="form-control">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">                     
                                                 <label class="control-label">@lang('caseMgmt.attr.req_fce')</label>
-                                                <input type="text" id="req_fce" class="form-control" disabled>
+                                                <input type="text" id="req_fce" class="form-control">
                                             </div>
                                         </div>
                                         <div class="col-md-6">

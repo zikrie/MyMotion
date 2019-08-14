@@ -25,13 +25,13 @@ class RtwCaseController extends Controller
             return redirect('/login');
         }
         $caserefno = $req->query('caserefno');
-        // dd($rtwrefno);
+        //dd($caserefno);
         $jsondecodeData="";
         $this->getDatartwOb($jsondecodeData, $caserefno); 
 
-         //dd($jsondecodeData);
-        
-         $casertw = $jsondecodeData->{'data'};
+        //dd($jsondecodeData);
+        //dd($caserefno);
+        $casertw = $jsondecodeData->{'data'};
         //dd($casertw);
         
 
@@ -49,19 +49,19 @@ class RtwCaseController extends Controller
 
         // dd($workbasketrtw);
         //
-      return view ('cmrtw.index', [ 'casertw'=>$casertw ,'race' => $race, 'state' => $state, 'national' => $national, 'idtype'=>$idtype, 'doclist' => $doclist ,'alldoclist' => $alldoclist]);
-      //
+      return view ('cmrtw.index', ['casertw'=>$casertw , 'race' => $race, 'state' => $state, 'national' => $national, 'idtype'=>$idtype, 'doclist' => $doclist ,'alldoclist' => $alldoclist]);
+      // 
 
     }
 
-    public function getDatartwOb(&$jsondecodeData, $caserefno)
+    public function getDatartwOb(&$jsondecodeData , $caserefno)
     {
        
-        //(Session::get('rtwrefno'));
-        //dd($rtwrefno);
+        //$caserefno = session('caserefno');
+        //dd($caserefno);
         $brcode = session('loginbranchcode');
         $operid = session('loginname');
-        $caserefno = session('caserefno');
+        //$caserefno = session('caserefno');
         //dd($brcode);
         
 

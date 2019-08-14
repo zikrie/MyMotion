@@ -168,4 +168,3 @@ Route::post('image-upload', 'ImageUploadController@imageUploadPost')->name('imag
 Route::post('/uploaddoc', 'UploadclaimController@upload')->name('claim.upload');
 // Route::post('/PK.supportingDoc', 'UploadclaimController@upload')->name('claim.upload');
 
-

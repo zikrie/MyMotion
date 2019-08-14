@@ -21,7 +21,7 @@
                                         <div class="col-md-6">
                                             
                                             <div class="form-group" id="divspecify123" style="display:none;">
-                                                <label class="control-label">@lang('caseMgmt.attr.specifyNo')</label>
+                                                <label class="control-label">@lang('caseMgmt.attr.specify_no')</label>
                                                 <select class="form-control">
                                                 <option value="">Please Select</option>
                                                 <option value="car">@lang('caseMgmt.attr.option_ip')</option>

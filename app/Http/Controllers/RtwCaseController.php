@@ -31,7 +31,7 @@ class RtwCaseController extends Controller
 
          // dd($jsondecodeData);
         
-        $casertw = $jsondecodeData->{'data'};
+       // $casertw = $jsondecodeData->{'data'};
         // dd($casertw);
 
 
@@ -49,8 +49,8 @@ class RtwCaseController extends Controller
 
         // dd($workbasketrtw);
         
-      return view ('cmrtw.index', ['casertw'=>$casertw, 'race' => $race, 'state' => $state, 'national' => $national, 'idtype'=>$idtype, 'doclist' => $doclist ,'alldoclist' => $alldoclist]);
-        
+      return view ('cmrtw.index', [ 'race' => $race, 'state' => $state, 'national' => $national, 'idtype'=>$idtype, 'doclist' => $doclist ,'alldoclist' => $alldoclist]);
+    //   'casertw'=>$casertw,
 
     }
 

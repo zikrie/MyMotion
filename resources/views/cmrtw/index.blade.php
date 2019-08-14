@@ -167,7 +167,7 @@
                      
                      <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#case_status" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('index.attr.case_status')</span></a> </li>
 
-                     <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#supporting_document" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('index.attr.supporting_document')</span></a> </li>
+                     {{-- <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#supporting_document" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('index.attr.supporting_document')</span></a> </li> --}}
                         </ul>
 
                         <div class="tab-content tabcontent-border">
@@ -192,36 +192,22 @@
                         @include('cmrtw.caseMgmt.caseStatus')
                     </div>
 
-                    <div class="tab-pane p-20" id="supporting_document" role="tabpanel">
+                    {{-- <div class="tab-pane p-20" id="supporting_document" role="tabpanel">
                         @include('cmrtw.caseMgmt.supportDoc')
-                    </div>
+                    </div> --}}
 
 
                
                 </div>       
                     </div>
 
-                    <div class="tab-pane p-20" id="contact_act" role="tabpanel">
-                            
-                        <div class="tab-content tabcontent-border">
-                          <!-- insured details tab -->
-                          <div class="tab-pane p-20 active" id="contact_act" role="tabpanel">
+                    <div class="tab-pane p-20 active" id="contact_act" role="tabpanel">
                             @include('cmrtw.contact_activity')
                           </div>
-
+                          
+                    <div class="tab-pane p-20 active" id="generalRemarks" role="tabpanel">
+                        @include('cmrtw.cmrtwRemarks')
                         </div>
-                    </div>
-
-                    <div class="tab-pane p-20" id="generalRemarks" role="tabpanel">
-                            
-                        <div class="tab-content tabcontent-border">
-                          <!-- insured details tab -->
-                          <div class="tab-pane p-20 active" id="generalRemarks" role="tabpanel">
-                            @include('cmrtw.cmrtwRemarks')
-                          </div>
-
-                        </div>
-                    </div>
                     
                     <div class="tab-pane p-20 active" id="caseclosure" role="tabpanel">
                              <ul class="nav customtab" role="tablist">

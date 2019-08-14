@@ -29,7 +29,7 @@ class RtwCaseController extends Controller
         $jsondecodeData="";
         $this->getDatartwOb($jsondecodeData, $caserefno); 
 
-         // dd($jsondecodeData);
+         //dd($jsondecodeData);
         
         $casertw = $jsondecodeData->{'data'};
         //dd($casertw);

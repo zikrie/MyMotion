@@ -92,6 +92,12 @@ a {
     padding: 15px !important;
 }
 
+.card .card-title1 {
+    font-weight: 500;
+    background-color: #1dc7d2a8 !important;
+    padding: 15px !important;
+}
+
 .table-bordered,
 .table-bordered td,
 .table-bordered th {
@@ -143,6 +149,13 @@ output {
 }
 
 .card-title {
+    font-weight: 700 !important;
+    background-color: #60d5dd !important;
+    padding: 15px !important;
+}
+
+
+.card-title1 {
     font-weight: 700 !important;
     background-color: #60d5dd !important;
     padding: 15px !important;
@@ -390,6 +403,16 @@ hr {
     padding: 5px 20px;
     /* padding: 15px !important;*/
     color: #f8f9fa !important;
+    border-bottom: 5px solid #98cb5b;
+    
+}
+
+.card .card-title1 {
+    font-weight: 500;
+    background-color: #B0E1E7 !important;
+    padding: 5px 20px;
+    /* padding: 15px !important;*/
+    color: #111111 !important;
     border-bottom: 5px solid #98cb5b;
     
 }

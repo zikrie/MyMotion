@@ -31,7 +31,7 @@ class RtwCaseController extends Controller
 
          //dd($jsondecodeData);
         
-        $casertw = $jsondecodeData->{'data'};
+         $casertw = $jsondecodeData->{'data'};
         //dd($casertw);
         
 

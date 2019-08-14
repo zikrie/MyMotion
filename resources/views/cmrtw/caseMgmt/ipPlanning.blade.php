@@ -463,7 +463,7 @@
                                             </ul>
                                             <div class="tab-content tabcontent-border">
                                                 <div class="tab-pane p-20 active" id="mobilityDetails" role="tabpanel">
-                                                    {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}
+                                                    @include('cmrtw.caseMgmt.PL.mobMobiliti')
                                                 </div>
                                                 <div class="tab-pane p-20 " id="equipAndGuard" role="tabpanel">
                                                     {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}

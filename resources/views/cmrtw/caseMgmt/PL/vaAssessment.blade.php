@@ -22,11 +22,11 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label class="control-label">@lang('vaAssessment.vabyob')</label>
-                                    <select class="form-control clearFields" name="vabyob">
-                                        <option value="">Please Select </option>
-                                        <option value="online">@lang('vaAssessment.online')</option>
-                                        <option value="physicalform">@lang('vaAssessment.physicalform')</option>
-                                    </select>
+                                        <select class="form-control clearFields" name="vabyob">
+                                            <option value="">Please Select </option>
+                                            <option value="online">@lang('vaAssessment.online')</option>
+                                            <option value="physicalform">@lang('vaAssessment.physicalform')</option>
+                                        </select>
                                 </div>
                             </div>
                         </div>

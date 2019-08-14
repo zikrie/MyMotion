@@ -176,6 +176,7 @@
                                                     <th>@lang('home.aging')</th>
                                                     <th>@lang('home.datereg')</th>
                                                     <th>@lang('home.rtwrefno')</th>
+                                                    <th>@lang('home.caserefno')</th>
                                                     <th>@lang('home.name')</th>
                                                     <th>@lang('home.icno')</th>
                                                     <th>@lang('home.casestatus')</th>
@@ -188,7 +189,7 @@
                                                 @isset($wbrtw->wbid)
 
                                                 <tr>
-                                                    <td><a id='selectdraft' href='/cmrtw.index?rtwrefno={{$wbrtw->rtwrefno}}&wbid={{$wbrtw->wbid}}'><i class="fas fa-edit"></i></a></td>
+                                                    <td><a id='selectdraft' href='/cmrtw.index?rtwrefno={{$wbrtw->rtwrefno}}&caserefno={{$wbrtw->caserefno}}&wbid={{$wbrtw->wbid}}'><i class="fas fa-edit"></i></a></td>
                                                     <td><a id="deletedraft" onclick="return confirm('Are you sure want to delete the draft?');" ><i class="fas fa-trash-alt fa-sm"></i></a></td>
                                                     <td>{{ $wbrtw->wbid }}</td>
                                                     <td><?php 
@@ -200,6 +201,7 @@
                                                     {{--  <td>{{substr($wb['date'],6,2)}}-{{substr($wb['date'],4,2)}}-{{substr($wb['date'],0,4)}}</td> --}}
                                                     <td>{{substr($wbrtw->date,6,2)}}-{{substr($wbrtw->date,4,2)}}-{{substr($wbrtw->date,0,4)}}</td>
                                                     <td>{{ $wbrtw->rtwrefno }}</td>
+                                                    <td>{{ $wbrtw->caserefno }}</td>
                                                     <td>{{ $wbrtw->name }}</td>
                                                     <td>{{ $wbrtw->idno }}</td>
                                                     <td>{{ $wbrtw->descen }}</td> 

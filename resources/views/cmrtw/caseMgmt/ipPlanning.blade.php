@@ -304,9 +304,9 @@
 
 
                                                     
-                                                    {{-- <div class="tab-pane p-20" id="jp" role="tabpanel">
+                                                     {{-- <div class="tab-pane p-20" id="jp" role="tabpanel">
                                                             <ul class="nav customtab" role="tablist">
-                                                                    {{-- <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#job_details" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Job Details</span></a> </li> --}}
+                                                                    
                                                                     <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#laser_assess" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">LASER Assessment</span></a> </li>
                                                                     <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#jp_ip" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Job Placement Insured Person Details</span></a> </li>
                                                                     <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#jp_report" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Job Placement Report</span></a> </li>
@@ -314,9 +314,7 @@
                                                                     <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#appreciation" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Appreciation Letter</span></a> </li>
                                                             </ul>
                                                             <div class="tab-content tabcontent-border">
-                                                                    {{-- <div class="tab-pane p-20 active" id="job_details" role="tabpanel">
-                                                                    @include('cmrtw.caseMgmt.PL.jpIpDetails')
-                                                                    </div> --}}
+                                                                    
                                                 
                                                                     <div class="tab-pane p-20" id="laser_assess" role="tabpanel">
                                                                     @include('cmrtw.caseMgmt.PL.jpLaserAssess')
@@ -337,8 +335,8 @@
                                                                       
                                                                     </div>
                                                             </div>
-                                                        </div>      --}}
-        
+                                                        </div>     
+         --}}
                                                         
     
     
@@ -499,11 +497,11 @@
                                                                     </div>                
                                                                 </div>
                                                             </div>
-    
-                                                            {{-- <div class="tab-pane p-20" id="business" role="tabpanel">
+{{--     
+                                                             <div class="tab-pane p-20" id="business" role="tabpanel">
                                                                             <ul class="nav customtab" role="tablist">
                                                                                     <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#support_doc_business" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Supporting Document Details</span></a> </li>
-                                                                                    {{-- <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#business_case_note" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Case Note Information</span></a> </li> --}}
+                                                                                   
                                                                                    
                                                                                    
                                                                             </ul>

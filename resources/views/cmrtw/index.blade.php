@@ -145,12 +145,12 @@
                     </div>
 
                     <!-- Contact Activity Tab-->
-                    <div class="tab-pane p-20 active" id="contact_act" role="tabpanel">
+                    <div class="tab-pane p-20 " id="contact_act" role="tabpanel">
                         @include('cmrtw.contact_activity')
                     </div>
                     
                     <!-- Remarks Tab -->
-                    <div class="tab-pane p-20 active" id="generalRemarks" role="tabpanel">
+                    <div class="tab-pane p-20 " id="generalRemarks" role="tabpanel">
                         @include('cmrtw.cmrtwRemarks')
                     </div>
 

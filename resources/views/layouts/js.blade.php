@@ -520,6 +520,31 @@ function remove_addDisabled(rid) {
             $('#hideAddress').hide(); 
         }
     }
+
+    function myFunctionPengesyoran(aval) {
+        if (aval == "lain2") {
+            $('#hidePengesyoran').show();   
+        }
+        else {
+            $('#hidePengesyoran').hide(); 
+        }
+    }
+
+    function mobiliti(aval) {
+        if (aval == "kenderaanperkeso") {
+            $('#hidekenderaanperkeso').show();
+            $('#hidetiketpenerbangan').hide();
+
+        }
+        else if(aval == "tiketpenerbangan"){
+            $('#hidekenderaanperkeso').hide(); 
+            $('#hidetiketpenerbangan').show(); 
+        }
+        else{
+            $('#hidekenderaanperkeso').hide(); 
+            $('#hidetiketpenerbangan').hide(); 
+        }
+    }
 </script>
 <script type="text/javascript">
     

@@ -66,11 +66,11 @@
 
                             <div class="tab-content tabcontent-border">
                                  <!-- RegistrationRTW details tab -->
-                                 <div class="tab-pane p-20 active" id="registrationrtw" role="tabpanel">
-                                   @include('cmrtw.rtwcase')
-                                   
+                                <div class="tab-pane p-20 active" id="registrationrtw" role="tabpanel">
+                                   @include('cmrtw.rtwcase')  
                                 </div>
-                               <div class="tab-pane p-20" id="benefitCM" role="tabpanel">
+
+                                <div class="tab-pane p-20" id="benefitCM" role="tabpanel">
                                     @include('cmrtw.obForm')
                                 </div>
                            </div> 
@@ -145,12 +145,12 @@
                     </div>
 
                     <!-- Contact Activity Tab-->
-                    <div class="tab-pane p-20 " id="contact_act" role="tabpanel">
+                    <div class="tab-pane p-20" id="contact_act" role="tabpanel">
                         @include('cmrtw.contact_activity')
                     </div>
                     
                     <!-- Remarks Tab -->
-                    <div class="tab-pane p-20 " id="generalRemarks" role="tabpanel">
+                    <div class="tab-pane p-20" id="generalRemarks" role="tabpanel">
                         @include('cmrtw.cmrtwRemarks')
                     </div>
 

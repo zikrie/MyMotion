@@ -8,7 +8,7 @@
                        <hr>
                        <div class="form-actions">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="form-group">
                                     <label class="control-label">@lang('vaAssessment.appraisal')</label>
                                     <select class="form-control clearFields" name="vaob">
@@ -19,7 +19,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="form-group">
                                     <label class="control-label">@lang('vaAssessment.vabyob')</label>
                                         <select class="form-control clearFields" name="vabyob">
@@ -29,15 +29,17 @@
                                         </select>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="form-group">
                                     <label class="control-label">@lang('vaAssessment.appraisaldate')</label>
                                     <input type="date" id="appraisaldate" class="form-control" value="">
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+                            @include('cmrtw.caseMgmt.PL.vaAssessDetails')
+                        </div>
+                        
                         <h5 class="card-title">@lang('vaAssessment.title2')</h5>
                         <hr>
                         <div class="row">

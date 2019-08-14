@@ -4,7 +4,7 @@
             <div class="card-body">
                 <div class="p-20">
                     <form action="#">
-                        <h3 class="card-title">@lang('benefitDetails.title1')</h3>    
+                        <h5 class="card-title">@lang('benefitDetails.title1')</h5>    
                         <hr>
                         <!-- Column -->
                         <div class="col-12">

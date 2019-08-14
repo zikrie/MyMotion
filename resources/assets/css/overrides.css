@@ -408,6 +408,8 @@ hr {
     border-color: #284682;
 }
 
+
+
 .waves-effect {
     position: relative;
     cursor: pointer;
@@ -681,3 +683,5 @@ body#login{
 .btn{
     line-height:2rem !important;
 }
+
+

@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use DB;
 use Illuminate\Support\Facades\Input;
 
-class RtwController extends Controller
+class RtwController extends CommonReftableController
 {
     public function index()
     {
@@ -106,10 +106,11 @@ class RtwController extends Controller
             
         }
 
+        //dd($this->getReftableEN('state'));
         $docinfo = array();
         $this->getDoc($docinfo);
         // return $data;
-        $state=DB::select('Select refcode, descen from reftable where tablerefcode=? order by refcode', ['state']);
+        $state=$this->getReftableEN('state');//DB::select('Select refcode, descen from reftable where tablerefcode=? order by refcode', ['state']);
         $national=DB::select('Select refcode, descen from reftable where tablerefcode=? order by refcode', ['national']);
         $idtype=DB::select('Select refcode, descen from reftable where tablerefcode=? order by refcode', ['idtype']);
         $race=DB::select('Select refcode, descen from reftable where tablerefcode=? order by refcode', ['race']);
@@ -123,7 +124,7 @@ class RtwController extends Controller
         if($loginrole == 'PKRTW')
         {
             // dd($data);
-            return view ('PK.index', ['data'=>$data,'idtype'=>$idtype, 'doclist'=>$doclist,'docinfo'=>$docinfo, 'race' => $race, 'state' => $state, 'national' => $national, 'alldoclist'=> $alldoclist]);
+            return view ('PK.index', ['idtype'=>$idtype, 'doclist'=>$doclist,'docinfo'=>$docinfo, 'race' => $race, 'state' => $state, 'national' => $national, 'alldoclist'=> $alldoclist]);
         }
         elseif($loginrole == 'CM')
         {
@@ -137,7 +138,7 @@ class RtwController extends Controller
         $brcode = session('loginbranchcode');
         $operid = session('loginname');
         $idtype = session('idtype');
-
+        dd($idno);
         $url = 'http://'.env('WS_IP', 'localhost').'/api/wsmotion/rtw/reg?idno='.$idno.'&brcode='.$brcode.'&operid='.$operid;//rtw
                           
         // return $url;

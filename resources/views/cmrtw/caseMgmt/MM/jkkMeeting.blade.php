@@ -71,13 +71,26 @@
                                                             <input type="text" id="initialAssessLoc" class="form-control"  >
                                                         </div>
                                                     </div> 
-                                                    <div class="col-md-4">
+                                                </div>
+                                                <div class="row p-t-20">
+                                                    <div class="col-md-12">
                                                         <div class="form-group">
                                                             <label class="control-label">Previous Minute Feedback Report</label>
                                                             <input type="text" id="initialAssessLoc" class="form-control"  >
                                                         </div>
                                                     </div> 
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">  
+                                                            <input type="text" id="initialAssessLoc" class="form-control"  >
+                                                        </div>
+                                                    </div> 
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <input type="text" id="initialAssessLoc" class="form-control"  >
+                                                        </div>
+                                                    </div> 
                                                 </div>
+                                           
                                    
                                             </div>
                                         </div>
@@ -99,7 +112,7 @@
                                                     <div class="col-md-4">
                                                         <div class="form-group">
                                                             <label class="control-label">Name</label>
-                                                            <input type="text" id="initialAssessTime" class="form-control" readonly >
+                                                            <input type="text" id="initialAssessTime" class="form-control">
                                                         </div>
                                                     </div>   
                                                     <div class="col-md-4">
@@ -203,7 +216,11 @@
                                                     </div>   
                                                     <div class="col-md-4">
                                                         <label class="control-label">Supplier Selected</label>
-                                                        <input type="text" id="initialAssessTime" class="form-control"  >
+                                                        <select class="form-control select"  required>
+                                                            <option value="">Please Selected</option>
+                                                            <option value="">Not </option>
+                                                            <option value=""></option>
+                                                        </select>
                                                     </div>                    
                                                 </div>
                                                 <div class="row p-t-20">
@@ -226,12 +243,28 @@
                                                 </div>
                                                 <div class="row p-t-20">
                                                     <div class="col-md-4">
-                                                        <label class="control-label">Minutes of Meetings</label>
-                                                        <input type="text" id="initialAssessTime" class="form-control" readonly >
+                                                        <div class="form-group">
+                                                            <label class="control-label">Minutes of Meetings</label>
+                                                            <input type="text" id="initialAssessTime" class="form-control" readonly >
+                                                        </div>
                                                     </div>
-                                                    <div class="col-md-4">
-                                                        <label class="control-label">Minutes Feedback Report</label>
-                                                        <input type="text" id="initialAssessTime" class="form-control" readonly >
+                                                </div>
+                                                <div class="row p-t-20">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label class="control-label">Minutes Feedback Report</label>
+                                                            <input type="text" id="initialAssessTime" class="form-control" readonly >
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <input type="text" id="initialAssessTime" class="form-control" readonly >
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12"> 
+                                                        <div class="form-group">
+                                                            <input type="text" id="initialAssessTime" class="form-control" readonly >
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>

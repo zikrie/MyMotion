@@ -55,7 +55,7 @@
                                                 </div>                     
                                                 <div class="col-md-4">
                                                     <label class="control-label">Related Supporting Document</label>
-                                                    <select class="form-control select" required>
+                                                    <select class="form-control select" id="Recommendations" name='Recommendations' onchange="ddd(this.options[this.selectedIndex].value)" required>
                                                         <option value="">Please Selected</option>
                                                         <option value="idno">Identification No.</option>
                                                         <option value="okuCard">OKU Card (If Available)</option>
@@ -76,10 +76,12 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4">
+                                            </div>
+                                            <div class="row p-t-20">
+                                                <div class="col-md-8">
                                                     <div class="form-group">
                                                         <label class="control-label">Case Management Review </label>
-                                                        <input type="text" id="initialAssessTime" class="form-control" readonly >
+                                                        <textarea class="form-control clearFields" rows="4" type="textarea"  id="reasons"></textarea> 
                                                     </div>
                                                 </div>
                                             </div>
@@ -120,7 +122,7 @@
                                                 </div>                     
                                                 <div class="col-md-4">
                                                     <label class="control-label">Related Supporting Document</label>
-                                                    <select class="form-control select" required>
+                                                    <select class="form-control select" id="Recommendations" name='Recommendations' onchange="myFunctionSDVehicleModifi(this.options[this.selectedIndex].value)" required>
                                                         <option value="">Please Selected</option>
                                                         <option value="idno">Identification No.</option>
                                                         <option value="okuCard">OKU Card (If Available)</option>
@@ -134,17 +136,35 @@
                                             </div>
                                             <div class="row p-t-20">
                                                 <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <div id="specificSuggHide" class="form-group " style="display:none">
+                                                            <label class="control-label">Specification Suggestions</label>
+                                                            <input type="text" id="initialAssessTime" class="form-control" >
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <div id="otherHide" class="form-group " style="display:none">
+                                                            <label class="control-label">Others</label>
+                                                            <input type="text" id="initialAssessTime" class="form-control" >
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
                                                     <label class="control-label">Driving Test</label>
                                                     <select class="form-control select" required>
                                                         <option value="">Please Selected</option>
                                                         <option value="idno">Pass</option>
                                                         <option value="okuCard">Fail</option>
                                                     </select>
-                                                </div>
-                                                <div class="col-md-4">
+                                                </div>                                             
+                                            </div>
+                                            <div class="row-p-t-20">
+                                                <div class="col-md-8">
                                                     <div class="form-group">
                                                         <label class="control-label">Case Management Review </label>
-                                                        <input type="text" id="initialAssessTime" class="form-control" readonly >
+                                                        <textarea class="form-control clearFields" rows="4" type="textarea"  id="reasons"></textarea> 
                                                     </div>
                                                 </div>
                                             </div>
@@ -165,3 +185,23 @@
 
 
 
+<script type="text/javascript">
+
+    function myFunctionSDVehicleModifi(aval) {
+           if (aval == "specificSugg") {
+               $('#specificSuggHide').show();
+               $('#otherHide').hide();
+               
+           } 
+           else if (aval == "other"){
+               $('#otherHide').show();
+               $('#specificSuggHide').hide();
+           }
+           else {
+               $('#specificSuggHide').hide();
+               $('#otherHide').hide();
+           }
+       }
+       
+       </script>
+       

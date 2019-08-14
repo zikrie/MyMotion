@@ -92,6 +92,12 @@ a {
     padding: 15px !important;
 }
 
+.card .card-title1 {
+    font-weight: 500;
+    background-color: #1dc7d2a8 !important;
+    padding: 15px !important;
+}
+
 .table-bordered,
 .table-bordered td,
 .table-bordered th {
@@ -147,6 +153,13 @@ output {
     background-color: #60d5dd !important;
     padding: 15px !important;
 }
+
+.card-title1 {
+    font-weight: 700 !important;
+    background-color: #60d5dd !important;
+    padding: 15px !important;
+}
+
 
 .message-box .message-widget a:last-child {
     float: right !important;
@@ -394,6 +407,16 @@ hr {
     
 }
 
+.card .card-title1 {
+    font-weight: 500;
+    background-color: #B0E1E7 !important;
+    padding: 5px 20px;
+    /* padding: 15px !important;*/
+    color: #111111 !important;
+    border-bottom: 5px solid #98cb5b;
+    
+}
+
 .card-title {
     font-weight: 700 !important;
     background-color: #284682 !important;
@@ -407,6 +430,8 @@ hr {
     background-color: #284682;
     border-color: #284682;
 }
+
+
 
 .waves-effect {
     position: relative;
@@ -678,16 +703,8 @@ body#login{
     padding-top:20px !important;
     
 }
-
-
-
-#add-contact th
-{
-    vertical-align: top;
+.btn{
+    line-height:2rem !important;
 }
 
-/* syahirah */
-/* .card-header {
-    padding: .75rem 1.25rem;
-    background-color: rgb(216, 232, 233);
-} */
+

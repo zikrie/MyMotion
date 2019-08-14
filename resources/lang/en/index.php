@@ -62,6 +62,7 @@ return [
         'leisure_activity' => 'Leisure Activity Details',
         'before_accident' => 'Before Accident',
         'after_accident' => 'After Accident',
+        'assessment_form' => 'Assessment Form',
         
 
         //planList

@@ -50,77 +50,84 @@
  </div>
 
  <div class="row p-t-20">
-        <div class="col-md-4">
-            <div class="form-group">
-                <label class="control-label">Address</label>
-                <input type="text" id="initialAssessLoc" class="form-control" readonly>
-            </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <label class="control-label">Address</label>
+            <input type="text" id="initialAssessLoc" class="form-control" readonly>
         </div>
-        <div class="col-md-4">
-            <div class="form-group">
-                <label class="control-label">Postcode</label>
-                <input type="text" id="initialAssessLoc" class="form-control" readonly>
-            </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <input type="text" id="initialAssessLoc" class="form-control" readonly>
         </div>
-        <div class="col-md-4">
-            <div class="form-group">
-                <label class="control-label">Telephone No.</label>
-                <input type="text" id="initialAssessLoc" class="form-control" readonly>
-            </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <input type="text" id="initialAssessLoc" class="form-control" readonly>
         </div>
- </div> 
+    </div>
+ </div>
 
  <div class="row p-t-20">
-        <div class="col-md-4">
-            <div class="form-group">
-                <label class="control-label">Mobile No.</label>
-                <input type="text" id="initialAssessLoc" class="form-control" readonly>
-            </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label class="control-label">Postcode</label>
+            <input type="text" id="initialAssessLoc" class="form-control" readonly>
         </div>
-        <div class="col-md-4">
-            <div class="form-group">
-                <label class="control-label">Email</label>
-                <input type="text" id="initialAssessLoc" class="form-control" readonly>
-            </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label class="control-label">Telephone No.</label>
+            <input type="text" id="initialAssessLoc" class="form-control" readonly>
         </div>
-        <div class="col-md-4">
-            <div class="form-group">
-                <label class="control-label">Start Date</label>
-                <input type="date" id="initialAssessLoc" class="form-control" >
-            </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label class="control-label">Mobile No.</label>
+            <input type="text" id="initialAssessLoc" class="form-control" readonly>
         </div>
+    </div>
  </div> 
 
-
+ <div class="row p-t-20">  
+    <div class="col-md-4">
+        <div class="form-group">
+            <label class="control-label">Email</label>
+            <input type="text" id="initialAssessLoc" class="form-control" readonly>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label class="control-label">Start Date</label>
+            <input type="date" id="initialAssessLoc" class="form-control" >
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label class="control-label">End Date</label>
+            <input type="date" id="initialAssessLoc" class="form-control" >
+        </div>
+    </div>
+ </div>
  <div class="row p-t-20">
-        <div class="col-md-4">
-            <div class="form-group">
-                <label class="control-label">End Date</label>
-                <input type="date" id="initialAssessLoc" class="form-control" >
-            </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label class="control-label">Quotation Title</label>
+            <input type="text" id="initialAssessLoc" class="form-control" >
         </div>
-        <div class="col-md-4">
-            <div class="form-group">
-                <label class="control-label">Quotation Title</label>
-                <input type="text" id="initialAssessLoc" class="form-control" >
-            </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label class="control-label">Item</label>
+            <select class="form-control select" id="resultItem" name='resultItem' onchange="myFunctionreqForQuotation(this.options[this.selectedIndex].value)" required>
+                <option value="">Please Selected</option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value="others">Others</option>
+            </select>
         </div>
-        <div class="col-md-4">
-            <div class="form-group">
-                <label class="control-label">Item</label>
-                <select class="form-control select" id="resultItem" name='resultItem' onchange="myFunctionreqForQuotation(this.options[this.selectedIndex].value)" required>
-                    <option value="">Please Selected</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value="others">Others</option>
-                </select>
-            </div>
-        </div>
- </div> 
-
-
- <div class="row p-t-20">
+    </div>
     <div class="col-md-4">
         <div class="form-group">
             <div id="hideOthersItem" class="form-group" style="display:none">
@@ -130,6 +137,8 @@
             </div>
         </div>
     </div>
+ </div>
+ <div class="row p-t-20">
     <div class="col-md-4">
         <div class="form-group">
             <label class="control-label">Price (RM)</label>
@@ -142,16 +151,18 @@
             <input type="text" id="initialAssessLoc" class="form-control" >
         </div>
     </div>
- </div>
-
- <div class="row p-t-20">
-   
     <div class="col-md-4">
         <div class="form-group">
             <label class="control-label">Source quotation</label>
-            <input type="text" id="initialAssessLoc" class="form-control" >
+            <select class="form-control select" required>
+                <option value="">Please Selected</option>
+                <option value="">Portal</option>
+                <option value="">Manual</option>
+            </select>
         </div>
     </div>
+ </div>
+ <div class="row p-t-20">
     <div class="col-md-4">
         <div class="form-group">
             <label class="control-label">Modification Start Date</label>
@@ -164,18 +175,14 @@
             <input type="date" id="initialAssessLoc" class="form-control" >
         </div>
     </div>
- </div>
-
-
-
- 
- <div class="row p-t-20">
     <div class="col-md-4">
         <div class="form-group">
             <label class="control-label">Contact Name Officer</label>
             <input type="text" id="initialAssessLoc" class="form-control" >
         </div>
     </div>
+ </div>
+ <div class="row p-t-20">
     <div class="col-md-4">
         <div class="form-group">
             <label class="control-label">Telephone No. Officer</label>
@@ -189,6 +196,7 @@
         </div>
     </div>
  </div>
+ 
 
 
 <script type="text/javascript">

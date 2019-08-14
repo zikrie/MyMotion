@@ -17,6 +17,13 @@
             </select>
         </div> 
     </div>
+    {{-- <div class="col-md-4">
+            <button class=" btn-success" data-toggle="collapse"
+                data-target="#collapseTwo2,#collapse3" aria-expanded="true"
+                aria-controls="collapseTwo2">
+                Next
+            </button>
+    </div> --}}
 </div>
 
 <div class="row p-t-20">
@@ -29,6 +36,11 @@
         </div>
     </div>
 </div>
+
+
+
+
+
 
 <script type="text/javascript">
 

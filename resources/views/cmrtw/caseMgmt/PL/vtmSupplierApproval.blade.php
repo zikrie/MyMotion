@@ -8,12 +8,6 @@
                             <input type="hidden" name="_token" value="{{csrf_token()}}">
                         
                             <div class="row p-t-20">
-                                    <div class="col-md-4">
-                                            <div class="form-group">
-                                                <label class="control-label">@lang('caseMgmt.attr.free_text')</label>
-                                                <input type="text" id="free_text" class="form-control">
-                                            </div>
-                                        </div>
                                         <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label class="control-label">@lang('caseMgmt.attr.vtm_decision')</label>
@@ -28,7 +22,7 @@
                                             <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label class="control-label">@lang('caseMgmt.attr.approval_name')</label>
-                                                        <input type="text" id="approval_name" class="form-control">
+                                                        <input type="text" id="approval_name" class="form-control" disabled>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
@@ -46,7 +40,7 @@
                                                 <div class="col-md-4">
                                                      <div class="form-group">
                                                          <label>@lang('caseMgmt.attr.approval_date')</label>
-                                                         <input type="date" class="form-control">
+                                                         <input type="date" class="form-control" disabled>
                                                       </div>
                                                  </div>
                                     

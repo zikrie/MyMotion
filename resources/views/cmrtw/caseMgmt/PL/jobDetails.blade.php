@@ -75,21 +75,27 @@
                                         </div>
                                     </div>
                                     <div class="col-md-6">
+                                            <div class="form-group">                     
+                                                <label class="control-label">@lang('caseMgmt.attr.describe_job_history')</label>
+                                                <input type="text" id="describe_job_history" class="form-control" disabled>
+                                            </div>
+                                        </div>
+                                    <div class="col-md-6">
                                         <div class="form-group">                     
-                                            <label class="control-label">@lang('ia.attr.finalSalary') <span class="text-danger">*</span></label>
-                                            <input type="text" id="finalSalary" class="form-control" value="RM">
+                                            <label class="control-label">@lang('caseMgmt.attr.last_salary')</label>
+                                            <input type="text" id="last_salary" class="form-control" value="RM">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">                     
-                                            <label class="control-label">@lang('ia.attr.medicalLeave') <span class="text-danger">*</span></label>
+                                            <label class="control-label">@lang('ia.attr.medicalLeave')</label>
                                             <input type="text" id="medicalLeave" class="form-control">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">                     
-                                            <label class="control-label">@lang('ia.attr.statusSalary') <span class="text-danger">*</span></label>
-                                            <input type="text" id="statusSalary" class="form-control">
+                                            <label class="control-label">@lang('caseMgmt.attr.salary_status')</label>
+                                            <input type="text" id="salary_status" class="form-control">
                                         </div>
                                     </div>
                         </div>

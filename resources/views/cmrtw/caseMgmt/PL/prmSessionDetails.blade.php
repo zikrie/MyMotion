@@ -11,14 +11,14 @@
                                     <div class="col-md-6">
                                             <div class="form-group">
                                                 <label class="control-label">@lang('caseMgmt.attr.supplier_name')</label><br>
-                                                <input type="text" id="supplier_name" class="form-control" >
+                                                <input type="text" id="supplier_name" class="form-control" disabled >
                                                        
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label class="control-label">@lang('caseMgmt.attr.supplier_address')</label><br>
-                                                    <input type="text" id="supplier_address" class="form-control">
+                                                    <input type="text" id="supplier_address" class="form-control" disabled>
                                                 </div>
                                         </div>
                                         <div class="col-md-6">
@@ -27,6 +27,12 @@
                                                 <input type="date" id="date" class="form-control" disabled>
                                             </div>
                                         </div>
+                                        <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">@lang('caseMgmt.attr.total_session')</label>
+                                                    <input type="text" id="total_session" class="form-control">
+                                                </div>
+                                            </div>
                                         <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label class="control-label">@lang('caseMgmt.attr.start_time')</label><br>

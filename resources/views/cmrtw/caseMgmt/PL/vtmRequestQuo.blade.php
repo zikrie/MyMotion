@@ -47,31 +47,31 @@
                                                 <div class="col-md-4">
                                                         <div class="form-group">
                                                             <label class="control-label">@lang('caseMgmt.attr.address')</label>
-                                                            <input type="text" id="address" class="form-control">
+                                                            <input type="text" id="address" class="form-control" disabled>
                                                         </div>
                                                     </div>
                                                 <div class="col-md-4">
                                                         <div class="form-group">
                                                         <label>@lang('insuredPerson.attr.postcode')</label>
-                                                        <input type="text"  id="postcode" class="form-control">
+                                                        <input type="text"  id="postcode" class="form-control" disabled>
                                                  </div>
                                                     </div>
                                                 <div class="col-md-4">
                                                      <div class="form-group">
                                                          <label>@lang('caseMgmt.attr.phone_home')</label>
-                                                         <input type="text" class="form-control">
+                                                         <input type="text" class="form-control" disabled>
                                                       </div>
                                                  </div>
                                                  <div class="col-md-4">
                                                          <div class="form-group">
                                                         <label>@lang('caseMgmt.attr.phone_mobile')</label>
-                                                         <input type="text" class="form-control">
+                                                         <input type="text" class="form-control" disabled>
                                                      </div>
                                                  </div>
                                                 <div class="col-md-4">
                                                              <div class="form-group">
                                                              <label>@lang('insuredPerson.attr.email')</label>
-                                                             <input type="text" class="form-control">
+                                                             <input type="text" class="form-control" disabled>
                                                             </div>
                                                 </div>
 

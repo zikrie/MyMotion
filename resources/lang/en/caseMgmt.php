@@ -448,6 +448,7 @@ return [
         'financial' => 'Financial/Business Support',
 
         //wsa
+        'salary_status' => 'Salary Status',
         'general_details' => 'General Details',
         'ipemp_permission' => 'Insured Person/Employer Permission',
         'job_details' => 'Insured Person Job Details',

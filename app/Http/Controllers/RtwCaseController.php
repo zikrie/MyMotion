@@ -54,7 +54,7 @@ class RtwCaseController extends Controller
 
     }
 
-    public function getDatartwOb(&$jsondecodeData,$caserefno)
+    public function getDatartwOb(&$jsondecodeData , $caserefno)
     {
        
         //$caserefno = session('caserefno');

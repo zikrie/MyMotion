@@ -402,7 +402,7 @@
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.grade')</label>
+                                    <label class="control-label">@lang('caseMgmt.attr.license_class')</label>
                                     <div class="input-group">
                                         <select class="form-control" tabindex="1" required>
                                             <option value="a_type">@lang('caseMgmt.attr.a_type')</option>
@@ -422,37 +422,18 @@
                                             <option value="i_type">@lang('caseMgmt.attr.i_type')</option>
                                         </select>
                                         <div class="input-group-append">
-                                            <button class="btn btn-success" type="button" onclick="add_newskills();"><i class="fa fa-plus"></i></button>
+                                            <button class="btn btn-success" type="button" onclick="add_newLicense();"><i class="fa fa-plus"></i></button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="col-md-10">
-                                <div class="form-group row">
-                                    <label class="control-label">@lang('ia.attr.licenseClass') <span class="text-danger">*</span></label>
-                                </div>
-                                <div class="form-group row">
-                                    <select class="selectpicker" multiple data-style="form-control">
-                                        
-                                    </select>
-                                </div>
-                            </div> -->
+                            <div class="col-md-2">
+                                <div id="newlicense"></div> 
+                            </div>
                         </div>
                         <hr>
 
-                        <div class="row">
-                            <div class="col-md-12">
-
-                                <select class="selectpicker" multiple data-style="form-control btn-info">
-                                    <option>Mustard</option>
-                                    <option>Ketchup</option>
-                                    <option>Relish</option>
-                                </select>
-                            </div>
-                        </div>
-
                         <div class="row p-t-20">
-                            
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label class="control-label">@lang('caseMgmt.attr.remarks')</label>

@@ -24,14 +24,14 @@ class RtwCaseController extends Controller
         {
             return redirect('/login');
         }
-        $rtwrefno = $req->query('rtwrefno');
+        $caserefno = $req->query('caserefno');
         // dd($rtwrefno);
         $jsondecodeData="";
-        $this->getDatartwOb($jsondecodeData, $rtwrefno); 
+        $this->getDatartwOb($jsondecodeData, $caserefno); 
 
-         // dd($jsondecodeData);
+         //dd($jsondecodeData);
         
-        //$casertw = $jsondecodeData->{'data'};
+        $casertw = $jsondecodeData->{'data'};
         //dd($casertw);
         
 
@@ -49,12 +49,12 @@ class RtwCaseController extends Controller
 
         // dd($workbasketrtw);
         //
-      return view ('cmrtw.index', [ 'race' => $race, 'state' => $state, 'national' => $national, 'idtype'=>$idtype, 'doclist' => $doclist ,'alldoclist' => $alldoclist]);
-      //'casertw'=>$casertw ,
+      return view ('cmrtw.index', [ 'casertw'=>$casertw ,'race' => $race, 'state' => $state, 'national' => $national, 'idtype'=>$idtype, 'doclist' => $doclist ,'alldoclist' => $alldoclist]);
+      //
 
     }
 
-    public function getDatartwOb(&$jsondecodeData, $rtwrefno)
+    public function getDatartwOb(&$jsondecodeData, $caserefno)
     {
        
         //(Session::get('rtwrefno'));

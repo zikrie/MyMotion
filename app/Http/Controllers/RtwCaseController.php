@@ -49,12 +49,12 @@ class RtwCaseController extends Controller
 
         // dd($workbasketrtw);
         //
-      return view ('cmrtw.index', [ 'race' => $race, 'state' => $state, 'national' => $national, 'idtype'=>$idtype, 'doclist' => $doclist ,'alldoclist' => $alldoclist]);
-      //'casertw'=>$casertw ,
+      return view ('cmrtw.index', [ 'casertw'=>$casertw ,'race' => $race, 'state' => $state, 'national' => $national, 'idtype'=>$idtype, 'doclist' => $doclist ,'alldoclist' => $alldoclist]);
+      //
 
     }
 
-    public function getDatartwOb(&$jsondecodeData)
+    public function getDatartwOb(&$jsondecodeData,$caserefno)
     {
        
         //$caserefno = session('caserefno');

@@ -61,7 +61,7 @@ class RtwCaseController extends Controller
         //dd($rtwrefno);
         $brcode = session('loginbranchcode');
         $operid = session('loginname');
-        // $caserefno = session('caserefno');
+        $caserefno = session('caserefno');
         //dd($brcode);
         
 
@@ -70,7 +70,7 @@ class RtwCaseController extends Controller
         // http://202.171.33.49:2021/api/wsmotion/rtw/insuredpersoninfo?rtwrefno=DMA310720190001&brcode=A31&loginid=irina
          // $url = 'http://'.env('WS_IP', 'localhost').'/api/wsmotion/rtw/reg?idno='.$idno.'&brcode='.$brcode.'&operid='.$operid;
 
-        $url = 'http://'.env('WS_IP', 'localhost').'/api/wsmotion/rtw/insuredpersoninfo?rtwrefno='.$rtwrefno.'&brcode='.$brcode.'&loginname='.$operid;//rtw  
+        $url = 'http://'.env('WS_IP', 'localhost').'/api/wsmotion/rtw/insuredpersoninfo?caserefno='.$caserefno.'&brcode='.$brcode.'&operid='.$operid;//rtw  
         //dd($url);                 
 
         $ch = curl_init();

@@ -530,7 +530,7 @@ function remove_addDisabled(rid) {
         }
     }
 
-    function mobiliti(aval) {
+    function myMobiliti(aval) {
         if (aval == "kenderaanperkeso") {
             $('#hidekenderaanperkeso').show();
             $('#hidetiketpenerbangan').hide();

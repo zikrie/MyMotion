@@ -31,9 +31,9 @@ class RtwCaseController extends Controller
 
          // dd($jsondecodeData);
         
-        $casertw = $jsondecodeData->{'data'};
-        // dd($casertw);
-
+        //$casertw = $jsondecodeData->{'data'};
+        //dd($casertw);
+        
 
         $state=DB::select('Select refcode, descen from reftable where tablerefcode=? order by refcode', ['state']);
         $national=DB::select('Select refcode, descen from reftable where tablerefcode=? order by refcode', ['national']);
@@ -48,22 +48,22 @@ class RtwCaseController extends Controller
          // dd($casertw);
 
         // dd($workbasketrtw);
-        
-      return view ('cmrtw.index', ['casertw'=>$casertw, 'race' => $race, 'state' => $state, 'national' => $national, 'idtype'=>$idtype, 'doclist' => $doclist ,'alldoclist' => $alldoclist]);
-        
+        //
+      return view ('cmrtw.index', [ 'race' => $race, 'state' => $state, 'national' => $national, 'idtype'=>$idtype, 'doclist' => $doclist ,'alldoclist' => $alldoclist]);
+      //'casertw'=>$casertw ,
 
     }
 
     public function getDatartwOb(&$jsondecodeData, $rtwrefno)
     {
        
-        // (Session::get('rtwrefno'));
-        
+        //(Session::get('rtwrefno'));
+        //dd($rtwrefno);
         $brcode = session('loginbranchcode');
         $operid = session('loginname');
         // $caserefno = session('caserefno');
-
-
+        //dd($brcode);
+        
 
         
         // http://202.171.33.49:2021/api/wsmotion/rtw/getworkbasketrtw?loginname=MASTURA 
@@ -71,7 +71,7 @@ class RtwCaseController extends Controller
          // $url = 'http://'.env('WS_IP', 'localhost').'/api/wsmotion/rtw/reg?idno='.$idno.'&brcode='.$brcode.'&operid='.$operid;
 
         $url = 'http://'.env('WS_IP', 'localhost').'/api/wsmotion/rtw/insuredpersoninfo?rtwrefno='.$rtwrefno.'&brcode='.$brcode.'&loginname='.$operid;//rtw  
-        // dd($url);                 
+        //dd($url);                 
 
         $ch = curl_init();
     
@@ -88,7 +88,7 @@ class RtwCaseController extends Controller
     
         $jsondecodeData =json_decode($result);
 
-        // dd($jsondecodeData);
+        //dd($jsondecodeData);
        
 
     }

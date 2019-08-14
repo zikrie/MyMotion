@@ -385,7 +385,7 @@
                         <hr>
 
                         <div class="row p-t-20"> 
-                            <div class="col-md-2">
+                            <div class="col-md-4">
                                 <div class="form-group">
                                     <label class="control-label">@lang('ia.attr.license') <span class="text-danger">*</span></label>
                                     <select class="select2 m-b-10 select2-multiple" style="width: 100%;border:1px" multiple="multiple" data-placeholder="Please Select" required>
@@ -400,27 +400,54 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-md-10">
+                            <div class="col-md-2">
                                 <div class="form-group">
+                                    <label class="control-label">@lang('caseMgmt.attr.grade')</label>
+                                    <div class="input-group">
+                                        <select class="form-control" tabindex="1" required>
+                                            <option value="a_type">@lang('caseMgmt.attr.a_type')</option>
+                                            <option value="a1_type">@lang('caseMgmt.attr.a1_type')</option>
+                                            <option value="b_type">@lang('caseMgmt.attr.b_type')</option>
+                                            <option value="b1_type">@lang('caseMgmt.attr.b1_type')</option>
+                                            <option value="b2_type">@lang('caseMgmt.attr.b2_type')</option>
+                                            <option value="c_type">@lang('caseMgmt.attr.c_type')</option>
+                                            <option value="d_type">@lang('caseMgmt.attr.d_type')</option>
+                                            <option value="da_type">@lang('caseMgmt.attr.da_type')</option>
+                                            <option value="e_type">@lang('caseMgmt.attr.e_type')</option>
+                                            <option value="e1_type">@lang('caseMgmt.attr.e1_type')</option>
+                                            <option value="e2_type">@lang('caseMgmt.attr.e2_type')</option>
+                                            <option value="f_type">@lang('caseMgmt.attr.f_type')</option>
+                                            <option value="g_type">@lang('caseMgmt.attr.g_type')</option>
+                                            <option value="h_type">@lang('caseMgmt.attr.h_type')</option>
+                                            <option value="i_type">@lang('caseMgmt.attr.i_type')</option>
+                                        </select>
+                                        <div class="input-group-append">
+                                            <button class="btn btn-success" type="button" onclick="add_newskills();"><i class="fa fa-plus"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-md-10">
+                                <div class="form-group row">
                                     <label class="control-label">@lang('ia.attr.licenseClass') <span class="text-danger">*</span></label>
+                                </div>
+                                <div class="form-group row">
                                     <select class="selectpicker" multiple data-style="form-control">
-                                        <option value="a_type">@lang('caseMgmt.attr.a_type')</option>
-                                        <option value="a1_type">@lang('caseMgmt.attr.a1_type')</option>
-                                        <option value="b_type">@lang('caseMgmt.attr.b_type')</option>
-                                        <option value="b1_type">@lang('caseMgmt.attr.b1_type')</option>
-                                        <option value="b2_type">@lang('caseMgmt.attr.b2_type')</option>
-                                        <option value="c_type">@lang('caseMgmt.attr.c_type')</option>
-                                        <option value="d_type">@lang('caseMgmt.attr.d_type')</option>
-                                        <option value="da_type">@lang('caseMgmt.attr.da_type')</option>
-                                        <option value="e_type">@lang('caseMgmt.attr.e_type')</option>
-                                        <option value="e1_type">@lang('caseMgmt.attr.e1_type')</option>
-                                        <option value="e2_type">@lang('caseMgmt.attr.e2_type')</option>
-                                        <option value="f_type">@lang('caseMgmt.attr.f_type')</option>
-                                        <option value="g_type">@lang('caseMgmt.attr.g_type')</option>
-                                        <option value="h_type">@lang('caseMgmt.attr.h_type')</option>
-                                        <option value="i_type">@lang('caseMgmt.attr.i_type')</option>
+                                        
                                     </select>
                                 </div>
+                            </div> -->
+                        </div>
+                        <hr>
+
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <select class="selectpicker" multiple data-style="form-control btn-info">
+                                    <option>Mustard</option>
+                                    <option>Ketchup</option>
+                                    <option>Relish</option>
+                                </select>
                             </div>
                         </div>
 

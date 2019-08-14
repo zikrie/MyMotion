@@ -135,7 +135,7 @@
                                         <div class="tab-pane p-20" id="prm" role="tabpanel">
                                                 <ul class="nav customtab" role="tablist">
                                                         {{-- <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#insurePersonDetailsPRM" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Insured Person Details</span></a> </li> --}}
-                                                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#recoveryInformation" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Recovery Information</span></a> </li>
+                                                        <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#recoveryInformation" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Recovery Information</span></a> </li>
                                                         <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#rehabReport" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Rehab Report</span></a> </li>
                                                         <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#sessInfo" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Session Information</span></a> </li>
                                                         <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#ipAttendanceInfo" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Insured Person Attendance Information</span></a> </li>
@@ -147,7 +147,7 @@
                                                         @include('cmrtw.caseMgmt.PL.ipPermission')
                                                         </div> --}}
                                     
-                                                        <div class="tab-pane p-20" id="recoveryInformation" role="tabpanel">
+                                                        <div class="tab-pane p-20 active" id="recoveryInformation" role="tabpanel">
                                                         @include('cmrtw.caseMgmt.PL.prmRecovery')
                                                         </div>
                                     
@@ -499,7 +499,7 @@
                                                             <div class="tab-pane p-20" id="business" role="tabpanel">
                                                                             <ul class="nav customtab" role="tablist">
                                                                                     <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#support_doc_business" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Supporting Document Details</span></a> </li>
-                                                                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#business_case_note" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Case Note Information</span></a> </li>
+                                                                                    {{-- <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#business_case_note" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Case Note Information</span></a> </li> --}}
                                                                                    
                                                                                    
                                                                             </ul>

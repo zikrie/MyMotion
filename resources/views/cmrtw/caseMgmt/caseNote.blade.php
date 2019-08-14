@@ -127,48 +127,51 @@
                                     <input class="form-control" type="date"  id="activity_date">
                                 </div>
                             </div>
+
+                            <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="example-text-input" class="col-form-label">@lang('caseMgmt.attr.plan_type')</label> 
+                                        <select class="form-control" id="plan_type" name="plan_type" required>
+                                            <option value="">Please Select</option>
+                                            <option value="general">General</option>
+                                            {{-- <option value="Two times a month">Two times a month</option> --}}
+                                            {{-- <option value="Once a month">Once a month</option> --}}
+                                            {{-- <option value="Once in two months">Once in two months</option> --}}
+                                        </select>
+                                    </div>
+                                </div>
+                            
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="example-text-input" class="col-form-label">@lang('caseMgmt.attr.title')</label>
+                                        <input type="text" name="title" id="title" class="form-control" required>
+                                    </div>
+                                </div>
                         </div>  
-                                
-                        <div class="row p-t-20">
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="example-text-input" class="col-form-label">@lang('caseMgmt.attr.plan_type')</label> 
-                                    <select class="form-control" id="plan_type" name="plan_type" required>
-                                        <option value="">Please Select</option>
-                                        <option value="general">General</option>
-                                        {{-- <option value="Two times a month">Two times a month</option> --}}
-                                        {{-- <option value="Once a month">Once a month</option> --}}
-                                        {{-- <option value="Once in two months">Once in two months</option> --}}
-                                    </select>
-                                </div>
-                            </div>
-                        
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="example-text-input" class="col-form-label">@lang('caseMgmt.attr.title')</label>
-                                    <input type="text" name="title" id="title" class="form-control" required>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
+                        <div class="row p-t-20">   
+                            <div class="col-md-12">
                                 <div class="form-group">
                                     <label for="example-text-input" class="col-form-label">@lang('caseMgmt.attr.description')</label>
-                                    <input type="text" name="description" id="description" class="form-control" required>
+                                    <textarea name="remarks" id="remarks" class="form-control" required rows="4" cols="50" required></textarea>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                        </div>
+                        <div class="row p-t-20">
+                            <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="example-text-input" class="col-form-label">@lang('caseMgmt.attr.prepared_by')</label>
                                     <input type="text" name="prepared_by" id="prepared_by" class="form-control" required>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="example-text-input" class="col-form-label">@lang('caseMgmt.attr.prepared_for')</label>
                                     <input type="text" name="prepared_for" id="prepared_for" class="form-control" required>
                                 </div>
                             </div>
-
                         </div>
+
+                        
                                 
                     </form>
                         <div class="modal-footer">

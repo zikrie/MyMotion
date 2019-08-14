@@ -531,19 +531,27 @@ function remove_addDisabled(rid) {
         }
     }
 
-    function mobiliti(aval) {
+    function myMobiliti(aval) {
         if (aval == "kenderaanperkeso") {
             $('#hidekenderaanperkeso').show();
             $('#hidetiketpenerbangan').hide();
+            $('#hidetaxi').hide();
 
         }
         else if(aval == "tiketpenerbangan"){
             $('#hidekenderaanperkeso').hide(); 
-            $('#hidetiketpenerbangan').show(); 
+            $('#hidetiketpenerbangan').show();
+            $('#hidetaxi').hide(); 
+        }
+        else if(aval == "taxi"){
+            $('#hidekenderaanperkeso').hide(); 
+            $('#hidetiketpenerbangan').hide();
+            $('#hidetaxi').show(); 
         }
         else{
             $('#hidekenderaanperkeso').hide(); 
-            $('#hidetiketpenerbangan').hide(); 
+            $('#hidetiketpenerbangan').hide();
+            $('#hidetaxi').hide(); 
         }
     }
 </script>

@@ -88,13 +88,7 @@
                             <a href="javascript:void(0)">
                                 <div class="mail-contnet text-right">
                                     <h3><b>26</b></h3>
-                                    <h5><b>@lang('home.total_task')</b></h5> {{-- <span class="mail-desc">Todays headlines : Breakdancing Grandma Proves ..</span> --}} {{-- </div>
-                                </a>
-                            </div>
-                        </div>
-                        
-                    </div> --}}
-                    {{--  --}}
+                                    <h5><b>@lang('home.total_task')</b></h5>
 
                     <div class="row p-t-20">
 
@@ -142,29 +136,7 @@
 
                                 </div> <br><br>
 
-                       {{--  <div class="row p-t-20">
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label class="control-label">@lang('home.date')</label>
-                                        <input type="date" id="dateofbirth" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label class="control-label">@lang('home.rtw_ref_no')</label>
-                                        <input type="text" id="rtw_ref_no" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <button type="button" class="btn btn-primary">@lang('home.search')</button>
-                                    </div>
-                                </div>
-                            </div> --}} 
-
-                               {{--  <h4 class="card-title">Responsive Table </h4>
-                               <h6 class="card-subtitle">Create responsive tables by wrapping any <code>.table</code> in <code>.table-responsive </code></h6> --}}
-                               <div class="col-12">
+                                <div class="col-12">
                                 <div class="card">
                                     <div class="table-responsive m-t-40">
                                         <table id="workbasketRTW" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
@@ -176,6 +148,7 @@
                                                     <th>@lang('home.aging')</th>
                                                     <th>@lang('home.datereg')</th>
                                                     <th>@lang('home.rtwrefno')</th>
+                                                    <th>@lang('home.caserefno')</th>
                                                     <th>@lang('home.name')</th>
                                                     <th>@lang('home.icno')</th>
                                                     <th>@lang('home.casestatus')</th>
@@ -188,7 +161,7 @@
                                                 @isset($wbrtw->wbid)
 
                                                 <tr>
-                                                    <td><a id='selectdraft' href='/cmrtw.index?rtwrefno={{$wbrtw->rtwrefno}}&wbid={{$wbrtw->wbid}}'><i class="fas fa-edit"></i></a></td>
+                                                    <td><a id='selectdraft' href='/cmrtw.index?rtwrefno={{$wbrtw->rtwrefno}}&caserefno={{$wbrtw->caserefno}}&wbid={{$wbrtw->wbid}}'><i class="fas fa-edit"></i></a></td>
                                                     <td><a id="deletedraft" onclick="return confirm('Are you sure want to delete the draft?');" ><i class="fas fa-trash-alt fa-sm"></i></a></td>
                                                     <td>{{ $wbrtw->wbid }}</td>
                                                     <td><?php 
@@ -197,14 +170,15 @@
                                                     $difference = $currdate->diff($wbrtwdate);
                                                     echo ($difference->d);
                                                     ?></td>
-                                                    {{--  <td>{{substr($wb['date'],6,2)}}-{{substr($wb['date'],4,2)}}-{{substr($wb['date'],0,4)}}</td> --}}
                                                     <td>{{substr($wbrtw->date,6,2)}}-{{substr($wbrtw->date,4,2)}}-{{substr($wbrtw->date,0,4)}}</td>
                                                     <td>{{ $wbrtw->rtwrefno }}</td>
+                                                    <td>{{ $wbrtw->caserefno }}</td>
                                                     <td>{{ $wbrtw->name }}</td>
                                                     <td>{{ $wbrtw->idno }}</td>
                                                     <td>{{ $wbrtw->descen }}</td> 
                                                 </tr>
-                                               @endisset @endforeach
+                                               @endisset 
+                                               @endforeach
                                                
                                             </tbody>
                                         </table>

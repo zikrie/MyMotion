@@ -1,8 +1,3 @@
-
-
-
-
-
 @extends('layouts.app')
 
 @section('maintitle', 'Tab Screen')
@@ -72,23 +67,6 @@
                 </div>
                 <!-- Column -->
             </div>
-
-                {{-- <div class="row p-t-20">
-
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label class="control-label"><h3>@lang('home.search')</h3></label>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6"> </div>
-
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <a href="javascript:void(0)">
-                                <div class="mail-contnet text-right">
-                                    <h3><b>26</b></h3>
-                                    <h5><b>@lang('home.total_task')</b></h5>
 
                     <div class="row p-t-20">
 

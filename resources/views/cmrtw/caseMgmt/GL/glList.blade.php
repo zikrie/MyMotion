@@ -4,75 +4,76 @@
             <div class="card-body">
                 <form action="/registrationrtw">
                     <div class="form-body">
-                        {{-- <h3 class="card-title">@lang('benefitDetails.insured_details')</h3> --}}
+                       
                         <input type="hidden" name="_token" value="{{csrf_token()}}">
 
-                        <div id="accordion2" role="tablist" class="minimal-faq" aria-multiselectable="true">
+                        <div id="accordion2" role="tablist" class="accordion" >
+                  
                             <div class="card m-b-0">
-                                <div class="card-header" role="tab" id="headingOne1" style="background-color: #FFFFFF;">
-                                    <h5 class="mb-0">
-                                        <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1"><h5 class="card-title"><i class="fa fa-plus"></i>
+                                <div class="card-header" role="tab" id="headingGLletter" style="background-color: #FFFFFF;">
+                                    <h5 class="mb-0">                           
+                                        <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapseGLletter" aria-expanded="false" aria-controls="collapseGLletter">
+                                            <h5 class="card-title" ><i class="fa fa-plus"></i>
                                             @lang('caseMgmt.attr.gl_letter')</h5>
                                         </a>
                                     </h5>
                                 </div>
-                                <div id="collapseOne1" class="collapse" role="tabpanel" aria-labelledby="headingOne1">
+                                <div id="collapseGLletter" class="collapse" role="tabpanel" aria-labelledby="headingGLletter">
                                     <div class="card-body">
-                                        {{-- @include('cmrtw.caseMgmt.GL.glDetails') --}}
-                                      	{{-- first div --}}
-										<div class="card m-b-0">
-                                                <div class="card-header" role="tab" id="headingThree33">
-                                                    <h6 class="mb-0">
-                                                        <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree33" aria-expanded="false" aria-controls="collapseThree33"><i class="fa fa-plus"></i>
-                                                            @lang('caseMgmt.attr.supplier')
-                                                        </a>
-                                                    </h6>
-                                                </div>
-                                                <div id="collapseThree33" class="collapse" role="tabpanel" aria-labelledby="headingThree33">
-                                                    <div class="card-body">
-                                                        @include('cmrtw.caseMgmt.GL.supplierDetails')
-                                                    </div>
-                                                </div>
-                                            </div>
-    
-                                            <br>
-                                            {{-- second div --}}
+                                        <div id="accordionLesisure" role="tablist" class="accordion" >
                                             <div class="card m-b-0">
-                                                <div class="card-header" role="tab" id="headingFour44">
-                                                    <h6 class="mb-0">
-                                                        <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour44" aria-expanded="false" aria-controls="collapseFour44"><i class="fa fa-plus"></i>
-                                                            @lang('caseMgmt.attr.gl_letter')</h5>
+                                                <div class="card-header" style="background-color: #98cb5b;" role="tab" id="headingSupplierGL ">
+                                                    <h5 class="mb-0">                           
+                                                        <a class="link" data-toggle="collapse" data-parent="#accordionSupplierGL" href="#collapseSupplierGL" aria-expanded="true" aria-controls="collapseSupplierGL">
+                                                            <i class="fa fa-plus"></i>  @lang('caseMgmt.attr.supplier')
                                                         </a>
-                                                    </h6>
+                                                    </h5>
                                                 </div>
-                                                <div id="collapseFour44" class="collapse" role="tabpanel" aria-labelledby="headingFour44">
+                                                <div id="collapseSupplierGL" class="collapse" role="tabpanel" aria-labelledby="headingSupplierGL">
                                                     <div class="card-body">
-                                                            @include('cmrtw.caseMgmt.GL.glDetails')
+                                                        @include('cmrtw.caseMgmt.GL.supplierDetails')    
                                                     </div>
                                                 </div>
                                             </div>
-                                            
+
                                             <br>
-                                             {{-- third div --}}
-                                             <div class="card m-b-0">
-                                                    <div class="card-header" role="tab" id="headingFive55" >
-                                                        <h6 class="mb-0">
-                                                            <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive55" aria-expanded="false" aria-controls="collapseFive55"><i class="fa fa-plus"></i>
-                                                                @lang('caseMgmt.attr.previous_gl')
-                                                            </a>
-                                                        </h6>
-                                                    </div>
-                                                    <div id="collapseFive55" class="collapse" role="tabpanel" aria-labelledby="headingFive55">
-                                                        <div class="card-body">
-                                                                @include('cmrtw.caseMgmt.GL.previousGl')
-                                                        </div>
+
+                                            <div class="card m-b-0">
+                                                <div class="card-header" style="background-color: #98cb5b;" role="tab" id="headingGLdetails ">
+                                                    <h5 class="mb-0">                           
+                                                        <a class="link" data-toggle="collapse" data-parent="#accordionSupplierGL" href="#collapseGLdetails" aria-expanded="true" aria-controls="collapseGLdetails">
+                                                            <i class="fa fa-plus"></i>  @lang('caseMgmt.attr.gl_letter')
+                                                        </a>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapseGLdetails" class="collapse" role="tabpanel" aria-labelledby="headingGLdetails">
+                                                    <div class="card-body">
+                                                        @include('cmrtw.caseMgmt.GL.glDetails')
                                                     </div>
                                                 </div>
-                                            
+                                            </div>
+
+                                            <br>
+
+                                            <div class="card m-b-0">
+                                                <div class="card-header" style="background-color: #98cb5b;" role="tab" id="headingpreviousGL ">
+                                                    <h5 class="mb-0">                           
+                                                        <a class="link" data-toggle="collapse" data-parent="#accordionSupplierGL" href="#collapsepreviousGL" aria-expanded="true" aria-controls="collapsepreviousGL">
+                                                            <i class="fa fa-plus"></i>   @lang('caseMgmt.attr.previous_gl')
+                                                        </a>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapsepreviousGL" class="collapse" role="tabpanel" aria-labelledby="headingpreviousGL">
+                                                    <div class="card-body">
+                                                    @include('cmrtw.caseMgmt.GL.previousGl') 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="card m-b-0">
                                 <div class="card-header" role="tab" id="headingTwo2" style="background-color: #FFFFFF;">
                                     <h5 class="mb-0">
@@ -89,31 +90,21 @@
                             </div>
 
                             <div class="card m-b-0">
-                                    <div class="card-header" role="tab" id="headingThree3" style="background-color: #FFFFFF;" >
-                                        <h5 class="mb-0">
-                                            <a class="collapsed link" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3"><h5 class="card-title"><i class="fa fa-plus"></i>
-                                                @lang('caseMgmt.attr.scm_approval')</h5>
-                                            </a>
-                                        </h5>
-                                    </div>
-                                    <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3">
-                                        <div class="card-body">
-                                            @include('cmrtw.caseMgmt.GL.scmhqApproval')
-                                        </div>
+                                <div class="card-header" role="tab" id="headingThree3" style="background-color: #FFFFFF;" >
+                                    <h5 class="mb-0">
+                                        <a class="collapsed link" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3"><h5 class="card-title"><i class="fa fa-plus"></i>
+                                            @lang('caseMgmt.attr.scm_approval')</h5>
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3">
+                                    <div class="card-body">
+                                        @include('cmrtw.caseMgmt.GL.scmhqApproval')
                                     </div>
                                 </div>
+                            </div>
                         </div>
-
-
                     </div>
-
-
-                    {{-- <div class="form-actions">
-                        <button type="button" class="btn btn waves-effect waves-light btn-secondary">@lang('registrationRTW.cancel')</button>
-                        <button type="button" class="btn btn waves-effect waves-light btn-secondary">@lang('registrationRTW.clear')</button>
-                        <button type="submit" class="btn btn waves-effect waves-light btn-success"> <i class="fa fa-check"></i>
-                        @lang('registrationRTW.save')</button>
-                    </div> --}}
                 </div>
             </form>
         </div>

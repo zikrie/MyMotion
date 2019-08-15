@@ -609,7 +609,7 @@ function remove_addDisabled(rid) {
             var divtest = document.createElement("div");
             divtest.setAttribute("class", "removeclass" + addLicense);
             var rdiv = 'removeclass' + addLicense;
-            divtest.innerHTML = '<div class="form-group"><label class="control-label">@lang('caseMgmt.attr.license_class') '+addLicense+'</label><div class="input-group"><select class="form-control" tabindex="1" required><option value="a_type">@lang('caseMgmt.attr.a_type')</option><option value="a1_type">@lang('caseMgmt.attr.a1_type')</option><option value="b_type">@lang('caseMgmt.attr.b_type')</option><option value="b1_type">@lang('caseMgmt.attr.b1_type')</option><option value="b2_type">@lang('caseMgmt.attr.b2_type')</option><option value="c_type">@lang('caseMgmt.attr.c_type')</option><option value="d_type">@lang('caseMgmt.attr.d_type')</option><option value="da_type">@lang('caseMgmt.attr.da_type')</option><option value="e_type">@lang('caseMgmt.attr.e_type')</option><option value="e1_type">@lang('caseMgmt.attr.e1_type')</option><option value="e2_type">@lang('caseMgmt.attr.e2_type')</option><option value="f_type">@lang('caseMgmt.attr.f_type')</option><option value="g_type">@lang('caseMgmt.attr.g_type')</option><option value="h_type">@lang('caseMgmt.attr.h_type')</option><option value="i_type">@lang('caseMgmt.attr.i_type')</option></select><div class="input-group-append"><button class="btn btn-danger" type="button" onclick="remove_newLicense('+addLicense+');"><i class="fa fa-minus"></i></button></div></div></div>';
+            divtest.innerHTML = '<tr><td></td><td></td><td><div class="col-md-6"><div class="input-group"><select class="form-control" tabindex="1" required><option value="a_type">@lang('caseMgmt.attr.a_type')</option><option value="a1_type">@lang('caseMgmt.attr.a1_type')</option><option value="b_type">@lang('caseMgmt.attr.b_type')</option><option value="b1_type">@lang('caseMgmt.attr.b1_type')</option><option value="b2_type">@lang('caseMgmt.attr.b2_type')</option><option value="c_type">@lang('caseMgmt.attr.c_type')</option><option value="d_type">@lang('caseMgmt.attr.d_type')</option><option value="da_type">@lang('caseMgmt.attr.da_type')</option><option value="e_type">@lang('caseMgmt.attr.e_type')</option><option value="e1_type">@lang('caseMgmt.attr.e1_type')</option><option value="e2_type">@lang('caseMgmt.attr.e2_type')</option><option value="f_type">@lang('caseMgmt.attr.f_type')</option><option value="g_type">@lang('caseMgmt.attr.g_type')</option><option value="h_type">@lang('caseMgmt.attr.h_type')</option><option value="i_type">@lang('caseMgmt.attr.i_type')</option></select><div class="input-group-append"><button class="btn btn-danger" type="button" onclick="remove_newLicense('+addLicense+');"><i class="fa fa-minus"></i></button></div></div></div></td></tr>';
         
             objTo.appendChild(divtest)
         }
@@ -617,5 +617,85 @@ function remove_addDisabled(rid) {
         function remove_newLicense(rid) {
             $('.removeclass' + rid).remove();
             addLicense--;
+        }
+
+        //add_newLicense1
+        var addLicense1 = 1;
+        
+        function add_newLicense1() {
+        
+            addLicense1++;
+            var objTo = document.getElementById('newlicense1')
+            var divtest = document.createElement("div");
+            divtest.setAttribute("class", "removeclass" + addLicense1);
+            var rdiv = 'removeclass' + addLicense1;
+            divtest.innerHTML = '<tr><td></td><td></td><td><div class="col-md-6"><div class="input-group"><select class="form-control" tabindex="1" required><option value="a_type">@lang('caseMgmt.attr.a_type')</option><option value="a1_type">@lang('caseMgmt.attr.a1_type')</option><option value="b_type">@lang('caseMgmt.attr.b_type')</option><option value="b1_type">@lang('caseMgmt.attr.b1_type')</option><option value="b2_type">@lang('caseMgmt.attr.b2_type')</option><option value="c_type">@lang('caseMgmt.attr.c_type')</option><option value="d_type">@lang('caseMgmt.attr.d_type')</option><option value="da_type">@lang('caseMgmt.attr.da_type')</option><option value="e_type">@lang('caseMgmt.attr.e_type')</option><option value="e1_type">@lang('caseMgmt.attr.e1_type')</option><option value="e2_type">@lang('caseMgmt.attr.e2_type')</option><option value="f_type">@lang('caseMgmt.attr.f_type')</option><option value="g_type">@lang('caseMgmt.attr.g_type')</option><option value="h_type">@lang('caseMgmt.attr.h_type')</option><option value="i_type">@lang('caseMgmt.attr.i_type')</option></select><div class="input-group-append"><button class="btn btn-danger" type="button" onclick="remove_newLicense1('+addLicense1+');"><i class="fa fa-minus"></i></button></div></div></div></td></tr>';
+        
+            objTo.appendChild(divtest)
+        }
+        
+        function remove_newLicense1(rid) {
+            $('.removeclass' + rid).remove();
+            addLicense1--;
+        }
+
+        //add_newLicense2
+        var addLicense2 = 1;
+        
+        function add_newLicense2() {
+        
+            addLicense2++;
+            var objTo = document.getElementById('newlicense2')
+            var divtest = document.createElement("div");
+            divtest.setAttribute("class", "removeclass" + addLicense2);
+            var rdiv = 'removeclass' + addLicense2;
+            divtest.innerHTML = '<tr><td></td><td></td><td><div class="col-md-6"><div class="input-group"><select class="form-control" tabindex="1" required><option value="a_type">@lang('caseMgmt.attr.a_type')</option><option value="a1_type">@lang('caseMgmt.attr.a1_type')</option><option value="b_type">@lang('caseMgmt.attr.b_type')</option><option value="b1_type">@lang('caseMgmt.attr.b1_type')</option><option value="b2_type">@lang('caseMgmt.attr.b2_type')</option><option value="c_type">@lang('caseMgmt.attr.c_type')</option><option value="d_type">@lang('caseMgmt.attr.d_type')</option><option value="da_type">@lang('caseMgmt.attr.da_type')</option><option value="e_type">@lang('caseMgmt.attr.e_type')</option><option value="e1_type">@lang('caseMgmt.attr.e1_type')</option><option value="e2_type">@lang('caseMgmt.attr.e2_type')</option><option value="f_type">@lang('caseMgmt.attr.f_type')</option><option value="g_type">@lang('caseMgmt.attr.g_type')</option><option value="h_type">@lang('caseMgmt.attr.h_type')</option><option value="i_type">@lang('caseMgmt.attr.i_type')</option></select><div class="input-group-append"><button class="btn btn-danger" type="button" onclick="remove_newLicense2('+addLicense2+');"><i class="fa fa-minus"></i></button></div></div></div></td></tr>';
+        
+            objTo.appendChild(divtest)
+        }
+        
+        function remove_newLicense2(rid) {
+            $('.removeclass' + rid).remove();
+            addLicense2--;
+        }
+
+        //add_newLicense3
+        var addLicense3 = 1;
+        
+        function add_newLicense3() {
+        
+            addLicense3++;
+            var objTo = document.getElementById('newlicense3')
+            var divtest = document.createElement("div");
+            divtest.setAttribute("class", "removeclass" + addLicense3);
+            var rdiv = 'removeclass' + addLicense3;
+            divtest.innerHTML = '<tr><td></td><td></td><td><div class="col-md-6"><div class="input-group"><select class="form-control" tabindex="1" required><option value="a_type">@lang('caseMgmt.attr.a_type')</option><option value="a1_type">@lang('caseMgmt.attr.a1_type')</option><option value="b_type">@lang('caseMgmt.attr.b_type')</option><option value="b1_type">@lang('caseMgmt.attr.b1_type')</option><option value="b2_type">@lang('caseMgmt.attr.b2_type')</option><option value="c_type">@lang('caseMgmt.attr.c_type')</option><option value="d_type">@lang('caseMgmt.attr.d_type')</option><option value="da_type">@lang('caseMgmt.attr.da_type')</option><option value="e_type">@lang('caseMgmt.attr.e_type')</option><option value="e1_type">@lang('caseMgmt.attr.e1_type')</option><option value="e2_type">@lang('caseMgmt.attr.e2_type')</option><option value="f_type">@lang('caseMgmt.attr.f_type')</option><option value="g_type">@lang('caseMgmt.attr.g_type')</option><option value="h_type">@lang('caseMgmt.attr.h_type')</option><option value="i_type">@lang('caseMgmt.attr.i_type')</option></select><div class="input-group-append"><button class="btn btn-danger" type="button" onclick="remove_newLicense3('+addLicense3+');"><i class="fa fa-minus"></i></button></div></div></div></td></tr>';
+        
+            objTo.appendChild(divtest)
+        }
+        
+        function remove_newLicense3(rid) {
+            $('.removeclass' + rid).remove();
+            addLicense3--;
+        }
+
+        //add_newLicense4
+        var addLicense4 = 1;
+        
+        function add_newLicense4() {
+        
+            addLicense4++;
+            var objTo = document.getElementById('newlicense4')
+            var divtest = document.createElement("div");
+            divtest.setAttribute("class", "removeclass" + addLicense4);
+            var rdiv = 'removeclass' + addLicense4;
+            divtest.innerHTML = '<tr><td></td><td></td><td><div class="col-md-6"><div class="input-group"><select class="form-control" tabindex="1" required><option value="a_type">@lang('caseMgmt.attr.a_type')</option><option value="a1_type">@lang('caseMgmt.attr.a1_type')</option><option value="b_type">@lang('caseMgmt.attr.b_type')</option><option value="b1_type">@lang('caseMgmt.attr.b1_type')</option><option value="b2_type">@lang('caseMgmt.attr.b2_type')</option><option value="c_type">@lang('caseMgmt.attr.c_type')</option><option value="d_type">@lang('caseMgmt.attr.d_type')</option><option value="da_type">@lang('caseMgmt.attr.da_type')</option><option value="e_type">@lang('caseMgmt.attr.e_type')</option><option value="e1_type">@lang('caseMgmt.attr.e1_type')</option><option value="e2_type">@lang('caseMgmt.attr.e2_type')</option><option value="f_type">@lang('caseMgmt.attr.f_type')</option><option value="g_type">@lang('caseMgmt.attr.g_type')</option><option value="h_type">@lang('caseMgmt.attr.h_type')</option><option value="i_type">@lang('caseMgmt.attr.i_type')</option></select><div class="input-group-append"><button class="btn btn-danger" type="button" onclick="remove_newLicense4('+addLicense4+');"><i class="fa fa-minus"></i></button></div></div></div></td></tr>';
+        
+            objTo.appendChild(divtest)
+        }
+        
+        function remove_newLicense4(rid) {
+            $('.removeclass' + rid).remove();
+            addLicense4--;
         }
 </script>

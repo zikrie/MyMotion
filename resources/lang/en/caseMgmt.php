@@ -215,6 +215,9 @@ return [
         'car' => 'Car',
         'motorcycle' => 'Motorcycle',
         'van' => 'Van',
+        'cur_trans_usage' => 'Current Transport Usage ',
+        'personal' => 'Personal',
+        'public' => 'public',
         
         //dependantandlivingdetails
         'marriage_status' => 'Marriage Status',
@@ -238,12 +241,13 @@ return [
         'education_loan' => 'Education Loan',
         'other_expenditure' => 'Other Expenditure',
         'other_loan' => 'Other Loan',
-        'flat' => 'Flat',
+        'flat' => 'Flat - Lift',
         'apartment' => 'Apartment',
         'terrace_house' => 'Terrace House',
         'bungalow' => 'Bungalow',
-        'rumah_panjang' => 'Rumah Panjang',
+        'long_house' => 'Long House',
         'worker_house' => 'Worker House',
+        'otherHouse' => 'Others',
         'container_house' => 'Container House',
         'partner_income' => 'Partner Income',
         'baitulmal' => 'Baitulmal',
@@ -252,6 +256,8 @@ return [
         'freelance' => 'Freelance',
         'business' => 'Business',
         'children_aid' => 'Children Aid',
+        'pwd' => 'PWDs',
+        'person' => 'persons',
         
 
         //disabledDetails

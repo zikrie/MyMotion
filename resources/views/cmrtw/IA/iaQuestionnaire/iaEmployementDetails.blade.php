@@ -49,15 +49,41 @@
                         <th align="top">No.</th>
                         <th>Occupation</th>
                         <th>Scope of Task</th>
-                        <th>Action</th>                               
+                        <th>Action</th>
+                        <th align="top">No.</th>
+                        <th>Occupation</th>
+                        <th>Scope of Task</th>
+                        <th>Action</th>
+                        <th align="top">No.</th>
+                        <th>Occupation</th>
+                        <th>Scope of Task</th>
+                        <th>Action</th>
+                        <th align="top">No.</th>
+                        <th>Occupation</th>
+                        <th>Scope of Task</th>
+                        <th>Action</th>        
+                        <th>Action</th>                  
                     </tr>
                 </thead>
                 <tbody id="add-employment-body">
                     <tr id= "addActivity_0">
+                        <!-- <td></td>
+                        <td></td>                      
+                        <td></td>
+                        <td></td>
                         <td></td>
                         <td></td>                      
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>                      
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>                      
+                        <td></td>
+                        <td></td>
+                        <td></td> -->
                     </tr>
                 </tbody>
             </table>
@@ -88,15 +114,23 @@
                         <th>Duration of Employment</th>
                         <th>Position</th> 
                         <th>Action</th>
+                        <th align="top">No.</th>
+                        <th>Employer Name</th>
+                        <th>Duration of Employment</th>
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody id="add-work_history-body">
                     <tr id= "addWorkHistory_1">
-                        <td></td>
+                        <!-- <td></td>
                         <td></td>
                         <td></td>                      
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>                      
+                        <td></td> -->
                     </tr>
                 </tbody>
             </table>

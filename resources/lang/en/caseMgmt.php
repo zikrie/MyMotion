@@ -117,6 +117,8 @@ return [
         'perkeso_office' => 'PERKESO Office',
         'hospital' => 'Hospital',
         'others_option' => 'Others',
+        'appointment_date' => 'Appointment Date',
+        'other_officer' => 'Other Officer who is involved',
         
         //jobDetails
         'working' => 'Working',
@@ -517,6 +519,7 @@ return [
         'position' => 'Position',
         'upload_wsa' => 'Upload WSA Report',
         'visit_review' => 'Visit Review',
+        'appointment_time' => 'Appointment Time',
 
 
         //fce
@@ -540,6 +543,13 @@ return [
         'wsa_report' => 'WSA Report',
         'fce_justify' => 'Justification',
         'job_taskdes' => 'Job Task/Description',
+        'suggest_occupation' => 'Occupation Suggestion',
+        'working_suggest' => 'Working Time Suggestions',
+        'working_suggest1' => 'Office Hour',
+        'working_suggest2' => 'Shift',
+        'jobscope_suggest' => 'Jobscope Suggestions',
+        'emp_suggest' => 'Employment Requirements Suggestions',
+        'proposed_fce' => 'Proposed FCE Service Type Required',
         
         //prm
         'rtwcaserefno' => 'RTW Case Reference No',

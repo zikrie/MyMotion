@@ -384,6 +384,46 @@
                         <div id="add_newskill"></div>
                         <hr>
 
+                        <div class="row p-t-20">
+                            <div class="col-md-2">
+                                <label class="control-label">@lang('ia.attr.license') <span class="text-danger">*</span></label>
+                                <label class="control-label">@lang('ia.attr.ldl')</label>
+                            </div>
+                            <div class="col-md-1">
+                                <div class="custom-control custom-checkbox">
+                                    <label class="control-label" hidden>@lang('ia.attr.license')</label>
+                                    <input type="checkbox" class="custom-control-input" id="ldl">
+                                    <label class="custom-control-label" for="ldl"></label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="control-label">@lang('caseMgmt.attr.license_class')</label>
+                                    <div class="input-group">
+                                        <select class="form-control" tabindex="1" required>
+                                            <option value="a_type">@lang('caseMgmt.attr.a_type')</option>
+                                            <option value="a1_type">@lang('caseMgmt.attr.a1_type')</option>
+                                            <option value="b_type">@lang('caseMgmt.attr.b_type')</option>
+                                            <option value="b1_type">@lang('caseMgmt.attr.b1_type')</option>
+                                            <option value="b2_type">@lang('caseMgmt.attr.b2_type')</option>
+                                            <option value="c_type">@lang('caseMgmt.attr.c_type')</option>
+                                            <option value="d_type">@lang('caseMgmt.attr.d_type')</option>
+                                            <option value="da_type">@lang('caseMgmt.attr.da_type')</option>
+                                            <option value="e_type">@lang('caseMgmt.attr.e_type')</option>
+                                            <option value="e1_type">@lang('caseMgmt.attr.e1_type')</option>
+                                            <option value="e2_type">@lang('caseMgmt.attr.e2_type')</option>
+                                            <option value="f_type">@lang('caseMgmt.attr.f_type')</option>
+                                            <option value="g_type">@lang('caseMgmt.attr.g_type')</option>
+                                            <option value="h_type">@lang('caseMgmt.attr.h_type')</option>
+                                            <option value="i_type">@lang('caseMgmt.attr.i_type')</option>
+                                        </select>
+                                        <div class="input-group-append">
+                                            <button class="btn btn-success" type="button" onclick="add_newLicense();"><i class="fa fa-plus"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="row p-t-20"> 
                             <div class="col-md-4">
                                 <div class="form-group">
@@ -400,7 +440,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-md-4">
                                 <div class="form-group">
                                     <label class="control-label">@lang('caseMgmt.attr.license_class')</label>
                                     <div class="input-group">

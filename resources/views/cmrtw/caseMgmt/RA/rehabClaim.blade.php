@@ -106,9 +106,12 @@
             
                                         <td> 
                                             <div class= "btn-group">
-            
-                                                                
-                                                <button class="delete-modal btn btn-danger" data-id="1">
+                                
+                                                <button class="edit-modal btn btn-info" data-toggle="modal" data-target="#exampleModal" data-id="2">
+                                                    <span class="glyphicon glyphicon-edit"></span> Edit
+                                                </button>
+                                                  <br>              
+                                                <button class="delete-modal btn btn-danger"  data-id="2">
                                                     <span class="glyphicon glyphicon-trash"></span> Delete
                                                 </button>
                                             </div>
@@ -125,11 +128,14 @@
                                            
                                             <td> 
                                                 <div class= "btn-group">
-                                                
-                                                        <button class="delete-modal btn btn-danger" data-id="1">
-                                                                <span class="glyphicon glyphicon-trash"></span> Delete
-                                                            </button>
-                                                                    
+                                
+                                                    <button class="edit-modal btn btn-info" data-toggle="modal" data-target="#exampleModal" data-id="2">
+                                                        <span class="glyphicon glyphicon-edit"></span> Edit
+                                                    </button>
+                                                    <br>           
+                                                    <button class="delete-modal btn btn-danger"  data-id="2">
+                                                        <span class="glyphicon glyphicon-trash"></span> Delete
+                                                    </button>
                                                 </div>
                                             </td>
                                         </tr>

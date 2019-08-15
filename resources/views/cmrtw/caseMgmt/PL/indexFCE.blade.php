@@ -12,7 +12,7 @@
                             <h5 class="mb-0">                           
                                 <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapseJobDetipFCE" aria-expanded="false" aria-controls="collapseJobDetipFCE">
                                     <h5 class="card-title1"><i class="fa fa-plus"></i>
-                                        Job Details Insure Person</h5>
+                                        Job Details Insured Person</h5>
                                 </a>
                             </h5>
                         </div>

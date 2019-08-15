@@ -554,6 +554,23 @@ function remove_addDisabled(rid) {
             $('#hidetaxi').hide(); 
         }
     }
+
+    function myWaris(aval) {
+        if (aval == "waristerdekat") {
+            $('#hideWaris').show();   
+        }
+        else {
+            $('#hideWaris').hide(); 
+        }
+    }
+    function myRemark(aval) {
+        if (aval == "tidak") {
+            $('#hideRemark').show();   
+        }
+        else {
+            $('#hideRemark').hide(); 
+        }
+    }
 </script>
 <!-- Mat IA education Skill -->
 <script type="text/javascript">

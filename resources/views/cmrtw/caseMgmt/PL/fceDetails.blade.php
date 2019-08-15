@@ -83,6 +83,37 @@
                                                 <input type="text" id="remarks" class="form-control">
                                             </div>
                                         </div>
+                                        <div class="col-md-6">
+                                                <div class="form-group">                     
+                                                    <label class="control-label">@lang('caseMgmt.attr.suggest_occupation')</label>
+                                                    <input type="text" id="suggest_occupation" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                    <div class="form-group">                     
+                                                        <label class="control-label">@lang('caseMgmt.attr.working_suggest')</label>
+                                                        <select name="select_opt" id="select_opt" class="form-control" required> 
+                                                            <option value="">Please Select</option>
+                                                            <option value="working_suggest1">@lang('caseMgmt.attr.working_suggest1')</option>
+                                                            <option value="working_suggest2">@lang('caseMgmt.attr.working_suggest2')</option>
+                                                    </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                        <div class="form-group">                     
+                                                            <label class="control-label">@lang('caseMgmt.attr.jobscope_suggest')</label>
+                                                            <input type="text" id="jobscope_suggest" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                            <div class="form-group">                     
+                                                                <label class="control-label">@lang('caseMgmt.attr.emp_suggest')</label>
+                                                                <input type="text" id="emp_suggest" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        
+                                            
+                                            
                                         
 
                                         

@@ -424,22 +424,22 @@
                                                                             @include('cmrtw.caseMgmt.PL.mobMobiliti')
                                                                         </div>
                                                                         <div class="tab-pane p-20 " id="equipAndGuard" role="tabpanel">
-                                                                            {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}
+                                                                             @include('cmrtw.caseMgmt.PL.mobGuardian')
                                                                         </div>
                                                                         <div class="tab-pane p-20 " id="trrcOffDetails" role="tabpanel">
-                                                                            {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}
+                                                                            @include('cmrtw.caseMgmt.PL.mobTrrcOffDetail') 
                                                                         </div>
                                                                         <div class="tab-pane p-20 " id="caseNote" role="tabpanel">
-                                                                            {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}
+                                                                             @include('cmrtw.caseMgmt.PL.mobNotakes') 
                                                                         </div>
                                                                         <div class="tab-pane p-20 " id="aomApproval" role="tabpanel">
-                                                                            {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}
+                                                                             @include('cmrtw.caseMgmt.PL.mobAomapproval')
                                                                         </div>
                                                                         <div class="tab-pane p-20 " id="JourVerifiReportCM" role="tabpanel">
-                                                                            {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}
+                                                                             @include('cmrtw.caseMgmt.PL.mobJourneyCM') 
                                                                         </div>
                                                                         <div class="tab-pane p-20 " id="JourVerifiReportHQSCM" role="tabpanel">
-                                                                            {{-- @include('cmrtw.caseMgmt.PL.ipPermission') --}}
+                                                                            @include('cmrtw.caseMgmt.PL.mobJourneyHQSCM')
                                                                         </div>
                                                                         
                                                                                         </div>

@@ -716,3 +716,26 @@ function remove_addDisabled(rid) {
             addLicense4--;
         }
 </script>
+
+
+<!-- zikrie - iA (treatments details) -->
+<script>
+	var treatment_Details = 1;
+
+    function treatmentDetailsIA() {
+
+        treatment_Details++;
+        var objTo = document.getElementById('treatmentDetailsIA')
+        var divtest = document.createElement("div");
+        divtest.setAttribute("class", "removeclass" + treatment_Details);
+        var rdiv = 'removeclass' + treatment_Details;
+        divtest.innerHTML = '<table id="" cellspacing="0" width="40%" "><tr><td><label class="control-label">Other</label></td><td><div class="row"><div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="other"><label class="custom-control-label" for="other"></label></div><div class="col-md-10"><input type="text" id="" class="form-control" required></div><td><div class="input-group-append"><button class="btn btn-danger" type="button" onclick="remove_treatmentDetails('+treatment_Details+');"><i class="fa fa-minus"></i></button></div></td></div></td></tr></table>';
+
+        objTo.appendChild(divtest)
+    }
+
+    function remove_treatmentDetails(rid) {
+        $('.removeclass' + rid).remove();
+        treatment_Details--;
+    }
+</script>

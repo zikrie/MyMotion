@@ -2,12 +2,19 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-body">
+                        <h5 class="card-title">@lang('index.attr.rehab_planning')</h5>
                     <form action="#">
                         <div class="form-body">
                         
                             <div class="row p-t-20">
                                 <div class="col-12">
                                     <div class="card">
+                                            <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>@lang('caseMgmt.attr.ip_goal')</label>
+                                                <textarea name="ip_goal" id="ip_goal" class="form-control" required rows="4" cols="50" disabled></textarea>
+                                            </div>
+                                        </div>
                                         <div class="table-responsive m-t-40">
                                             <table id="example231" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
                                                 <thead>

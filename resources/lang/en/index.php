@@ -35,7 +35,7 @@ return [
 
         'rtw' => 'Return to Work',
         'registerRtw' => 'Registration Details',
-        'planlist' => 'Plan List',
+        'rehab_plancm' => 'Rehab Plan',
         'benefit_details' => 'Benefit Details',
         'mo_details' => 'Medical Officer Details',
         'sp_details' => 'Service Provider Details',

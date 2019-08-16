@@ -81,7 +81,7 @@ return [
         'pleaseselect' => 'Please Select',
         'refpurpose' => 'Reference Purpose',
         'rehab' => 'Rehab',
-        'recoverequipment' => 'Recovery Equipment',
+        'recoveryequipment' => 'Recovery Equipment',
         'jobplacement' => 'Job Placement',
         'others' => 'Others',
         'otherpurpose' => 'Others Purpose',

@@ -33,7 +33,6 @@ return [
         'casemgmt' => 'Case Management',
         'rtw' => 'Return to Work',
         'registerRtw' => 'Registration Details',
-        'planlist' => 'Plan List',
         'benefit_details' => 'Benefit Details',
         'mo_details' => 'Medical Officer Details',
         
@@ -47,6 +46,7 @@ return [
         'doctherapist_phone' => 'Doctor/Therapist Phone Number',
         'specify' => 'If Others, Please specify',
         'specify_no' => 'If No, Please specify',
+        'other' => 'Other',
 
 
         'doctor_name' => 'Doctor Name',
@@ -209,6 +209,7 @@ return [
         'others' => 'Others',
 
         //mobility_details
+        'mobility'=> 'Mobility',
         'transportation' => 'Transportation',
         'own_vehicles' => 'Own Vehicles',
         'modified_vehicles' => 'Modified Vehicle (According to Current Requirements)',
@@ -439,7 +440,8 @@ return [
 
 
 
-        //planList
+        //rehabPlan
+        'ip_goal' => 'RTW Goal',
         'rehab_plan' => 'Rehab Plan',
         'start_time_suggest' => 'Start Time Suggestion',
         'estimation_cost' => 'Estimation Cost (RM)',
@@ -603,7 +605,7 @@ return [
         'assigned_date' => 'Assigned Date',
         'person_incharge' => 'Person Incharge',
         'pic_contact' => 'Person Incharge Contact No',
-        'expected_date1' => 'Expectation Start Date of Coursee',
+        'expected_date1' => 'Expectation Start Date of Course',
         'expected_date2' => 'Expectation End Date of Course',
         'course_name' => 'Course Name',
         'course_period' => 'Course Period',
@@ -632,6 +634,7 @@ return [
         'total_oku' => 'Total Workers with Disabilities',
 
         //jp
+        'job_placement' => 'Job Placement',
         'first_job' => 'Occupation (First Option)',
         'second_job' => 'Occupation (Second Option)',
         'third_job' => 'Occupation (Third Option)',
@@ -673,6 +676,8 @@ return [
         'answer5' => 'Strongly Agree',
        
        //osm_and_financial
+        'osm_psm_opm' => 'OSM/PSM/OPM',
+        'bus_financial' => 'Business/Financial Support',
         'recovery_tool' => 'Recovery Tool',
         'organisation' => 'Organisation/Hospital',
         'agency_name' => 'Agency Name',
@@ -684,6 +689,7 @@ return [
         'business_type_ob' => 'Business Type (Insured Person)',
 
         //discussion
+        'discussion' => 'Discussion',
         'discuss_cat' => 'Discussion Category',
         'discuss_cat1' => 'With Insured Person',
         'discuss_cat2' => 'Grouping',
@@ -706,22 +712,8 @@ return [
         'discuss_note' => 'Note',
         'discuss_comment' => 'Comment',
         
-        
-        
-        
-       
-        
-
-
-
-
-
- 
-
-
-
-
-
+        //va
+        'va_title' => 'Vocational Assessment',
 
 
         //guarantee_letter
@@ -760,10 +752,11 @@ return [
         'address' => 'Address',
 
         //case_note
+        'case_note' => 'Case Note',
         'activity_date' => 'Activity Date',
         'title' => 'Title',
         'description' => 'Description',
-        'plan_type' => 'Plan',
+        'plan_type' => 'Type',
 
 
         //case_status

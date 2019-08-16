@@ -85,7 +85,7 @@ return [
         'jobplacement' => 'Job Placement',
         'others' => 'Others',
         'otherpurpose' => 'Others Purpose',
-        'refreceivedate' => 'Referal Receive Date',
+        'refreceivedate' => 'Referral Receive Date',
         'reportby' => 'Reported By',
         'insuredperson' => 'Insured Person',
         'employer' => 'Employer',
@@ -93,6 +93,7 @@ return [
         'addresssame' => 'Postal Address same as Residential Address ?',
         'unemployment' => 'Unemployment',
         'add' => 'Address',
+        'complain' => 'Complain',
     ],
 
     'save' => 'Save',

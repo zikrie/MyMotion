@@ -19,7 +19,7 @@
                                 <select class="form-control select" id="reportby" name='reportby' onchange="myFunctionReport(this.options[this.selectedIndex].value)">
 
                                     <option value="insuredperson">@lang('registrationRtw.attr.insuredperson')</option>
-                                    <option value="employer">@lang('registrationRtw.attr.employer')</option>
+                                    <option value="employer">@lang('registrationRtw.attr.complain')</option>
                                     <option value="Others">@lang('registrationRtw.attr.others')</option>
                                 </select>
                             </div>

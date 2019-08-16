@@ -133,9 +133,19 @@
                                         <label for="example-text-input" class="col-form-label">@lang('caseMgmt.attr.plan_type')</label> 
                                         <select class="form-control" id="plan_type" name="plan_type" required>
                                             <option value="">Please Select</option>
-                                            <option value="general">General</option>
-                                            {{-- <option value="Two times a month">Two times a month</option> --}}
-                                            {{-- <option value="Once a month">Once a month</option> --}}
+                                            <option value="discussion">@lang('caseMgmt.attr.discussion')</option>
+                                            <option value="prm">@lang('caseMgmt.attr.prm')</option>
+                                            <option value="wsa">@lang('caseMgmt.attr.wsa')</option>
+                                            <option value="fce">@lang('caseMgmt.attr.fce')</option>
+                                            <option value="osm_psm_opm">@lang('caseMgmt.attr.osm_psm_opm')</option>
+                                            <option value="mm">@lang('caseMgmt.attr.mm')</option>
+                                            <option value="va_title">@lang('caseMgmt.attr.va_title')</option>
+                                            <option value="vtm">@lang('caseMgmt.attr.vtm')</option>
+                                            <option value="jp">@lang('caseMgmt.attr.jp')</option>
+                                            <option value="bus_financial">@lang('caseMgmt.attr.bus_financial')</option>
+                                            <option value="mobility">@lang('caseMgmt.attr.mobility')</option>
+                                            <option value="other">@lang('caseMgmt.attr.other')</option>
+                                           
                                             {{-- <option value="Once in two months">Once in two months</option> --}}
                                         </select>
                                     </div>
@@ -151,25 +161,12 @@
                         <div class="row p-t-20">   
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label for="example-text-input" class="col-form-label">@lang('caseMgmt.attr.description')</label>
-                                    <textarea name="remarks" id="remarks" class="form-control" required rows="4" cols="50" required></textarea>
+                                    <label for="example-text-input" class="col-form-label">@lang('caseMgmt.attr.case_note')</label>
+                                    <textarea name="case_note" id="case_note" class="form-control" required rows="4" cols="50" required></textarea>
                                 </div>
                             </div>
                         </div>
-                        <div class="row p-t-20">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="example-text-input" class="col-form-label">@lang('caseMgmt.attr.prepared_by')</label>
-                                    <input type="text" name="prepared_by" id="prepared_by" class="form-control" required>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="example-text-input" class="col-form-label">@lang('caseMgmt.attr.prepared_for')</label>
-                                    <input type="text" name="prepared_for" id="prepared_for" class="form-control" required>
-                                </div>
-                            </div>
-                        </div>
+ 
 
                         
                                 

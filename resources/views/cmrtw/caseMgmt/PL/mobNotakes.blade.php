@@ -4,8 +4,7 @@
             <div class="card-body">
                 <form action="/registrationrtw" method="POST">
                     <div class="form-body">
-                     <h5 class="card-title">@lang('mobNotakes.title1')</h5>
-                     <hr>
+                     
                      <div class="form-actions">
                         <div class="row">
                          <div class="col-md-6">

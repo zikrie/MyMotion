@@ -109,7 +109,7 @@
                     <div class="tab-pane p-20" id="ipDetails" role="tabpanel">
                         <ul class="nav customtab" role="tablist">
 
-                            <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#plan_list" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('index.attr.planlist')</span></a> </li>
+                            <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#rehab_plancm" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('index.attr.rehab_plancm')</span></a> </li>
 
                             <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#gl" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('index.attr.gl')</span></a> </li>
 
@@ -123,8 +123,8 @@
 
                         <div class="tab-content tabcontent-border">
 
-                            <div class="tab-pane p-20 active" id="plan_list" role="tabpanel">
-                                @include('cmrtw.caseMgmt.planList')
+                            <div class="tab-pane p-20 active" id="rehab_plancm" role="tabpanel">
+                                @include('cmrtw.caseMgmt.rehabPlanCm')
                             </div>
 
                             <div class="tab-pane p-20" id="gl" role="tabpanel">

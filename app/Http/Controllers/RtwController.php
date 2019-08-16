@@ -138,7 +138,7 @@ class RtwController extends CommonReftableController
         $brcode = session('loginbranchcode');
         $operid = session('loginname');
         $idtype = session('idtype');
-        dd($idno);
+        // dd($idno);
         $url = 'http://'.env('WS_IP', 'localhost').'/api/wsmotion/rtw/reg?idno='.$idno.'&brcode='.$brcode.'&operid='.$operid;//rtw
                           
         // return $url;

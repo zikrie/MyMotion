@@ -106,20 +106,20 @@
                                                     </div>                
                                                 </div>
                                             </div>
+                                        </div>
 
 
 
 
 
-                                                {{-- VTM --}}
-                                            <div class="tab-pane p-20" id="vtm" role="tabpanel">                          
-                                                <div class="tab-content tabcontent-border"> 
-                                                    <div class="tab-content tabcontent-border">
-                                                        <div class="tab-pane p-20 active" id="insurePersonDetailsMM" role="tabpanel">
-                                                            @include('cmrtw.caseMgmt.PL.indexVTM') 
-                                                        </div>  
-                                                    </div>                
-                                                </div>
+                                        {{-- VTM --}}
+                                        <div class="tab-pane p-20" id="vtm" role="tabpanel">                          
+                                            <div class="tab-content tabcontent-border"> 
+                                                <div class="tab-content tabcontent-border">
+                                                    <div class="tab-pane p-20 active" id="insurePersonDetailsMM" role="tabpanel">
+                                                        @include('cmrtw.caseMgmt.PL.indexVTM') 
+                                                    </div>  
+                                                </div>                
                                             </div>
             
     
@@ -211,25 +211,19 @@
                                                                 </div>
                                                             </div>
 
-                                                                      {{-- DISCUSSION --}}
-                                                                    <div class="tab-pane p-20" id="discussion" role="tabpanel">                          
-                                                                        <div class="tab-content tabcontent-border"> 
-                                                                            <div class="tab-content tabcontent-border">
-                                                                                <div class="tab-pane p-20 active" id="insurePersonDetailsMM" role="tabpanel">
-                                                                                    @include('cmrtw.caseMgmt.PL.indexDISCUSSION') 
-                                                                                </div>  
-                                                                            </div>                
-                                                                        </div>
-                                                                    </div>
+                                        {{-- DISCUSSION --}}
+                                        <div class="tab-pane p-20" id="discussion" role="tabpanel">                          
+                                            <div class="tab-content tabcontent-border"> 
+                                                <div class="tab-content tabcontent-border">
+                                                    <div class="tab-pane p-20 active" id="insurePersonDetailsMM" role="tabpanel">
+                                                        @include('cmrtw.caseMgmt.PL.indexDISCUSSION') 
+                                                    </div>  
+                                                </div>                
+                                            </div>
+                                        </div>
                                                                     
                                         
                                     </div>
-    
-                                        
-                                
-                                    
-    
-    
                         </div>
                     </form>
                 </div>

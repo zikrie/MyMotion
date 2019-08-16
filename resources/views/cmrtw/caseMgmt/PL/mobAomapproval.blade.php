@@ -4,8 +4,7 @@
             <div class="card-body">
                 <form action="/registrationrtw" method="POST">
                     <div class="form-body">
-                     <h5 class="card-title">@lang('mobAomapproval.title1')</h5>
-                     <hr>
+                    
                      <div class="form-actions">
                      <div class="row">
                         <div class="col-md-6">
@@ -22,7 +21,7 @@
                         <div class="col-md-6">
                             <div id="hideRemark" class="form-group" style="display:none"> 
                                 <div class="form-group">
-                                    <label class="control-label"><span class="text-danger">*</span>@lang('mobAomapproval.remark')</label>
+                                    <label class="control-label">@lang('mobAomapproval.remark')<span class="text-danger">*</span></label>
                                     <input type="text" id="remark" class="form-control" value="" required>
                                 </div>
                              </div>

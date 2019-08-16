@@ -116,7 +116,7 @@ class RtwController extends CommonReftableController
         $race=DB::select('Select refcode, descen from reftable where tablerefcode=? order by refcode', ['race']);
           $sql = 'select d.docdescen,d.doctype,d.docdescbm, d.doccat from doctype d, noticedoc n '
                 . 'where  n.doctype = d.doctype';
-        $doclist = DB::select('SELECT doccat, doctype, docdescbm, docdescen FROM doctype where doctype = ? OR doctype = ?', ['C16','C03']   ) ;
+        $doclist = DB::select('SELECT doccat, doctype, docdescbm, docdescen FROM doctype where doctype in ( ? , ? )order by docdescen desc' , ['C17','C16']   ) ;
         $alldoclist = DB::select('select docdescen,doctype,docdescbm, doccat from doctype order by doccat desc, doctype');
         
 
@@ -138,7 +138,7 @@ class RtwController extends CommonReftableController
         $brcode = session('loginbranchcode');
         $operid = session('loginname');
         $idtype = session('idtype');
-        dd($idno);
+        // dd($idno);
         $url = 'http://'.env('WS_IP', 'localhost').'/api/wsmotion/rtw/reg?idno='.$idno.'&brcode='.$brcode.'&operid='.$operid;//rtw
                           
         // return $url;

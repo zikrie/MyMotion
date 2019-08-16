@@ -29,7 +29,7 @@
                             <h5 class="mb-0">                           
                                 <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapseReqForQuoVTM" aria-expanded="false" aria-controls="collapseReqForQuoVTM">
                                     <h5 class="card-title1"><i class="fa fa-plus"></i>
-                                        Request for quotation</h5>
+                                        Request for Quotation</h5>
                                 </a>
                             </h5>
                         </div>
@@ -171,6 +171,21 @@
                         </div>
                     </div>
 
+                    <div class="card m-b-0">
+                        <div class="card-header" role="tab" id="headingDiscussion">
+                            <h5 class="mb-0">                           
+                                <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapseDiscussion" aria-expanded="false" aria-controls="collapseDiscussion">
+                                    <h5 class="card-title1"><i class="fa fa-plus"></i>
+                                        @lang('caseMgmt.attr.discussion')</h5>
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapseDiscussion" class="collapse" role="tabpanel" aria-labelledby="headingDiscussion">
+                            <div class="card-body">
+                                @include('cmrtw.caseMgmt.PL.discussionResult')
+                            </div>
+                        </div>
+                    </div>
 
 
 

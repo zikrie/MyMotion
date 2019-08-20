@@ -281,7 +281,7 @@ return [
         'marriage_status' => 'Marriage Status',
         'partner_working' => 'If married, does your partner is working?',
         'dependent_number' => 'Number of Dependents',
-        'estimate_living_cost' => 'Estimation of Living Cost',
+        'estimate_living_cost' => 'Monthly Estimatied Cost of Living',
         'residence' => 'Residence',
         'residence_type' => 'Type of Residence',
         'monthly_finance' => 'Monthly Income',

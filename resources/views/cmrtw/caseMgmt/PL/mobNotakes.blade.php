@@ -9,13 +9,13 @@
                         <div class="row">
                          <div class="col-md-6">
                             <div class="form-group">
-                                <label class="control-label">@lang('mobNotakes.tarikhaktiviti')</label>
+                                <label class="control-label">@lang('caseMgmt.attr.tarikhaktiviti')</label>
                                 <input type="date" id="tarikhaktiviti" class="form-control" value="">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label class="control-label">@lang('mobNotakes.plan')</label>
+                                <label class="control-label">@lang('caseMgmt.attr.plan')</label>
                                 <input type="text" id="plan" class="form-control" value="" disabled>
                             </div>
                         </div>
@@ -23,13 +23,13 @@
                     <div class="row">
                          <div class="col-md-6">
                             <div class="form-group">
-                                <label class="control-label">@lang('mobNotakes.perkara')</label>
+                                <label class="control-label">@lang('caseMgmt.attr.perkara')</label>
                                 <input type="text" id="perkara" class="form-control" value="">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label class="control-label">@lang('mobNotakes.ulasan')</label>
+                                <label class="control-label">@lang('caseMgmt.attr.ulasan')</label>
                                 <input type="text" id="ulasan" class="form-control" value="">
                             </div>
                         </div>
@@ -37,13 +37,13 @@
                     <div class="row">
                          <div class="col-md-6">
                             <div class="form-group">
-                                <label class="control-label">@lang('mobNotakes.dokumensokongan')</label>
+                                <label class="control-label">@lang('caseMgmt.attr.dokumensokongan')</label>
                                 <input type="text" id="dokumensokongan" class="form-control" value="">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label class="control-label">@lang('mobNotakes.dikemaskinioleh')</label>
+                                <label class="control-label">@lang('caseMgmt.attr.dikemaskinioleh')</label>
                                 <input type="text" id="dikemaskinioleh" class="form-control" value="" disabled>
                             </div>
                         </div>
@@ -51,7 +51,7 @@
                     <div class="row">
                     <div class="col-md-6">
                             <div class="form-group">
-                                <label class="control-label">@lang('mobNotakes.dikemaskinipada')</label>
+                                <label class="control-label">@lang('caseMgmt.attr.dikemaskinipada')</label>
                                 <input type="text" id="dikemaskinipada" class="form-control" value="" disabled>
                             </div>
                         </div>
@@ -59,10 +59,10 @@
 
 
 
-                        <button type="submit" class="btn btn waves-effect waves-light btn-success">
+                        {{-- <button type="submit" class="btn btn waves-effect waves-light btn-success">
                         SAVE & CONTINUE</button>
                         <button type="button" onclick="submitform()" class="btn btn waves-effect waves-light btn-success">RESET</button>
-                        <button type="button" class="btn waves-effect waves-light btn-success"  onclick="window.location='/homertw'">@lang('rtw_eligibility.cancel')</button>
+                        <button type="button" class="btn waves-effect waves-light btn-success"  onclick="window.location='/homertw'">@lang('rtw_eligibility.cancel')</button> --}}
                         </div>
                     </div>
                 </form>

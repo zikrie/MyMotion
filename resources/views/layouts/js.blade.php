@@ -312,6 +312,7 @@ function remove_education(rid) {
 }
 
 </script>
+{{-- syahirah --}}
 <script>
     $(document).ready(function(){
         // Add minus icon for collapse element which is open by default
@@ -523,7 +524,7 @@ function remove_addDisabled(rid) {
     }
 
     function myFunctionPengesyoran(aval) {
-        if (aval == "lain2") {
+        if (aval == "other") {
             $('#hidePengesyoran').show();   
         }
         else {
@@ -532,13 +533,13 @@ function remove_addDisabled(rid) {
     }
 
     function myMobiliti(aval) {
-        if (aval == "kenderaanperkeso") {
+        if (aval == "perkeso_vehicle") {
             $('#hidekenderaanperkeso').show();
             $('#hidetiketpenerbangan').hide();
             $('#hidetaxi').hide();
 
         }
-        else if(aval == "tiketpenerbangan"){
+        else if(aval == "flight_ticket"){
             $('#hidekenderaanperkeso').hide(); 
             $('#hidetiketpenerbangan').show();
             $('#hidetaxi').hide(); 
@@ -556,7 +557,7 @@ function remove_addDisabled(rid) {
     }
 
     function myWaris(aval) {
-        if (aval == "waristerdekat") {
+        if (aval == "relationship_guardian5") {
             $('#hideWaris').show();   
         }
         else {
@@ -564,7 +565,7 @@ function remove_addDisabled(rid) {
         }
     }
     function myRemark(aval) {
-        if (aval == "tidak") {
+        if (aval == "no") {
             $('#hideRemark').show();   
         }
         else {
@@ -706,7 +707,7 @@ function remove_addDisabled(rid) {
             var divtest = document.createElement("div");
             divtest.setAttribute("class", "removeclass" + addLicense4);
             var rdiv = 'removeclass' + addLicense4;
-            divtest.innerHTML = '<tr><td></td><td></td><td><div class="col-md-6"><div class="input-group"><select class="form-control" tabindex="1" required><option value="a_type">@lang('caseMgmt.attr.a_type')</option><option value="a1_type">@lang('caseMgmt.attr.a1_type')</option><option value="b_type">@lang('caseMgmt.attr.b_type')</option><option value="b1_type">@lang('caseMgmt.attr.b1_type')</option><option value="b2_type">@lang('caseMgmt.attr.b2_type')</option><option value="c_type">@lang('caseMgmt.attr.c_type')</option><option value="d_type">@lang('caseMgmt.attr.d_type')</option><option value="da_type">@lang('caseMgmt.attr.da_type')</option><option value="e_type">@lang('caseMgmt.attr.e_type')</option><option value="e1_type">@lang('caseMgmt.attr.e1_type')</option><option value="e2_type">@lang('caseMgmt.attr.e2_type')</option><option value="f_type">@lang('caseMgmt.attr.f_type')</option><option value="g_type">@lang('caseMgmt.attr.g_type')</option><option value="h_type">@lang('caseMgmt.attr.h_type')</option><option value="i_type">@lang('caseMgmt.attr.i_type')</option></select><div class="input-group-append"><button class="btn btn-danger" type="button" onclick="remove_newLicense4('+addLicense4+');"><i class="fa fa-minus"></i></button></div></div></div></td></tr>';
+            divtest.innerHTML = '<td></td><td></td><td><div class="col-md-6"><div class="input-group"><select class="form-control" tabindex="1" required><option value="a_type">@lang('caseMgmt.attr.a_type')</option><option value="a1_type">@lang('caseMgmt.attr.a1_type')</option><option value="b_type">@lang('caseMgmt.attr.b_type')</option><option value="b1_type">@lang('caseMgmt.attr.b1_type')</option><option value="b2_type">@lang('caseMgmt.attr.b2_type')</option><option value="c_type">@lang('caseMgmt.attr.c_type')</option><option value="d_type">@lang('caseMgmt.attr.d_type')</option><option value="da_type">@lang('caseMgmt.attr.da_type')</option><option value="e_type">@lang('caseMgmt.attr.e_type')</option><option value="e1_type">@lang('caseMgmt.attr.e1_type')</option><option value="e2_type">@lang('caseMgmt.attr.e2_type')</option><option value="f_type">@lang('caseMgmt.attr.f_type')</option><option value="g_type">@lang('caseMgmt.attr.g_type')</option><option value="h_type">@lang('caseMgmt.attr.h_type')</option><option value="i_type">@lang('caseMgmt.attr.i_type')</option></select><div class="input-group-append"><button class="btn btn-danger" type="button" onclick="remove_newLicense4('+addLicense4+');"><i class="fa fa-minus"></i></button></div></div></div></td>';
         
             objTo.appendChild(divtest)
         }
@@ -715,4 +716,27 @@ function remove_addDisabled(rid) {
             $('.removeclass' + rid).remove();
             addLicense4--;
         }
+</script>
+
+
+<!-- zikrie - iA (treatments details) -->
+<script>
+	var treatment_Details = 1;
+
+    function treatmentDetailsIA() {
+
+        treatment_Details++;
+        var objTo = document.getElementById('treatmentDetailsIA')
+        var divtest = document.createElement("div");
+        divtest.setAttribute("class", "removeclass" + treatment_Details);
+        var rdiv = 'removeclass' + treatment_Details;
+        divtest.innerHTML = '<table id="" cellspacing="0" width="40%" "><tr><td><label class="control-label">Other</label></td><td><div class="row"><div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="other"><label class="custom-control-label" for="other"></label></div><div class="col-md-10"><input type="text" id="" class="form-control" required></div><td><div class="input-group-append"><button class="btn btn-danger" type="button" onclick="remove_treatmentDetails('+treatment_Details+');"><i class="fa fa-minus"></i></button></div></td></div></td></tr></table>';
+
+        objTo.appendChild(divtest)
+    }
+
+    function remove_treatmentDetails(rid) {
+        $('.removeclass' + rid).remove();
+        treatment_Details--;
+    }
 </script>

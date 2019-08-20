@@ -54,12 +54,9 @@
          @elseif(Session::get('loginrole') == 'PKRTW')
          <li class="nav-small-cap">--- FORMS, TABLE &amp; WIDGETS</li>
         <li><a href="/homertw"><i class="icon-home"></i>@lang('navbar.home')</a></li>
-            <li> <a class="has-arrow " href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-grid2"></i><span class="hide-menu">@lang('navbar.rtw')</span></a>
-                <ul aria-expanded="false" class="collapse">
-                   <li><a href="/rtweligibilty">@lang('navbar.new_registrationrtw')</a></li>
-        
-                  
-                </li>
+        <li> <a class="has-arrow " href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-grid2"></i><span class="hide-menu">@lang('navbar.rtw')</span></a>
+            <ul aria-expanded="false" class="collapse">
+                <li><a href="/rtweligibilty">@lang('navbar.new_registrationrtw')</a></li>
             </ul>
         </li>
 

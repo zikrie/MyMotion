@@ -136,6 +136,211 @@
                             </div>
                         </div>
                         <hr>
+                                        
+                        <div class="row p-t-20"> 
+                            <div class="col-md-6">
+                                <div class="row ">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="control-label">@lang('caseMgmt.attr.monthly_finance')<span class="text-danger">*</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="control-label">RM <span class="text-danger">*</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row p-t-20"> 
+                            <div class="col-md-6">
+                                <div class="row ">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="control-label">@lang('caseMgmt.attr.salary_income')</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="salary_income" value="" placeholder="enter amount" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="control-label">@lang('caseMgmt.attr.spouse_income')</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                        <input type="text" class="form-control" id="spouse_income" value="" placeholder="enter amount" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="control-label">@lang('caseMgmt.attr.baitulmal')</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                        <input type="text" class="form-control" id="baitulmal" value="" placeholder="enter amount" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="control-label">@lang('caseMgmt.attr.children_aid')</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                        <input type="text" class="form-control" id="children_aid" value="" placeholder="enter amount" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="control-label">@lang('caseMgmt.attr.perkeso_compesation')</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                        <input type="text" class="form-control" id="perkeso_compesation" value="" placeholder="enter amount" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="control-label">@lang('caseMgmt.attr.jkm_allowance')</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                        <input type="text" class="form-control" id="jkm_allowance" value="" placeholder="enter amount" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="control-label">@lang('caseMgmt.attr.ngo_aid')</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                        <input type="text" class="form-control" id="ngo_aid" value="" placeholder="enter amount" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="control-label">@lang('caseMgmt.attr.freelance')</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                        <input type="text" class="form-control" id="freelance" value="" placeholder="enter amount" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="control-label">@lang('caseMgmt.attr.business')</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                        <input type="text" class="form-control" id="business" value="" placeholder="enter amount" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="control-label">@lang('caseMgmt.attr.others')</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                        <input type="text" class="form-control" id="others" value="" placeholder="enter amount" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                        <input type="text" class="form-control" id="otherMonthlyincome" value="" placeholder="please specify" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="others" value="" placeholder="enter amount" required>
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-success" type="button" onclick="otherIncomeFunc();"><i class="fa fa-plus"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="otherIncome"></div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group" style="text-align:right;">
+                                            <label class="control-label">@lang('caseMgmt.attr.total')</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                        <input type="text" class="form-control" id="totalIncome" value="" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="col-sm-3">
+                                    <div class="form-group">
+                                        <label class="control-label"></label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                    <input type="text" class="form-control" id="baitulmal" value="" placeholder="enter amount" required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="form-group">
+                                        <label class="control-label">@lang('caseMgmt.attr.salary_income')</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <input type="text" id="remarks" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- remarks -->
+                        <div class="row p-t-20"> 
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label">@lang('caseMgmt.attr.remarks')</label>
+                                    <input type="text" id="remarks" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--living cost  -->
                         <div class="row p-t-20"> 
                             <div class="col-md-12">
                                 <div class="form-group">
@@ -167,53 +372,10 @@
                             </div>
                         </div>
                         <div id="living"></div>
-                        <div class="row p-t-20"> 
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.residence') <span class="text-danger">*</span></label>
-                                    <select name="select_opt" id="select_opt" class="form-control" onchange="showfield2(this.options[this.selectedIndex].value)" required> 
-                                        <option value="">Please Select</option>
-                                        <option value="yes">@lang('caseMgmt.attr.yes')</option>
-                                        <option value="no1">@lang('caseMgmt.attr.no')</option>
-                                    </select>
-                                </div>
-                            </div>
-                            
-                            
-                        </div>
-                        <div class="row p-t-20"> 
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.monthly_finance') <span class="text-danger">*</span></label>
-                                    <select class="form-control" required>
-                                        <option value="">Please Select</option>
-                                        <option value="partner_income">@lang('caseMgmt.attr.partner_income')</option>
-                                        <option value="baitulmal">@lang('caseMgmt.attr.baitulmal')</option>
-                                        <option value="perkeso_compesation">@lang('caseMgmt.attr.perkeso_compesation')</option>
-                                        <option value="jkm_allowance">@lang('caseMgmt.attr.jkm_allowance')</option>
-                                        <option value="freelance">@lang('caseMgmt.attr.freelance')</option>
-                                        <option value="business">@lang('caseMgmt.attr.business')</option>
-                                        <option value="children_aid">@lang('caseMgmt.attr.children_aid')</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.remarks')</label>
-                                    <input type="text" id="remarks" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row p-t-20"> 
-                            <div class="col-md-6">
-                                <div class="form-group" id="divspecify" style="display:none;">
-                                    <label class="control-label">@lang('caseMgmt.attr.specify')</label>
-                                    <input type="text" id="specify" class="form-control">
-                                </div>
-                            </div>
-                        </div>
                     </div>
+
                 </form>
+
             </div>
         </div>
     </div>
@@ -241,42 +403,24 @@
         }
     }
 
-    var dependent = 1;
+    //add other monthly income for other-mat
+    var otherincome = 1;
 
-    function dependentCost() {
+    function otherIncomeFunc() {
 
-        dependent++;
-        var objTo = document.getElementById('dependentField')
+        otherincome++;
+        var objTo = document.getElementById('otherIncome')
         var divtest = document.createElement("div");
-        divtest.setAttribute("class", "removeclass" + dependent);
-        var rdiv = 'removeclass' + dependent;
-        divtest.innerHTML = '<div class="row p-t-20"><div class="col-md-12"><div class="form-group"><label class="control-label">@lang('caseMgmt.attr.dependent_number')</label><div class="row"><div class="col-sm-6 nopadding"><div class="form-group"><select class="form-control"><option value="">Please Select</option><option value="wife">@lang('caseMgmt.attr.wife')</option><option value="not_school">@lang('caseMgmt.attr.not_school')</option><option value="primary_school">@lang('caseMgmt.attr.primary_school')</option><option value="secondary_school">@lang('caseMgmt.attr.secondary_school')</option><option value="university">@lang('caseMgmt.attr.university')</option><option value="disabled">@lang('caseMgmt.attr.disabled')</option></select></div></div><div class="col-sm-6 nopadding"><div class="form-group"><div class="input-group"><input type="text" class="form-control" id="noLiving" name="noLiving" value="" placeholder="Number of person"><div class="input-group-append"><button class="btn btn-danger" type="button" onclick="remove_dependentCost('+dependent+');"><i class="fa fa-minus"></i></button></div></div></div></div></div></div></div></div>';
+        divtest.setAttribute("class", "removeclass" + otherincome);
+        var rdiv = 'removeclass' + otherincome;
+        divtest.innerHTML = '<div class="row"><div class="col-sm-6"><div class="form-group"><input type="text" class="form-control" id="otherMonthlyincome'+otherincome+'" value="" placeholder="please specify" required></div></div><div class="col-sm-6"><div class="form-group"><div class="input-group"><input type="text" class="form-control" id="others" value="" placeholder="enter amount" required><div class="input-group-append"><button class="btn btn-danger" type="button" onclick="remove_otherIncomeFunc('+otherincome+');"><i class="fa fa-minus"></i></button></div></div></div></div></div>';
 
         objTo.appendChild(divtest)
     }
 
-    function remove_dependentCost(rid) {
+    function remove_otherIncomeFunc(rid) {
         $('.removeclass' + rid).remove();
-        dependent--;
-    }
-
-    var living = 1;
-
-    function livingCost() {
-
-        living++;
-        var objTo = document.getElementById('living')
-        var divtest = document.createElement("div");
-        divtest.setAttribute("class", "removeclass" + living);
-        var rdiv = 'removeclass' + living;
-        divtest.innerHTML = '<div class="row p-t-20"><div class="col-md-12"><div class="form-group"><label class="control-label">@lang('caseMgmt.attr.estimate_living_cost')</label><div class="row"><div class="col-sm-6 nopadding"><div class="form-group"><select class="form-control"><option value="">Please Select</option><option value="accomodation">@lang('caseMgmt.attr.accomodation')</option><option value="education_loan">@lang('caseMgmt.attr.education_loan')</option><option value="other_expenditure">@lang('caseMgmt.attr.other_expenditure')</option><option value="other_loan">@lang('caseMgmt.attr.other_loan')</option></select></div></div><div class="col-sm-6 nopadding"><div class="form-group"><div class="input-group"><input type="text" class="form-control" id="rm_value" name="rm_value" value="" placeholder="RM"><div class="input-group-append"><button class="btn btn-danger" type="button" onclick="remove_livingCost('+living+');"><i class="fa fa-minus"></i></button></div></div></div></div></div></div>/div></div>';
-
-        objTo.appendChild(divtest)
-    }
-
-    function remove_livingCost(rid) {
-        $('.removeclass' + rid).remove();
-        living--;
+        otherincome--;
     }
 </script>
 

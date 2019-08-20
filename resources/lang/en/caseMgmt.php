@@ -2,6 +2,8 @@
  
 return [
 
+    
+    'casenote_info' => 'Case Note Information',
     'attr' => [
 
     	'accident_notice' => 'Accident Notice',
@@ -44,7 +46,7 @@ return [
         'doctherapist_name' => 'Doctor/Therapist Email',
         'ref_purpose' => 'Reference Purpose',
         'doctherapist_phone' => 'Doctor/Therapist Phone Number',
-        'specify' => 'If Others, Please specify',
+        'specify' => 'If Other, Please specify',
         'specify_no' => 'If No, Please specify',
         'other' => 'Other',
 
@@ -215,8 +217,51 @@ return [
         'others' => 'Others',
 
         //mobility_details
+        'mobility_title'=> 'Mobility Details',
+        'mobility_title1'=> 'Equipment and Guardian',
+        'mobility_title2'=> 'TRRC Officer Details',
+        'mobility_title3'=> 'AOM Approval',
+        'mobility_title4'=> 'Journey Verification Report - CM',
+        'mobility_title5'=> ' Journey Verification Report - HQ SCM',
+        'mob_req'=> 'Mobility Requirement',
+        'vehicle_details'=> 'PERKESO Vehicle Details',
+        'flight_details'=> 'Flight Details',
+        'taxigrab_details'=> 'Taxi/Grab Details',
+        'perkeso_vehicle'=> 'PERKESO Vehicle',
+        'flight_ticket'=> 'Flight Ticket',
+        'taxi_grab'=> 'Taxi/Grab',
+        'destination_from'=> 'From',
+        'destination_to'=> 'To',
+        'vehicle_type'=> 'Type of Vehicle',
+        'proposedjourney_date'=> 'Proposed Journey Date',
+        'actualjourney_date'=> 'Actual Journey Date',
+        'journey_date'=> 'Journey Date',
+        'driver'=> 'Driver',
+        'register_vehicle'=> 'No. Vehicle Registration',
+        'proposed_flight'=> 'Proposed Flight Date',
+        'actual_flight'=> 'Actual Flight Date',
+        'time'=> 'Time',
+        'airport_name'=> 'Airport Name',
+        'return_flight'=> 'Return Flight',
+        'depart_flight'=> 'Departure Flight',
+        'promo_code'=> 'Promo Code',
+        'guardian_details'=> 'Guardian Details',
+        'guardian'=> 'Guardian',
+        'need_guardian'=> 'Need guardian?',
+        'guardian_name'=> 'Name',
+        'relationship_guardian'=> 'Relationship',
+        'relationship_guardian1'=> 'Husband and Wife',
+        'relationship_guardian2'=> 'Parents',
+        'relationship_guardian3'=> 'Children',
+        'relationship_guardian4'=> 'Siblings',
+        'relationship_guardian5'=> 'Relative',
+        'equipment_details'=> 'Equipment Details',
+        'equipment_name'=> 'Equipment Name',
+        'equipment_quantity'=> 'Quantity',
+        'trrc_name'=> 'Name',
+        'journey_report'=> 'Journey Report',
         'mobility'=> 'Mobility',
-        'transportation' => 'Transportation',
+        'vehicleation' => 'Vehicle',
         'own_vehicles' => 'Own Vehicles',
         'modified_vehicles' => 'Modified Vehicle (According to Current Requirements)',
         'driving_capabilities' => 'Driving Capabilities',
@@ -227,6 +272,10 @@ return [
         'cur_trans_usage' => 'Current Transport Usage ',
         'personal' => 'Personal',
         'public' => 'public',
+        'special_req' => 'Special Requirement',
+        'decision' => 'Decision',
+        'decision_date' => 'Decision Date',
+        'freetext' => 'Freetext',
         
         //dependantandlivingdetails
         'marriage_status' => 'Marriage Status',
@@ -730,6 +779,21 @@ return [
         
         //va
         'va_title' => 'Vocational Assessment',
+        'va_title1' => 'Vocational Assessment Result',
+        'realistic_score' => 'Realistic Score',
+        'investigative_score' => 'Investigative Score',
+        'artistic_score' => 'Artistic Score',
+        'social_score' => 'Social Score',
+        'entrising_score' => 'Entrising Score',
+        'conventional_score' => 'Conventional Score',
+        'ip_personality' => 'Insured Person Personality Based on Assessment Results',
+        'ip_personality1' => 'Type of Insured Person Personality 1',
+        'ip_personality2' => 'Type of Insured Person Personality 2',
+        'ip_personality3' => 'Type of Insured Person Personality 3',
+        'des_interest' => 'Brief Description of the Candidate Career Interest',
+        'voc_training' => 'Vocational Training',
+        'close_case' => 'Close Case',
+        
 
 
         //guarantee_letter
@@ -798,8 +862,6 @@ return [
         'previous_benefit' => 'Previous Benefit Claim History',
         'total_claim' => 'Total Claim (RM)',
         'total_balance_days' => 'Total Balance Days',
-        'recommendation' => 'Recommendation',
-        'recommendation_date' => 'Recommendation Date',
         'recommended_by' => 'Recommended By',
 
         
@@ -810,7 +872,10 @@ return [
         'no' => 'No',
         'approved' => 'Approved',
         'not_approved' => 'Not Approved',
+        'approval' => 'Approval',
         'upload' => 'Upload',
+        'recommendation' => 'Recommendation',
+        'recommendation_date' => 'Recommendation Date',
         
 
 

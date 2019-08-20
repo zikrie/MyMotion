@@ -12,7 +12,7 @@
                             <h5 class="mb-0">                           
                                 <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapseMobilityDetails" aria-expanded="false" aria-controls="collapseMobilityDetails">
                                     <h5 class="card-title1"><i class="fa fa-plus"></i>
-                                    Mobility Details</h5>
+                                        @lang('caseMgmt.attr.mobility_title')</h5>
                                 </a>
                             </h5>
                         </div>
@@ -29,7 +29,7 @@
                             <h5 class="mb-0">                           
                                 <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapseEquipAndGuardMobility" aria-expanded="false" aria-controls="collapseEquipAndGuardMobility">
                                     <h5 class="card-title1"><i class="fa fa-plus"></i>
-                                    Equipment and Guardian</h5>
+                                        @lang('caseMgmt.attr.mobility_title1')</h5>
                                 </a>
                             </h5>
                         </div>
@@ -46,7 +46,7 @@
                             <h5 class="mb-0">                           
                                 <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapseTRRCofficDetMobility" aria-expanded="false" aria-controls="collapseTRRCofficDetMobility">
                                     <h5 class="card-title1"><i class="fa fa-plus"></i>
-                                    TRRC Officer Details</h5>
+                                        @lang('caseMgmt.attr.mobility_title2')</h5>
                                 </a>
                             </h5>
                         </div>
@@ -59,12 +59,12 @@
 
 
                     
-                    <div class="card m-b-0">
+                    {{-- <div class="card m-b-0">
                         <div class="card-header" role="tab" id="headingCaseNoteMobility">
                             <h5 class="mb-0">                           
                                 <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapseCaseNoteMobility" aria-expanded="false" aria-controls="collapseCaseNoteMobility">
                                     <h5 class="card-title1"><i class="fa fa-plus"></i>
-                                    Case Note Information</h5>
+                                        @lang('caseMgmt.casenote_info')</h5>
                                 </a>
                             </h5>
                         </div>
@@ -73,7 +73,7 @@
                             @include('cmrtw.caseMgmt.PL.mobNotakes') 
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
 
 
 
@@ -83,7 +83,7 @@
                             <h5 class="mb-0">                           
                                 <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapseAOMapprovMobility" aria-expanded="false" aria-controls="collapseAOMapprovMobility">
                                     <h5 class="card-title1"><i class="fa fa-plus"></i>
-                                    AOM Approval</h5>
+                                        @lang('caseMgmt.attr.mobility_title3')</h5>
                                 </a>
                             </h5>
                         </div>
@@ -101,7 +101,7 @@
                             <h5 class="mb-0">                           
                                 <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapseJournVerifiReportMobility" aria-expanded="false" aria-controls="collapseJournVerifiReportMobility">
                                     <h5 class="card-title1"><i class="fa fa-plus"></i>
-                                    Journey Verification Report - CM</h5>
+                                        @lang('caseMgmt.attr.mobility_title4')</h5>
                                 </a>
                             </h5>
                         </div>
@@ -119,7 +119,7 @@
                             <h5 class="mb-0">                           
                                 <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapseJourneyVerifyRepHQSCM" aria-expanded="false" aria-controls="collapseJourneyVerifyRepHQSCM">
                                     <h5 class="card-title1"><i class="fa fa-plus"></i>
-                                    Journey Verification Report - HQ SCM</h5>
+                                        @lang('caseMgmt.attr.mobility_title5')</h5>
                                 </a>
                             </h5>
                         </div>

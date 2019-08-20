@@ -157,7 +157,16 @@
                      
 
                                                             {{-- MOBILITY --}}
-                                                            <div class="tab-pane p-20" id="mobility" role="tabpanel">
+                                                            <div class="tab-pane p-20" id="mobility" role="tabpanel">                          
+                                                                <div class="tab-content tabcontent-border"> 
+                                                                    <div class="tab-content tabcontent-border">
+                                                                        <div class="tab-pane p-20 active" id="insurePersonDetailsMM" role="tabpanel">
+                                                                            @include('cmrtw.caseMgmt.PL.indexMobility') 
+                                                                        </div>  
+                                                                    </div>                
+                                                                </div>
+                                                            </div>
+                                                            {{-- <div class="tab-pane p-20" id="mobility" role="tabpanel">
                                                                     <ul class="nav customtab" role="tablist">
                                                                         <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#mobilityDetails" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Mobility Details</span></a> </li>
                                                                         <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#equipAndGuard" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Equipment and Guardian</span></a> </li>
@@ -191,7 +200,8 @@
                                                                         </div>
                                                                         
                                                                                         </div>
-                                                                                </div>  
+                                                                                </div>   --}}
+
                                                             
                                                             
 

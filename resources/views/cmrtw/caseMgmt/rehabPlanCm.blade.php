@@ -59,7 +59,7 @@
                                             <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#va" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.va_title')</span></a> </li>                 
                                             <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#vtm" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.vtm')</span></a> </li>
                                             <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#jp" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.job_placement')</span></a> </li> 
-                                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#business" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.bus_financial')</span></a> </li>                   
+                                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#businessFinan" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.bus_financial')</span></a> </li>                   
                                             <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#mobility" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.mobility')</span></a> </li>            
                                     </ul>     
     
@@ -218,7 +218,7 @@
                                                             </div>
                                                             
                                                             {{-- BUSINESS --}}
-                                                            <div class="tab-pane p-20" id="business" role="tabpanel">                          
+                                                            <div class="tab-pane p-20" id="businessFinan" role="tabpanel">                          
                                                                 <div class="tab-content tabcontent-border"> 
                                                                     <div class="tab-content tabcontent-border">
                                                                         <div class="tab-pane p-20 active" id="insurePersonDetailsMM" role="tabpanel">

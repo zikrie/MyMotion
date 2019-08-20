@@ -120,12 +120,18 @@ return [
         'appointment_date' => 'Appointment Date',
         'other_officer' => 'Other Officer who is involved',
         
-        //jobDetails
-        'working' => 'Working',
-        'multiple_employ' => 'Multiple Employment',
-        
+        //employmentDetails
+        'rtw_status' => 'RTW Status',
+        'rtw_hierarchy' => 'RTW Hierarchy',
+        'rtw_hierarchy1' => 'Same work same employer',
+        'rtw_hierarchy2' => 'Similar work same employer',
+        'rtw_hierarchy3' => 'Different work same employer',
+        'rtw_hierarchy4' => 'Same work different employer',
+        'rtw_hierarchy5' => 'Similar work different employer',
+        'rtw_hierarchy6' => 'Different work different employer',
+        'rtw_hierarchy7' => 'Self employ',
+        'rtw_date2' => 'RTW Date',
 
-        //masco_jobcode
         'main_group' => 'Main Group',
         'main_subgroup' => 'Main Subgroup',
         'small_group' => 'Small Subgroup',

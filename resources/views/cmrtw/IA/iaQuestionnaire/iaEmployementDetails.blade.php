@@ -6,8 +6,8 @@
         <div class="row p-t-20">
             <div class="col-md-4">
                 <div class="form-group">
-                    <label for="example-text-input" class="col-form-label">@lang('ia.attr.work') <span class="text-danger">*</span></label>
-                    <div class="row">
+                    <label for="example-text-input" class="col-form-label">@lang('ia.attr.work')<span class="text-danger">*</span></label>
+                    <div class="row p-l-20">
                         <div class="custom-control custom-radio" >
                             <input type="radio" id="yes1" name="yes1" class="custom-control-input" required>
                             <label class="custom-control-label" for="yes1">@lang('caseMgmt.attr.yes')</label>
@@ -19,71 +19,92 @@
                     </div>
                 </div>
             </div>
-
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label class="control-label">@lang('caseMgmt.attr.rtw_hierarchy')<span class="text-danger">*</span></label>
+                    <select class="form-control" required>
+                        <option value="">Please Select</option>
+                        <option value="rtw_hierarchy1">@lang('caseMgmt.attr.rtw_hierarchy1')</option>
+                        <option value="rtw_hierarchy2">@lang('caseMgmt.attr.rtw_hierarchy2')</option>
+                        <option value="rtw_hierarchy3">@lang('caseMgmt.attr.rtw_hierarchy3')</option> 
+                        <option value="rtw_hierarchy4">@lang('caseMgmt.attr.rtw_hierarchy4')</option>
+                        <option value="rtw_hierarchy5">@lang('caseMgmt.attr.rtw_hierarchy5')</option>
+                        <option value="rtw_hierarchy6">@lang('caseMgmt.attr.rtw_hierarchy6')</option>
+                        <option value="rtw_hierarchy7">@lang('caseMgmt.attr.rtw_hierarchy7')</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row p-t-20">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label class="control-label">@lang('caseMgmt.attr.rtw_date2')<span class="text-danger">*</span></label>
+                    <input type="date" id="rtw_date" class="form-control" required>
+                </div>
+            </div>
             <div class="col-md-6">
                 <div class="form-group">   
                     <label for="example-text-input" class="col-form-label">@lang('ia.attr.medicalLeave') <span class="text-danger">*</span></label>
-                    <div class="row">
+                    <div class="row p-l-20">
                         <div class="custom-control custom-radio">
-                            <input type="radio" id="yesMC" name="yesnoMC" class="custom-control-input" required>
+                            <input type="radio" id="yesMC" name="medicalLeave" class="custom-control-input" required>
                             <label class="custom-control-label" for="yesMC">@lang('ia.attr.yes')</label>
                         </div>
                         <div class="custom-control custom-radio">
-                            <input type="radio" id="noMC" name="yesnoMC" class="custom-control-input" required>
+                            <input type="radio" id="noMC" name="medicalLeave" class="custom-control-input" required>
                             <label class="custom-control-label" for="noMC">@lang('ia.attr.no')</label>
                         </div>
                     </div>
                 </div>
             </div> 
         </div>
+        <div class="row p-t-20">
+            <div class="col-md-8">
+                <div class="form-group">
+                    <label class="control-label">@lang('caseMgmt.attr.remarks')</label>
+                    <textarea class="form-control clearFields" rows="3" type="textarea"  id="empRemarks"></textarea>
+                </div>
+            </div>
+        </div>
+        <!-- current emp details -->
+        <div class="row p-t-20">
+            <div class="col-md-12">
+                <div class="card-header" style="background-color: #98cb5b;" role="tab" id="headingAA">
+                    <h4 class="mb-0">@lang('ia.title31')</h4>
+                </div>
+            </div>
+        </div>
+
         <div class="form-group row">
             <div class="col-12">
                 <button  type="button" class="btn btn-primary" data-toggle="modal" data-target="#addEmployment"><i class="fa fa-plus"></i></button>
             </div>
         </div>
-        <div class="table-responsive">
-            
-            <table id="add-employment" class="display table table-hover table-striped table-bordered">
+        <div class="table-responsive">  
+            <table id="add-employment" class="display table table-hover table-striped table-bordered" width="100%">
                 <thead>
                     <tr>
                         <th align="top">No.</th>
                         <th>Occupation</th>
                         <th>Scope of Task</th>
                         <th>Action</th>
-                        <th align="top">No.</th>
-                        <th>Occupation</th>
-                        <th>Scope of Task</th>
-                        <th>Action</th>
-                        <th align="top">No.</th>
-                        <th>Occupation</th>
-                        <th>Scope of Task</th>
-                        <th>Action</th>
-                        <th align="top">No.</th>
-                        <th>Occupation</th>
-                        <th>Scope of Task</th>
-                        <th>Action</th>        
-                        <th>Action</th>                  
+                        <th style="display:none;" align="top">No.</th>
+                        <th style="display:none;">Occupation</th>
+                        <th style="display:none;">Scope of Task</th>
+                        <th style="display:none;">Action</th>
+                        <th style="display:none;" align="top">No.</th>
+                        <th style="display:none;">Occupation</th>
+                        <th style="display:none;">Scope of Task</th>
+                        <th style="display:none;">Action</th>
+                        <th style="display:none;" align="top">No.</th>
+                        <th style="display:none;">Occupation</th>
+                        <th style="display:none;" >Scope of Task</th>
+                        <th style="display:none;">Action</th>        
+                        <th style="display:none;">Action</th>                  
                     </tr>
                 </thead>
                 <tbody id="add-employment-body">
                     <tr id= "addActivity_0">
-                        <!-- <td></td>
-                        <td></td>                      
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>                      
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>                      
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>                      
-                        <td></td>
-                        <td></td>
-                        <td></td> -->
                     </tr>
                 </tbody>
             </table>
@@ -122,15 +143,6 @@
                 </thead>
                 <tbody id="add-work_history-body">
                     <tr id= "addWorkHistory_1">
-                        <!-- <td></td>
-                        <td></td>
-                        <td></td>                      
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>                      
-                        <td></td> -->
                     </tr>
                 </tbody>
             </table>
@@ -483,8 +495,17 @@ $(document).ready(function()
             tr += '<td>'+numE+'</td>';
             $('#addEmployment').find('.form-control').each(function()
             {
-                console.log($(this).attr('id'), $(this).val());
-                tr += '<td>'+$(this).val()+'</td>';
+                if(){
+                    console.log($(this).attr('id'), $(this).val());
+                    tr += '<td>'+$(this).val()+'</td>';
+                }else if{
+                    console.log($(this).attr('id'), $(this).val());
+                    tr += '<td>'+$(this).val()+'</td>';
+                }
+                else{
+                    console.log($(this).attr('id'), $(this).val());
+                    tr += '<td>'+$(this).val()+'</td>';
+                }
             })
             tr += '<td>';
             tr += '<div class= "btn-group">';       
@@ -501,6 +522,7 @@ $(document).ready(function()
     // delete a post
 $(document).on('click', '.delete-modal', function() {
     $('#addActivity_'+$(this).data('id')).detach();
+    numE--;
 });
 
 
@@ -549,6 +571,7 @@ $(document).ready(function()
     // delete a post
 $(document).on('click', '.delete-modal', function() {
     $('#addWorkHistory_'+$(this).data('id')).detach();
+    numWH--;
 });
 
 

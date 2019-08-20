@@ -323,14 +323,20 @@ return [
         
         //limitationDetails
         'face_limitation' => 'Limitation Details',
-        'ob_equipment' => 'Does insured person needs equipment or recovery parts ?',
+        'require_rehab' => 'Requires Rehab',
         'equipment' => 'Equipment needed ?',
         'orthotic' => 'Orthotic',
         'prosthetic' => 'Prosthetic',
         'recovery_equipment' => 'Recovery Equipment',
+        'rehabtype' => 'Rehab Type',
+        'physicalRehab' => 'Physical Rehab',
+        'implant' => 'Implant',
+        'proposestartdate' => 'Propose Start Date',
+
         
 
-        'appointment_confirm' => 'Do you have appointment?',
+        'appointment_confirm' => 'Have Appointment',
+        'multiple_appointment' => 'Multiple Appointment',
         'appointment_date' => 'Appointment Date',
         'treatment_place' => 'Treatment Place',
         'department_name' => 'Department',
@@ -349,6 +355,9 @@ return [
         'otorhino_department' => 'Department of Otorhinolarygology', 
         'radio_department' => 'Department of Radiology', 
         'patho_department' => 'Department of Obstetrics and Gynecology',
+        'location' => 'Location',
+        'government' => 'Government',
+        'private' => 'Private',
         
         //vassDetails
         'skillsScore' => 'Skills Score',

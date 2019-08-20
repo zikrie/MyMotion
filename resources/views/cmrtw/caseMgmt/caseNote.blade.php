@@ -5,9 +5,7 @@
                     <form action="#">
                         <div class="form-body">
 
-                            {{-- <div class="row p-t-20">
-
-                            </div> --}}
+                           
                             <!-- Column -->
                             <div class="row p-t-20">
                                 <div class="col-12">
@@ -29,21 +27,7 @@
                                                         
                                                         <tbody>
                                                             
-                                                            {{-- @foreach ($workbasket as $wb) --}}
-                                                            {{-- <tr> --}}
-                                                                {{-- <td>{{ $wb->wbid }}</td> --}}
-                                                                {{-- <td>{{substr($wb->date,6,2)}}-{{substr($wb->date,4,2)}}-{{substr($wb->date,0,4)}}</td> --}}
-                                                                {{-- <td>{{ $datediff }}</td> --}}
-                                                                {{-- <td>{{ $wb->time }}</td> --}}
-                                                                {{-- <td>{{ $wb->rtwrefno }}</td> --}}
-                                                                {{-- <td>{{ $wb->schemerefno }}</td> --}}
-                                                                {{-- <td>{{ $wb->caseid }}</td> --}}
-                                                                {{-- <td>{{ $wb->revisionrefno }}</td> --}}
-                                                                {{-- <td>{{ $wb->medrefno }}</td> --}}
-                                                                {{-- <td>{{ $wb->descen }}</td> --}}
-                                                            {{-- </tr> --}}
-                                                            {{-- @endforeach --}}
-
+                                                           
 
                                                             <tr>
                                                                 <td>1</td>
@@ -64,7 +48,7 @@
                                                                     </button>
                                                                 </div>
                                                                 </td>
-                                                                {{-- <td>{{ $datediff }}</td> --}}
+                                                              
                                                             </tr>
                                                             <tr>
                                                                 <td>2</td>
@@ -85,12 +69,12 @@
                                                                     </button>
                                                                 </div>
                                                                 </td>
-                                                                {{-- <td>{{ $datediff }}</td> --}}
+                                                              
                                                             </tr>
                                                             
                                                             
                                                         </tbody>
-                                                    </table>
+                                            </table>
 
                                         </div>
                                         
@@ -110,78 +94,6 @@
         </div>
     </div>
 
-    <div id="exampleModal1" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title"></h4>
-                </div>
     
-                <div class="modal-body">
-                    <form class="form-horizontal" role="form" id="modal">
-                        <div class="row p-t-20">
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="example-text-input" class="col-form-label">@lang('caseMgmt.attr.activity_date')</label>
-                                    <input class="form-control" type="date"  id="activity_date">
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label for="example-text-input" class="col-form-label">@lang('caseMgmt.attr.plan_type')</label> 
-                                        <select class="form-control" id="plan_type" name="plan_type" required>
-                                            <option value="">Please Select</option>
-                                            <option value="discussion">@lang('caseMgmt.attr.discussion')</option>
-                                            <option value="prm">@lang('caseMgmt.attr.prm')</option>
-                                            <option value="wsa">@lang('caseMgmt.attr.wsa')</option>
-                                            <option value="fce">@lang('caseMgmt.attr.fce')</option>
-                                            <option value="osm_psm_opm">@lang('caseMgmt.attr.osm_psm_opm')</option>
-                                            <option value="mm">@lang('caseMgmt.attr.mm')</option>
-                                            <option value="va_title">@lang('caseMgmt.attr.va_title')</option>
-                                            <option value="vtm">@lang('caseMgmt.attr.vtm')</option>
-                                            <option value="jp">@lang('caseMgmt.attr.jp')</option>
-                                            <option value="bus_financial">@lang('caseMgmt.attr.bus_financial')</option>
-                                            <option value="mobility">@lang('caseMgmt.attr.mobility')</option>
-                                            <option value="other">@lang('caseMgmt.attr.other')</option>
-                                           
-                                            {{-- <option value="Once in two months">Once in two months</option> --}}
-                                        </select>
-                                    </div>
-                                </div>
-                            
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label for="example-text-input" class="col-form-label">@lang('caseMgmt.attr.title')</label>
-                                        <input type="text" name="title" id="title" class="form-control" required>
-                                    </div>
-                                </div>
-                        </div>  
-                        <div class="row p-t-20">   
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="example-text-input" class="col-form-label">@lang('caseMgmt.attr.case_note')</label>
-                                    <textarea name="case_note" id="case_note" class="form-control" required rows="4" cols="50" required></textarea>
-                                </div>
-                            </div>
-                        </div>
- 
-
-                        
-                                
-                    </form>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary edit" data-dismiss="modal" id="addRehab">
-                                <span class='glyphicon glyphicon-check'></span> Add
-                            </button>
-                            <button type="button" class="btn btn-warning" data-dismiss="modal">
-                                <span class='glyphicon glyphicon-remove'></span> Close
-                            </button>
-                        </div>
-                </div>    
-            </div>
-        </div>
-    </div>
 
     

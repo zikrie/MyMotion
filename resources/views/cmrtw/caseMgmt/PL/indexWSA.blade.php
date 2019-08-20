@@ -5,8 +5,6 @@
                
                 <div id="accordion2" role="tablist" class="accordion" >
 
-
-                   
                     <div class="card m-b-0">
                         <div class="card-header" role="tab" id="headingPermissionWSA">
                             <h5 class="mb-0">                           

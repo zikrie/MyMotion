@@ -122,12 +122,18 @@ return [
         'appointment_date' => 'Appointment Date',
         'other_officer' => 'Other Officer who is involved',
         
-        //jobDetails
-        'working' => 'Working',
-        'multiple_employ' => 'Multiple Employment',
-        
+        //employmentDetails
+        'rtw_status' => 'RTW Status',
+        'rtw_hierarchy' => 'RTW Hierarchy',
+        'rtw_hierarchy1' => 'Same work same employer',
+        'rtw_hierarchy2' => 'Similar work same employer',
+        'rtw_hierarchy3' => 'Different work same employer',
+        'rtw_hierarchy4' => 'Same work different employer',
+        'rtw_hierarchy5' => 'Similar work different employer',
+        'rtw_hierarchy6' => 'Different work different employer',
+        'rtw_hierarchy7' => 'Self employ',
+        'rtw_date2' => 'RTW Date',
 
-        //masco_jobcode
         'main_group' => 'Main Group',
         'main_subgroup' => 'Main Subgroup',
         'small_group' => 'Small Subgroup',
@@ -275,7 +281,7 @@ return [
         'marriage_status' => 'Marriage Status',
         'partner_working' => 'If married, does your partner is working?',
         'dependent_number' => 'Number of Dependents',
-        'estimate_living_cost' => 'Estimation of Living Cost',
+        'estimate_living_cost' => 'Monthly Estimatied Cost of Living',
         'residence' => 'Residence',
         'residence_type' => 'Type of Residence',
         'monthly_finance' => 'Monthly Income',
@@ -375,14 +381,20 @@ return [
         
         //limitationDetails
         'face_limitation' => 'Limitation Details',
-        'ob_equipment' => 'Does insured person needs equipment or recovery parts ?',
+        'require_rehab' => 'Requires Rehab',
         'equipment' => 'Equipment needed ?',
         'orthotic' => 'Orthotic',
         'prosthetic' => 'Prosthetic',
         'recovery_equipment' => 'Recovery Equipment',
+        'rehabtype' => 'Rehab Type',
+        'physicalRehab' => 'Physical Rehab',
+        'implant' => 'Implant',
+        'proposestartdate' => 'Propose Start Date',
+
         
 
-        'appointment_confirm' => 'Do you have appointment?',
+        'appointment_confirm' => 'Have Appointment',
+        'multiple_appointment' => 'Multiple Appointment',
         'appointment_date' => 'Appointment Date',
         'treatment_place' => 'Treatment Place',
         'department_name' => 'Department',
@@ -401,6 +413,9 @@ return [
         'otorhino_department' => 'Department of Otorhinolarygology', 
         'radio_department' => 'Department of Radiology', 
         'patho_department' => 'Department of Obstetrics and Gynecology',
+        'location' => 'Location',
+        'government' => 'Government',
+        'private' => 'Private',
         
         //vassDetails
         'skillsScore' => 'Skills Score',

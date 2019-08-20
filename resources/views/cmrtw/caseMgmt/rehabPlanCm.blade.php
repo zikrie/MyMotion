@@ -47,26 +47,34 @@
                                     </div>
                                 </div>
                             </div>
-                            
-                            <ul class="nav nav-tabs" role="tablist">
-                                <!-- <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#discussion" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.discussion')</span></a> </li>   
-                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#prm" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.prm')</span></a> </li>
-                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#wsa" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.wsa')</span></a> </li>
-                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#fce" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.fce')</span></a> </li>
-                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#osm" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.osm_psm_opm')</span></a> </li>   
-                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#mm" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.mm')</span></a> </li> 
-                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#va" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.va_title')</span></a> </li>                 
-                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#vtm" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.vtm')</span></a> </li>
-                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#jp" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.job_placement')</span></a> </li>  -->
-                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#business1" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.bus_financial')</span></a> </li>                   
-                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#mobility" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.mobility')</span></a> </li>            
-                            </ul>     
+    
+    
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#discussion" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.discussion')</span></a> </li>   
+                                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#prm" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.prm')</span></a> </li>
+                                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#wsa" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.wsa')</span></a> </li>
+                                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#fce" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.fce')</span></a> </li>
+                                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#osm" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.osm_psm_opm')</span></a> </li>   
+                                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#mm" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.mm')</span></a> </li> 
+                                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#va" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.va_title')</span></a> </li>                 
+                                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#vtm" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.vtm')</span></a> </li>
+                                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#jp" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.job_placement')</span></a> </li> 
+                                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#business1" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.bus_financial')</span></a> </li> 
+                                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#mobility" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.mobility')</span></a> </li>            
+                                    </ul>     
     
                                     <div class="tab-content tabcontent-border">
     
-                                        {{-- DISCUSSION --}}
-                                        <div class="tab-pane p-20 active" id="discussion" role="tabpanel">                          
-                                            @include('cmrtw.caseMgmt.PL.indexDISCUSSION') 
+    
+                                        {{-- WSA --}}
+                                        <div class="tab-pane p-20" id="wsa" role="tabpanel">                          
+                                            <div class="tab-content tabcontent-border"> 
+                                                <div class="tab-content tabcontent-border">
+                                                    <div class="tab-pane p-20 active" id="wsa" role="tabpanel">
+                                                        @include('cmrtw.caseMgmt.PL.indexWSA') 
+                                                    </div>  
+                                                </div>                
+                                            </div>
                                         </div>
 
                                         {{-- PRM --}}
@@ -80,13 +88,25 @@
                                         </div>
 
                                          {{-- FCE --}}
-                                        <div class="tab-pane p-20" id="fce" role="tabpanel">                          
-                                            @include('cmrtw.caseMgmt.PL.indexFCE') 
+                                         <div class="tab-pane p-20" id="fce" role="tabpanel">                          
+                                            <div class="tab-content tabcontent-border"> 
+                                                <div class="tab-content tabcontent-border">
+                                                    <div class="tab-pane p-20 active" id="fce" role="tabpanel">
+                                                        @include('cmrtw.caseMgmt.PL.indexFCE') 
+                                                    </div>  
+                                                </div>                
+                                            </div>
                                         </div>
     
-                                        {{-- OSM --}}
-                                        <div class="tab-pane p-20" id="osm" role="tabpanel">                          
-                                            @include('cmrtw.caseMgmt.PL.indexOSM') 
+                                         {{-- PRM --}}
+                                         <div class="tab-pane p-20" id="prm" role="tabpanel">                          
+                                            <div class="tab-content tabcontent-border"> 
+                                                <div class="tab-content tabcontent-border">
+                                                    <div class="tab-pane p-20 active" id="prm" role="tabpanel">
+                                                        @include('cmrtw.caseMgmt.PL.indexPRM') 
+                                                    </div>  
+                                                </div>                
+                                            </div>
                                         </div>
 
                                         {{-- MM --}}
@@ -99,27 +119,104 @@
                                             @include('cmrtw.caseMgmt.PL.indexVA') 
                                         </div>
 
-                                        {{-- VTM --}}
-                                        <div class="tab-pane p-20" id="vtm" role="tabpanel">                          
-                                            @include('cmrtw.caseMgmt.PL.indexVTM') 
-                                        </div>
+                                            {{-- MM --}}
+                                            <div class="tab-pane p-20" id="mm" role="tabpanel">                          
+                                                <div class="tab-content tabcontent-border"> 
+                                                    <div class="tab-content tabcontent-border">
+                                                        <div class="tab-pane p-20 active" id="mm" role="tabpanel">
+                                                            @include('cmrtw.caseMgmt.MM.indexMM') 
+                                                        </div>  
+                                                    </div>                
+                                                </div>
+                                            </div>
+
+
+
+
+
+                                                {{-- VTM --}}
+                                            <div class="tab-pane p-20" id="vtm" role="tabpanel">                          
+                                                <div class="tab-content tabcontent-border"> 
+                                                    <div class="tab-content tabcontent-border">
+                                                        <div class="tab-pane p-20 active" id="vtm" role="tabpanel">
+                                                            @include('cmrtw.caseMgmt.PL.indexVTM') 
+                                                        </div>  
+                                                    </div>                
+                                                </div>
+                                            </div>
             
     
-                                        {{-- JP --}}
-                                        <div class="tab-pane p-20" id="jp" role="tabpanel">                          
-                                            @include('cmrtw.caseMgmt.PL.indexJP') 
-                                        </div>
-                                 
-                                        {{-- BUSINESS --}}
-                                        <div class="tab-pane p-20" id="business1" role="tabpanel">                          
-                                            @include('cmrtw.caseMgmt.PL.indexBUSINESS') 
-                                        </div>
+                                                    {{-- JP --}}
+                                                    <div class="tab-pane p-20" id="jp" role="tabpanel">                          
+                                                        <div class="tab-content tabcontent-border"> 
+                                                            <div class="tab-content tabcontent-border">
+                                                                <div class="tab-pane p-20 active" id="jp" role="tabpanel">
+                                                                    @include('cmrtw.caseMgmt.PL.indexJP') 
+                                                                </div>  
+                                                            </div>                
+                                                        </div>
+                                                    </div>
+            
+    
+                                                            
+                                                    {{-- VA --}}
+                                                    <div class="tab-pane p-20" id="va" role="tabpanel">                          
+                                                        <div class="tab-content tabcontent-border"> 
+                                                            <div class="tab-content tabcontent-border">
+                                                                <div class="tab-pane p-20 active" id="va" role="tabpanel">
+                                                                    @include('cmrtw.caseMgmt.PL.indexVA') 
+                                                                </div>  
+                                                            </div>                
+                                                        </div>
+                                                    </div>
+                     
 
-                                        {{-- MOBILITY --}}
-                                        <div class="tab-pane p-20" id="mobility" role="tabpanel">                          
-                                            @include('cmrtw.caseMgmt.PL.indexMobility') 
-                                        </div>
-  
+                                                            {{-- MOBILITY --}}
+                                                            <div class="tab-pane p-20" id="mobility" role="tabpanel">                          
+                                                                <div class="tab-content tabcontent-border"> 
+                                                                    <div class="tab-content tabcontent-border">
+                                                                        <div class="tab-pane p-20 active" id="mobility" role="tabpanel">
+                                                                            @include('cmrtw.caseMgmt.PL.indexMobility') 
+                                                                        </div>  
+                                                                    </div>                
+                                                                </div>
+                                                            </div>
+                                                           
+                                                            {{-- OSM --}}
+                                                            <div class="tab-pane p-20" id="osm" role="tabpanel">                          
+                                                                <div class="tab-content tabcontent-border"> 
+                                                                    <div class="tab-content tabcontent-border">
+                                                                        <div class="tab-pane p-20 active" id="osm" role="tabpanel">
+                                                                            @include('cmrtw.caseMgmt.PL.indexOSM') 
+                                                                        </div>  
+                                                                    </div>                
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            {{-- BUSINESS --}}
+                                                            <div class="tab-pane p-20" id="business1" role="tabpanel">                          
+                                                                    <div class="tab-content tabcontent-border"> 
+                                                                        <div class="tab-content tabcontent-border">
+                                                                            <div class="tab-pane p-20 active" id="business1" role="tabpanel">
+                                                                                @include('cmrtw.caseMgmt.PL.indexBUSINESS') 
+                                                                            </div>  
+                                                                        </div>                
+                                                                    </div>
+                                                                </div>
+                                                            
+
+                                                                      {{-- DISCUSSION --}}
+                                                                    <div class="tab-pane p-20" id="discussion" role="tabpanel">                          
+                                                                        <div class="tab-content tabcontent-border"> 
+                                                                            <div class="tab-content tabcontent-border">
+                                                                                <div class="tab-pane p-20 active" id="discussion" role="tabpanel">
+                                                                                    @include('cmrtw.caseMgmt.PL.indexDISCUSSION') 
+                                                                                </div>  
+                                                                            </div>                
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                        
                                     </div>
                         </div>
                     </form>

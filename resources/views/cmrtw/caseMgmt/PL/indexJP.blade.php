@@ -4,13 +4,11 @@
             <form class="form">
                
                 <div id="accordion2" role="tablist" class="accordion" >
-
-
-                   
+ 
                    <div class="card m-b-0">
                         <div class="card-header" role="tab" id="headingJobDetJP">
                             <h5 class="mb-0">                           
-                                <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapseJobDetJP" aria-expanded="false" aria-controls="collapseJobDetJP">
+                                <a class="link" data-toggle="collapse" data-parent="#accordion2" href="#collapseJobDetJP" aria-expanded="true" aria-controls="collapseJobDetJP">
                                     <h5 class="card-title1"><i class="fa fa-plus"></i>
                                         Job Details</h5>
                                 </a>
@@ -105,12 +103,6 @@
                             </div>
                         </div>
                     </div>
-
-
-
-                   
-
-
 
                 </div>
             </form>

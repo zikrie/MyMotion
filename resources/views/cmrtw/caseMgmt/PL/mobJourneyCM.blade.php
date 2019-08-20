@@ -8,7 +8,7 @@
                      <div class="form-actions">
                             <div class="row p-t-20">
                                 <div class="col-md-4">
-                                    <label class="control-label">Laporan Perjalanan Test 1 </label>
+                                    <label class="control-label">@lang('caseMgmt.attr.journey_report')</label>
                                 </div>
                                 <div class="col-sm-1">
                                     <div class="custom-control custom-checkbox">
@@ -19,7 +19,7 @@
                             </div>
                             <div class="row p-t-20">
                                 <div class="col-md-4">
-                                    <label class="control-label">Laporan Perjalanan Test 2 </label>
+                                    <label class="control-label">@lang('caseMgmt.attr.journey_report') </label>
                                 </div>
                                 <div class="col-sm-1">
                                     <div class="custom-control custom-checkbox">
@@ -30,7 +30,7 @@
                             </div>
                             <div class="row p-t-20">
                                 <div class="col-md-4">
-                                    <label class="control-label">Laporan Perjalanan Test 3 </label>
+                                    <label class="control-label">@lang('caseMgmt.attr.journey_report')</label>
                                 </div>
                                 <div class="col-sm-1">
                                     <div class="custom-control custom-checkbox">
@@ -43,29 +43,29 @@
                         <div class="col-md-6">
                             <div class="form-group">
 
-                                <label class="control-label">@lang('mobJourneyCM.pengesahan')</label>
-                                <select class="form-control select" id="mobiliti">
+                                <label class="control-label">@lang('caseMgmt.attr.verify')</label>
+                                <select class="form-control select" id="verify">
                                     <option value="">Please Select </option>
-                                    <option value="ya">@lang('mobJourneyCM.ya')</option>
-                                    <option value="tidak">@lang('mobJourneyCM.tidak')</option>
+                                    <option value="yes">@lang('caseMgmt.attr.yes')</option>
+                                    <option value="no">@lang('caseMgmt.attr.no')</option>
                                   
                                 </select>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label class="control-label">@lang('mobJourneyCM.remark')</label>
-                                <input type="text" id="remark" class="form-control" value="">
+                                <label class="control-label">@lang('caseMgmt.attr.remarks')</label>
+                                <input type="text" id="remarks" class="form-control" value="">
                             </div>
                         </div>
                     </div>
 
 
 
-                        <button type="submit" class="btn btn waves-effect waves-light btn-success">
+                        {{-- <button type="submit" class="btn btn waves-effect waves-light btn-success">
                         SAVE & CONTINUE</button>
                         <button type="button" onclick="submitform()" class="btn btn waves-effect waves-light btn-success">RESET</button>
-                        <button type="button" class="btn waves-effect waves-light btn-success"  onclick="window.location='/homertw'">@lang('rtw_eligibility.cancel')</button>
+                        <button type="button" class="btn waves-effect waves-light btn-success"  onclick="window.location='/homertw'">@lang('rtw_eligibility.cancel')</button> --}}
                         </div>
                     </div>
                 </form>

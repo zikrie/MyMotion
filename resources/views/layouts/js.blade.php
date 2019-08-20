@@ -312,6 +312,7 @@ function remove_education(rid) {
 }
 
 </script>
+{{-- syahirah --}}
 <script>
     $(document).ready(function(){
         // Add minus icon for collapse element which is open by default
@@ -523,7 +524,7 @@ function remove_addDisabled(rid) {
     }
 
     function myFunctionPengesyoran(aval) {
-        if (aval == "lain2") {
+        if (aval == "other") {
             $('#hidePengesyoran').show();   
         }
         else {
@@ -532,13 +533,13 @@ function remove_addDisabled(rid) {
     }
 
     function myMobiliti(aval) {
-        if (aval == "kenderaanperkeso") {
+        if (aval == "perkeso_vehicle") {
             $('#hidekenderaanperkeso').show();
             $('#hidetiketpenerbangan').hide();
             $('#hidetaxi').hide();
 
         }
-        else if(aval == "tiketpenerbangan"){
+        else if(aval == "flight_ticket"){
             $('#hidekenderaanperkeso').hide(); 
             $('#hidetiketpenerbangan').show();
             $('#hidetaxi').hide(); 
@@ -556,7 +557,7 @@ function remove_addDisabled(rid) {
     }
 
     function myWaris(aval) {
-        if (aval == "waristerdekat") {
+        if (aval == "relationship_guardian5") {
             $('#hideWaris').show();   
         }
         else {
@@ -564,7 +565,7 @@ function remove_addDisabled(rid) {
         }
     }
     function myRemark(aval) {
-        if (aval == "tidak") {
+        if (aval == "no") {
             $('#hideRemark').show();   
         }
         else {

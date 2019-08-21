@@ -319,7 +319,11 @@ return [
         'pwd' => 'PWDs',
         'person' => 'persons',
         'total' => 'Total',
-        
+        'expensesDependent' => 'Expenses of Dependent',
+        'vehicles' => 'Vehicles',
+        'housing' => 'Housing',
+        'eduLoan' => 'Educational Loan',
+        'otherLoan' => 'Others Loan',
 
         //disabledDetails
         'disabled_card' => 'Do you have Disabled People Card (OKU)?',
@@ -426,10 +430,15 @@ return [
         'health' => 'Health Score',
         'pain' => 'Pain Tolerance Score',
         'remarks' => 'Remarks',
-
+        'scale' => 'Scale',
+        'notgood' => 'Not Good',
 
         
         //dassDetails
+        'scale1' => 'Did not apply to me at all',
+        'scale2' => 'Applied to me to some degree, or some of the time',
+        'scale3' => 'Applied to me to a considerable degree, or a good part of time',
+        'scale4' => 'Applied to me very much, or most of the time',
         'depression' => 'Depression',
         'anxiety' => 'Anxiety',
         'stress' => 'Stress',
@@ -454,6 +463,7 @@ return [
         'ques19' => 'I was aware of the action of my heart in the absence of physical exertion (eg, sense of heart rate increase, heart missing a beat)',
         'ques20' => 'I felt scared without any good reason',
         'ques21' => 'I felt that life was meaningless',
+        'tell' => 'Please Specify',
 
         //adlDetails
         'toilet_use' => 'Toilet Use',

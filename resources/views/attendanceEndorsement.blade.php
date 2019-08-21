@@ -18,7 +18,7 @@
             <h5 class="card-title">Insured Person Attendance Detail</h5>
                
             
-            <div class="row p-t-20">
+            <div class="row p-l-20">
                 <div class="col-md-4">
                     <div class="form-group">
                         <label class="control-label">SP</label> 
@@ -32,8 +32,9 @@
                 </div>
             </div>
 
-
-            <table id="" class="table table-bordered table-responsive-md table-striped text-center">
+            <div class="card">
+            <div class="card-body">
+            <table id="" class="table table-bordered table-responsive-md table-striped text-center" width="90%">
                 <thead>
                     <tr>
                         <th> </th>
@@ -48,7 +49,7 @@
                 </thead>
                 <tbody id="">
                     <tr id= "">
-                        <td><input type="radio" name="radios" id="radio1" /></td>
+                        <td><input type="checkbox" name="checkboxs" id="checkbox1" /></td>
                         <td>PRM/GL01/810723075383/201907</td>                      
                         <td>New</td>
                         <td>Home Nursing Providers Sdn Bhd</td>
@@ -59,7 +60,7 @@
                 </tbody>
                 <tbody id="">
                     <tr id= "">
-                        <td><input type="radio" name="radios" id="radio2" /></td>
+                        <td><input type="checkbox" name="checkboxs" id="checkbox2" /></td>
                         <td>PRM/GL02/810723075383/201907(2)</td>                      
                         <td>Extension</td>
                         <td>Home Nursing Providers Sdn Bhd</td>
@@ -70,7 +71,7 @@
                 </tbody>
                 <tbody id="">
                     <tr id= "">
-                        <td><input type="radio" name="radios" id="radio3" /></td>
+                        <td><input type="checkbox" name="radcheckboxsios" id="checkbox3" /></td>
                         <td>PRM/GL03/810723075383/201907</td>                      
                         <td>New</td>
                         <td>Home Nursing Providers Sdn Bhd</td>
@@ -80,8 +81,10 @@
                     </tr>
                 </tbody>
             </table>
+        </div>
+    </div>
 
-            <div class="row p-t-20">
+            <div class="row p-l-20">
                 <div class="col-md-4">
                     <div class="form-group">
                         <label class="control-label">Update Attendance Method</label> 
@@ -100,21 +103,18 @@
                 </div>
             </div>
 
-      
-
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-       
 
 
 
 
+
+
+
+
+            
+
+        <div class="card">
+        <div class="card-body">
             <div id="table" class="table-editable">
             <span class="table-add float-right mb-3 mr-2">
                 <a href="#!" class="text-success"><i class="fas fa-plus fa-2x" aria-hidden="true"></i></a>
@@ -264,6 +264,8 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
+            </div>
             </div>
         </form>
     </div>

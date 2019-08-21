@@ -3,9 +3,9 @@
         <div class="card">
             <form class="form">
                
-            <h5 class="card-title1">Supporting Document Details</h5>
+            <!-- <h5 class="card-title1">Supporting Document Details</h5> -->
             
-            <!-- <div id="accordion2" role="tablist" class="accordion" >
+            <div id="accordion2" role="tablist" class="accordion" >
 
                     <div class="card m-b-0">
                         <div class="card-header" >
@@ -22,7 +22,7 @@
                             </div>
                         
                     </div> 
-            </div> -->
+            </div> 
 
             </form>
         </div>

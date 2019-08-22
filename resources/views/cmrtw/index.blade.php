@@ -173,6 +173,7 @@
                             <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#defaultedrejected" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Defaulted/Rejected Case Closure Info.</span></a> </li>
                             <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#benefitCM" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Rtw Case Closure Info.</span></a> </li>
                             <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#appraisal" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Vass/Dass21 Appraisal Info.</span></a> </li>
+                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#caseclose" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Case Closure Info.</span></a> </li>
                         </ul>
 
                         <div class="tab-content tabcontent-border">
@@ -187,13 +188,18 @@
                                 @include('cmrtw.caseclosure.defaultedrejected')
                             </div>
                             
-                            <!-- Benefit CM -->
+                            <!-- Maklumat Penutupan Kes RTW-->
                             <div class="tab-pane p-20" id="benefitCM" role="tabpanel">
                                 @include('cmrtw.obForm')
                             </div>
 
-                            <!-- Benefit CM -->
+                            <!-- Maklumat Penilaian Vass & Dass21 -->
                             <div class="tab-pane p-20" id="appraisal" role="tabpanel">
+                                @include('cmrtw.obForm')
+                            </div>
+
+                            <!-- Maklumat Penutupan kes-->
+                            <div class="tab-pane p-20" id="caseclose" role="tabpanel">
                                 @include('cmrtw.obForm')
                             </div>
                         </div> 

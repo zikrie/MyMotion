@@ -98,7 +98,8 @@
                                     <label class="custom-control-label" for="no1">Key-in</label>
                                 </div>
                             </div>
-                            <button type="button" id=""> Upload Attendance </button>
+                            <!-- <button type="button" id=""> Upload Attendance </button> -->
+                            <span class="choosefile"><input type="file" required>
                     </div>
                 </div>
             </div>
@@ -119,26 +120,44 @@
             <span class="table-add float-right mb-3 mr-2">
                 <a href="#!" class="text-success"><i class="fas fa-plus fa-2x" aria-hidden="true"></i></a>
             </span>
-                <table class="table table-bordered table-responsive-md table-striped text-center">
+                <table id="dtBasicExample1" class="table table-bordered table-responsive-md table-striped text-center">
                     <thead>
                         <tr>
-                            <th class="text-center">Number</th>
-                            <th class="text-center">Name</th>
-                            <th class="text-center">Treatment Date</th>
+                           
+                            <th></th>
+                            <th class="text-center">No.  
+                                <span class="table-up" style="float:right;><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"aria-hidden="true"></i></a></span>
+                                <span class="table-down" style="float:right;><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"aria-hidden="true"></i></a></span>
+                            </th>
+                            <th class="text-center">Name
+                                <span class="table-up" style="float:right;><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"aria-hidden="true"></i></a></span>
+                                <span class="table-down" style="float:right;><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"aria-hidden="true"></i></a></span>
+                            </th>
+                            <th class="text-center">Treatment Date  
+                                <span class="table-up" style="float:right;><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"aria-hidden="true"></i></a></span>
+                                <span class="table-down" style="float:right;><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"aria-hidden="true"></i></a></span>
+                            </th>
                             <th class="text-center">Module</th>
-                            <th class="text-center">Session</th>
-                            <th class="text-center">Total (RM)</th>
-                            <th class="text-center">Sort</th>
+                            <th class="text-center">Session  
+                                <span class="table-up" style="float:right;><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"aria-hidden="true"></i></a></span>
+                                <span class="table-down" style="float:right;><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"aria-hidden="true"></i></a></span>
+                            </th>
+                            <th class="text-center">Total (RM)  
+                                <span class="table-up" style="float:right;><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"aria-hidden="true"></i></a></span>
+                                <span class="table-down" style="float:right;><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"aria-hidden="true"></i></a></span>
+                            </th>
+                            <!-- <th class="text-center">Sort</th> -->
                             <th class="text-center">Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
+                            <td class="pt-3-half" contenteditable="true"><input type="checkbox" name="Checkboxs" id="Checkbox1" /></td>
                             <td class="pt-3-half" contenteditable="true">1</td>
                             <td class="pt-3-half" contenteditable="true">Zul</td>
-                            <td class="pt-3-half" contenteditable="true">30/07/2019</td>
+                            <td class="pt-3-half" contenteditable="true"><input type="date" name="date"></td>
                             <td class="pt-3-half" contenteditable="true">
-                                                    <select>        
+                                                    <select id="selectFilter">        
                                                             <option value="">Please Select</option>
                                                             <option value="">IFT</option>
                                                             <option value="">TENS</option>
@@ -147,12 +166,12 @@
                             </td>
                             <td class="pt-3-half" contenteditable="true">1</td>
                             <td class="pt-3-half" contenteditable="true">80</td>
-                            <td class="pt-3-half">
+                            <!-- <td class="pt-3-half">
                             <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
                                     aria-hidden="true"></i></a></span>
                             <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"
                                     aria-hidden="true"></i></a></span>
-                            </td>
+                            </td> -->
                             <td>
                             <span class="table-remove"><button type="button"
                                 class="btn btn-danger btn-rounded btn-sm my-0">Delete</button></span>
@@ -160,9 +179,10 @@
                         </tr>
                         <!-- This is our clonable table line -->
                         <tr>
+                            <td class="pt-3-half" contenteditable="true"><input type="checkbox" name="Checkboxs" id="Checkbox2" /></td>
                             <td class="pt-3-half" contenteditable="true">2</td>
                             <td class="pt-3-half" contenteditable="true">Zul</td>
-                            <td class="pt-3-half" contenteditable="true">08/07/2019</td>
+                            <td class="pt-3-half" contenteditable="true"><input type="date" name="date"></td>
                             <td class="pt-3-half" contenteditable="true">
                                                     <select>        
                                                             <option value="">Please Select</option>
@@ -171,24 +191,26 @@
                                                             <option value="">OT</option>
                                                     </select>
                             </td>
-                            <td class="pt-3-half" contenteditable="true">1</td>
-                            <td class="pt-3-half" contenteditable="true">80</td>
-                            <td class="pt-3-half">
+                            <td class="pt-3-half" contenteditable="true">1 </td>
+                            <td class="pt-3-half" contenteditable="true">33</td>
+                            <!-- <td class="pt-3-half">
                             <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
                                     aria-hidden="true"></i></a></span>
                             <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"
                                     aria-hidden="true"></i></a></span>
-                            </td>
+                            </td> -->
                             <td>
                             <span class="table-remove"><button type="button"
+                                class="btn btn-danger btn-rounded btn-sm my-0">Delete</button></span>
                                 class="btn btn-danger btn-rounded btn-sm my-0">Delete</button></span>
                             </td>
                         </tr>
                         <!-- This is our clonable table line -->
-                        <tr>    
-                            <td class="pt-3-half" contenteditable="true">3</td>
+                        <tr>
+                            <td class="pt-3-half" contenteditable="true"><input type="checkbox" name="Checkboxs" id="Checkbox3" /></td>    
+                            <td class="pt-3-half" contenteditable="true">3 </td>
                             <td class="pt-3-half" contenteditable="true">Zul</td>
-                            <td class="pt-3-half" contenteditable="true">12/07/2019</td>
+                            <td class="pt-3-half" contenteditable="true"><input type="date" name="date"></td>
                             <td class="pt-3-half" contenteditable="true">
                                                     <select>        
                                                             <option value="">Please Select</option>
@@ -199,12 +221,12 @@
                             </td>
                             <td class="pt-3-half" contenteditable="true">1</td>
                             <td class="pt-3-half" contenteditable="true">80</td>
-                            <td class="pt-3-half">
+                            <!-- <td class="pt-3-half">
                             <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
                                     aria-hidden="true"></i></a></span>
                             <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"
                                     aria-hidden="true"></i></a></span>
-                            </td>
+                            </td> -->
                             <td>
                             <span class="table-remove"><button type="button"
                                 class="btn btn-danger btn-rounded btn-sm my-0">Delete</button></span>
@@ -212,9 +234,10 @@
                         </tr>
                         <!-- This is our clonable table line -->
                         <tr>    
+                            <td class="pt-3-half" contenteditable="true"><input type="checkbox" name="Checkboxs" id="Checkbox4" /></td>
                             <td class="pt-3-half" contenteditable="true">4</td>
                             <td class="pt-3-half" contenteditable="true">Ahmad</td>
-                            <td class="pt-3-half" contenteditable="true">22/07/2019</td>
+                            <td class="pt-3-half" contenteditable="true"><input type="date" name="date"></td>
                             <td class="pt-3-half" contenteditable="true">
                                                     <select>        
                                                             <option value="">Please Select</option>
@@ -225,12 +248,12 @@
                             </td>
                             <td class="pt-3-half" contenteditable="true">1</td>
                             <td class="pt-3-half" contenteditable="true">80</td>
-                            <td class="pt-3-half">
+                            <!-- <td class="pt-3-half">
                                 <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
                                     aria-hidden="true"></i></a></span>
                                 <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"
                                     aria-hidden="true"></i></a></span>
-                            </td>
+                            </td> -->
                             <td>
                                 <span class="table-remove"><button type="button"
                                     class="btn btn-danger btn-rounded btn-sm my-0">Delete</button></span>
@@ -238,9 +261,10 @@
                         </tr>
                         <!-- This is our clonable table line -->
                         <tr class="hide">
+                            <td class="pt-3-half" contenteditable="true"><input type="checkbox" name="Checkboxs" id="Checkbox5" /></td>
                             <td class="pt-3-half" contenteditable="true"></td>
                             <td class="pt-3-half" contenteditable="true"></td>
-                            <td class="pt-3-half" contenteditable="true"></td>
+                            <td class="pt-3-half" contenteditable="true"><input type="date" name="date"></td>
                             <td class="pt-3-half" contenteditable="true">
                                                     <select>        
                                                             <option value="">Please Select</option>
@@ -251,12 +275,12 @@
                             </td>
                             <td class="pt-3-half" contenteditable="true"></td>
                             <td class="pt-3-half" contenteditable="true"></td>
-                            <td class="pt-3-half">
+                            <!-- <td class="pt-3-half">
                             <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
                                     aria-hidden="true"></i></a></span>
                             <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"
                                     aria-hidden="true"></i></a></span>
-                            </td>
+                            </td> -->
                             <td>
                             <span class="table-remove"><button type="button"
                                 class="btn btn-danger btn-rounded btn-sm my-0">Delete</button></span>
@@ -267,9 +291,31 @@
             </div>
             </div>
             </div>
+
+
+
+
+          
+
+
+
         </form>
     </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- Editable table -->
 <script type="text/javascript">
@@ -361,6 +407,34 @@ const $tableID = $('#table');
    // Output the result
    $EXPORT.text(JSON.stringify(data));
  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function () {
+$('#dtBasicExample1').DataTable();
+$('.dataTables_length').addClass('bs-select');
+});
 
 </script>
                 

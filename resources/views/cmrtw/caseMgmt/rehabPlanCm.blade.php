@@ -216,7 +216,72 @@
                                             </div>
                                         </div> --}}
 
+                                        <div class="tab-pane p-20" id="mm" role="tabpanel">
+                                                    <ul class="nav customtab" role="tablist">
+                                                           
+                                                           
+                                                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#rtwPlanningInfoMM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">  RTW Planning Information</span></a> </li>
+                                                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#modifihistoryInfoMM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down"> Modifications History Information</span></a> </li>
+                                                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#modifiInfoMM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down"> Modifications Information</span></a> </li>
+                                                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#requestForQuotationMM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Request For Quotation</span></a> </li>
+                                                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#supplierDetailsMM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">  Supplier Details</span></a> </li>
+                                                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#SCMhqMM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down"> SCM Session (HQ) for JKK Meeting</span></a> </li>
+                                                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#jkkMeetingMM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">  JKK Meeting (AM)</span></a> </li>
+                                                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#suppInfoSelectedMM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down"> Supplier Information Selected</span></a> </li>
+                                                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#modifiReportMM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down"> Modifications Report  </span></a> </li>
+                                                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#caseNoteInfo" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">  Case Note Information </span></a> </li>
+                                                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#discussionMM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">   @lang('caseMgmt.attr.discussion') </span></a> </li>
+                                                        </ul>
+                                                    <div class="tab-content tabcontent-border">
+                                                           
+                                        
+                                                            <div class="tab-pane p-20" id="rtwPlanningInfoMM" role="tabpanel">
+                                                            @include('cmrtw.caseMgmt.MM.RTWplanningInfo') 
+                                                            </div>
+                                        
+                                                            <div class="tab-pane p-20" id="modifihistoryInfoMM" role="tabpanel">
+                                                            @include('cmrtw.caseMgmt.MM.modifyHistoryInfoMM') 
+                                                            </div>
+                                        
+                                                            <div class="tab-pane p-20" id="modifiInfoMM" role="tabpanel">
+                                                            @include('cmrtw.caseMgmt.MM.modifyInfoMM') 
+                                                            </div>
+                                        
+                                                            <div class="tab-pane p-20" id="requestForQuotationMM" role="tabpanel">
+                                                            @include('cmrtw.caseMgmt.MM.reqForQuotation') 
+                                                            </div>
+                                                           
+                                                            <div class="tab-pane p-20" id="supplierDetailsMM" role="tabpanel">
+                                                            @include('cmrtw.caseMgmt.MM.supplierDetail') 
+                                                            </div>
+ 
+                                                            <div class="tab-pane p-20" id="SCMhqMM" role="tabpanel">
+                                                            @include('cmrtw.caseMgmt.MM.scmSession') 
+                                                            </div>
+         
+                                                            <div class="tab-pane p-20" id="jkkMeetingMM" role="tabpanel">
+                                                            @include('cmrtw.caseMgmt.MM.jkkMeeting') 
+                                                            </div>
+          
+                                                            <div class="tab-pane p-20" id="suppInfoSelectedMM" role="tabpanel">
+                                                            @include('cmrtw.caseMgmt.MM.suppInfoSelected') 
+                                                            </div>
+                                                                
+                                                            <div class="tab-pane p-20" id="modifiReportMM" role="tabpanel">
+                                                            @include('cmrtw.caseMgmt.MM.modifiReport') 
+                                                            </div>
+                                    
+                                                            <div class="tab-pane p-20" id="caseNoteInfo" role="tabpanel">
+                                                            @include('cmrtw.caseMgmt.MM.caseNoteInfo') 
+                                                            </div>
 
+                                                            <div class="tab-pane p-20" id="discussionMM" role="tabpanel">
+                                                            @include('cmrtw.caseMgmt.PL.discussionResult')
+                                                            </div>
+
+                                                        
+                                                    </div>
+                                                </div>   
 
 
 
@@ -532,7 +597,7 @@
                                                                 </div> --}}
                                                                 
 
-                                                                <div class="tab-pane p-20" id="discussion1" role="tabpanel">
+                                                                <div class="tab-pane p-20" id="discussion" role="tabpanel">
                                                                                 <ul class="nav customtab" role="tablist">
                                                                                         <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#discuss_cat" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Discussion Category</span></a> </li>
                                                                                         <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#comm_ip" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Insured Person Communication Details</span></a> </li>

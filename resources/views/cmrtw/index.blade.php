@@ -214,7 +214,7 @@
                         @include('cmrtw.assessmentForm')
                     </div>
                 </div>
-
+            </div>
         </div>
     </div>
 </div>

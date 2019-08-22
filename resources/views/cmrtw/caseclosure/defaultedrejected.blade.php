@@ -7,19 +7,18 @@
                      <h4 class="card-title">Defaulted/Rejected Case Closure Information</h4>
                      <hr>
                      <div class="form-actions">
-                        <div class="row p-t-20">
+                        
                             <div class="col-md-4"> 
-                                 <div class="form-group">          
+                                 <div class="form-group">
+                                    
                                         <label class="control-label">@lang('caseclosure.status') <span class="text-danger">*</span></label>
-                                        <select class="form-control" tabindex="1" onchange="myDefaulted(this.options[this.selectedIndex].value)" required>
+                                        <select class="form-control" tabindex="1" onchange="myNamaHospital(this.options[this.selectedIndex].value)" required>
                                             <option value="">Please Select</option>
-                                            <option value="sebab_defaulted">@lang('caseclosure.attr.sebab_defaulted')</option>
-                                            <option value="sebab_rejected">@lang('caseclosure.attr.sebab_rejected')</option>
-                                        </select> 
-                                    </div>
-                                </div>  
-                                <div class="col-md-4">   
-                                    <div id="hidesebab_defaulted" class="form-group" style="display:none">
+                                             <option value="general_department">@lang('caseclosure.attr.general_department')</option>
+                                             <option value="sebab_rejected">@lang('caseclosure.attr.sebab_rejected')</option>
+                                        </select>   
+                                    
+                                    <div id="hideHospitalname" class="form-group" style="display:none">
                                         <div class="form-group">
                                             <label class="control-label">@lang('caseMgmt.attr.hospital_name')</label>
                                             <input class="form-control"  type="text"  value="" id="hospital_name">
@@ -27,7 +26,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
                        
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -63,17 +61,5 @@
 </div>
 </div>
 
-<script>
-function myDefaulted(aval) 
-    {
-        if (aval == "sebab_defaulted") 
-        {
-            $('#hidesebab_defaulted').show();
-        } 
-        else
-        {
-            $('#hidesebab_defaulted').hide();
-        }
-    }
 
-</script>
+

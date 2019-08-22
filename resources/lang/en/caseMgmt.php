@@ -49,6 +49,8 @@ return [
         'specify' => 'If Other, Please specify',
         'specify_no' => 'If No, Please specify',
         'other' => 'Other',
+        'hospital_name' => 'Hospital Name',
+        'doctor_phoneno' => 'Doctor Phone No',
 
 
         'doctor_name' => 'Doctor Name',

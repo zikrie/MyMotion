@@ -481,7 +481,7 @@
 
 
 </script>
-<script type="text/javascript">
+{{-- <script type="text/javascript">
 
 // add
 var numE = 0;
@@ -537,7 +537,7 @@ $('#addEmployment').on('show.bs.modal', function (e)
 
 })
 
-</script> 
+</script>  --}}
 
 <script type="text/javascript">
 

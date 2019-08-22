@@ -53,17 +53,19 @@
                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#caseclosure" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Case Closure</span></a></li>
                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#supporting_document" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('index.attr.supporting_document')</span></a> </li>
                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#assessment_form" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('index.attr.assessment_form')</span></a> </li>
-           </ul>
+            </ul>
 
-           <!-- Nav tabs -->
+                <!-- Nav tabs -->
                 <div class="tab-content tabcontent-border">
    
                     <div class="tab-pane p-20 active" id="registerrtw" role="tabpanel">
-                             <ul class="nav customtab" role="tablist">
+                             
+                            <ul class="nav customtab" role="tablist">
                     
                                 <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#registrationrtw" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Application Info</span></a></li>
                                 <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#benefitCM" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Benefit Claim Info</span></a> </li>
-                             </ul>
+                            
+                            </ul>
 
                             <div class="tab-content tabcontent-border">
                                  <!-- RegistrationRTW details tab -->
@@ -77,11 +79,14 @@
                            </div> 
                     </div>
                     <div class="tab-pane p-20" id="ia" role="tabpanel">
+                        
                         <ul class="nav customtab" role="tablist" id="calendarTab">
+                            
                             <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#offerconfirmation" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Offer Confirmation</span></a> </li>
                             <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#appointment" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Appointment</span></a> </li>
                             <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#iarecovery" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Initial Assessment</span></a> </li>
                             <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#rehabplan" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Rehab Plan</span></a> </li>
+                        
                         </ul>
 
                         <div class="tab-content tabcontent-border">
@@ -201,7 +206,8 @@
                     <div class="tab-pane p-20" id="assessment_form" role="tabpanel">
                         @include('cmrtw.assessmentForm')
                     </div>
-            </div>
+                </div>
+
         </div>
     </div>
 </div>

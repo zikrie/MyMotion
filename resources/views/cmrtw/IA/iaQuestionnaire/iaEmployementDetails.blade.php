@@ -282,7 +282,7 @@
                         <div class="col-md-4">
                             <div class="form-group">   
                                 <label for="example-text-input" class="col-form-label">@lang('ia.attr.fulltimeWorkingAbility') <span class="text-danger">*</span></label>
-                                <div class="row"> 
+                                <div class="row p-l-20"> 
                                     <div class="custom-control custom-radio">
                                         <input type="radio" id="yes123" name="yes223" class="custom-control-input" required>
                                         <label class="custom-control-label" for="yes123">@lang('ia.attr.yes')</label>
@@ -481,7 +481,7 @@
 
 
 </script>
-<script type="text/javascript">
+{{-- <script type="text/javascript">
 
 // add
 var numE = 0;
@@ -537,7 +537,7 @@ $('#addEmployment').on('show.bs.modal', function (e)
 
 })
 
-</script> 
+</script>  --}}
 
 <script type="text/javascript">
 

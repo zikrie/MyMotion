@@ -7,7 +7,7 @@
                         <input type="hidden" name="_token" value="{{csrf_token()}}">
 
                         <div class="row p-t-20"> 
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="form-group">
                                     <label class="control-label">@lang('caseMgmt.attr.marriage_status') <span class="text-danger">*</span></label>
                                     <select class="form-control" required>
@@ -36,7 +36,7 @@
                             </div>
                         </div>
                         <hr>
-                        <div class="row p-t-20 p-l-20">
+                        <div class="row p-t-20">
                             <div class="table-responsive m-t-40" >
                                 <table id="" cellspacing="0" width="90%" >
                                     <thead>
@@ -169,6 +169,7 @@
                         </div>
 
                         <div class="row p-t-20"> 
+                            <!-- monthly income -->
                             <div class="col-md-6">
                                 <div class="row ">
                                     <div class="col-sm-6">
@@ -190,7 +191,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                        <input type="text" class="form-control" id="spouse_income" value="" placeholder="enter amount" required>
+                                            <input type="text" class="form-control" id="spouse_income" value="" placeholder="enter amount" required>
                                         </div>
                                     </div>
                                 </div>
@@ -202,7 +203,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                        <input type="text" class="form-control" id="baitulmal" value="" placeholder="enter amount" required>
+                                            <input type="text" class="form-control" id="baitulmal" value="" placeholder="enter amount" required>
                                         </div>
                                     </div>
                                 </div>
@@ -214,7 +215,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                        <input type="text" class="form-control" id="children_aid" value="" placeholder="enter amount" required>
+                                            <input type="text" class="form-control" id="children_aid" value="" placeholder="enter amount" required>
                                         </div>
                                     </div>
                                 </div>
@@ -226,7 +227,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                        <input type="text" class="form-control" id="perkeso_compesation" value="" placeholder="enter amount" required>
+                                            <input type="text" class="form-control" id="perkeso_compesation" value="" placeholder="enter amount" required>
                                         </div>
                                     </div>
                                 </div>
@@ -238,7 +239,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                        <input type="text" class="form-control" id="jkm_allowance" value="" placeholder="enter amount" required>
+                                            <input type="text" class="form-control" id="jkm_allowance" value="" placeholder="enter amount" required>
                                         </div>
                                     </div>
                                 </div>
@@ -250,7 +251,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                        <input type="text" class="form-control" id="ngo_aid" value="" placeholder="enter amount" required>
+                                            <input type="text" class="form-control" id="ngo_aid" value="" placeholder="enter amount" required>
                                         </div>
                                     </div>
                                 </div>
@@ -262,7 +263,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                        <input type="text" class="form-control" id="freelance" value="" placeholder="enter amount" required>
+                                            <input type="text" class="form-control" id="freelance" value="" placeholder="enter amount" required>
                                         </div>
                                     </div>
                                 </div>
@@ -274,19 +275,14 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                        <input type="text" class="form-control" id="business" value="" placeholder="enter amount" required>
+                                            <input type="text" class="form-control" id="business" value="" placeholder="enter amount" required>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row ">
-                                    <div class="col-sm-6">
+                                    <div class="col-sm-12">
                                         <div class="form-group">
                                             <label class="control-label">@lang('caseMgmt.attr.others')</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                        <input type="text" class="form-control" id="others" value="" placeholder="enter amount" required>
                                         </div>
                                     </div>
                                 </div>
@@ -299,7 +295,7 @@
                                     <div class="col-sm-6">
                                         <div class="form-group">
                                             <div class="input-group">
-                                                <input type="text" class="form-control" id="others" value="" placeholder="enter amount" required>
+                                                <input type="text" class="form-control" id="otherMonthlyincome2" value="" placeholder="enter amount" required>
                                                 <div class="input-group-append">
                                                     <button class="btn btn-success" type="button" onclick="otherIncomeFunc();"><i class="fa fa-plus"></i></button>
                                                 </div>
@@ -308,6 +304,7 @@
                                     </div>
                                 </div>
                                 <div id="otherIncome"></div>
+
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="form-group" style="text-align:right;">
@@ -321,145 +318,87 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- estimated monthly income -->
                             <div class="col-md-6">
                                 <div class="row ">
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <label class="control-label">@lang('caseMgmt.attr.salary_income')</label>
+                                            <label class="control-label">@lang('caseMgmt.attr.expensesDependent')</label>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="salary_income" value="" placeholder="enter amount" required>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row ">
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label class="control-label">@lang('caseMgmt.attr.spouse_income')</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                        <input type="text" class="form-control" id="spouse_income" value="" placeholder="enter amount" required>
+                                        <input type="text" class="form-control" id="expensesDependent" value="" placeholder="enter amount" required>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="row ">
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <label class="control-label">@lang('caseMgmt.attr.baitulmal')</label>
+                                            <label class="control-label">@lang('caseMgmt.attr.vehicles')</label>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                        <input type="text" class="form-control" id="baitulmal" value="" placeholder="enter amount" required>
+                                        <input type="text" class="form-control" id="vehicles" value="" placeholder="enter amount" required>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="row ">
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <label class="control-label">@lang('caseMgmt.attr.children_aid')</label>
+                                            <label class="control-label">@lang('caseMgmt.attr.housing')</label>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                        <input type="text" class="form-control" id="children_aid" value="" placeholder="enter amount" required>
+                                        <input type="text" class="form-control" id="housing" value="" placeholder="enter amount" required>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="row ">
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <label class="control-label">@lang('caseMgmt.attr.perkeso_compesation')</label>
+                                            <label class="control-label">@lang('caseMgmt.attr.eduLoan')</label>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                        <input type="text" class="form-control" id="perkeso_compesation" value="" placeholder="enter amount" required>
+                                        <input type="text" class="form-control" id="eduLoan" value="" placeholder="enter amount" required>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="row ">
-                                    <div class="col-sm-6">
+                                    <div class="col-sm-12">
                                         <div class="form-group">
-                                            <label class="control-label">@lang('caseMgmt.attr.jkm_allowance')</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                        <input type="text" class="form-control" id="jkm_allowance" value="" placeholder="enter amount" required>
+                                            <label class="control-label">@lang('caseMgmt.attr.otherLoan')</label>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="row ">
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <label class="control-label">@lang('caseMgmt.attr.ngo_aid')</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                        <input type="text" class="form-control" id="ngo_aid" value="" placeholder="enter amount" required>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row ">
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label class="control-label">@lang('caseMgmt.attr.freelance')</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                        <input type="text" class="form-control" id="freelance" value="" placeholder="enter amount" required>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row ">
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label class="control-label">@lang('caseMgmt.attr.business')</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                        <input type="text" class="form-control" id="business" value="" placeholder="enter amount" required>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row ">
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label class="control-label">@lang('caseMgmt.attr.others')</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                        <input type="text" class="form-control" id="others" value="" placeholder="enter amount" required>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row ">
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                        <input type="text" class="form-control" id="otherMonthlyincome" value="" placeholder="please specify" required>
+                                        <input type="text" class="form-control" id="othersLoan" value="" placeholder="please specify" required>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
                                             <div class="input-group">
-                                                <input type="text" class="form-control" id="others" value="" placeholder="enter amount" required>
+                                                <input type="text" class="form-control" id="otherLoans" value="" placeholder="enter amount" required>
                                                 <div class="input-group-append">
-                                                    <button class="btn btn-success" type="button" onclick="otherIncomeFunc();"><i class="fa fa-plus"></i></button>
+                                                    <button class="btn btn-success" type="button" onclick="otherEstimateIncomeFunc();"><i class="fa fa-plus"></i></button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="otherIncome"></div>
+                                <div id="otherLoansDisp"></div>
+
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="form-group" style="text-align:right;">
@@ -472,43 +411,22 @@
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                         <!-- remarks -->
                         <div class="row p-t-20"> 
-                            <div class="col-md-6">
+                            <div class="col-md-8">
                                 <div class="form-group">
                                     <label class="control-label">@lang('caseMgmt.attr.remarks')</label>
-                                    <input type="text" id="remarks" class="form-control">
+                                    <textarea class="form-control clearFields" rows="5" type="textarea"  id="dependentRemarks"></textarea>
                                 </div>
                             </div>
                         </div>
 
-                        <!--living cost  -->
-                        <div class="row p-t-20"> 
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label class="control-label">@lang('caseMgmt.attr.estimate_living_cost') <span class="text-danger">*</span></label>
-                                    <div class="row">
-                                        <div class="col-sm-6 nopadding">
-                                            <div class="form-group">
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" id="rm_value" name="rm_value" value="" placeholder="RM" required>
-                                                    <div class="input-group-append">
-                                                        <button class="btn btn-success" type="button" onclick="livingCost();"><i class="fa fa-plus"></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="living"></div>
+
                     </div>
-
                 </form>
-
             </div>
         </div>
     </div>
@@ -555,6 +473,26 @@
         $('.removeclass' + rid).remove();
         otherincome--;
     }
+
+        //add other estimated monthly income for other-mat
+        var otherEstimate = 1;
+
+        function otherEstimateIncomeFunc() {
+
+            otherEstimate++;
+            var objTo = document.getElementById('otherLoansDisp')
+            var divtest = document.createElement("div");
+            divtest.setAttribute("class", "removeclass" + otherEstimate);
+            var rdiv = 'removeclass' + otherEstimate;
+            divtest.innerHTML = '<div class="row"><div class="col-sm-6"><div class="form-group"><input type="text" class="form-control" id="otherLoans'+otherEstimate+'" value="" placeholder="please specify" required></div></div><div class="col-sm-6"><div class="form-group"><div class="input-group"><input type="text" class="form-control" id="otherLoans" value="" placeholder="enter amount" required><div class="input-group-append"><button class="btn btn-danger" type="button" onclick="remove_otherEstimateIncomeFunc('+otherEstimate+');"><i class="fa fa-minus"></i></button></div></div></div></div></div>';
+
+            objTo.appendChild(divtest)
+        }
+
+        function remove_otherEstimateIncomeFunc(rid) {
+            $('.removeclass' + rid).remove();
+            otherEstimate--;
+        }
 </script>
 
 

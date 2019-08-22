@@ -5,141 +5,136 @@
                 <form action="/registrationrtw">
                     <div class="form-body">
 
-                     <input type="hidden" name="_token" value="{{csrf_token()}}">
-<!-- 
-                    <div class="row p-t-20">
-                        <div class="col-md-4"> 
-                            <div class="form-group">
-                                <label class="control-label">@lang('caseMgmt.attr.treatment_type') <span class="text-danger">*</span></label>
-                                <select class="form-control" tabindex="1" required>
-                                    <option value="">Please Select</option>
-                                    <option value="operation">@lang('caseMgmt.attr.operation')</option>
-                                    <option value="conservative">@lang('caseMgmt.attr.conservative')</option>
-                                    <option value="therapy">@lang('caseMgmt.attr.therapy')</option>
-                                    <option value="alternative_treatment">@lang('caseMgmt.attr.alternative_treatment')</option>
-                                    <option value="others_option">@lang('caseMgmt.attr.others_option')</option>   
-                                </select> 
-                            </div>
-                        </div>
-                       <div class="col-md-4">
-                            <div class="form-group">
-                                <label class="control-label">@lang('caseMgmt.attr.treatment_specify') <span class="text-danger">*</span></label>
-                                <input type="text" id="treatment_specify" class="form-control" required>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label class="control-label">@lang('caseMgmt.attr.remarks')</label>
-                                <div class="input-group">
-                                    <input type="text" id="remarks" class="form-control">
-                                    <div class="input-group-append">
-                                        <button class="btn btn-success" type="button" onclick="treatmentDetails();"><i class="fa fa-plus"></i></button>
+                        <input type="hidden" name="_token" value="{{csrf_token()}}">
+                        <!-- 
+                            <div class="row p-t-20">
+                                <div class="col-md-4"> 
+                                    <div class="form-group">
+                                        <label class="control-label">@lang('caseMgmt.attr.treatment_type') <span class="text-danger">*</span></label>
+                                        <select class="form-control" tabindex="1" required>
+                                            <option value="">Please Select</option>
+                                            <option value="operation">@lang('caseMgmt.attr.operation')</option>
+                                            <option value="conservative">@lang('caseMgmt.attr.conservative')</option>
+                                            <option value="therapy">@lang('caseMgmt.attr.therapy')</option>
+                                            <option value="alternative_treatment">@lang('caseMgmt.attr.alternative_treatment')</option>
+                                            <option value="others_option">@lang('caseMgmt.attr.others_option')</option>   
+                                        </select> 
+                                    </div>
+                                </div>
+                            <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label">@lang('caseMgmt.attr.treatment_specify') <span class="text-danger">*</span></label>
+                                        <input type="text" id="treatment_specify" class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label">@lang('caseMgmt.attr.remarks')</label>
+                                        <div class="input-group">
+                                            <input type="text" id="remarks" class="form-control">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-success" type="button" onclick="treatmentDetails();"><i class="fa fa-plus"></i></button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div id="treatmentDetail"></div> -->
+                            <div id="treatmentDetail"></div> -->
 
-                    <!-- <div class="row p-t-20">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label class="control-label">Type of Treatment</label>
-                            </div>
-                        </div>
-                    </div> -->
+                            <!-- <div class="row p-t-20">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label">Type of Treatment</label>
+                                    </div>
+                                </div>
+                            </div> -->
 
-                    <div class="row p-t-20 p-l-20">
-                            <div class="table-responsive m-t-80" >
-                                <table id="" cellspacing="0" width="40%" ">
-                                   
-                                    <tbody class='align-middle'>
-                                        <tr>
-                                            <label class="control-label">Type of Treatment  <span class="text-danger">*</span></label>
-                                        </tr>
-                                 
-                                    
-
-                                        <tr>
-                                            <td><label class="control-label">Surgery</label></td>
-                                            <td>
-                                                <div class="row">
-                                                    <div class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" id="surgery">
-                                                        <label class="custom-control-label" for="surgery"></label>
-                                                    </div>
-                                                    <div class="col-md-10">
-                                                        <input type="text" id="" class="form-control" required> 
-                                                    </div>
+                        <div class="row p-t-20">
+                            <div class="table-responsive m-t-40" >
+                                <table id="try" cellspacing="0" width="60%"> 
+                                    <tr>
+                                        <label class="control-label">Type of Treatment  <span class="text-danger">*</span></label>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="control-label">Surgery</label></td>
+                                        <td>
+                                            <div class="row">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="surgery">
+                                                    <label class="custom-control-label" for="surgery"></label>
                                                 </div>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><label class="control-label">Conservative</label></td>
-                                            <td>
-                                                <div class="row">
-                                                    <div class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" id="conservative">
-                                                        <label class="custom-control-label" for="conservative"></label>
-                                                    </div>
-                                                    <div class="col-md-10">
-                                                        <input type="text" id="" class="form-control" required> 
-                                                    </div>
+                                                <div class="col-md-10">
+                                                    <input type="text" id="" class="form-control" required> 
                                                 </div>
-                                            </td>
-                                        </tr>
+                                            </div>
+                                        </td>
+                                    </tr>
 
-                                        <tr>
-                                            <td><label class="control-label">Mediaction</label></td>
-                                            <td>
-                                                <div class="row">
-                                                    <div class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" id="mediaction">
-                                                        <label class="custom-control-label" for="mediaction"></label>
-                                                    </div>
-                                                    <div class="col-md-10">
-                                                        <input type="text" id="" class="form-control" required> 
-                                                    </div>
+                                    <tr>
+                                        <td><label class="control-label">Conservative</label></td>
+                                        <td>
+                                            <div class="row">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="conservative">
+                                                    <label class="custom-control-label" for="conservative"></label>
                                                 </div>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><label class="control-label">Therapy</label></td>
-                                            <td>
-                                                <div class="row">
-                                                    <div class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" id="therapy">
-                                                        <label class="custom-control-label" for="therapy"></label>
-                                                    </div>
-                                                    <div class="col-md-10">
-                                                        <input type="text" id="" class="form-control" required> 
-                                                    </div>
+                                                <div class="col-md-10">
+                                                    <input type="text" id="" class="form-control" required> 
                                                 </div>
-                                            </td>
-                                        </tr>
+                                            </div>
+                                        </td>
+                                    </tr>
 
-                                        <tr>
-                                            <td><label class="control-label">Alternatif Treatment</label></td>
-                                            <td>
-                                                <div class="row">
-                                                    <div class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" id="alternatifTreatment">
-                                                        <label class="custom-control-label" for="alternatifTreatment"></label>
-                                                    </div>
-                                                    <div class="col-md-10">
-                                                        <input type="text" id="" class="form-control" required> 
-                                                    </div>
+                                    <tr>
+                                        <td><label class="control-label">Mediaction</label></td>
+                                        <td>
+                                            <div class="row">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="mediaction">
+                                                    <label class="custom-control-label" for="mediaction"></label>
                                                 </div>
-                                            </td>
-                                        </tr>
+                                                <div class="col-md-10">
+                                                    <input type="text" id="" class="form-control" required> 
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
 
+                                    <tr>
+                                        <td><label class="control-label">Therapy</label></td>
+                                        <td>
+                                            <div class="row">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="therapy">
+                                                    <label class="custom-control-label" for="therapy"></label>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <input type="text" id="" class="form-control" required> 
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
 
-                                        <tr>
-                                            <td><label class="control-label">Other</label></td>
-                                            <td>
-                                                <div class="row">
+                                    <tr>
+                                        <td><label class="control-label">Alternatif Treatment</label></td>
+                                        <td>
+                                            <div class="row">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="alternatifTreatment">
+                                                    <label class="custom-control-label" for="alternatifTreatment"></label>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <input type="text" id="" class="form-control" required> 
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><label class="control-label">Other</label></td>
+                                        <td>
+                                            <div class="row">
+                                                <div class="input-group">
                                                     <div class="custom-control custom-checkbox">
                                                         <input type="checkbox" class="custom-control-input" id="other">
                                                         <label class="custom-control-label" for="other"></label>
@@ -147,82 +142,65 @@
                                                     <div class="col-md-10">
                                                         <input type="text" id="" class="form-control" required> 
                                                     </div>
-                                                    <td>
-                                                        <div class="input-group-append">
-                                                            <button class="btn btn-success" type="button" onclick="treatmentDetailsIA();"><i class="fa fa-plus"></i></button>
-                                                        </div>
-                                                    </td>
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-success" type="button" onclick="treatmentDetailsIA();"><i class="fa fa-plus"></i></button>
+                                                    </div>
                                                 </div>
-                                               
-                                            </td>
-                                        </tr>
-<!-- 
-                                       <tr>
-                                         
-                                            <td><div id="treatmentDetailsIA"></div></td>
-                                        </tr>  -->
-                                        
-                                    </tbody>
-                                   
+                                            </div>   
+                                        </td>
+                                    </tr>
+                                    <tr><div id="treatmentDetailsIA"></div></tr>
                                 </table>
-                                <div id="treatmentDetailsIA"></div>
-                            </div>
-                            
-                        </div>
-                       
-                        
+                                
+                            </div>     
+                        </div>    
                         <hr>
 
-
-                        <div class="row p-t-20 p-l-20">
-                            <div class="table-responsive m-t-40" >
-                                <table id="" cellspacing="0" width="40%" >
-                                   
-                                    <tbody class='align-middle'>
-                                        <tr>
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <label class="control-label">Medical Report Date <span class="text-danger">*</span></label>
-                                                    <input type="date" id="" class="form-control" required> 
-                                                </div>
-                                            </div>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                        <div class="row p-t-20">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">Medical Report Date <span class="text-danger">*</span></label>
+                                    <input type="date" id="" class="form-control" required> 
+                                </div>
                             </div>
                         </div>
                         <hr>
                    
-
-                        <div class="row p-t-20 p-l-20">
-                            <div class="table-responsive m-t-40" >
-                                <table id="" cellspacing="0" width="40%" >
-                                   
-                                    <tbody class='align-middle'>
-                                        <tr>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label class="control-label">Remarks <span class="text-danger">*</span></label>
-                                                    <textarea class="form-control" id="" rows="3" placeholder=""></textarea>
-                                                </div>
-                                            </div>  
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                        <div class="row p-t-20">
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <label class="control-label">Remarks <span class="text-danger">*</span></label>
+                                    <textarea class="form-control" id="" rows="3" placeholder=""></textarea>
+                                </div>
+                            </div>  
                         </div>
 
 
-
-
-
-
-
-                </div>
-            </form>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </div>
-</div>
+<!-- zikrie - iA (treatments details) -->
+<script>
+	var treatment_Details = 1;
 
+    function treatmentDetailsIA() {
+
+        treatment_Details++;
+        var objTo = document.getElementById('treatmentDetailsIA')
+        var divtest = document.createElement("div");
+        divtest.setAttribute("class", "removeclass" + treatment_Details);
+        var rdiv = 'removeclass' + treatment_Details;
+        divtest.innerHTML = '<td><label class="control-label">Other '+treatment_Details+'</label></td><td><div class="row"><div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="other"><label class="custom-control-label" for="other"></label></div><div class="col-md-10"><input type="text" id="" class="form-control" required></div><td><div class="input-group-append"><button class="btn btn-danger" type="button" onclick="remove_treatmentDetails('+treatment_Details+');"><i class="fa fa-minus"></i></button></div></td></div></td>';
+
+        objTo.appendChild(divtest)
+    }
+
+    function remove_treatmentDetails(rid) {
+        $('.removeclass' + rid).remove();
+        treatment_Details--;
+    }
+</script>
 

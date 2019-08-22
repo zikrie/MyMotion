@@ -29,7 +29,6 @@
                         </div>
                         <div class="col-md-6">
                             <div id="hidePengesyoran" class="form-group" style="display:none">
-
                                 <div class="form-group">
                                     <label class="control-label">@lang('caseMgmt.attr.specify')</label>
                                     <input class="form-control"  type="text"  value="" id="specify">

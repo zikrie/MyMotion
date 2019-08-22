@@ -734,3 +734,8 @@ body#login{
 /* .btn{
     line-height:2rem !important;
 } */
+
+/* zik cm/prm/attendance */
+.pt-3-half {
+    padding-top: 1.4rem;
+    }

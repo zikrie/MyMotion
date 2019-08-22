@@ -203,10 +203,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                        </div>
+                        <div class="row p-t-20">
+                            <div class="col-md-8">
                                 <div class="form-group">
                                     <label class="control-label">@lang('caseMgmt.attr.adl_addinfo')</label>
-                                    <input type="text" id="addinfo" class="form-control">
+                                    <textarea class="form-control clearFields" rows="5" type="textarea"  id="addInfo"></textarea>
                                 </div>
                             </div>
                         </div>

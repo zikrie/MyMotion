@@ -1,3 +1,23 @@
+@section('form_control1')
+<style>
+    .form-control1 {
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #949596ab !important;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    margin: 0px 5px !important;
+    padding:5px !important;
+}
+</style>
+@endsection
+
+
 <div class="row">
     <div class="col-12">
         <div class="card">
@@ -123,7 +143,7 @@
                         </div>
                     </div>
                         <div class="table-responsive">  
-                            <table id="add-work_history" class="display table table-hover table-striped table-bordered" width="100%">
+                            <table id="add-treatmentappointment" class="display table table-hover table-striped table-bordered" width="100%">
                             <thead>
                                 <tr>
                                     <th align="top">No.</th>
@@ -157,8 +177,8 @@
                                     <th style="display:none;">Action</th>  --}}                 
                                 </tr>
                             </thead>
-                            <tbody id="add-work_history-body">
-                                <tr id= "addWorkHistory_1">
+                            <tbody id="add-treatmentappointment-body">
+                                <tr id= "TreatmentAppointment_0">
                                 </tr>
                             </tbody>
                          </table>
@@ -226,7 +246,7 @@
 </div>
 {{-- Add Work History --}}
 <div id="addTreatmentAppointment" class="modal fade" role="dialog">
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title">@lang('caseMgmt.attr.multiple_appointment')</h4>
@@ -239,13 +259,13 @@
                             <div class="col-md-4"> 
                                 <div class="form-group">
                                     <label class="control-label">@lang('caseMgmt.attr.appointment_date') <span class="text-danger">*</span></label>
-                                    <input type="date" id="appointment_date" class="form-control" required>       
+                                    <input type="date" id="appointment_date" class="form-control1" required>       
                                 </div>
                             </div>
                             <div class="col-md-4"> 
                                 <div class="form-group">
                                     <label class="control-label">@lang('caseMgmt.attr.location') <span class="text-danger">*</span></label>
-                                        <select class="form-control" onchange="myHospitalmodal(this.options[this.selectedIndex].value)" required>
+                                        <select class="form-control1" onchange="myHospitalmodal(this.options[this.selectedIndex].value)" required>
                                             <option value="">Please Select</option>
                                             <option value="government">@lang('caseMgmt.attr.government')</option>
                                             <option value="private">@lang('caseMgmt.attr.private')</option>
@@ -256,7 +276,7 @@
                                  <div class="form-group">
                                     <div id="hideGovernmentmodal" class="form-group" style="display:none">
                                         <label class="control-label">@lang('caseMgmt.attr.department_name') <span class="text-danger">*</span></label>
-                                        <select class="form-control" tabindex="1" onchange="myNamaHospitalmodal(this.options[this.selectedIndex].value)" required>
+                                        <select class="form-control1" tabindex="1" onchange="myNamaHospitalmodal(this.options[this.selectedIndex].value)" required>
                                             <option value="">Please Select</option>
                                              <option value="general_department">@lang('caseMgmt.attr.general_department')</option>
                                              <option value="rehab_department">@lang('caseMgmt.attr.rehab_department')</option>
@@ -296,20 +316,20 @@
                         <div class="col-md-4"> 
                             <div class="form-group">
                                 <label class="control-label">@lang('caseMgmt.attr.treatment_Dr_name') <span class="text-danger">*</span></label>
-                                <input type="text" id="treatment_Dr_name" class="form-control" required>
+                                <input type="text" id="treatment_Dr_name" class="form-control1" required>
                             </div>
                         </div>
                         <div class="col-md-4"> 
                             <div class="form-group">
                                 <label class="control-label">@lang('caseMgmt.attr.doctor_phoneno') <span class="text-danger">*</span></label>
-                                <input type="text" id="doctor_phoneno" class="form-control" required>
+                                <input type="text" id="doctor_phoneno" class="form-control1" required>
                             </div>
                         </div>
                     </div>
                             
                 </form>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary edit" data-dismiss="modal" id="addNewWorkHistory">
+                    <button type="button" class="btn btn-primary edit" data-dismiss="modal" id="addNewTreatmentAppoinment">
                         <span class='glyphicon glyphicon-check'></span>Save
                     </button>
                 </div>
@@ -322,9 +342,13 @@
     
     function MedicalAppoinment() {
             $('#hideMedAppointment').show();
+            $('#hideSingleAppointment').hide();
+            $('#hideMultipleAppointment').hide();
     }
     function MedicalAppoinment2() {
             $('#hideMedAppointment').hide();
+            $('#hideSingleAppointment').hide();
+            $('#hideMultipleAppointment').hide();
     }
 
     function MultipleAppoinment() {
@@ -351,6 +375,7 @@
         {
             $('#hideGovernment').hide();
             $('#hideHospitalname').show();
+            $('#hideNamaHospital').hide();
         }
         else
          {
@@ -379,11 +404,13 @@
         {
             $('#hideGovernmentmodal').show();
             $('#hideHospitalnamemodal').hide();
+
         } 
         else if(aval == "private")
         {
             $('#hideGovernmentmodal').hide();
             $('#hideHospitalnamemodal').show();
+            $('#hideNamaHospitalmodal').hide();
         }
         else
          {
@@ -409,44 +436,44 @@
 <script type="text/javascript">
 
 // add
-var numWH = 0;
+var numTA = 0;
 $(document).ready(function()
 {
-    $("#addWorkHistory").on('click', '#addNewWorkHistory', function()
+    $("#addTreatmentAppointment").on('click', '#addNewTreatmentAppoinment', function()
     {
-        numWH++;
-        var tr = '<tr id="addWorkHistory_'+numWH+'">' ;
+        numTA++;
+        var tr = '<tr id="TreatmentAppointment_'+numTA+'">';
            
-            tr += '<td>'+numWH+'</td>';
-            $('#addWorkHistory').find('.form-control').each(function()
+            tr += '<td>'+numTA+'</td>';
+            $('#addTreatmentAppointment').find('.form-control1').each(function()
             {
                 console.log($(this).attr('id'), $(this).val());
                 tr += '<td>'+$(this).val()+'</td>';
             })
             tr += '<td>';
             tr += '<div class= "btn-group">';       
-            tr += '<button class="edit-modal btn btn-info" data-toggle="modal" data-target="#addWorkHistory"><span class="glyphicon glyphicon-edit"></span> Update</button>'; 
-            tr += ' <button class="delete-modal btn btn-danger" data-id="'+numWH+'"><span class="glyphicon glyphicon-trash"></span> Delete </button>'; 
+            tr += '<button class="edit-modal btn btn-info" data-toggle="modal" data-target="#addTreatmentAppointment"><span class="glyphicon glyphicon-edit"></span> Update</button>'; 
+            tr += ' <button class="delete-modal btn btn-danger" data-id="'+numTA+'"><span class="glyphicon glyphicon-trash"></span> Delete </button>'; 
             tr += '</div>';
             tr += '</td>';
             tr += '</tr>';
-        $('#add-work_history-body').append(tr);
+        $('#add-treatmentappointment-body').append(tr);
 
     });
 
 
     // delete a post
 $(document).on('click', '.delete-modal', function() {
-    $('#addWorkHistory_'+$(this).data('id')).detach();
-    numWH--;
+    $('#TreatmentAppointment_'+$(this).data('id')).detach();
+    numTA--;
 });
 
 
-
-
-$('#addWorkHistory').on('show.bs.modal', function (e) 
+$('#addTreatmentAppointment').on('show.bs.modal', function (e) 
 {
     console.log($(e.relatedTarget).data('id'));
+
+})
 
 })
 

@@ -7,6 +7,7 @@
 @section('head')
 <link href="{{ asset("bower_components/footable/css/footable.standalone.min.css")}}" rel="stylesheet" type="text/css" />
 <link href="{{asset("PERKESO_UI/assets/node_modules/calendar/dist/fullcalendar.css")}}" rel="stylesheet" />
+<link href="{{asset('js-year-calendar/dist/js-year-calendar.css')}}" rel="stylesheet">
 
 @endsection
 
@@ -98,7 +99,7 @@
 
                             <!-- supporting details tab -->
                             <div class="tab-pane p-20" id="appointment" role="tabpanel">
-                                @include('cmrtw.IA.appointment')
+                                @include('cmrtw.IA.appointment.appointment')
                             </div>
 
                             <div class="tab-pane p-20 " id="iarecovery" role="tabpanel">

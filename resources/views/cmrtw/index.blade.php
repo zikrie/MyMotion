@@ -7,6 +7,7 @@
 @section('head')
 <link href="{{ asset("bower_components/footable/css/footable.standalone.min.css")}}" rel="stylesheet" type="text/css" />
 <link href="{{asset("PERKESO_UI/assets/node_modules/calendar/dist/fullcalendar.css")}}" rel="stylesheet" />
+<link href="{{asset('js-year-calendar/dist/js-year-calendar.css')}}" rel="stylesheet">
 
 @endsection
 
@@ -98,7 +99,7 @@
 
                             <!-- supporting details tab -->
                             <div class="tab-pane p-20" id="appointment" role="tabpanel">
-                                @include('cmrtw.IA.appointment')
+                                @include('cmrtw.IA.appointment.appointment')
                             </div>
 
                             <div class="tab-pane p-20 " id="iarecovery" role="tabpanel">
@@ -120,6 +121,8 @@
 
                             <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#rehab_al" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('index.attr.rehab_al')</span></a> </li>
 
+                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#discussion2" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.discussion')</span></a> </li>
+
                             <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#case_note" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('index.attr.case_note')</span></a> </li>
 
                             <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#case_status" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('index.attr.case_status')</span></a> </li>
@@ -139,6 +142,10 @@
                             <div class="tab-pane p-20" id="rehab_al" role="tabpanel">
                                 @include('cmrtw.caseMgmt.RA.rehabAllowanceList')
                             </div>
+
+                            <div class="tab-pane p-20" id="discussion2" role="tabpanel">
+                                    @include('cmrtw.caseMgmt.mainDiscussion')
+                                </div>
 
                             <div class="tab-pane p-20" id="case_note" role="tabpanel">
                                 @include('cmrtw.caseMgmt.caseNote')

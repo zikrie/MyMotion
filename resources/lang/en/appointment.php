@@ -2,7 +2,8 @@
  
 return [
 
-	'title' => 'Schedule Appointment',
+    'title' => 'Schedule Appointment',
+    'title1' => 'Set Appointment',
 
     'attr' => [
     	'name' => 'Name',

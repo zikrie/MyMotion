@@ -43,7 +43,7 @@
                                         <tr>
                                             <th><label class="control-label">@lang('caseMgmt.attr.dependent_number') <span class="text-danger">*</span></label></th>
                                             <th><label class="control-label">@lang('caseMgmt.attr.normal') <span class="text-danger">*</span></label></th>
-                                            <th><label class="control-label"><u>@lang('caseMgmt.attr.pwd')</u></label></th>
+                                            <th><label class="control-label">@lang('caseMgmt.attr.pwd')</label></th>
                                         </tr>
                                     </thead>
                                     <tbody class='align-middle'>
@@ -57,6 +57,13 @@
                                             <td><div class="row"><div class="col-md-6"><input type="text" class="form-control" id="not_school" value="" placeholder="enter number of members" required></div><div class="col-md-4">
                                                 <label class="control-label">@lang('caseMgmt.attr.person')</label></div></div></td>
                                             <td><div class="row"><div class="col-md-6"><input type="text" class="form-control" id="not_schoolPWD" value="" placeholder="enter number of members" required></div><div class="col-md-4">
+                                                <label class="control-label">@lang('caseMgmt.attr.person')</label></div></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label class="control-label">@lang('caseMgmt.attr.noFormalEdu')</label></td>
+                                            <td><div class="row"><div class="col-md-6"><input type="text" class="form-control" id="noFormalEdu" value="" placeholder="enter number of members" required></div><div class="col-md-4">
+                                                <label class="control-label">@lang('caseMgmt.attr.person')</label></div></div></td>
+                                            <td><div class="row"><div class="col-md-6"><input type="text" class="form-control" id="noFormalEduPWD" value="" placeholder="enter number of members" required></div><div class="col-md-4">
                                                 <label class="control-label">@lang('caseMgmt.attr.person')</label></div></div></td>
                                         </tr>
                                         <tr>
@@ -80,13 +87,7 @@
                                             <td><div class="row"><div class="col-md-6"><input type="text" class="form-control" id="universityPWD" value="" placeholder="enter number of members" required></div><div class="col-md-4">
                                                 <label class="control-label">@lang('caseMgmt.attr.person')</label></div></div></td>
                                         </tr>
-                                        <tr>
-                                            <td><label class="control-label">@lang('caseMgmt.attr.disabled')</label></td>
-                                            <td><div class="row"><div class="col-md-6"><input type="text" class="form-control" id="disabled" value="" placeholder="enter number of members" required></div><div class="col-md-4">
-                                                <label class="control-label">@lang('caseMgmt.attr.person')</label></div></div></td>
-                                            <td><div class="row"><div class="col-md-6"><input type="text" class="form-control" id="disabledPWD" value="" placeholder="enter number of members" required></div><div class="col-md-4">
-                                                <label class="control-label">@lang('caseMgmt.attr.person')</label></div></div></td>
-                                        </tr>
+                                        
                                     </tbody>
                                 </table>
                             </div>

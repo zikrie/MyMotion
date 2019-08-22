@@ -16,6 +16,7 @@
 
     @include('layouts.css')
     @yield('head')
+    @yield('form_control1')
     {{--C:\DATASS\ProjekAku\Perkeso\perkeso\perkeso\public\PERKESO_UI\assets\node_modules\jquery--}}
     <script src="{{ asset('/js/perkeso_ui/jquery-3.2.1.min.js') }}"></script>
     <link href="{{ asset('/css/overrides.css') }}" rel="stylesheet" type="text/css" />

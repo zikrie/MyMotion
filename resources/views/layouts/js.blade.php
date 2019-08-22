@@ -87,8 +87,8 @@
   <script src="/PERKESO_UI/horizontal-nav-fullwidth/dist/js/sidebarmenu.js"></script>
   
 {{-- Calendar Appointment --}}
-<script src="/PERKESO_UI/assets/node_modules/sticky-kit-master/dist/sticky-kit.min.js"></script>
-<!-- Calendar JavaScript -->
+<!-- <script src="/PERKESO_UI/assets/node_modules/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    //Calendar JavaScript
     <script src="/PERKESO_UI/assets/node_modules/calendar/jquery-ui.min.js"></script>
     <script src="/PERKESO_UI/assets/node_modules/moment/moment.js"></script>
     <script src='/PERKESO_UI/assets/node_modules/calendar/dist/fullcalendar.min.js'></script>
@@ -101,9 +101,10 @@
         "use strict";
         $("input,select,textarea").not("[type=submit]").jqBootstrapValidation();
     }(window, document, jQuery);
-    </script>
+    </script> -->
 
-
+<script src="{{asset('js-year-calendar/dist/js-year-calendar.js')}}"></script>
+@include('cmrtw.IA.appointment.takwim.calendar');
 
 <script>
     // MAterial Date picker    

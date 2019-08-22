@@ -19,16 +19,18 @@
                                                     </select>
                                                 </div>
                                             </div>
+                                </div>
+                                <div class="row p-t-20">
                                             <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label class="control-label">@lang('caseMgmt.attr.remarks')</label>
-                                                        <input type="text" id="remarks" class="form-control">
+                                                         <textarea class="form-control" rows="5" type="textarea"  id="remarks"></textarea>
                                                     </div>
                                                 </div>
                                         </div>
                                 </div>
-                            </div>
                         </form>
+                    </div>
                     </div>
                 </div>
             </div>

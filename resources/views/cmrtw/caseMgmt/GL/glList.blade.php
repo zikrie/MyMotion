@@ -21,25 +21,25 @@
                                 <div id="collapseGLletter" class="collapse" role="tabpanel" aria-labelledby="headingGLletter">
                                     <div class="card-body">
                                         <div id="accordionLesisure" role="tablist" class="accordion" >
+                                            
                                             <div class="card m-b-0">
-                                                <div class="card-header" style="background-color: #98cb5b;" role="tab" id="headingSupplierGL ">
+                                                <div class="card-header" style="background-color: #d8e7e7;" role="tab" id="headingpreviousGL ">
                                                     <h5 class="mb-0">                           
-                                                        <a class="link" data-toggle="collapse" data-parent="#accordionSupplierGL" href="#collapseSupplierGL" aria-expanded="true" aria-controls="collapseSupplierGL">
-                                                            <i class="fa fa-plus"></i>  @lang('caseMgmt.attr.supplier')
+                                                        <a class="link" data-toggle="collapse" data-parent="#accordionSupplierGL" href="#collapsepreviousGL" aria-expanded="true" aria-controls="collapsepreviousGL">
+                                                            <i class="fa fa-plus"></i>   @lang('caseMgmt.attr.previous_gl')
                                                         </a>
                                                     </h5>
                                                 </div>
-                                                <div id="collapseSupplierGL" class="collapse" role="tabpanel" aria-labelledby="headingSupplierGL">
+                                                <div id="collapsepreviousGL" class="collapse" role="tabpanel" aria-labelledby="headingpreviousGL">
                                                     <div class="card-body">
-                                                        @include('cmrtw.caseMgmt.GL.supplierDetails')    
+                                                    @include('cmrtw.caseMgmt.GL.previousGl') 
                                                     </div>
                                                 </div>
                                             </div>
 
                                             <br>
-
                                             <div class="card m-b-0">
-                                                <div class="card-header" style="background-color: #98cb5b;" role="tab" id="headingGLdetails ">
+                                                <div class="card-header" style="background-color: #d8e7e7;" role="tab" id="headingGLdetails ">
                                                     <h5 class="mb-0">                           
                                                         <a class="link" data-toggle="collapse" data-parent="#accordionSupplierGL" href="#collapseGLdetails" aria-expanded="true" aria-controls="collapseGLdetails">
                                                             <i class="fa fa-plus"></i>  @lang('caseMgmt.attr.gl_letter')
@@ -54,21 +54,23 @@
                                             </div>
 
                                             <br>
-
+                                                                                       
                                             <div class="card m-b-0">
-                                                <div class="card-header" style="background-color: #98cb5b;" role="tab" id="headingpreviousGL ">
+                                                <div class="card-header" style="background-color: #d8e7e7;" role="tab" id="headingSupplierGL ">
                                                     <h5 class="mb-0">                           
-                                                        <a class="link" data-toggle="collapse" data-parent="#accordionSupplierGL" href="#collapsepreviousGL" aria-expanded="true" aria-controls="collapsepreviousGL">
-                                                            <i class="fa fa-plus"></i>   @lang('caseMgmt.attr.previous_gl')
+                                                        <a class="link" data-toggle="collapse" data-parent="#accordionSupplierGL" href="#collapseSupplierGL" aria-expanded="true" aria-controls="collapseSupplierGL">
+                                                            <i class="fa fa-plus"></i>  @lang('caseMgmt.attr.sp_details')
                                                         </a>
                                                     </h5>
                                                 </div>
-                                                <div id="collapsepreviousGL" class="collapse" role="tabpanel" aria-labelledby="headingpreviousGL">
+                                                <div id="collapseSupplierGL" class="collapse" role="tabpanel" aria-labelledby="headingSupplierGL">
                                                     <div class="card-body">
-                                                    @include('cmrtw.caseMgmt.GL.previousGl') 
+                                                        @include('cmrtw.caseMgmt.GL.serviceProDetails')    
                                                     </div>
                                                 </div>
                                             </div>
+
+                                            
                                         </div>
                                     </div>
                                 </div>

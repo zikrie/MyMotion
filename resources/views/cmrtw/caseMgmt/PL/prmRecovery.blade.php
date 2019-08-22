@@ -16,7 +16,7 @@
                                                             <input type="radio" name="optradio" checked>@lang('caseMgmt.attr.prm')
                                                           </label>
                                                           <label class="radio-inline">
-                                                            <input type="radio" name="optradio">@lang('caseMgmt.attr.osm')
+                                                            <input type="radio" name="optradio">@lang('caseMgmt.attr.osm_psm_opm')
                                                           </label>
                                                           <label class="radio-inline">
                                                             <input type="radio" name="optradio">@lang('caseMgmt.attr.psm')

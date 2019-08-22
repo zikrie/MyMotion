@@ -49,6 +49,8 @@ return [
         'specify' => 'If Other, Please specify',
         'specify_no' => 'If No, Please specify',
         'other' => 'Other',
+        'hospital_name' => 'Hospital Name',
+        'doctor_phoneno' => 'Doctor Phone No',
 
 
         'doctor_name' => 'Doctor Name',
@@ -260,7 +262,6 @@ return [
         'equipment_quantity'=> 'Quantity',
         'trrc_name'=> 'Name',
         'journey_report'=> 'Journey Report',
-        'mobility'=> 'Mobility',
         'vehicleation' => 'Vehicle',
         'own_vehicles' => 'Own Vehicles',
         'modified_vehicles' => 'Modified Vehicle (According to Current Requirements)',
@@ -530,17 +531,17 @@ return [
         'rehab_plan' => 'Rehab Plan',
         'start_time_suggest' => 'Start Time Suggestion',
         'estimation_cost' => 'Estimation Cost (RM)',
-        'status' => 'Status',
         'wsa' => 'WSA',
         'fce' => 'FCE',
         'prm' => 'PRM',
         'mm' => 'MM',
         'vtm' => 'VTM',
         'jp' => 'JP',
-        'osm' => 'OSM',
+        'osm_psm_opm' => 'OSM/PSM/OPM',
         'psm' => 'PSM',
         'ism' => 'ISM',
         'financial' => 'Financial/Business Support',
+        'mobility' => 'Mobility',
 
         //wsa
         'salary_status' => 'Salary Status',
@@ -761,7 +762,6 @@ return [
         'answer5' => 'Strongly Agree',
        
        //osm_and_financial
-        'osm_psm_opm' => 'OSM/PSM/OPM',
         'bus_financial' => 'Business/Financial Support',
         'recovery_tool' => 'Recovery Tool',
         'organisation' => 'Organisation/Hospital',
@@ -796,6 +796,7 @@ return [
         'discuss_purpose' => 'Purpose of Discussion',
         'discuss_note' => 'Note',
         'discuss_comment' => 'Comment',
+        'category' => 'Category',
         
         //va
         'va_title' => 'Vocational Assessment',
@@ -820,10 +821,7 @@ return [
         'gl_letter' => 'Guarantee Letter Details',
         'recommend_cm' => 'Recommendation by Case Manager',
         'scm_approval' => 'SCM HQ Approval',
-
-
-        //recommend_cm
-
+        'scm_approval' => 'SCM HQ Approval',
         'action' => 'Action',
         'proceed' => 'Proceed',
         'close' => 'Close',
@@ -836,7 +834,7 @@ return [
         'supplier' => 'Supplier Details',
         'supplier_list' => 'Supplier List',
         'justification' => 'Choice Justification',
-        'previous_gl' => 'Previous GL Details',
+        'previous_gl' => 'Previous Guarantee Letter Details',
         'plan_type' => 'Plan Type',
         'gl_number' => 'Guarantee Letter Number',
         'gl_type' => 'Type of Guarantee Letter',
@@ -850,32 +848,52 @@ return [
         'supplier_name' => 'Supplier Name',
         'supplier_address' => 'Supplier Address',
         'address' => 'Address',
+        'gl_refno' => 'GL Reference No',
+        'sp_details' => 'Service Provider Details',
+        'extension' => 'Extension',
+        'basic_equip' => 'Basic Equipment',
+        'advanced_equip' => 'Advanced Equipment',
+        'modalitity' => 'Modalitity',
+        'modalitit1' => ' Therapeutic Ultrasound',
+        'modalitity2' => 'Hydrocollator Pack',
+        'modalitity3' => 'TENS',
+        'modalitity4' => 'Cryocuff',
+        'modalitity5' => 'Ice pack',
 
         //case_note
         'case_note' => 'Case Note',
         'activity_date' => 'Activity Date',
         'title' => 'Title',
         'description' => 'Description',
-        'plan_type' => 'Type',
 
 
         //case_status
-        'rtw_status' => 'RTW Status',
         'case_status_details' => 'Case Status Details',
+        'current_status' => 'Current RTW Status',
+        'initial_status' => 'Initial RTW Status',
+        'current_date' => 'Current Return to Work Date',
+        'initial_date' => 'Initial Return to Work Date',
         'rtw_date' => 'Return to Work Date',
         'hierarchy_rtw' => 'Hierarchy RTW',
-        'hiera1' => 'Same job,same employer',
-        'hiera2' => 'Different job,same employer',
-        'hiera3' => 'Same job,different employer',
-        'hiera4' => 'Different job,different employer',
+        'hiera1' => 'Similar work ,same employer',
+        'hiera2' => 'Different work,same employer',
+        'hiera3' => 'Similar work,different employer',
+        'hiera4' => 'Different work,different employer',
         'case_status' => 'Case Status',
+        'case_status1' => 'On Going RTW Plan',
+        'case_status2' => 'Defaulted',
+        'case_status3' => 'Rejected',
+        'case_status4' => 'Uncontactable',
+        'plan_type1' => 'On Rehab',
+        'plan_type2' => 'Treatment',
+        'plan_type3' => 'Job Seeking',
         'pending_issue' => 'Is there any pending issue?',
         'update_date' => 'Update Status Date',
 
         //rehab_allowance
         'rehab_claim' => 'Rehab Claim Details',
-        'phone_home' => 'Phone Number (Home)',
-        'phone_mobile' => 'Phone Number (Mobile)',
+        'phone_home' => 'Telephone No (Home)',
+        'phone_mobile' => 'Telephone No (Mobile)',
         'claim_date' => 'Claim Date',
         'total_presence' => 'Total Presence',
         'upload_claimdoc' => 'Claim Document',
@@ -886,16 +904,22 @@ return [
 
         
         
+        
 
 
         'yes' => 'Yes',
         'no' => 'No',
-        'approved' => 'Approved',
-        'not_approved' => 'Not Approved',
+        'approve' => 'Approve',
+        'not_approve' => 'Not Approve',
         'approval' => 'Approval',
         'upload' => 'Upload',
         'recommendation' => 'Recommendation',
         'recommendation_date' => 'Recommendation Date',
+        'type' => 'Type',
+        'status' => 'Status',
+        'new' => 'New',
+        'address' => 'Address',
+        'pending' => 'Pending',
         
 
 

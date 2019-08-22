@@ -4,7 +4,6 @@
             <div class="card-body">
                 <form action="/registrationrtw" method="POST">
                     <div class="form-body">
-                     
                      <div class="form-actions">
                         <div class="row">
                          <div class="col-md-6">

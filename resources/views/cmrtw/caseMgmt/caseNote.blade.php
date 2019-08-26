@@ -2,6 +2,7 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-body">
+                <h5 class=card-title>Case Note</h5>
                     <form action="#">
                         <div class="form-body">
 

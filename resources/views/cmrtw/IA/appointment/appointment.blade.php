@@ -12,34 +12,36 @@
                     </div>
                     <br><br>
 
-                    <h4 class="card-title"></h4>
-                        
-                    <div class="row p-t-20">
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            <button type="button" class="btn btn waves-effect waves-light btn-success">@lang('appointment.generate_appointment_schedule')</button>
+                        </div>
+                    </div>
+
+                    
+                    <!-- modal for calendar appointment details -->   
+                    <!-- <div class="row p-t-20">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label class="control-label">@lang('appointment.attr.date')<span class="text-danger">*</span></label>
-                                <input class="form-control" type="date"  id="appointmentDate">
+                                
+                                
                             </div>
                         </div>
-                        <div class="col-md-4">
+
                             <div class="form-group">
-                                <label class="control-label">@lang('appointment.attr.time')<span class="text-danger">*</span></label>
-                                <input class="form-control" type="time"  id="appointmentTime">
+                                <div class="form-group row">
+                                    <label for="min-date" class="col-sm-4 control-label">Dates</label>
+                                    <div class="col-sm-8">
+                                        <div class="input-group input-daterange" id="date-range">
+                                            <input id="min-date" name="takwim-start-date" type="text" class="form-control">
+                                            <div class="input-group-prepend input-group-append">
+                                                <div class="input-group-text">to</div>
+                                            </div>
+                                            <input name="takwim-end-date" type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>   
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label class="control-label">@lang('appointment.attr.location')<span class="text-danger">*</span></label>
-                                <select class="form-control select " id="appointmentLocation" name='appointmentLocation' onchange="appointmentFunc(this.options[this.selectedIndex].value)">
-                                    <option value="">Please Select..</option>
-                                    <option value="insured_person_residential">@lang('appointment.attr.insured_person_residential')</option>
-                                    <option value="employer_premis">@lang('appointment.attr.employer_premis')</option>
-                                    <option value="socso_office">@lang('appointment.attr.socso_office')</option>
-                                    <option value="hospital">@lang('appointment.attr.hospital')</option>
-                                    <option value="appointmentOthers">@lang('appointment.attr.others')</option>
-                                </select>
-                            </div>
-                        </div>
                     </div>
                     <div id="hide_insured_person_residential" class="form-group " style="display:none">
                         <div class="form-group row">
@@ -326,7 +328,7 @@
                                 <textarea class="form-control clearFields" rows="5" type="textarea"  id="appointmentRemarks"></textarea>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                         
                      
                 </form>
@@ -349,27 +351,41 @@
                 <input type="hidden" name="event-index">
                 <form class="form-horizontal">
                     <div class="form-group row">
-                        <label for="event-name" class="col-sm-4 control-label">Name</label>
+                        <label class="control-label">@lang('appointment.attr.date')<span class="text-danger">*</span></label>
                         <div class="col-sm-8">
-                            <input id="event-name" name="event-name" type="text" class="form-control">
+                            <input class="form-control" type="date"  id="appointmentDate">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="event-location" class="col-sm-4 control-label">Location</label>
+                        <label class="control-label">@lang('appointment.attr.time')<span class="text-danger">*</span></label>
                         <div class="col-sm-8">
-                            <input id="event-location" name="event-location" type="text" class="form-control">
+                            <input class="form-control" type="time"  id="appointmentTime">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="min-date" class="col-sm-4 control-label">Dates</label>
+                        <label class="control-label">@lang('appointment.attr.location')<span class="text-danger">*</span></label>
                         <div class="col-sm-8">
-                            <div class="input-group input-daterange" id="date-range">
-                                <input id="min-date" name="takwim-start-date" type="text" class="form-control">
-                                <div class="input-group-prepend input-group-append">
-                                    <div class="input-group-text">to</div>
-                                </div>
-                                <input name="takwim-end-date" type="text" class="form-control">
-                            </div>
+                            <select class="form-control select " id="appointmentLocation" name='appointmentLocation' onchange="appointmentFunc(this.options[this.selectedIndex].value)">
+                                <option value="">Please Select..</option>
+                                <option value="insured_person_residential">@lang('appointment.attr.insured_person_residential')</option>
+                                <option value="employer_premis">@lang('appointment.attr.employer_premis')</option>
+                                <option value="socso_office">@lang('appointment.attr.socso_office')</option>
+                                <option value="hospital">@lang('appointment.attr.hospital')</option>
+                                <option value="appointmentOthers">@lang('appointment.attr.others')</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="control-label">@lang('appointment.attr.location')<span class="text-danger">*</span></label>
+                        <div class="col-sm-8">
+                            <select class="form-control select " id="appointmentLocation" name='appointmentLocation' onchange="appointmentFunc(this.options[this.selectedIndex].value)">
+                                <option value="">Please Select..</option>
+                                <option value="insured_person_residential">@lang('appointment.attr.insured_person_residential')</option>
+                                <option value="employer_premis">@lang('appointment.attr.employer_premis')</option>
+                                <option value="socso_office">@lang('appointment.attr.socso_office')</option>
+                                <option value="hospital">@lang('appointment.attr.hospital')</option>
+                                <option value="appointmentOthers">@lang('appointment.attr.others')</option>
+                            </select>
                         </div>
                     </div>
                 </form>
@@ -429,7 +445,7 @@
             $('#hide_others').hide();
         }
     }
-      function submitform(){
+    function submitform(){
         $('#reset').find('form').submit();
         $('.clearFields').val('');
     }

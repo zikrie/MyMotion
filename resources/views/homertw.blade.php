@@ -77,7 +77,7 @@
                             <div class="input-group col-12">
                                 <input class="form-control" type="date" id="date">
                                 <div class="input-group-append">
-                                    <span class="input-group-text" style="background-color: #d8e8e9;;"><i
+                                    <span class="input-group-text" style="background-color: #d8e8e9;"><i
                                         class="ti-search"></i></span>
                                     </div>
                                 </div>
@@ -104,7 +104,7 @@
                                     <div class="input-group col-12">
                                         <input class="form-control" type="number" id="idno">
                                         <div class="input-group-append">
-                                            <span class="input-group-text" style="background-color: #d8e8e9;;"><i
+                                            <span class="input-group-text" style="background-color: #d8e8e9;"><i
                                                 class="ti-search"></i></span>
                                             </div>
                                         </div>

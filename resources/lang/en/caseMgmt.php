@@ -797,6 +797,13 @@ return [
         'discuss_note' => 'Note',
         'discuss_comment' => 'Comment',
         'category' => 'Category',
+        'medium' => 'Medium',
+        'medium1' => 'Whatsapp',
+        'medium2' => 'SMS',
+        'medium3' => 'Email',
+        'medium4' => 'Meeting',
+        'location_discuss' => 'Location',
+        'purpose_discuss' => 'Purpose',
         
         //va
         'va_title' => 'Vocational Assessment',
@@ -920,6 +927,7 @@ return [
         'new' => 'New',
         'address' => 'Address',
         'pending' => 'Pending',
+        'date' => 'Date',
         
 
 

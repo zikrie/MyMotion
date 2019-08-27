@@ -6,14 +6,18 @@
                     <form action="#">
                         <div class="form-body">
                                 
-                                    {{-- <span class="mytooltip tooltip-effect-2"> <span class="tooltip-item">Euclid</span> <span class="tooltip-content clearfix"> <img src="../assets/images/tooltip/Euclid.png" /> <span class="tooltip-text">Also known as Euclid of andria, was a Greek mathematician, often referred.</span> </span> </span> --}}
-                            <!-- Column -->
+                                  
                             <div class="row p-t-20">
                                 <div class="col-12">
                                     <div class="card">
+                                            <div class="form-group row">
+                                                    <div class="col-12">
+                                                        <button class="btn btn-info btn-lg" type="button"  data-toggle="modal" data-target="#exampleModal1"><i class="fa fa-plus"></i> </button>
+                                                    </div>
+                                                </div>
                                         <div class="table-responsive m-t-40">
-                                                <button class="btn btn-success" type="button"><span class="table-add float-right mb-3 mr-2" data-toggle="modal" data-target="#exampleModal1"><a href="#!" class="text-success"><i
-                                                    class="fa fa-plus" aria-hidden="true"></i> </a></span></button>
+                                               
+                                                  
                                             <table id="example231" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
                                                         <thead>
                                                             <tr>
@@ -35,14 +39,10 @@
                                                                 <td>FCE</td>
                                                                 <td>19/05/2018</td>
                                                                 <td><div class= "btn-group">
-                                
-                                                                    <button class="edit-modal btn btn-info" data-toggle="modal" data-target="#exampleModal" data-id="2">
-                                                                        <span class="glyphicon glyphicon-edit"></span> Edit
-                                                                    </button>
-                                                                                    
-                                                                    <button class="delete-modal btn btn-danger"  data-id="2">
-                                                                        <span class="glyphicon glyphicon-trash"></span> Delete
-                                                                    </button>
+                                         
+                                                                        <button type="button" class="btn btn-primary edit">
+                                                                                <span class='glyphicon glyphicon-check'></span> View
+                                                                            </button>
                                                                 </div>
                                                                 </td>
                                                               
@@ -55,7 +55,7 @@
                                                                 <td><div class= "btn-group">
                                 
                                                                     <button class="edit-modal btn btn-info" data-toggle="modal" data-target="#exampleModal" data-id="2">
-                                                                        <span class="glyphicon glyphicon-edit"></span> Edit
+                                                                        <span class="glyphicon glyphicon-edit"></span> Update
                                                                     </button>
                                                                                     
                                                                     <button class="delete-modal btn btn-danger"  data-id="2">
@@ -83,397 +83,183 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="exampleModal">
+    <div id="exampleModal1" class="modal fade" role="dialog">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title" id="myLargeModalLabel">Case Details</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title"></h4>
                     </div>
-                    <!-- Modal body -->
+        
                     <div class="modal-body">
-                        <div class="form-group row">
-                            <div class="col-2">
-                                <label for="email"><b>Notice Type</b></label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <input type="text" name="Notice" id="Notice" class="form-control" required>
+                        <form class="form-horizontal" role="form" id="rehabForm">
+                            <div class="row p-t-20">
+                                    <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="example-text-input" class="col-form-label">@lang('caseMgmt.attr.category')</label> 
+                                                <select name="select_opt" id="select_opt" class="form-control" onchange="showField890(this.options[this.selectedIndex].value)" required> 
+                                                    <option value="">Please Select</option>
+                                                    <option value="discusscat1">@lang('caseMgmt.attr.discuss_cat1')</option>
+                                                    <option value="discuss_cat2">@lang('caseMgmt.attr.discuss_cat2')</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="example-text-input" class="col-form-label">@lang('caseMgmt.attr.rehab_type')</label> 
+                                        <select class="form-control select" id="bankloc" name="bankloc" required>
+                                            <option value="">Please Select</option>
+                                            <option value="FCE">FCE</option>
+                                            <option value="WSA">WSA</option>
+                                            <option value="PRM">PRM</option>
+                                            <option value="MM">MM</option>
+                                            <option value="VA">VA</option>
+                                            <option value="VTM">VTM</option>
+                                            <option value="JP">JP</option>
+                                            <option value="Financial Support">Financial Support</option>
+                                            <option value="Business Support">Business Support</option>
+                                            <option value="Rehab Allowance">Rehab Allowance</option>
+                                            <option value="Mobility Support">Mobility Support</option>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-2">
-                                <label for="email"><b>Scheme Reference Number</b></label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <input type="text" name="Reference" id="Reference" class="form-control" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-2">
-                                <label for="email"><b>Case Type</b></label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <input type="text" name="Type" id="Type" class="form-control" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-2">
-                                <label for="email"><b>Notice ID</b></label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <input type="text" name="notice_id" id="notice_id" class="form-control" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-2">
-                                <label for="email"><b>Type of Act</b></label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <input type="text" name="Act" id="Act" class="form-control" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-2">
-                                <label for="email"><b>Office Location</b></label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <input type="text" name="Location" id="Location" class="form-control" required>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-header">
-                        <h4 class="modal-title" id="myLargeModalLabel">Accident Details</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="form-group row">
-                            <div class="col-2">
-                                <label for="email"><b>Accident Date</b></label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <input type="text" name="Accident_Date" id="Accident_Date" class="form-control" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-2">
-                                <label for="email"><b>About Injury</b></label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <input type="text" name="About_injury" id="About_injury" class="form-control" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-2">
-                                <label for="email"><b>Accident Code</b></label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <input type="text" name="Accident_code" id="Accident_code" class="form-control" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-2">
-                                <label for="email"><b>Company Code</b></label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <input type="text" name="Company_code" id="Company_code" class="form-control" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-2">
-                                <label for="email"><b>Job Code</b></label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <input type="text" name="Job_code" id="Job_code" class="form-control" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-2">
-                                <label for="email"><b>Decision</b></label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <input type="text" name="Decision" id="Decision" class="form-control" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-2">
-                                <label for="email"><b>Potential HUK</b></label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <input type="text" name="Potential_huk" id="Potential_huk" class="form-control" required>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-header">
-                        <h4 class="modal-title" id="myLargeModalLabel">FHUS Details</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="form-group row">
-                            <div class="col-2">
-                                <label for="email"><b>Name and address of clinic which provides treatment</b></label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <input type="text" name="Name" id="Name" class="form-control" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-2">
-                                <label for="email"><b>Start Date</b></label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <input type="text" name="Start_date" id="Start_date" class="form-control" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-2">
-                                <label for="email"><b>End Date</b></label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <input type="text" name="End_date" id="End_date" class="form-control" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-2">
-                                <label for="email"><b>HUS Approval Status</b></label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <input type="text" name="Approval_hus" id="Approval_hus" class="form-control" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-2">
-                                <label for="email"><b>Total HUS Days Approved</b></label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <input type="text" name="Total_hus" id="Total_hus" class="form-control" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-2">
-                                <label for="email"><b>Total FHUS payment (RM)</b></label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <input type="text" name="Total_fhus" id="Total_fhus" class="form-control" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-2">
-                                <label for="email"><b>Supporting Document</b></label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <input type="text" name="support_doc" id="support_doc" class="form-control" required>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-header">
-                        <h4 class="modal-title" id="myLargeModalLabel">FHUK Details</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="form-group row">
-                            <div class="col-2">
-                                <label for="email"><b>JD Type</b></label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <input type="text" name="JD_type" id="JD_type" class="form-control" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-2">
-                                <label for="email"><b>JD/JDR Session Date</b></label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <input type="text" name="JD/JDR" id="JD/JDR" class="form-control" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-2">
-                                <label for="email"><b>Assessment Type</b></label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <input type="text" name="Assessment_type" id="Assessment_type" class="form-control" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-2">
-                                <label for="email"><b>JD/JDR Result</b></label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <input type="text" name="Result" id="Result" class="form-control" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-2">
-                                <label for="email"><b>Assessment %</b></label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <input type="text" name="Assessment%" id="Assessment%" class="form-control" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-2">
-                                <label for="email"><b>Total Lump Sum FHUK (RM)</b></label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <input type="text" name="Total_lump" id="Total_lump" class="form-control" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-2">
-                                <label for="email"><b>Total Periodical Payment (RM)</b></label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <input type="text" name="Total_periodical" id="Total_periodical" class="form-control" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-2">
-                                <label for="email"><b>ELS (Y/N)</b></label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <input type="text" name="ELS" id="ELS" class="form-control" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-2">
-                                <label for="email"><b>Total ELS  Payment  (RM)</b></label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <input type="text" name="Total_els" id="Total_els" class="form-control" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-2">
-                                <label for="email"><b>Total FHUK (RM)</b></label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <input type="text" name="Total_fhuk" id="Total_fhuk" class="form-control" required>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-header">
-                        <h4 class="modal-title" id="myLargeModalLabel">Details Of Supply Equipment</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="form-group row">
-                            <div class="col-2">
-                                <label for="email"><b>Item</b></label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <input type="text" name="Item" id="Item" class="form-control" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-2">
-                                <label for="email"><b>Diognasis type</b></label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <input type="text" name="Diognasis" id="Diognasis" class="form-control" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-2">
-                                <label for="email"><b>Status</b></label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <input type="text" name="Status" id="Status" class="form-control" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-2">
-                                <label for="email"><b>Registration Date</b></label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <input type="text" name="Registration_date" id="Registration_date" class="form-control" required>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-header">
-                        <h4 class="modal-title" id="myLargeModalLabel">Remarks</h4>
-                    </div>
-                    <div class="modal-body">
-                        <textarea name="remarks" id="remarks" class="form-control" required rows="4" cols="50"></textarea>
-                    </div>
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                    </div>
+                                {{-- <div class="col-md-6">
+                                            
+                                        <div class="form-group" id="abujahal" style="display:none;">
+                                            <label class="control-label">@lang('caseMgmt.attr.specify_no')</label>
+                                            <select class="form-control">
+                                            <option value="">Please Select</option>
+                                            <option value="car">@lang('caseMgmt.attr.option_ip')</option>
+                                            <option value="car">@lang('caseMgmt.attr.option_geo')</option>
+                                            <option value="motorcycle">@lang('caseMgmt.attr.option_quit')</option>
+                                            <option value="van">@lang('caseMgmt.attr.option_unreachable')</option>
+                                        </select>
+                                            
+                                        </div>
+                                    </div> --}}
+                                    <div class="col-md-12" id="abujahal" style="display:none;">
+                                           
+                                                    <h6 class=card-title>With Insured Person</h6>
+                                                            <div class="row p-t-20">
+
+                                                                    <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label class="control-label">@lang('caseMgmt.attr.date')</label>
+                                                                                <input type="date" id="date" class="form-control" disabled>
+                                                                            </div>
+                                                                    </div>
+                                                            </div>
+                                                                    <div class="row p-t-20">
+                                                                    <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label class="control-label">@lang('caseMgmt.attr.medium')</label>
+                                                                                <select name="select_opt" id="select_opt" class="form-control" onchange="showfieldMedium(this.options[this.selectedIndex].value)" required> 
+                                                                                    <option value="">Please Select</option>
+                                                                                    <option value="medium1">@lang('caseMgmt.attr.medium1')</option>
+                                                                                    <option value="medium2">@lang('caseMgmt.attr.medium2')</option>
+                                                                                    <option value="medium3">@lang('caseMgmt.attr.medium3')</option>
+                                                                                    <option value="medium4">@lang('caseMgmt.attr.medium4')</option>
+                                                                                    <option value="specify">@lang('caseMgmt.attr.other')</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6"> 
+                                                                            <div class="form-group" id="abujahal1" style="display:none;">
+                                                                                <label class="control-label">@lang('caseMgmt.attr.specify')</label>
+                                                                                <input type="text" id="specify" class="form-control">
+                                                                            </div>
+                                                                            
+                                                                        </div>
+                                                                 </div>
+                                                                 <div class="row p-t-20">
+                                                                        <div class="col-md-12">
+                                                                            <div class="form-group">
+                                                                                <label class="control-label">@lang('caseMgmt.attr.remarks')</label>
+                                                                                <textarea name="remarks" id="remarks" class="form-control" required rows="4" cols="50"></textarea>
+                                                                            </div>
+                                                                        </div>
+                                                                 </div>
+                                                                        
+                                        </div>
+
+                                        <div class="col-md-12" id="abujahal2" style="display:none;">
+                                           
+                                                <h6 class=card-title>Group</h6>
+                                                        <div class="row p-t-20">
+
+                                                                <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label class="control-label">@lang('caseMgmt.attr.date')</label>
+                                                                            <input type="date" id="date" class="form-control" disabled>
+                                                                        </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label class="control-label">@lang('caseMgmt.attr.location_discuss')</label>
+                                                                            <input type="location_discuss" id="location_discuss" class="form-control" disabled>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                               
+                                                             <div class="row p-t-20">
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-group">
+                                                                            <label class="control-label">@lang('caseMgmt.attr.purpose_discuss')</label>
+                                                                            <textarea name="purpose_discuss" id="purpose_discuss" class="form-control" required rows="4" cols="50" disabled></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                             </div>
+                                                                    
+                                    </div>
+                                                    
+                                    
+                    
+                                
+                            </div>  
+                         
+                                                                            
+                           
+                                    
+                        </form>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary edit" data-dismiss="modal" id="addRehab">
+                                    <span class='glyphicon glyphicon-check'></span> Add
+                                </button>
+                                <button type="button" class="btn btn-warning" data-dismiss="modal">
+                                    <span class='glyphicon glyphicon-remove'></span> Close
+                                </button>
+                            </div>
+                    </div>    
                 </div>
             </div>
         </div>
         
-        <script type="text/javascript">
-            function buttonClick(){
-              document.getElementById("viewBtn").style.backgroundColor = "green";
-            }
-            function buttonClick1(){
-              document.getElementById("viewBtn").style.backgroundColor = "green";
-            }
-        </script>
-    
+<script type="text/javascript">
+function showField890(name){
+    if(name == 'discusscat1') {
+        $('#abujahal').show();
+    }
+    else {
+        $('#abujahal').hide();
+    }
+    if(name == 'discuss_cat2') {
+        $('#abujahal2').show();
+    }
+    else {
+        $('#abujahal2').hide();
+    }      
+}
+
+function showfieldMedium(name){
+    if(name == 'specify') {
+        $('#abujahal1').show();
+    }
+    else {
+        $('#abujahal1').hide();
+    }   
+}
+
+
+</script>    
 
     

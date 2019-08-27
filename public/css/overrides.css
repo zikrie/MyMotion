@@ -731,11 +731,43 @@ body#login{
   .tooltip:hover .tooltiptext {
     visibility: visible;
   }
+
+/* end */
+
 /* .btn{
     line-height:2rem !important;
 } */
 
-/* zik cm/prm/attendance */
+/* zik attendance */
 .pt-3-half {
     padding-top: 1.4rem;
     }
+/* end */
+
+
+/* zikrie - scroll down table for attendance/history */
+    #table-wrapper {
+        position:relative;
+      }
+      #table-scroll {
+        height:500px;
+        overflow:auto;  
+        margin-top:20px;
+      }
+      #table-wrapper table {
+        width:100%;
+      
+      }
+      /* #table-wrapper table * {
+        background:yellow;
+        color:black; */
+      }
+      #table-wrapper table thead th .text {
+        position:absolute;   
+        top:-20px;
+        z-index:2;
+        height:20px;
+        width:35%;
+        border:1px solid red;
+      }
+/* end */

@@ -8,10 +8,22 @@
                      <hr>
                      <div class="form-actions">
                         
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label class="control-label">@lang('defaulted.status')<span class="text-danger">*</span></label>
-                                    <input type="text" id="name" class="form-control" value="">
+                            <div class="col-md-4"> 
+                                 <div class="form-group">
+                                    
+                                        <label class="control-label">@lang('caseclosure.status') <span class="text-danger">*</span></label>
+                                        <select class="form-control" tabindex="1" onchange="myNamaHospital(this.options[this.selectedIndex].value)" required>
+                                            <option value="">Please Select</option>
+                                             <option value="general_department">@lang('caseclosure.attr.general_department')</option>
+                                             <option value="sebab_rejected">@lang('caseclosure.attr.sebab_rejected')</option>
+                                        </select>   
+                                    
+                                    <div id="hideHospitalname" class="form-group" style="display:none">
+                                        <div class="form-group">
+                                            <label class="control-label">@lang('caseMgmt.attr.hospital_name')</label>
+                                            <input class="form-control"  type="text"  value="" id="hospital_name">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                        

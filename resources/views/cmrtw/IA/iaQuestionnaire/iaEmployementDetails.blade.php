@@ -135,10 +135,10 @@
                         <th>Duration of Employment</th>
                         <th>Position</th> 
                         <th>Action</th>
-                        <th align="top">No.</th>
-                        <th>Employer Name</th>
-                        <th>Duration of Employment</th>
-                        <th>Action</th>
+                        <th style="display:none;" align="top"></th>
+                        <th style="display:none;"></th>
+                        <th style="display:none;"></th>
+                        <th style="display:none;"></th>
                     </tr>
                 </thead>
                 <tbody id="add-work_history-body">

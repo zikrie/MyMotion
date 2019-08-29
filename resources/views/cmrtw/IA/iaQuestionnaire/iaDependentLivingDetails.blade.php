@@ -180,7 +180,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="salary_income" value="" placeholder="enter amount" required>
+                                            <input type="number" class="form-control" id="salary_income" value="" placeholder="enter amount" oninput="calcMonthlyIncome();" required>
                                         </div>
                                     </div>
                                 </div>
@@ -192,7 +192,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="spouse_income" value="" placeholder="enter amount" required>
+                                            <input type="number" class="form-control" id="spouse_income" value="" placeholder="enter amount" oninput="calcMonthlyIncome();" required>
                                         </div>
                                     </div>
                                 </div>
@@ -204,7 +204,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="baitulmal" value="" placeholder="enter amount" required>
+                                            <input type="number" class="form-control" id="baitulmal" value="" placeholder="enter amount" oninput="calcMonthlyIncome();" required>
                                         </div>
                                     </div>
                                 </div>
@@ -216,7 +216,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="children_aid" value="" placeholder="enter amount" required>
+                                            <input type="text" class="form-control" id="children_aid" value="" placeholder="enter amount" oninput="calcMonthlyIncome();" required>
                                         </div>
                                     </div>
                                 </div>
@@ -228,7 +228,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="perkeso_compesation" value="" placeholder="enter amount" required>
+                                            <input type="text" class="form-control" id="perkeso_compesation" value="" placeholder="enter amount" oninput="calcMonthlyIncome();" required>
                                         </div>
                                     </div>
                                 </div>
@@ -240,7 +240,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="jkm_allowance" value="" placeholder="enter amount" required>
+                                            <input type="text" class="form-control" id="jkm_allowance" value="" placeholder="enter amount" oninput="calcMonthlyIncome();" required>
                                         </div>
                                     </div>
                                 </div>
@@ -252,7 +252,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="ngo_aid" value="" placeholder="enter amount" required>
+                                            <input type="text" class="form-control" id="ngo_aid" value="" placeholder="enter amount" oninput="calcMonthlyIncome();" required>
                                         </div>
                                     </div>
                                 </div>
@@ -264,7 +264,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="freelance" value="" placeholder="enter amount" required>
+                                            <input type="text" class="form-control" id="freelance" value="" placeholder="enter amount" oninput="calcMonthlyIncome();" required>
                                         </div>
                                     </div>
                                 </div>
@@ -276,7 +276,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="business" value="" placeholder="enter amount" required>
+                                            <input type="text" class="form-control" id="business" value="" placeholder="enter amount" oninput="calcMonthlyIncome();" required>
                                         </div>
                                     </div>
                                 </div>
@@ -290,13 +290,13 @@
                                 <div class="row ">
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                        <input type="text" class="form-control" id="otherMonthlyincome" value="" placeholder="please specify" required>
+                                            <input type="text" class="form-control" id="othersMonincome" value="" placeholder="please specify" required>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
                                             <div class="input-group">
-                                                <input type="text" class="form-control" id="otherMonthlyincome2" value="" placeholder="enter amount" required>
+                                                <input type="text" class="form-control" id="otherMonthlyincome1" value="" placeholder="enter amount" oninput="calcMonthlyIncome();" required>
                                                 <div class="input-group-append">
                                                     <button class="btn btn-success" type="button" onclick="otherIncomeFunc();"><i class="fa fa-plus"></i></button>
                                                 </div>
@@ -314,7 +314,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                        <input type="text" class="form-control" id="totalIncome" value="" required>
+                                            <input type="number" class="form-control" id="totalIncome" value="" required >
                                         </div>
                                     </div>
                                 </div>
@@ -329,7 +329,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                        <input type="text" class="form-control" id="expensesDependent" value="" placeholder="enter amount" required>
+                                            <input type="text" class="form-control" id="expensesDependent" value="" placeholder="enter amount" required>
                                         </div>
                                     </div>
                                 </div>
@@ -342,7 +342,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                        <input type="text" class="form-control" id="vehicles" value="" placeholder="enter amount" required>
+                                            <input type="text" class="form-control" id="vehicles" value="" placeholder="enter amount" required>
                                         </div>
                                     </div>
                                 </div>
@@ -355,7 +355,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                        <input type="text" class="form-control" id="housing" value="" placeholder="enter amount" required>
+                                            <input type="text" class="form-control" id="housing" value="" placeholder="enter amount" required>
                                         </div>
                                     </div>
                                 </div>
@@ -368,7 +368,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                        <input type="text" class="form-control" id="eduLoan" value="" placeholder="enter amount" required>
+                                            <input type="text" class="form-control" id="eduLoan" value="" placeholder="enter amount" required>
                                         </div>
                                     </div>
                                 </div>
@@ -384,7 +384,7 @@
                                 <div class="row ">
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                        <input type="text" class="form-control" id="othersLoan" value="" placeholder="please specify" required>
+                                            <input type="text" class="form-control" id="othersLoan" value="" placeholder="please specify" required>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
@@ -408,7 +408,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                        <input type="text" class="form-control" id="totalIncome" value="" required>
+                                            <input type="text" class="form-control" id="totalIncome" value="" required disabled>
                                         </div>
                                     </div>
                                 </div>
@@ -457,6 +457,7 @@
 
     //add other monthly income for other-mat
     var otherincome = 1;
+    var mulOtherincome;
 
     function otherIncomeFunc() {
 
@@ -465,9 +466,10 @@
         var divtest = document.createElement("div");
         divtest.setAttribute("class", "removeclass" + otherincome);
         var rdiv = 'removeclass' + otherincome;
-        divtest.innerHTML = '<div class="row"><div class="col-sm-6"><div class="form-group"><input type="text" class="form-control" id="otherMonthlyincome'+otherincome+'" value="" placeholder="please specify" required></div></div><div class="col-sm-6"><div class="form-group"><div class="input-group"><input type="text" class="form-control" id="others" value="" placeholder="enter amount" required><div class="input-group-append"><button class="btn btn-danger" type="button" onclick="remove_otherIncomeFunc('+otherincome+');"><i class="fa fa-minus"></i></button></div></div></div></div></div>';
+        divtest.innerHTML = '<div class="row"><div class="col-sm-6"><div class="form-group"><input type="text" class="form-control" id="othersMonincome'+otherincome+'" value="" placeholder="please specify" required></div></div><div class="col-sm-6"><div class="form-group"><div class="input-group"><input type="text" class="form-control" id="otherMonthlyincome'+otherincome+'" value="" placeholder="enter amount" oninput="calcMonthlyIncome();" required><div class="input-group-append"><button class="btn btn-danger" type="button" onclick="remove_otherIncomeFunc('+otherincome+');"><i class="fa fa-minus"></i></button></div></div></div></div></div>';
 
         objTo.appendChild(divtest)
+        mulOtherincome = document.getElementById("otherMonthlyincome'+otherincome+'")
     }
 
     function remove_otherIncomeFunc(rid) {
@@ -494,6 +496,29 @@
             $('.removeclass' + rid).remove();
             otherEstimate--;
         }
+
+        function calcMonthlyIncome(){
+            
+            var num1=document.getElementById("salary_income").value;
+            var num2=document.getElementById("spouse_income").value;
+            var num3=document.getElementById("baitulmal").value;
+            var num4=document.getElementById("children_aid").value;
+            var num5=document.getElementById("perkeso_compesation").value;
+            var num6=document.getElementById("jkm_allowance").value;
+            var num7=document.getElementById("ngo_aid").value;
+            var num8=document.getElementById("freelance").value;
+            var num9=document.getElementById("business").value;
+            var num10=document.getElementById("otherMonthlyincome1").value;
+            var num11=document.getElementById("otherMonthlyincome1").value;
+            
+            var resultMonthlyIncome = parseFloat(num1)+parseFloat(num2)+parseFloat(num3)+parseFloat(num4)+parseFloat(num5)+parseFloat(num6)+parseFloat(num7)+parseFloat(num8)+parseFloat(num9)+parseFloat(num10);
+            
+            document.write(resultMonthlyIncome);
+            document.getElementById("totalIncome").value = resultMonthlyIncome;
+
+        }
+        
+        
 </script>
 
 

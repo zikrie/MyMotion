@@ -292,10 +292,9 @@
 </div>
 <script type="text/javascript">
     function viewIAresult(){
-      document.getElementById("iaResult").style.backgroundColor = "green";
+        document.getElementById("iaResult").style.backgroundColor = "green";
+
     }
-    function nextTab(){
-      document.getElementById("#rehabplan");
-    }
+
 </script>
 

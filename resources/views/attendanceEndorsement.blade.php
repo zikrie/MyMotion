@@ -587,7 +587,7 @@
                                                 <tfoot>
                                                         <tr>
                                                         <td colspan="5"><b>Total (RM)</b></td>
-                                                        <td>$180</td>
+                                                        <td><b>RM 880.00</b></td>
                                                         <td colspan="3"></td>
                                                         </tr>
                                                 </tfoot>
@@ -605,9 +605,9 @@
 
                                     <div class="card">
                                         <div class="card-body">
-
+                                        <h5 class="card-title">Insured Person Attendance Detail</h5>
                                            
-                                        <div class="row p-l-20">
+                                        <div class="row p-t-20">
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label class="control-label">Service Provider</label> 
@@ -657,8 +657,8 @@
 
 
 
-                                        <h5 class="card-title">Insured Person Attendance Detail</h5>
-                                            <div id="table" class="table-editable">
+                                        <div id="table-wrapper">
+                                            <div id="table-scroll" class="table-editable">
                                                     <table   class="table table-bordered table-responsive-md table-striped text-center">
                                                         <thead>
                                                             <tr>
@@ -809,7 +809,7 @@
                                                         <tfoot>
                                                                 <tr>
                                                                 <td colspan="5"><b>Total (RM)</b></td>
-                                                                <td colspan="1">$180</td>
+                                                                <td colspan="1"><b>RM 1040</b></td>
                                                                
                                                                 </tr>
                                                         </tfoot>
@@ -818,6 +818,7 @@
                                                 </div>
                                                 
                                             </div>
+                                        </div>
                                 
                                     </div>
                             </div> 
@@ -952,7 +953,7 @@ const $tableID = $('#table');
 
 
 
-
+//search 
 $(document).ready(function () {
 $('#dtBasicExample1').DataTable();
 $('.dataTables_length').addClass('bs-select');
@@ -964,7 +965,7 @@ $('.dataTables_length').addClass('bs-select');
 
 
 
-
+//check box function
 $("th input[type='checkbox']").on("change", function() {
   
    var cb = $(this),          //checkbox that was changed
@@ -978,6 +979,12 @@ $("th input[type='checkbox']").on("change", function() {
        }
   
 });
+
+
+
+
+
+
 
 </script>
                 

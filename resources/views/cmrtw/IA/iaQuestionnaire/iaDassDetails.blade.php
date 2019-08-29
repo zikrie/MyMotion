@@ -517,29 +517,29 @@
 
                         <div class="row p-t-20">
                             <div class="col-md-3"> 
-                                <div class="form-group">
+                                <div class="form-group" hidden>
                                     <label class="control-label">@lang('caseMgmt.attr.depression')</label>
                                     <input type="text" id="depression" class="form-control" value="" disabled>
                                 </div>
                             </div>
                             <div class="col-md-3">
-                                <div class="form-group">
+                                <div class="form-group" hidden>
                                     <label class="control-label">@lang('caseMgmt.attr.anxiety')</label>
                                     <input type="text" id="anxiety" class="form-control" value="" disabled>
                                 </div>
                             </div>
                             <div class="col-md-3">
-                                <div class="form-group">
+                                <div class="form-group" hidden>
                                     <label class="control-label">@lang('caseMgmt.attr.stress')</label>
                                     <input type="text" id="stress" class="form-control" value="" disabled>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <!-- <div class="col-md-3">
                                 <div class="form-group">
                                     <label class="control-label">@lang('caseMgmt.attr.remarks')</label>
                                     <input type="text" id="remarks" class="form-control">
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
 
                     </div>

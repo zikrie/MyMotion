@@ -18,7 +18,7 @@
     <div class="tab-content tabcontent-border">
 
                     <div class="tab-pane p-20 active" id="plan_list" role="tabpanel">
-                      @include('cmrtw.caseMgmt.planList')
+                      @include('cmrtw.caseMgmt.rehabPlanCm')
                     </div>
 
                      <div class="tab-pane p-20" id="gl" role="tabpanel">

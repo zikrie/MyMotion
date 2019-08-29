@@ -15,11 +15,11 @@
                 </h5>
             </div>
             <div class="table-responsive m-t-40">
-                <table id="example231" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
+                <table id="example231" class="display nowrap table table-hover table-striped table-bordered " cellspacing="0" width="100%">
                     <thead>
                         <tr>
-                            <th>@lang('caseMgmt.attr.strength')</th>
-                            <th>@lang('caseMgmt.attr.weakness')</th>
+                            <th style="text-align:center">@lang('caseMgmt.attr.strength')</th>
+                            <th style="text-align:center">@lang('caseMgmt.attr.weakness')</th>
                         </tr>
                     </thead>
                             

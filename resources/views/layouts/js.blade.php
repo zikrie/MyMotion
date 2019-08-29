@@ -104,7 +104,7 @@
     </script> -->
 
 <script src="{{asset('js-year-calendar/dist/js-year-calendar.js')}}"></script>
-@include('cmrtw.IA.appointment.takwim.calendar');
+@include('cmrtw.IA.appointment.takwim.calendar')
 
 <script>
     // MAterial Date picker    

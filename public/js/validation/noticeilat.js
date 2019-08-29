@@ -15,7 +15,7 @@ $(document).ready(function () {
 
         idtype = document.getElementById('idtype_doc').innerHTML;
 
-        $('#table_upload_doc > tbody:last-child').append('<tr id="myTableRow_' + no_doc + '"><td style="display:none;"><input type="hidden" class="number" value="' + no_doc + '"></td><td><select required class="form-control" name="doccat[' + no_doc + ']">' + idtype + '</select></td><td></td><td><span class="choosefile"><input type="file" id="pdf_cancel_' + no_doc + '" name="pdf[' + no_doc + ']"  /> <i class="preview btn_cancel_' + no_doc + ' icon-close"></i></span></td></td>');
+        $('#table_upload_doc > tbody:last-child').append('<tr id="myTableRow_' + no_doc + '"><td style="display:none;"><input type="hidden" class="number" value="' + no_doc + '"></td><td><select required class="form-control" name="doccat[' + no_doc + ']">' + idtype + '</select></td><td><span class="choosefile"><input type="file" id="pdf_cancel_' + no_doc + '" name="pdf[' + no_doc + ']"  /> <i class="preview btn_cancel_' + no_doc + ' icon-close"></i></span></td></td><input type="date" class="form-control"></td><td><button type="button" id="btn_delete_' + no_doc + '" class="btn btn-sm btn-danger"><i class="fas fa-trash-alt fa-sm " ></i></button></td></tr>');
         
         
         

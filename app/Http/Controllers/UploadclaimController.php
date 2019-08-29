@@ -27,6 +27,8 @@ class UploadclaimController extends Controller
 
         $idno = session('idno');
         $caserefno = session('caserefno');
+        $uniquerefno = "2019070001";
+       
         $operid = session('loginname');
         $brcode = session('loginbranchcode');
         $dataSet = array();
@@ -60,6 +62,7 @@ class UploadclaimController extends Controller
                 $docname = $caserefno.'_'.$doctype.'_'.$date.'.pdf';
                 $dataSet[$cnt++] = [
                     'caserefno' => '',
+                    'uniquerefno' => $uniquerefno,
                     'idno' =>$idno,
                     'docdate' =>$date,
                     'doctime' =>date('His'), 
@@ -77,6 +80,7 @@ class UploadclaimController extends Controller
                 $docname = $caserefno.'_'.$doctype.'_'.$date.'.pdf';
                 $dataSet[$cnt++] = [
                     'caserefno' => $caserefno,
+                    'uniquerefno' => $uniquerefno,
                     'idno' =>$idno,
                     'docdate' =>$date,
                     'doctime' =>date('His'), 
@@ -100,37 +104,37 @@ class UploadclaimController extends Controller
         $jsondata = json_encode($docrepo);
         //return $jsondata;
 
-        // $url = 'http://'.env('WS_IP', 'localhost').'/api/wsmotion/upddoc';
+        $url = 'http://'.env('WS_IP', 'localhost').'/api/wsmotion/upddoc';
 
-        // $ch = curl_init();
+        $ch = curl_init();
         
-        // curl_setopt($ch,CURLOPT_URL, $url);
-        // curl_setopt($ch, CURLOPT_PROXY, '');
+        curl_setopt($ch,CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_PROXY, '');
         
-        // curl_setopt($ch,CURLOPT_POSTFIELDS, $jsondata);
-        // curl_setopt($ch, CURLOPT_HTTPGET, FALSE);
+        curl_setopt($ch,CURLOPT_POSTFIELDS, $jsondata);
+        curl_setopt($ch, CURLOPT_HTTPGET, FALSE);
         
-        // curl_setopt( $ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
-        // curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        // $result = curl_exec($ch);
-        // $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-        // $response = curl_getinfo($ch, CURLINFO_HEADER_OUT);
+        curl_setopt( $ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        $result = curl_exec($ch);
+        $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        $response = curl_getinfo($ch, CURLINFO_HEADER_OUT);
 
-        // curl_close($ch);
+        curl_close($ch);
         
-        // $jsondecode = json_decode($result);
+        $jsondecode = json_decode($result);
         
         
-        // $errorcode = $jsondecode->{'errorcode'};
-        // if ($errorcode == 0)
-        // {
-        //     return redirect()->back()->withInput(['tab'=>'uploaddoc'])->with('messagedoc','Upload successful');
-        // }
-        // else
-        // {
-        //     return redirect()->back()->withInput(['tab'=>'uploaddoc'])->with('messagedoc','Upload unsuccessful');
-        // }
-        return redirect()->back()->withInput(['tab'=>'uploaddoc'])->with('messagedoc','Upload successful');
+        $errorcode = $jsondecode->{'errorcode'};
+        if ($errorcode == 0)
+        {
+            return redirect()->back()->withInput(['tab'=>'uploaddoc'])->with('messagedoc','Upload successful');
+        }
+        else
+        {
+            return redirect()->back()->withInput(['tab'=>'uploaddoc'])->with('messagedoc','Upload unsuccessful');
+        }
+        // return redirect()->back()->withInput(['tab'=>'uploaddoc'])->with('messagedoc','Upload successful');
         
         
         //return $a;

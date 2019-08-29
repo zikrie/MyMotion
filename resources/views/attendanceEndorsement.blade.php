@@ -40,8 +40,8 @@
                                         <h5 class="card-title">Insured Person Attendance Detail</h5>
                                         
                                         
-                                        <div class="row p-l-20">
-                                            <div class="col-md-4">
+                                        <div class="row p-t-20">
+                                            <div class="col-md-2">
                                                 <div class="form-group">
                                                     <label class="control-label">SP</label> 
                                                     <select name="select_opt" id="select_opt" class="form-control" required> 
@@ -49,6 +49,50 @@
                                                         <option value="">Home Nursing Providers Sdn Bhd</option>
                                                         <option value="">ABC Sdn Bhd</option>
                                                         <option value="">DEF Sdn Bhd</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="form-group">
+                                                    <label class="control-label">State</label> 
+                                                    <select name="select_opt" id="select_opt" class="form-control" required> 
+                                                        <option value="">Please Select</option>
+                                                        <option value=""></option>
+                                                        <option value=""></option>
+                                                        <option value=""></option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="form-group">
+                                                    <label class="control-label">District</label> 
+                                                    <select name="select_opt" id="select_opt" class="form-control" required> 
+                                                        <option value="">Please Select</option>
+                                                        <option value=""></option>
+                                                        <option value=""></option>
+                                                        <option value=""></option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="form-group">
+                                                    <label class="control-label">Year</label> 
+                                                    <select name="select_opt" id="select_opt" class="form-control" required> 
+                                                        <option value="">Please Select</option>
+                                                        <option value=""></option>
+                                                        <option value=""></option>
+                                                        <option value=""></option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="form-group">
+                                                    <label class="control-label">Month</label> 
+                                                    <select name="select_opt" id="select_opt" class="form-control" required> 
+                                                        <option value="">Please Select</option>
+                                                        <option value=""></option>
+                                                        <option value=""></option>
+                                                        <option value=""></option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -74,9 +118,9 @@
                                                     <td>PRM/GL01/810723075383/201907</td>                      
                                                     <td>New</td>
                                                     <td>Home Nursing Providers Sdn Bhd</td>
-                                                    <td>* Physiotherapy</td>
-                                                    <td>#######</td>
-                                                    <td>#######</td>
+                                                    <td>* Physiotherapy<br>* Occupational Therapy</td>
+                                                    <td>1/2/2019</td>
+                                                    <td>3/1/3019</td>
                                                 </tr>
                                             </tbody>
                                             <tbody id="">
@@ -85,9 +129,9 @@
                                                     <td>PRM/GL02/810723075383/201907(2)</td>                      
                                                     <td>Extension</td>
                                                     <td>Home Nursing Providers Sdn Bhd</td>
-                                                    <td>* Physiotherapy</td>
-                                                    <td>#######</td>
-                                                    <td>#######</td>
+                                                    <td>* Physiotherapy<br>* Occupational Therapy</td>
+                                                    <td>3/2/2019</td>
+                                                    <td>5/1/2019</td>
                                                 </tr>
                                             </tbody>
                                             <tbody id="">
@@ -96,9 +140,9 @@
                                                     <td>PRM/GL03/810723075383/201907</td>                      
                                                     <td>New</td>
                                                     <td>Home Nursing Providers Sdn Bhd</td>
-                                                    <td>* Physiotherapy</td>
-                                                    <td>#######</td>
-                                                    <td>#######</td>
+                                                    <td>* Physiotherapy<br>* Occupational Therapy</td>
+                                                    <td>6/1/2019</td>
+                                                    <td>7/3/2019</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -156,6 +200,14 @@
                                                             <span  style="float:right;><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"aria-hidden="true"></i></a></span>
                                                             <span  style="float:right;><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"aria-hidden="true"></i></a></span>
                                                         </th>
+                                                        <th  rowspan="2" style="text-align:center;vertical-align:middle;padding:1">Diognasis (GL)  
+                                                            <span  style="float:right;><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"aria-hidden="true"></i></a></span>
+                                                            <span  style="float:right;><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"aria-hidden="true"></i></a></span>
+                                                        </th>
+                                                        <th  rowspan="2" style="text-align:center;vertical-align:middle;padding:1">Injury (Attendance)  
+                                                            <span  style="float:right;><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"aria-hidden="true"></i></a></span>
+                                                            <span  style="float:right;><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"aria-hidden="true"></i></a></span>
+                                                        </th>
                                                         <th  rowspan="2" style="text-align:center;vertical-align:middle;padding:1">Module</th>
                                                         <th rowspan="2" style="text-align:center;vertical-align:middle;padding:1">Session  
                                                             <span  style="float:right;><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"aria-hidden="true"></i></a></span>
@@ -165,23 +217,27 @@
                                                             <span  style="float:right;><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"aria-hidden="true"></i></a></span>
                                                             <span  style="float:right;><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"aria-hidden="true"></i></a></span>
                                                         </th>
+                                                        <th rowspan="2"   style="text-align:center;vertical-align:middle;padding:1">Query  
+                                                            <span  style="float:right;><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"aria-hidden="true"></i></a></span>
+                                                            <span  style="float:right;><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"aria-hidden="true"></i></a></span>
+                                                        </th>
                                                         <!-- <th class="text-center">Sort</th> -->
                                                         <th  colspan="4" class="text-center">Action</th>
                                                     
                                                     </tr>
                                                     <tr>
-                                                    <th class="text-center"><input type="checkbox" name="Checkboxs" id="selectAll" />   Endorse</th>
-                                                    <th class="text-center"><input type="checkbox" name="Checkboxs" id="CheckBox12" />   Reject</th>
-                                                    <th class="text-center">Delete</th>
+                                                        <th class="text-center"><input type="checkbox" name="Checkboxs" id="selectAll" />   Endorse</th>
+                                                        <th class="text-center"><input type="checkbox" name="Checkboxs" id="CheckBox12" />   Reject</th>
+                                                        <th class="text-center">Delete</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                 
                                                     <!-- This is our clonable table line -->
-                                                    <tr>
+                                                    <tr class="package-row">
                                                     
                                                         
-                                                        <td class="pt-3-half" contenteditable="true">1</td>
+                                                        <td id="package" name="package">1</td>
                                                         <td class="pt-3-half" contenteditable="true">Zul</td>
                                                         <td class="pt-3-half" contenteditable="true"><input type="date" name="date"></td>
                                                         <td class="pt-3-half" contenteditable="true">
@@ -192,8 +248,12 @@
                                                                                         <option value="">OT</option>
                                                                                 </select>
                                                         </td>
+                                                        <td class="pt-3-half" contenteditable="true"></td>
+                                                        <td class="pt-3-half" contenteditable="true"></td>
                                                         <td class="pt-3-half" contenteditable="true">2</td>
                                                         <td class="pt-3-half" contenteditable="true">160</td>
+                                                        <td class="pt-3-half" contenteditable="true"></td>
+                                                       
                                                         <!-- <td class="pt-3-half">
                                                         <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
                                                                 aria-hidden="true"></i></a></span>
@@ -221,8 +281,11 @@
                                                                                         <option value="">OT</option>
                                                                                 </select>
                                                         </td>
+                                                        <td class="pt-3-half" contenteditable="true"></td>
+                                                        <td class="pt-3-half" contenteditable="true"></td>
                                                         <td class="pt-3-half" contenteditable="true">1 </td>
                                                         <td class="pt-3-half" contenteditable="true">80</td>
+                                                        <td class="pt-3-half" contenteditable="true"></td>
                                                         <!-- <td class="pt-3-half">
                                                         <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
                                                                 aria-hidden="true"></i></a></span>
@@ -249,9 +312,13 @@
                                                                                         <option value="">TENS</option>
                                                                                         <option value="">OT</option>
                                                                                 </select>
+                                                                                
                                                         </td>
+                                                        <td class="pt-3-half" contenteditable="true"></td>
+                                                        <td class="pt-3-half" contenteditable="true"></td>
                                                         <td class="pt-3-half" contenteditable="true">1</td>
                                                         <td class="pt-3-half" contenteditable="true">80</td>
+                                                        <td class="pt-3-half" contenteditable="true"></td>
                                                         <!-- <td class="pt-3-half">
                                                         <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
                                                                 aria-hidden="true"></i></a></span>
@@ -279,8 +346,11 @@
                                                                                         <option value="">OT</option>
                                                                                 </select>
                                                         </td>
+                                                        <td class="pt-3-half" contenteditable="true"></td>
+                                                        <td class="pt-3-half" contenteditable="true"></td>
                                                         <td class="pt-3-half" contenteditable="true">1</td>
                                                         <td class="pt-3-half" contenteditable="true">80</td>
+                                                        <td class="pt-3-half" contenteditable="true"></td>
                                                         <!-- <td class="pt-3-half">
                                                             <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
                                                                 aria-hidden="true"></i></a></span>
@@ -308,8 +378,11 @@
                                                                                         <option value="">OT</option>
                                                                                 </select>
                                                         </td>
+                                                        <td class="pt-3-half" contenteditable="true"></td>
+                                                        <td class="pt-3-half" contenteditable="true"></td>
                                                         <td class="pt-3-half" contenteditable="true">1</td>
                                                         <td class="pt-3-half" contenteditable="true">80</td>
+                                                        <td class="pt-3-half" contenteditable="true"></td>
                                                         <!-- <td class="pt-3-half">
                                                             <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
                                                                 aria-hidden="true"></i></a></span>
@@ -337,8 +410,11 @@
                                                                                         <option value="">OT</option>
                                                                                 </select>
                                                         </td>
+                                                        <td class="pt-3-half" contenteditable="true"></td>
+                                                        <td class="pt-3-half" contenteditable="true"></td>
                                                         <td class="pt-3-half" contenteditable="true">1</td>
                                                         <td class="pt-3-half" contenteditable="true">80</td>
+                                                        <td class="pt-3-half" contenteditable="true"></td>
                                                         <!-- <td class="pt-3-half">
                                                             <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
                                                                 aria-hidden="true"></i></a></span>
@@ -366,8 +442,11 @@
                                                                                         <option value="">OT</option>
                                                                                 </select>
                                                         </td>
+                                                        <td class="pt-3-half" contenteditable="true"></td>
+                                                        <td class="pt-3-half" contenteditable="true"></td>
                                                         <td class="pt-3-half" contenteditable="true">1</td>
                                                         <td class="pt-3-half" contenteditable="true">80</td>
+                                                        <td class="pt-3-half" contenteditable="true"></td>
                                                         <!-- <td class="pt-3-half">
                                                             <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
                                                                 aria-hidden="true"></i></a></span>
@@ -395,8 +474,11 @@
                                                                                         <option value="">OT</option>
                                                                                 </select>
                                                         </td>
+                                                        <td class="pt-3-half" contenteditable="true"></td>
+                                                        <td class="pt-3-half" contenteditable="true"></td>
                                                         <td class="pt-3-half" contenteditable="true">1</td>
                                                         <td class="pt-3-half" contenteditable="true">80</td>
+                                                        <td class="pt-3-half" contenteditable="true"></td>
                                                         <!-- <td class="pt-3-half">
                                                             <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
                                                                 aria-hidden="true"></i></a></span>
@@ -425,8 +507,11 @@
                                                                                         <option value="">OT</option>
                                                                                 </select>
                                                         </td>
+                                                        <td class="pt-3-half" contenteditable="true"></td>
+                                                        <td class="pt-3-half" contenteditable="true"></td>
                                                         <td class="pt-3-half" contenteditable="true">1</td>
                                                         <td class="pt-3-half" contenteditable="true">80</td>
+                                                        <td class="pt-3-half" contenteditable="true"></td>
                                                         <!-- <td class="pt-3-half">
                                                             <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
                                                                 aria-hidden="true"></i></a></span>
@@ -455,8 +540,11 @@
                                                                                     <option value="">OT</option>
                                                                             </select>
                                                     </td>
+                                                    <td class="pt-3-half" contenteditable="true"></td>
+                                                    <td class="pt-3-half" contenteditable="true"></td>
                                                     <td class="pt-3-half" contenteditable="true">1</td>
                                                     <td class="pt-3-half" contenteditable="true">80</td>
+                                                    <td class="pt-3-half" contenteditable="true"></td>
                                                     <!-- <td class="pt-3-half">
                                                         <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
                                                             aria-hidden="true"></i></a></span>
@@ -485,8 +573,11 @@
                                                                                     <option value="">OT</option>
                                                                             </select>
                                                     </td>
+                                                    <td class="pt-3-half" contenteditable="true"></td>
+                                                    <td class="pt-3-half" contenteditable="true"></td>
                                                     <td class="pt-3-half" contenteditable="true">1</td>
                                                     <td class="pt-3-half" contenteditable="true">80</td>
+                                                    <td class="pt-3-half" contenteditable="true"></td>
                                                     <!-- <td class="pt-3-half">
                                                         <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
                                                             aria-hidden="true"></i></a></span>
@@ -515,8 +606,11 @@
                                                                                     <option value="">OT</option>
                                                                             </select>
                                                     </td>
+                                                    <td class="pt-3-half" contenteditable="true"></td>
+                                                    <td class="pt-3-half" contenteditable="true"></td>
                                                     <td class="pt-3-half" contenteditable="true">1</td>
                                                     <td class="pt-3-half" contenteditable="true">80</td>
+                                                    <td class="pt-3-half" contenteditable="true"></td>
                                                     <!-- <td class="pt-3-half">
                                                         <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
                                                             aria-hidden="true"></i></a></span>
@@ -570,6 +664,9 @@
                                                         </td>
                                                         <td class="pt-3-half" contenteditable="true"></td>
                                                         <td class="pt-3-half" contenteditable="true"></td>
+                                                        <td class="pt-3-half" contenteditable="true"></td>
+                                                        <td class="pt-3-half" contenteditable="true"></td>
+                                                        <td class="pt-3-half" contenteditable="true"></td>
                                                         <!-- <td class="pt-3-half">
                                                         <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
                                                                 aria-hidden="true"></i></a></span>
@@ -586,14 +683,14 @@
                                                 </tbody>
                                                 <tfoot>
                                                         <tr>
-                                                        <td colspan="5"><b>Total (RM)</b></td>
+                                                        <td colspan="7"><b>Total (RM)</b></td>
                                                         <td><b>RM 880.00</b></td>
-                                                        <td colspan="3"></td>
+                                                        <td colspan="5"></td>
                                                         </tr>
                                                 </tfoot>
                                             </table>
 
-                                        </div>
+                                    </div>
                                         
                                     </div>
                                 </div>
@@ -658,7 +755,7 @@
 
 
                                         <div id="table-wrapper">
-                                            <div id="table-scroll" class="table-editable">
+                                            <div id="table-scroll" >
                                                     <table   class="table table-bordered table-responsive-md table-striped text-center">
                                                         <thead>
                                                             <tr>
@@ -679,130 +776,132 @@
                                                         
                                                             <!-- This is our clonable table line -->
                                                             <tr>   
-                                                                <td class="pt-3-half" contenteditable="true">1</td>
-                                                                <td class="pt-3-half" contenteditable="true">Zul</td>
-                                                                <td class="pt-3-half" contenteditable="true">3/2/2019</td>
-                                                                <td class="pt-3-half" contenteditable="true">Physio</td>
-                                                                <td class="pt-3-half" contenteditable="true">2</td>
-                                                                <td class="pt-3-half" contenteditable="true">160</td>
+                                                                <td >1</td>
+                                                                <td >Zul</td>
+                                                                <td >3/2/2019</td>
+                                                                <td >Physio</td>
+                                                                <td >2</td>
+                                                                <td >160</td>
                                                             </tr>
 
                                                             <!-- This is our clonable table line -->
                                                             <tr>
                                                             
-                                                                <td class="pt-3-half" contenteditable="true">2</td>
-                                                                <td class="pt-3-half" contenteditable="true">Zul</td>
-                                                                <td class="pt-3-half" contenteditable="true">3/7/2019</td>
-                                                                <td class="pt-3-half" contenteditable="true">Physio </td>
-                                                                <td class="pt-3-half" contenteditable="true">1 </td>
-                                                                <td class="pt-3-half" contenteditable="true">80</td>
+                                                                <td >2</td>
+                                                                <td >Zul</td>
+                                                                <td >3/7/2019</td>
+                                                                <td >Physio </td>
+                                                                <td >1 </td>
+                                                                <td >80</td>
                                                             </tr>
 
                                                             <!-- This is our clonable table line -->
                                                             <tr>
                                                                 
-                                                                <td class="pt-3-half" contenteditable="true">3 </td>
-                                                                <td class="pt-3-half" contenteditable="true">Zul</td>
-                                                                <td class="pt-3-half" contenteditable="true">3/8/2019</td>
-                                                                <td class="pt-3-half" contenteditable="true">Physio </td>
-                                                                <td class="pt-3-half" contenteditable="true">1</td>
-                                                                <td class="pt-3-half" contenteditable="true">80</td>
+                                                                <td >3 </td>
+                                                                <td >Zul</td>
+                                                                <td >3/8/2019</td>
+                                                                <td >Physio </td>
+                                                                <td >1</td>
+                                                                <td >80</td>
                                                             </tr>
 
                                                             <!-- This is our clonable table line -->
                                                             <tr>    
-                                                                <td class="pt-3-half" contenteditable="true">4</td>
-                                                                <td class="pt-3-half" contenteditable="true">Zul</td>
-                                                                <td class="pt-3-half" contenteditable="true">3/9/2019</td>
-                                                                <td class="pt-3-half" contenteditable="true">Physio</td>
-                                                                <td class="pt-3-half" contenteditable="true">1</td>
-                                                                <td class="pt-3-half" contenteditable="true">80</td>
+                                                                <td >4</td>
+                                                                <td >Zul</td>
+                                                                <td >3/9/2019</td>
+                                                                <td >Physio</td>
+                                                                <td >1</td>
+                                                                <td >80</td>
                                                             </tr>
 
                                                             <!-- This is our clonable table line -->
                                                             <tr>    
-                                                                <td class="pt-3-half" contenteditable="true">5</td>
-                                                                <td class="pt-3-half" contenteditable="true">Ahmad</td>
-                                                                <td class="pt-3-half" contenteditable="true">3/2/2019</td>
-                                                                <td class="pt-3-half" contenteditable="true">Physio</td>
-                                                                <td class="pt-3-half" contenteditable="true">1</td>
-                                                                <td class="pt-3-half" contenteditable="true">80</td>
-                                                            </tr>
-
-                                                            <!-- This is our clonable table line -->
-                                                            <tr>    
-                                                                
-                                                                <td class="pt-3-half" contenteditable="true">6</td>
-                                                                <td class="pt-3-half" contenteditable="true">Ahmad</td>
-                                                                <td class="pt-3-half" contenteditable="true">3/7/2019</td>
-                                                                <td class="pt-3-half" contenteditable="true">Physio </td>
-                                                                <td class="pt-3-half" contenteditable="true">1</td>
-                                                                <td class="pt-3-half" contenteditable="true">80</td>
+                                                                <td >5</td>
+                                                                <td >Ahmad</td>
+                                                                <td >3/2/2019</td>
+                                                                <td >Physio</td>
+                                                                <td >1</td>
+                                                                <td >80</td>
                                                             </tr>
 
                                                             <!-- This is our clonable table line -->
                                                             <tr>    
                                                                 
-                                                                <td class="pt-3-half" contenteditable="true">7</td>
-                                                                <td class="pt-3-half" contenteditable="true">Ahmad</td>
-                                                                <td class="pt-3-half" contenteditable="true">3/8/2019</td>
-                                                                <td class="pt-3-half" contenteditable="true">Physio</td>
-                                                                <td class="pt-3-half" contenteditable="true">1</td>
-                                                                <td class="pt-3-half" contenteditable="true">80</td>
+                                                                <td >6</td>
+                                                                <td >Ahmad</td>
+                                                                <td >3/7/2019</td>
+                                                                <td >Physio </td>
+                                                                <td >1</td>
+                                                                <td >80</td>
+                                                            </tr>
+
+                                                            <!-- This is our clonable table line -->
+                                                            <tr>    
+                                                                
+                                                                <td >7</td>
+                                                                <td >Ahmad</td>
+                                                                <td >3/8/2019</td>
+                                                                <td >Physio</td>
+                                                                <td >1</td>
+                                                                <td >80</td>
                                                             </tr>
 
                                                             <!-- This is our clonable table line -->
                                                             <tr>    
                                                             
-                                                                <td class="pt-3-half" contenteditable="true">8</td>
-                                                                <td class="pt-3-half" contenteditable="true">Ahmad</td>
-                                                                <td class="pt-3-half" contenteditable="true">3/9/2019</td>
-                                                                <td class="pt-3-half" contenteditable="true">Physio</td>
-                                                                <td class="pt-3-half" contenteditable="true">1</td>
-                                                                <td class="pt-3-half" contenteditable="true">80</td>
+                                                                <td >8</td>
+                                                                <td >Ahmad</td>
+                                                                <td >3/9/2019</td>
+                                                                <td >Physio</td>
+                                                                <td >1</td>
+                                                                <td >80</td>
                                                             </tr>
 
                                                             <!-- This is our clonable table line -->
                                                             <tr>    
                                                             
-                                                                <td class="pt-3-half" contenteditable="true">9</td>
-                                                                <td class="pt-3-half" contenteditable="true">Khairul</td>
-                                                                <td class="pt-3-half" contenteditable="true">3/2/2019</td>
-                                                                <td class="pt-3-half" contenteditable="true">Physio </td>
-                                                                <td class="pt-3-half" contenteditable="true">1</td>
-                                                                <td class="pt-3-half" contenteditable="true">80</td> 
+                                                                <td >9</td>
+                                                                <td >Khairul</td>
+                                                                <td >3/2/2019</td>
+                                                                <td >Physio </td>
+                                                                <td >1</td>
+                                                                <td >80</td> 
                                                             </tr>
 
                                                             <!-- This is our clonable table line -->
                                                             <tr>    
                                                             
-                                                            <td class="pt-3-half" contenteditable="true">10</td>
-                                                            <td class="pt-3-half" contenteditable="true">Khairul</td>
-                                                            <td class="pt-3-half" contenteditable="true">3/7/2019</td>
-                                                            <td class="pt-3-half" contenteditable="true">Physio</td>
-                                                            <td class="pt-3-half" contenteditable="true">1</td>
-                                                            <td class="pt-3-half" contenteditable="true">80</td>
-                                                        </tr>
+                                                                <td >10</td>
+                                                                <td >Khairul</td>
+                                                                <td >3/7/2019</td>
+                                                                <td >Physio </td>
+                                                                <td >1</td>
+                                                                <td >80</td> 
+                                                            </tr>
 
                                                             <!-- This is our clonable table line -->
-                                                        <tr>    
-                                                            <td class="pt-3-half" contenteditable="true">11</td>
-                                                            <td class="pt-3-half" contenteditable="true">Khairul</td>
-                                                            <td class="pt-3-half" contenteditable="true">3/7/2019</td>
-                                                            <td class="pt-3-half" contenteditable="true">Physio</td>
-                                                            <td class="pt-3-half" contenteditable="true">1</td>
-                                                            <td class="pt-3-half" contenteditable="true">80</td>
-                                                        </tr>
+                                                            <tr>    
+                                                            
+                                                                <td >11</td>
+                                                                <td >Khairul</td>
+                                                                <td >3/8/2019</td>
+                                                                <td >Physio </td>
+                                                                <td >1</td>
+                                                                <td >80</td> 
+                                                            </tr>
 
                                                         <!-- This is our clonable table line -->
-                                                        <tr>     
-                                                            <td class="pt-3-half" contenteditable="true">12</td>
-                                                            <td class="pt-3-half" contenteditable="true">Khairul</td>
-                                                            <td class="pt-3-half" contenteditable="true">3/8/2019</td>
-                                                            <td class="pt-3-half" contenteditable="true">Physio</td>
-                                                            <td class="pt-3-half" contenteditable="true">1</td>
-                                                            <td class="pt-3-half" contenteditable="true">80</td>   
-                                                        </tr>
+                                                            <tr>    
+                                                                
+                                                                <td >12</td>
+                                                                <td >Khairul</td>
+                                                                <td >3/9/2019</td>
+                                                                <td >Physio </td>
+                                                                <td >1</td>
+                                                                <td >80</td> 
+                                                            </tr>
 
                                                          
                                                     </tbody>
@@ -822,8 +921,8 @@
                                 
                                     </div>
                             </div> 
+                        </div>
                 </div>
-            </div>
 
 
 
@@ -836,6 +935,12 @@
           
 
 
+
+            </div>
+
+
+
+          
 
         </div>
     </div>
@@ -970,11 +1075,11 @@ $("th input[type='checkbox']").on("change", function() {
   
    var cb = $(this),          //checkbox that was changed
        th = cb.parent(),      //get parent th
-       col = th.index() + 7;  //get column index. note nth-child starts at 1, not zero
-       if( col==7){
+       col = th.index() + 10;  //get column index. note nth-child starts at 1, not zero
+       if( col==10){
         $("tbody td:nth-child(" + col + ") input").prop("checked", this.checked);  //select the inputs and [un]check it  
        }
-       else if( col==8){
+       else if( col==11){
         $("tbody td:nth-child(" + col + ") input").prop("checked", this.checked);  //select the inputs and [un]check it  
        }
   

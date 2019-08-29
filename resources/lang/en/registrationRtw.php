@@ -34,6 +34,7 @@ return [
         'postal_address3' => 'Postal Address 3',
         'city' => 'City',
         'state' => 'State',
+        'district' => 'District',
         'postcode' => 'Postcode',
         'telNo' => 'Telephone No.',
         'mobileNo' => 'Mobile No.',

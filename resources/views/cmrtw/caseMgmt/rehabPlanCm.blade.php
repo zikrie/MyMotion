@@ -22,25 +22,41 @@
                                                 <tr>
                                                     <th>@lang('caseMgmt.attr.no')</th>
                                                     <th>@lang('caseMgmt.attr.rehab_plan')</th>
-                                                    <th>@lang('caseMgmt.attr.start_time_suggest')</th>
+                                                    <th>@lang('caseMgmt.attr.aging')</th>
+                                                    <th>@lang('caseMgmt.attr.propose_start_date')</th>
                                                     <th>@lang('caseMgmt.attr.estimation_cost')</th>
                                                     <th>@lang('caseMgmt.attr.status')</th>   
+                                                    <th>@lang('caseMgmt.attr.action')</th>   
                                                 </tr>
                                             </thead>                                              
                                             <tbody>
                                                 <tr>
                                                     <td>1</td>
                                                     <td>WSA</td>
+                                                    <td>6</td>
                                                     <td>19/03/2019</td>
-                                                    <td>500</td>
-                                                    <td>Active</td>                                                              
+                                                    <td></td>
+                                                    <td>New</td>                                                              
+                                                    <td><div class= "btn-group">
+                                                    <button type="button" class="btn btn-primary edit">
+                                                    <span class='glyphicon glyphicon-check'></span> Update
+                                                    </button> 
+                                                    </div>
+                                                    </td>                                                              
                                                 </tr>  
                                                 <tr>
-                                                        <td>2</td>
-                                                        <td>FCE</td>
-                                                        <td>19/04/2019</td>
-                                                        <td>500</td>
-                                                        <td>Active</td>                                                              
+                                                    <td>2</td>
+                                                    <td>FCE</td>
+                                                    <td>5</td>
+                                                    <td>19/04/2019</td>
+                                                    <td></td>
+                                                    <td>New</td>
+                                                    <td><div class= "btn-group">
+                                                    <button type="button" class="btn btn-primary edit">
+                                                     <span class='glyphicon glyphicon-check'></span> Update
+                                                    </button> 
+                                                    </div>  
+                                                    </td>                                                               
                                                     </tr>                                                      
                                             </tbody>
                                         </table>   
@@ -50,7 +66,7 @@
     
     
                             <ul class="nav nav-tabs" role="tablist">
-                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#discussion" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.discussion')</span></a> </li>   
+                                    {{-- <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#discussion" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.discussion')</span></a> </li>    --}}
                                         <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#prm" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.prm')</span></a> </li>
                                         <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#wsa" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.wsa')</span></a> </li>
                                         <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#fce" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">@lang('caseMgmt.attr.fce')</span></a> </li>
@@ -78,23 +94,36 @@
                                     </div> --}}
 
 
-
+                                    {{-- WSA --}}
                                     <div class="tab-pane p-20" id="wsa" role="tabpanel">
                                         <ul class="nav customtab" role="tablist">
-                                                <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#permission" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Permission</span></a> </li>
-                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#jobDetails" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Job Details</span></a> </li>
+                                                <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#discussionWsa" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Discussion</span></a> </li>
+                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#permission" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Insured Person/ Employer Consent</span></a> </li>
+                                                {{-- <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#jobDetails" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Job Details</span></a> </li> --}}
+                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#empEmployment" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Insured Person Employment Info</span></a> </li>
+                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#empEmployer" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Insured Person Employer Info</span></a> </li>
                                                 <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#appointmentTrip" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Appointment Trip</span></a> </li>
                                                 <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#wsa_form" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">WSA Form</span></a> </li>
                                                 <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#wsa_report" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">WSA Report</span></a> </li>
                                         </ul>
                                         <div class="tab-content tabcontent-border">
-                                                <div class="tab-pane p-20 active" id="permission" role="tabpanel">
+                                                <div class="tab-pane p-20 active" id="discussionWsa" role="tabpanel">
+                                                        @include('cmrtw.caseMgmt.PL.wsaDiscussion')
+                                                 </div>
+
+                                                <div class="tab-pane p-20" id="permission" role="tabpanel">
                                                     @include('cmrtw.caseMgmt.PL.ipPermission')
                                                 </div>
+                                                <div class="tab-pane p-20" id="empEmployment" role="tabpanel">                                                  
+                                                        @include('cmrtw.caseMgmt.PL.wsaEmployment')  
+                                                 </div>
+                                                 <div class="tab-pane p-20" id="empEmployer" role="tabpanel">                                                  
+                                                        @include('cmrtw.caseMgmt.PL.wsaEmployer')  
+                                                 </div>
                             
-                                                <div class="tab-pane p-20" id="jobDetails" role="tabpanel">                                                  
+                                                {{-- <div class="tab-pane p-20" id="jobDetails" role="tabpanel">                                                  
                                                     @include('cmrtw.caseMgmt.PL.jobDetails')  
-                                                </div>
+                                                </div> --}}
                             
                                                 <div class="tab-pane p-20" id="appointmentTrip" role="tabpanel">                                  
                                                      @include('cmrtw.caseMgmt.PL.appointmentTrip')
@@ -175,29 +204,41 @@
                                     <div class="tab-pane p-20" id="prm" role="tabpanel">
                                             <ul class="nav customtab" role="tablist">
                                                    
-                                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#recoveryInformation" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Recovery Information</span></a> </li>
+                                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#discussionprm" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Discussion</span></a> </li>
+                                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#prmgl" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Guarantee Letter</span></a> </li>
+                                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#prmsession" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Session Info</span></a> </li>
                                                     <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#rehabReport" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Rehab Report</span></a> </li>
-                                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#sessInfo" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Session Information</span></a> </li>
+                                                    {{-- <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#sessInfo" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Session Information</span></a> </li> --}}
                                                     <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#ipAttendanceInfo" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Insured Person Attendance Information</span></a> </li>
+                                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#caseNotePrm" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Case Note</span></a> </li>
                                                    
                                             </ul>
                                             <div class="tab-content tabcontent-border">
                                                   
                                 
-                                                    <div class="tab-pane p-20 active" id="recoveryInformation" role="tabpanel">
-                                                    @include('cmrtw.caseMgmt.PL.prmRecovery')
+                                                    <div class="tab-pane p-20 active" id="discussionprm" role="tabpanel">
+                                                    @include('cmrtw.caseMgmt.PL.prmDiscussion')
                                                     </div>
+                                                    <div class="tab-pane p-20" id="prmgl" role="tabpanel">
+                                                            @include('cmrtw.caseMgmt.PL.prmGl')
+                                                    </div>
+                                                    <div class="tab-pane p-20" id="prmsession" role="tabpanel">
+                                                        @include('cmrtw.caseMgmt.PL.prmSession')
+                                                </div>
                                 
                                                     <div class="tab-pane p-20" id="rehabReport" role="tabpanel">
-                                                    @include('cmrtw.caseMgmt.PL.prmRehabReport')
+                                                         @include('cmrtw.caseMgmt.PL.prmRehabReport')
                                                     </div>
                                 
-                                                    <div class="tab-pane p-20" id="sessInfo" role="tabpanel">
+                                                    {{-- <div class="tab-pane p-20" id="sessInfo" role="tabpanel">
                                                         @include('cmrtw.caseMgmt.PL.prmSessionDetails')
-                                                    </div>
+                                                    </div> --}}
                                 
                                                     <div class="tab-pane p-20" id="ipAttendanceInfo" role="tabpanel">
                                                         @include('cmrtw.caseMgmt.PL.prmIpAttend')
+                                                    </div>
+                                                    <div class="tab-pane p-20" id="caseNotePrm" role="tabpanel">
+                                                        @include('cmrtw.caseMgmt.PL.prmCaseNote')
                                                     </div>
                                                    
                                             </div>
@@ -597,7 +638,7 @@
                                                                 </div> --}}
                                                                 
 
-                                                                <div class="tab-pane p-20" id="discussion" role="tabpanel">
+                                                                {{-- <div class="tab-pane p-20" id="discussion" role="tabpanel">
                                                                                 <ul class="nav customtab" role="tablist">
                                                                                         <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#discuss_cat" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Discussion Category</span></a> </li>
                                                                                         <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#comm_ip" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Insured Person Communication Details</span></a> </li>
@@ -619,7 +660,7 @@
                                                                                         
                                                                 
                                                                                 </div>
-                                                                        </div>                              
+                                                                        </div>                               --}}
                                     
                                 </div>
                         </div>

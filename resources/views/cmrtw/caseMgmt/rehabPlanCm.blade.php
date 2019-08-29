@@ -175,7 +175,7 @@
                                     <div class="tab-pane p-20" id="prm" role="tabpanel">
                                             <ul class="nav customtab" role="tablist">
                                                    
-                                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#recoveryInformation" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Recovery Information</span></a> </li>
+                                                    <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#recoveryInformation" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Recovery Information</span></a> </li>
                                                     <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#rehabReport" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Rehab Report</span></a> </li>
                                                     <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#sessInfo" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Session Information</span></a> </li>
                                                     <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#ipAttendanceInfo" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Insured Person Attendance Information</span></a> </li>
@@ -220,7 +220,7 @@
                                                     <ul class="nav customtab" role="tablist">
                                                            
                                                            
-                                                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#rtwPlanningInfoMM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">  RTW Planning Information</span></a> </li>
+                                                            <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#rtwPlanningInfoMM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">  RTW Planning Information</span></a> </li>
                                                             <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#modifihistoryInfoMM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down"> Modifications History Information</span></a> </li>
                                                             <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#modifiInfoMM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down"> Modifications Information</span></a> </li>
                                                             <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#requestForQuotationMM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Request For Quotation</span></a> </li>
@@ -235,7 +235,7 @@
                                                     <div class="tab-content tabcontent-border">
                                                            
                                         
-                                                            <div class="tab-pane p-20" id="rtwPlanningInfoMM" role="tabpanel">
+                                                            <div class="tab-pane p-20 active" id="rtwPlanningInfoMM" role="tabpanel">
                                                             @include('cmrtw.caseMgmt.MM.RTWplanningInfo') 
                                                             </div>
                                         
@@ -302,7 +302,7 @@
                                             <div class="tab-pane p-20" id="vtm" role="tabpanel">
                                                     <ul class="nav customtab" role="tablist">
                                                            
-                                                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#supplierApprovalVTM" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Supplier Approval</span></a> </li>
+                                                            <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#supplierApprovalVTM" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Supplier Approval</span></a> </li>
                                                             <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#reqForQuotVTM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Request for Quotation</span></a> </li>
                                                             <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#quotationVTM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Quotation</span></a> </li>
                                                             <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#suppInfoSelectedVTM" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Selected Supplier Information</span></a> </li>
@@ -316,7 +316,7 @@
                                                     <div class="tab-content tabcontent-border">
                                                            
                                         
-                                                            <div class="tab-pane p-20" id="supplierApprovalVTM" role="tabpanel">
+                                                            <div class="tab-pane p-20 active" id="supplierApprovalVTM" role="tabpanel">
                                                             @include('cmrtw.caseMgmt.PL.vtmSupplierApproval')
                                                             </div>
                                         
@@ -379,7 +379,7 @@
                                                  <div class="tab-pane p-20" id="jp" role="tabpanel">
                                                         <ul class="nav customtab" role="tablist">
                                                                 
-                                                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#laser_assess" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">LASER Assessment</span></a> </li>
+                                                                <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#laser_assess" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">LASER Assessment</span></a> </li>
                                                                 <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#jp_ip" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Job Placement Insured Person Details</span></a> </li>
                                                                 <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#jp_report" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Job Placement Report</span></a> </li>
                                                                 <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#search_job" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Search Job Activity</span></a> </li>
@@ -388,7 +388,7 @@
                                                         <div class="tab-content tabcontent-border">
                                                                 
                                             
-                                                                <div class="tab-pane p-20" id="laser_assess" role="tabpanel">
+                                                                <div class="tab-pane p-20 active" id="laser_assess" role="tabpanel">
                                                                 @include('cmrtw.caseMgmt.PL.jpLaserAssess')
                                                                 </div>
                                             

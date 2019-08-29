@@ -953,7 +953,7 @@ const $tableID = $('#table');
 
 
 
-
+//search 
 $(document).ready(function () {
 $('#dtBasicExample1').DataTable();
 $('.dataTables_length').addClass('bs-select');
@@ -965,7 +965,7 @@ $('.dataTables_length').addClass('bs-select');
 
 
 
-
+//check box function
 $("th input[type='checkbox']").on("change", function() {
   
    var cb = $(this),          //checkbox that was changed

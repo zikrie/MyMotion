@@ -9,7 +9,23 @@ $.ajaxSetup({
 
 let calendar = null;
 
+function updateEvent(event) {
+    // $('#update-modal input[name="event-index"]').val(event ? event.id : '');
+    // $('#update-modal input[name="event-name"]').val(event ? event.name : '');
+    // $('#update-modal input[name="event-location"]').val(event ? event.location : '');
+    // $('#update-modal input[name="takwim-start-date"]').datepicker('update', event ? event.startDate : '');
+    // $('#update-modal input[name="takwim-end-date"]').datepicker('update', event ? event.endDate : '');
+    $('#update-modal').modal();
+}
 function editEvent(event) {
+    // $('#event-modal input[name="event-index"]').val(event ? event.id : '');
+    // $('#event-modal input[name="event-name"]').val(event ? event.name : '');
+    // $('#event-modal input[name="event-location"]').val(event ? event.location : '');
+    // $('#event-modal input[name="takwim-start-date"]').datepicker('update', event ? event.startDate : '');
+    // $('#event-modal input[name="takwim-end-date"]').datepicker('update', event ? event.endDate : '');
+    $('#event-modal').modal();
+}
+function rescheduleEvent(event) {
     $('#event-modal input[name="event-index"]').val(event ? event.id : '');
     $('#event-modal input[name="event-name"]').val(event ? event.name : '');
     $('#event-modal input[name="event-location"]').val(event ? event.location : '');
@@ -35,7 +51,11 @@ $(function() {
         contextMenuItems:[
             {
                 text: 'Update',
-                click: editEvent
+                click: updateEvent
+            },
+            {
+                text: 'Reschedule',
+                click: rescheduleEvent
             },
             {
                 text: 'Delete',

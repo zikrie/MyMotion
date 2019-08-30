@@ -117,7 +117,7 @@
                                 <div class="col-12">
                                 <div class="card">
                                     <div class="table-responsive m-t-40">
-                                        <table id="workbasketRTW" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
+                                        <table id="workbasketRTW" class="table table-bordered text-center" cellspacing="0" width="100%">
                                             <thead>
                                                 <tr>
                                                     <th>@lang('home.select')</th>
@@ -131,6 +131,15 @@
                                                     <th>@lang('home.icno')</th>
                                                     <th>@lang('home.casestatus')</th>
                                                 </tr>
+                                                <!-- <tr>
+                                                    <th>Select / Update</th>
+                                                    <th>Delete</th>
+                                                    <th>Add</th>
+                                                    <th>View upload file</th>
+                                                    <th>Download</th>
+                                                    <th>Upload</th>
+                                                    <th>Search</th>
+                                                </tr> -->
                                             </thead>
 
                                             <tbody class='align-middle'>
@@ -139,7 +148,7 @@
                                                 @isset($wbrtw->wbid)
 
                                                 <tr>
-                                                    <td><a id='selectdraft' href='/cmrtw.index?rtwrefno={{$wbrtw->rtwrefno}}&caserefno={{$wbrtw->caserefno}}&wbid={{$wbrtw->wbid}}'><i class="fas fa-edit"></i></a></td>
+                                                    <td><a id='selectdraft' href="/cmrtw.index?rtwrefno={{$wbrtw->rtwrefno}}&caserefno={{$wbrtw->caserefno}}&wbid={{$wbrtw->wbid}}"><i class="fas fa-edit"></i></a></td>
                                                     <td><a id="deletedraft" onclick="return confirm('Are you sure want to delete the draft?');" ><i class="fas fa-trash-alt fa-sm"></i></a></td>
                                                     <td>{{ $wbrtw->wbid }}</td>
                                                     <td><?php 
@@ -157,7 +166,17 @@
                                                 </tr>
                                                @endisset 
                                                @endforeach
-                                               
+
+                                               <!-- <tr >
+                                                    <td style="text-align:center;width:1%;"><a id='selectdraft'><i class="fas fa-edit"></a></i></td>
+                                                    <td style="align:center;width:1%;"><a id='deletedraft'><i class="fas fa-trash-alt "></i></td>
+                                                    <td style="align:center;width:1%;"><a id='adddraft'><i class="fas fa-plus "></i></td>
+                                                    <td style="align:center;width:1%;"><a id='viewdraft'><i class="fas fa-file-pdf "></i></td>
+                                                    <td style="align:center;width:1%;"><a id='downloaddraft'><i class="fas fa-download "></i></td>
+                                                    <td style="align:center;width:1%;"><a id='uploaddraft'><i class="fas fa-upload"></i></td>
+                                                    <td style="align:center;width:1%;"><a id='searchdraft'><i class="fas fa-search"></i></td> 
+                                                </tr> -->
+
                                             </tbody>
                                         </table>
                                     </div>

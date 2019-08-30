@@ -1,7 +1,5 @@
-
 <script>
 function calendar(hospital_id){
-// alert(hospital_id);
 $.ajaxSetup({
     headers: {
     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -43,7 +41,6 @@ function editEvent(event) {
     var countArray = $('#update-modal input[name="takwim_table_count"]').val();
 
     if(countArray >= '1'){
-        // alert(countArray);
         for(i=0; i<countArray; i++){
             $('#addtableupdate'+ i).remove();
             counter -= 1;
@@ -58,16 +55,10 @@ function editEvent(event) {
     $('#update-modal select[name="takwim_medical_board_category"]').val(event ? event.mb_category : '');
     $('#update-modal select[name="takwim_chairman"]').val(event ? event.chairman_id : '');
     $('#update-modal select[name="takwim_sectariat"]').val(event ? event.secretariat_id : '');
-    // $('#update-modal select[name="takwim_discipline"]').val(event ? event.doc_speciality : '');
-    // $('#update-modal select[name="takwim_doctor"]').val(event ? event.doctor : '');
-    // $('#update-modal input[name="takwim_quota"]').val(event ? event.quota : '');
     $('#update-modal textarea[name="takwim_remarks"]').val(event ? event.remarks : '');
     $('#update-modal input[name="takwim-start-date"]').datepicker('update', event ? event.startDate : '');
     $('#update-modal input[name="takwim-end-date"]').datepicker('update', event ? event.endDate : '');
 
-    // console.log(event.table['table']);
-    // console.log(event.table['table'].length);
-    // console.log(event.table['table'][3].speciality_id);
 
     var countTable = event.table['table'].length;
     if(countTable != '')
@@ -114,11 +105,9 @@ function editEvent(event) {
 }
 
 function rescheduleEvent(event) {
-    // $('#update-modal input[name="takwim-start-date"]').css('pointer-events', 'none');
     var countArray = $('#reschedule-modal input[name="takwim_table_count"]').val();
 
     if(countArray >= '1'){
-        // alert(countArray);
         for(i=0; i<countArray; i++){
             $('#addtablereschedule'+ i).remove();
             counter -= 1;
@@ -133,9 +122,6 @@ function rescheduleEvent(event) {
     $('#reschedule-modal select[name="takwim_medical_board_category"]').val(event ? event.mb_category : '');
     $('#reschedule-modal select[name="takwim_chairman"]').val(event ? event.chairman_id : '');
     $('#reschedule-modal select[name="takwim_sectariat"]').val(event ? event.secretariat_id : '');
-    // $('#reschedule-modal select[name="takwim_discipline"]').val(event ? event.doc_speciality : '');
-    // $('#reschedule-modal select[name="takwim_doctor"]').val(event ? event.doctor : '');
-    // $('#reschedule-modal input[name="takwim_quota"]').val(event ? event.quota : '');
     $('#reschedule-modal textarea[name="takwim_remarks"]').val(event ? event.remarks : '');
     $('#reschedule-modal input[name="takwim-start-date"]').datepicker('update', event ? event.startDate : '');
     $('#reschedule-modal input[name="takwim-end-date"]').datepicker('update', event ? event.endDate : '');
@@ -163,7 +149,6 @@ function rescheduleEvent(event) {
                 cols += '<td><input type="number" name="takwim_quota'+ counter +'" class="form-control" disabled><input type="hidden" name="takwim_id'+ counter +'" required class="form-control" disabled></td>';
                 cols += '<td><input type="number" name="takwim_quota1'+ counter +'" required class="form-control" disabled></td>';
 
-                // cols += '<td><button type="button" class="ibtnDelupdate btn btn-md btn-danger"><i class="fas fa-trash-alt"></i></button></td>';
 
                 newRow.append(cols);
                 $("table.order-list3").append(newRow);
@@ -184,14 +169,6 @@ function rescheduleEvent(event) {
     $('#reschedule-modal').modal();
 }
 
-// function quota(event) {
-//     $('#quota-modal input[name="takwim_hospital"]').val(event ? event.hospital_id : '');
-//     $('#quota-modal input[name="takwim_quota"]').val(event ? event.quota : '');
-//     $('#quota-modal input[name="takwim-start-date"]').datepicker('update', event ? event.startDate : '');
-//     $('#quota-modal input[name="takwim-end-date"]').datepicker('update', event ? event.endDate : '');
-//     $('#quota-modal').modal();
-// }
-
 function duplicateEvent(event) {
     var countArray = $('#duplicate-modal input[name="takwim_table_count"]').val();
 
@@ -210,9 +187,6 @@ function duplicateEvent(event) {
     $('#duplicate-modal select[name="takwim_medical_board_category"]').val(event ? event.mb_category : '');
     $('#duplicate-modal select[name="takwim_chairman"]').val(event ? event.chairman : '');
     $('#duplicate-modal select[name="takwim_sectariat"]').val(event ? event.sectariat : '');
-    // $('#duplicate-modal select[name="takwim_discipline"]').val(event ? event.doc_speciality : '');
-    // $('#duplicate-modal select[name="takwim_doctor"]').val(event ? event.doctor : '');
-    // $('#duplicate-modal input[name="takwim_quota"]').val(event ? event.quota : '');
     $('#duplicate-modal textarea[name="takwim_remarks"]').val(event ? event.remarks : '');
     $('#duplicate-modal input[name="takwim-start-date"]').datepicker('update', event ? event.startDate : '');
     $('#duplicate-modal input[name="takwim-end-date"]').datepicker('update', event ? event.endDate : '');
@@ -239,8 +213,6 @@ function duplicateEvent(event) {
                 cols += '<td><select name="takwim_doctor'+ counter +'" class="form-control" disabled><option value="">-- @lang('medical_board/index.please_select') -- </option>@foreach ($doctor as $value)<option value={{$value->doctor_id}}>{{$value->doctor_name}}</option>@endforeach</select></td>';
                 cols += '<td><input type="number" name="takwim_quota'+ counter +'" class="form-control" disabled><input type="hidden" name="takwim_id'+ counter +'" required class="form-control" disabled></td>';
                 cols += '<td><input type="number" name="takwim_quota1'+ counter +'" required class="form-control" disabled></td>';
-
-                // cols += '<td><button type="button" class="ibtnDelupdate btn btn-md btn-danger"><i class="fas fa-trash-alt"></i></button></td>';
 
                 newRow.append(cols);
                 $("table.order-list4").append(newRow);
@@ -279,9 +251,6 @@ function deleteEvent(event) {
     $('#delete-modal select[name="takwim_medical_board_category"]').val(event ? event.mb_category : '');
     $('#delete-modal select[name="takwim_chairman"]').val(event ? event.chairman_id : '');
     $('#delete-modal select[name="takwim_sectariat"]').val(event ? event.secretariat_id : '');
-    // $('#delete-modal select[name="takwim_discipline"]').val(event ? event.doc_speciality : '');
-    // $('#delete-modal select[name="takwim_doctor"]').val(event ? event.doctor : '');
-    // $('#delete-modal input[name="takwim_quota"]').val(event ? event.quota : '');
     $('#delete-modal textarea[name="takwim_remarks"]').val(event ? event.remarks : '');
     $('#delete-modal input[name="takwim-start-date"]').datepicker('update', event ? event.startDate : '');
     $('#delete-modal input[name="takwim-end-date"]').datepicker('update', event ? event.endDate : '');
@@ -330,8 +299,6 @@ function deleteEvent(event) {
 }
 
 function saveEvent() {
-
-    // alert('IN');
 
     var medical_board_category = $('#event-modal select[name="takwim_medical_board_category"]').val();
 
@@ -398,9 +365,8 @@ function saveEvent() {
                 quota: takwim_quo
             });
         }
-        // return array;
+
     }
-    // console.log(array);
 
     var dataSource = calendar.getDataSource(ds());
 
@@ -410,7 +376,7 @@ function saveEvent() {
         dataType: "json",
         data: {count: event.count, venue: event.venue, session: event.session, mb_category: event.mb_category, chairman: event.chairman, sectariat: event.sectariat, date_takwim: event.date_takwim, hospital_id: event.hospital_id, statecode: event.statecode, table: array},
         success:function(data){
-            // alert('COMEON');
+
             alert(data.success);
        }
      });
@@ -497,8 +463,7 @@ function updateEvent() {
                 td_id: td_id1
             });
         }
-        // console.log(array2);
-        //return array;
+
     }
 
     var dataSource = calendar.getDataSource(ds());
@@ -528,7 +493,7 @@ function updateEvent() {
         dataType: "json",
         data: {id: event2.id, count: event2.count, venue: event2.venue, session: event2.session, mb_category: event2.mb_category, chairman: event2.chairman, sectariat: event2.sectariat, remarks: event2.remarks, date_takwim: event2.date_takwim, table: array2},
         success:function(data){
-            // $('#message').append('<div class="alert alert-success alert-rounded">'+data.success+'<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span> </button></div>');
+            
             alert(data.success);
        }
     });
@@ -560,7 +525,7 @@ function rescheduleEvent2() {
             });
         }
         console.log(takwimid_array);
-        //return array;
+
     }else{
         var takwimid_array = 'null';
     }
@@ -573,7 +538,7 @@ function rescheduleEvent2() {
         dataType: "json",
         data: {id: event.id, count: event.count, table: takwimid_array},
         success:function(data){
-            // $('#message').append('<div class="alert alert-success alert-rounded">'+data.success+'<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span> </button></div>');
+            
             alert(data.success);
        }
     });
@@ -595,42 +560,27 @@ function saveDuplicateEvent() {
         if(medical_board_category == '{{$value->refcode}}'){
             var mb_category1 = '{{$value->descen}}';
         }
-        // alert(mb_category1);
-        // var mb_category1 = 'JD';
+
     }else if(medical_board_category == '2'){
         var mb_color = 'green';
         if(medical_board_category == '{{$value->refcode}}'){
             var mb_category1 = '{{$value->descen}}';
         }
-        // var mb_category1 = 'JDK';
+
     }else if(medical_board_category == '3'){
         var mb_color = 'yellow';
         if(medical_board_category == '{{$value->refcode}}'){
             var mb_category1 = '{{$value->descen}}';
         }
-        // var mb_category1 = 'JDR';
+
     }else if(medical_board_category == '4'){
         var mb_color = 'purple';
         if(medical_board_category == '{{$value->refcode}}'){
             var mb_category1 = '{{$value->descen}}';
         }
-        // var mb_category1 = 'JDRK';
+
     }
     @endforeach
-
-    // if(medical_board_category == '1'){
-    //     var mb_color = 'blue';
-    //     var mb_category1 = 'JD';
-    // }else if(medical_board_category == '2'){
-    //     var mb_color = 'green';
-    //     var mb_category1 = 'JDK';
-    // }else if(medical_board_category == '3'){
-    //     var mb_color = 'yellow';
-    //     var mb_category1 = 'JDR';
-    // }else if(medical_board_category == '4'){
-    //     var mb_color = 'purple';
-    //     var mb_category1 = 'JDRK';
-    // }
 
     var event = {
         id: $('#duplicate-modal input[name="takwim-index"]').val(),
@@ -649,11 +599,6 @@ function saveDuplicateEvent() {
         color: mb_color
     }
 
-    // alert(event.venue);
-    // alert(event.newstartdate);
-    // alert(event.newenddate);
-    // alert('YYYYY');
-
     var dataSource = calendar.getDataSource(ds());
 
     $.ajax({
@@ -662,78 +607,11 @@ function saveDuplicateEvent() {
             dataType: "json",
             data:{newstartdate: event.newstartdate, newenddate: event.newenddate, hospital_id: event.hospital_id, session: event.session, mb_category: event.mb_category, venue: event.venue, statecode: event.statecode, remarks: event.remarks, doc_speciality: event.doc_speciality},
             success:function(data){
-                // $('#message').append('<div class="alert alert-success alert-rounded">'+data.success+'<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span> </button></div>');
+                
                 alert(data.success);
             }
         });
-
-
-    // if (event.id) {
-    //     for (var i in dataSource) {
-    //         if (dataSource[i].id == event.id) {
-    //             dataSource[i].venue = event.venue;
-    //             dataSource[i].session = event.session;
-    //             dataSource[i].name = event.name;
-    //             dataSource[i].mb_category = event.mb_category;
-    //             dataSource[i].doc_speciality = event.doc_speciality;
-    //             dataSource[i].remarks = event.remarks;
-    //             dataSource[i].startDate = event.startDate;
-    //             dataSource[i].endDate = event.endDate;
-    //             dataSource[i].color = event.color;
-    //         }
-    //     }
-
-    // }
-    // else
-    // {
-    //     var getDateArray = function(start, end) {
-    //         var arr = new Array();
-    //         var dt = new Date(start);
-    //         while (dt <= end) {
-    //             arr.push(new Date(dt));
-    //             dt.setDate(dt.getDate() + 1);
-    //         }
-    //         return arr;
-    //     }
-
-    //     var dateArr = getDateArray(event.startDate, event.endDate);
-
-    //     for(var e = 0; e < dateArr.length; e++) {
-    //         // alert(dateArr[e]);
-
-    //         var newId = 0;
-    //         for(var i in dataSource) {
-    //             if(dataSource[i].id > newId) {
-    //                 newId = dataSource[i].id;
-    //             }
-    //         }
-
-    //         var event2 = {
-    //             id: $('#duplicate-modal input[name="takwim-index"]').val(),
-    //             venue: $('#duplicate-modal input[name="takwim_venue"]').val(),
-    //             session: $('#duplicate-modal select[name="takwim_session"]').val(),
-    //             name: mb_category1,
-    //             mb_category: $('#duplicate-modal select[name="takwim_medical_board_category"]').val(),
-    //             doc_speciality: $('#duplicate-modal select[name="takwim_discipline"]').val(),
-    //             hospital_id: $('#duplicate-modal input[name="takwim_hospital"]').val(),
-    //             statecode: $('#duplicate-modal input[name="takwim_statecode').val(),
-    //             remarks: $('#duplicate-modal textarea[name="takwim_remarks"]').val(),
-    //             startDate: $('#duplicate-modal input[name="takwim-start-date"]').datepicker('getDate'),
-    //             endDate: $('#duplicate-modal input[name="takwim-end-date"]').datepicker('getDate'),
-    //             color: mb_color
-    //         }
-            
-    //         newId++;
-    //         event.id = newId;
-    //         event.startDate = dateArr[e];
-    //         event.endDate = dateArr[e];
-    //         // alert(event.id); 
-    //         // alert(event.startDate); 
-    //         // alert(event.endDate);
-
-    //         dataSource.push(event2);            
-    //     }
-    // } 
+ 
 
     calendar.setDataSource(ds());
     $('#duplicate-modal').modal('hide');
@@ -748,17 +626,13 @@ function saveQuota() {
         endDate: $('#quota-modal input[name="takwim-end-date"]').datepicker('getDate'),
     }
 
-    // alert(event.hospital_id);
-    // alert(event.quota);
-    // alert(event.date_quota);
-
     $.ajax({
         type: "POST",
         url: "/takwim/setQuota",
         dataType: "json",
         data: {startDate: event.startDate, endDate: event.endDate, hospital_id: event.hospital_id, quota: event.quota, date_quota: event.date_quota},
         success:function(data){
-            // $('#message').append('<div class="alert alert-success alert-rounded">'+data.success+'<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span> </button></div>');
+        
             alert(data.success);
         }
     });
@@ -769,7 +643,6 @@ function saveQuota() {
 function deletedEvent(){
 
     var takwim_id = $('#delete-modal input[name="takwim-index"]').val();
-    // alert(takwim_id);
 
     $.ajax({
         type: "POST",
@@ -777,7 +650,7 @@ function deletedEvent(){
         dataType: "json",
         data: {takwim_id: takwim_id},
         success:function(data){
-            // $('#message').append('<div class="alert alert-success alert-rounded">'+data.success+'<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span> </button></div>');
+
             alert(data.success);
         }
     });
@@ -844,20 +717,6 @@ function ds() {
                     }
                     @endforeach
 
-                            // if(medical_board_category == '1'){
-                            //     var mb_color = 'blue';
-                            //     var mb_category1 = 'JD';
-                            // }else if(medical_board_category == '2'){
-                            //     var mb_color = 'green';
-                            //     var mb_category1 = 'JDK';
-                            // }else if(medical_board_category == '3'){
-                            //     var mb_color = 'yellow';
-                            //     var mb_category1 = 'JDR';
-                            // }else if(medical_board_category == '4'){
-                            //     var mb_color = 'purple';
-                            //     var mb_category1 = 'JDRK';
-                            // }
-
                     result.push({
                         id: $(this).attr('id'),
                         name: mb_category1,
@@ -918,7 +777,7 @@ function ds() {
             calendar.setDataSource(result); 
         }
     });
-    // console.log(disable);
+
     return disable;  
 };
 
@@ -935,9 +794,7 @@ function dd(){
         text += "new Date(" + todays.getFullYear() + "," + todays.getMonth() + "," + todays.getDate()+ "),";
         i++;
     }
-    // var array = text.split("/",2);
-    // // console.log(array);
-    // return array;
+
     return text;
 };
 
@@ -985,7 +842,6 @@ function getPublicHoliday(){
             });
         }
     });
-    // console.log(publicholiday);
     return publicholiday;
 };
 
@@ -1004,13 +860,6 @@ $(function() {
     var max = currentYear + 1;
 
     var d = ds();
-    // alert(d);
-    // console.log(d);
-
-    // var a = getPublicHoliday();
-    // console.log(a);
-    // alert(a);
-    // console.log(getPublicHoliday());
 
     calendar = new Calendar('#calendar', {
         minDate: new Date (min, 12, 1),
@@ -1032,20 +881,15 @@ $(function() {
                 click: deleteEvent
             }
         ],
-        // disabledDays: d,
+
         selectRange: function(e) {
             var year = e.startDate.getFullYear();
             var disable = d;
 
-            // for(var i in disable){
-                // if(hospital_id != 'ALL'){
                 if(year >= currentYear){
                         setEvent({ startDate: e.startDate, endDate: e.endDate });
                     }
-                // }else{
-                //     alert('Please choose hospital');
-                // }
-            // }
+
         },
         mouseOnDay: function(e) {
 
@@ -1094,15 +938,6 @@ $(function() {
                                 }
                             }
                         @endforeach
-
-                        // var doc_speciality1 = e.events[i].doc_speciality;
-
-                        // @foreach ($discipline as $value)
-                        //     if(doc_speciality1 == '{{$value->refcode}}'){
-                        //         var d = '{{$value->descen}}';
-                        //         // alert(d);
-                        //     }
-                        // @endforeach
 
                         var venue1 = e.events[i].venue;
                         var table1 = e.events[i].table;
@@ -1160,75 +995,18 @@ $(function() {
         },
         dayContextMenu: function(e) {
 
-            // for(var i in e.events) {
-            // if(e.events[i].name == 'JD'){
-            // var contextMenu = document.querySelector('.calendar-context-menu');
-
-            // // contextMenu.css('left', elt.offset().left + 25 + 'px');
-            // // console.log("Right click on day: " + e.date + " (" + name + " events)"); 
-            // var eventQuota = document.createElement('div');
-            // eventQuota.classList.add('item');
-            // var eventQuotaContent = document.createElement('div');
-            // eventQuotaContent.classList.add('content');
-            // eventQuotaContent.textContent = "Quota";
-            // eventQuota.appendChild(eventQuotaContent);
-            // eventQuota.addEventListener('click', function () {
-            //     // alert('YYYYYY');
-            //     for(var i in e.events) {
-            //         quota(e.events[i]);
-            //     }
-
-            //   });
-
-            // contextMenu.appendChild(eventQuota);
-            // }}
             
             $(e.element).popover('hide');
         },
         customDayRenderer: function(element, date) {
-            // var y = d;
 
-            // for(var i in y) {
-            //     if(date.getTime() == y[i].getTime()) {
-                    // $(element).parent().addClass('disabled');
-                    // $(element).addClass('disabled');
-                    // $(element).parent().css('box-shadow', 'rgb(255, 153, 51) 0px -4px 0px 0px inset');
-                // }
                 if(date.getTime() == currentDate) {
                     $(element).css('font-weight', 'bold');
-                }
-            // }
-        },
-        // customDataSourceRenderer: function(element, date) {
-        //      var y = d;
-        //      console.log(y);
-        //     for(var i in d) {
-        //         if(date.getTime() == d[i]) {
-        //             alert('IN');
-        //             $(element).css('font-weight', 'bold');
-        //             $(element).css('font-size', '15px');
-        //             $(element).css('color', 'green');
-        //         }
-        //     }
 
-            // if(date.getTime() == redDateTime) {
-            //     $(element).css('font-weight', 'bold');
-            //     $(element).css('font-size', '15px');
-            //     $(element).css('color', 'green');
-            // }
-            // else if(date.getTime() == circleDateTime) {
-            //     $(element).css('background-color', 'red');
-            //     $(element).css('color', 'white');
-            //     $(element).css('border-radius', '15px');
-            // }
-            // else if(date.getTime() == borderDateTime) {
-            //     $(element).css('border', '2px solid blue');
-            // }
-        // },
-        // disabledWeekDays: [0, 6],
+        },
+        
     });
     ds();
-    // getPublicHoliday();
 
     $('#save-event').click(function() {
 
@@ -1244,9 +1022,6 @@ $(function() {
             startDate: $('#event-modal input[name="takwim-start-date"]').val(),
         }
 
-        // alert('Masuk');
-        // alert(event.startDate);
-
         var arraytable = [];
         arraytable.push({
                     speciality_id: event.doc_speciality,
@@ -1259,9 +1034,7 @@ $(function() {
                     speciality_id: takwim_dis,
                 });
             }
-            //return array;
         }
-        // console.log(arraytable);
 
         $.ajax({
             type: "POST",
@@ -1269,8 +1042,7 @@ $(function() {
             dataType: "json",
             data: {count: event.count, venue: event.venue, session: event.session, mb_category: event.mb_category, hospital_id: event.hospital_id, date: event.startDate, table: arraytable},
             success:function(data){
-                // console.log(data.success);
-                // alert(data.success);
+
                 if(data.success == '0')
                 {
                     if(event.venue != '' && event.session != '' && event.mb_category != '' && event.doc_speciality != '' && event.hospital_id != '' && event.startDate != '' && event.doctor != '' && event.quota != '')
@@ -1284,25 +1056,6 @@ $(function() {
            }
         });
 
-        // if(event.count >= '1'){
-        //     var bal = event.count - 1;
-        //     for(i=bal; i>=0; i--){
-        //         // alert(i);
-        //         var takwim_dis = $('#event-modal select[name="takwim_discipline'+ i +'"]').val();
-        //         var takwim_doc = $('#event-modal select[name="takwim_doctor'+ i +'"]').val();
-        //         var takwim_quo = $('#event-modal input[name="takwim_quota'+ i +'"]').val();
-
-        //         if(takwim_dis != '' && takwim_doc != '' && takwim_quo != ''){
-        //             if(event.venue != '' && event.session != '' && event.mb_category != '' && event.doc_speciality != '' && event.hospital_id != '' && event.startDate != '' && event.endDate != '' && event.doctor != '' && event.quota != '')
-        //             {
-        //                 saveEvent();
-        //             }
-        //         }
-        //     }
-        // }else{
-            
-        // }
-
     });
 
     $('#update-event').click(function() {
@@ -1311,9 +1064,7 @@ $(function() {
             venue: $('#update-modal input[name="takwim_venue"]').val(),
             session: $('#update-modal select[name="takwim_session"]').val(),
             mb_category: $('#update-modal select[name="takwim_medical_board_category"]').val(),
-            // doc_speciality: $('#update-modal select[name="takwim_discipline"]').val(),
-            // doctor: $('#update-modal select[name="takwim_doctor"]').val(),
-            // quota: $('#update-modal input[name="takwim_quota"]').val(),
+
             remarks: $('#update-modal textarea[name="takwim_remarks"]').val(),
             startDate: $('#update-modal input[name="takwim-start-date"]').datepicker('getDate'),
             endDate: $('#update-modal input[name="takwim-end-date"]').datepicker('getDate'),
@@ -1379,15 +1130,11 @@ $(function() {
             mb_category: $('#update-modal select[name="takwim_medical_board_category"]').val(),
             chairman: $('#update-modal select[name="takwim_chairman"]').val(),
             sectariat: $('#update-modal select[name="takwim_sectariat"]').val(),
-            // doc_speciality: $('#update-modal select[name="takwim_discipline"]').val(),
-            // doctor: $('#update-modal select[name="takwim_doctor"]').val(event ? event.doctor : ''),
-            // quota: $('#update-modal input[name="takwim_quota"]').val(event ? event.quota : ''),
+
             remarks: $('#update-modal textarea[name="takwim_remarks"]').val(),
             hospital_id: $('#takwim_hospital').val(),
             statecode: $('#takwim_statecode').val(),
             table: arraytbl,
-            // startDate: $('#update-modal input[name="takwim-start-date"]').datepicker('getDate'),
-            // endDate: $('#update-modal input[name="takwim-end-date"]').datepicker('getDate'),
         }
 
         duplicateEvent(event);
@@ -1405,10 +1152,6 @@ $(function() {
             startDate: $('#duplicate-modal input[name="takwim-start-date"]').val(),
             endDate: $('#duplicate-modal input[name="takwim-end-date"]').val(),
         }
-
-        // alert(event.venue);
-        // alert(event.startDate);
-        // alert(event.endDate);
 
         if(event.venue != '' && event.session != '' && event.mb_category != '' && event.doc_speciality != '' && event.startDate != '' && event.endDate != '')
         {

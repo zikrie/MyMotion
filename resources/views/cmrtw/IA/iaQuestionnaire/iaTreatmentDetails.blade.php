@@ -51,13 +51,13 @@
 
                         <div class="row p-t-20">
                             <div class="table-responsive m-t-40" >
-                                <table id="try" cellspacing="0" width="60%"> 
+                                <table id="try" width="60%"> 
                                     <tr>
                                         <label class="control-label">Type of Treatment  <span class="text-danger">*</span></label>
                                     </tr>
-                                    <tr>
-                                        <td><label class="control-label">Surgery</label></td>
-                                        <td>
+                                    <tr >
+                                        <td width="20%"><label class="control-label">Surgery</label></td>
+                                        <td width="60%">
                                             <div class="row">
                                                 <div class="custom-control custom-checkbox">
                                                     <input type="checkbox" class="custom-control-input" id="surgery">
@@ -149,7 +149,9 @@
                                             </div>   
                                         </td>
                                     </tr>
-                                    <tr><div id="treatmentDetailsIA"></div></tr>
+                                    <tr><td></td>
+                                        <td><div id="treatmentDetailsIA"></div></td>
+                                    </tr>
                                 </table>
                                 
                             </div>     
@@ -193,7 +195,7 @@
         var divtest = document.createElement("div");
         divtest.setAttribute("class", "removeclass" + treatment_Details);
         var rdiv = 'removeclass' + treatment_Details;
-        divtest.innerHTML = '<td><label class="control-label">Other '+treatment_Details+'</label></td><td><div class="row"><div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="other"><label class="custom-control-label" for="other"></label></div><div class="col-md-10"><input type="text" id="" class="form-control" required></div><td><div class="input-group-append"><button class="btn btn-danger" type="button" onclick="remove_treatmentDetails('+treatment_Details+');"><i class="fa fa-minus"></i></button></div></td></div></td>';
+        divtest.innerHTML = '<tr><td></td><td><div class="row"><div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="other"><label class="custom-control-label" for="other"></label></div><div class="col-md-10"><input type="text" id="" class="form-control" required></div><td><div class="input-group-append"><button class="btn btn-danger" type="button" onclick="remove_treatmentDetails('+treatment_Details+');"><i class="fa fa-minus"></i></button></div></td></div></td></tr>';
 
         objTo.appendChild(divtest)
     }

@@ -1,99 +1,14 @@
-<div class="row">
-    <div class="col-sm-12">
-        <div class="card">
-            <div class="card-body"> 
-                <form class="form">
-                    <h4 class="card-title">@lang('appointment.title')</h4>
-
-                    <div class="card">
-                        <div class="card-body">
-                            <div id="calendar"></div>
-                        </div>
-                    </div>
-                    <br><br>
-
-                    <div class="form-group row">
-                        <div class="col-md-12">
-                            <button type="button" class="btn btn waves-effect waves-light btn-success">@lang('appointment.generate_appointment_schedule')</button>
-                        </div>
-                    </div>
-
-                    
-                    <!-- modal for calendar appointment details -->   
-                    <!-- <div class="row p-t-20">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                
-                                
-                            </div>
-                        </div>
-
-                            <div class="form-group">
-                                <div class="form-group row">
-                                    <label for="min-date" class="col-sm-4 control-label">Dates</label>
-                                    <div class="col-sm-8">
-                                        <div class="input-group input-daterange" id="date-range">
-                                            <input id="min-date" name="takwim-start-date" type="text" class="form-control">
-                                            <div class="input-group-prepend input-group-append">
-                                                <div class="input-group-text">to</div>
-                                            </div>
-                                            <input name="takwim-end-date" type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                </div>   
-                            </div>
-                    </div>
-                    <div id="hide_insured_person_residential" class="form-group " style="display:none">
-                        <div class="form-group row">
-                            
-                        </div>
-                        <div class="form-group row">
-                            
-                        </div>
-                        <div class="form-group row">
-                            
-                        </div>
-                        <div class="form-group row">
-                            
-                        </div>
-                        <div class="form-group row">
-                            
-                        </div>
-                    </div>
-
-                    
-
-                    
-
-                    
-
-                    
-                    <div class="row p-t-20">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label class="control-label">@lang('appointment.attr.remarks')</label>
-                                <textarea class="form-control clearFields" rows="5" type="textarea"  id="appointmentRemarks"></textarea>
-                            </div>
-                        </div>
-                    </div> -->
-                        
-                     
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
 {{-- MODAL --}}
-<div class="modal fade" id="event-modal">
-    <div class="modal-dialog modal-lg">
+<div class="modal fade" id="update-modal" tabindex="-1" role="dialog" aria-labelledby="update-modal">
+    <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">@lang('appointment.title1')</h5>
+                <h5 class="modal-title">Update Appointment</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
+            <form id="updatetakwim_form" action="/takwim/update" method="post">
             <div class="modal-body">
                 <input type="hidden" name="event-index">
                 <form class="form-horizontal">
@@ -405,61 +320,7 @@
                 <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
                 <button type="button" class="btn btn-primary" id="save-event">Save</button>
             </div>
+            </form>
         </div>
     </div>
 </div>
-@include('cmrtw.IA.appointment.takwim.update_appointment')
-@include('cmrtw.IA.appointment.takwim.delete_appointment')
-@include('cmrtw.IA.appointment.takwim.reschedule_appointment')
-
-<script type="text/javascript">
-    
-    function appointmentFunc(aval) {
-        if (aval == "insured_person_residential") {
-            $('#hide_insured_person_residential').show(); 
-            $('#hide_employer_premis').hide();
-            $('#hide_socso_office').hide();
-            $('#hide_hospital').hide();
-            $('#hide_others').hide();
-        } 
-        else if (aval == "employer_premis"){
-            $('#hide_employer_premis').show();
-            $('#hide_insured_person_residential').hide();
-            $('#hide_socso_office').hide();
-            $('#hide_hospital').hide();
-            $('#hide_others').hide();
-        }
-        else if (aval == "socso_office"){
-            $('#hide_socso_office').show();
-            $('#hide_insured_person_residential').hide();
-            $('#hide_employer_premis').hide();
-            $('#hide_hospital').hide();
-            $('#hide_others').hide();
-        }
-        else if (aval == "hospital"){
-            $('#hide_hospital').show();
-            $('#hide_insured_person_residential').hide();
-            $('#hide_employer_premis').hide();
-            $('#hide_socso_office').hide();
-            $('#hide_others').hide();
-        }
-        else if (aval == "appointmentOthers"){
-            $('#hide_others').show();
-            $('#hide_insured_person_residential').hide();
-            $('#hide_employer_premis').hide();
-            $('#hide_socso_office').hide();
-            $('#hide_hospital').hide();
-        }
-        else {
-            $('#hide_insured_person_residential').hide();
-            $('#hide_employer_premis').hide();
-            $('#hide_socso_office').hide();
-            $('#hide_hospital').hide();
-            $('#hide_others').hide();
-        }
-    }
-    function submitform(){
-        $('#reset').find('form').submit();
-        $('.clearFields').val('');
-    }
-</script>

@@ -11,13 +11,15 @@
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label class="control-label">@lang('caseMgmt.attr.leisure_ques') <span class="text-danger">*</span></label>
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="leisure_ques1" name="leisure_ques" class="custom-control-input" onclick="leisureFunc1()" required>
-                                        <label class="custom-control-label" for="leisure_ques1">@lang('caseMgmt.attr.yes')</label>
-                                    </div>
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="leisure_ques2" name="leisure_ques" class="custom-control-input" onclick="leisureFunc2()" required>
-                                        <label class="custom-control-label" for="leisure_ques2">@lang('caseMgmt.attr.no')</label>
+                                    <div class="row p-l-20">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="leisure_ques1" name="leisure_ques" class="custom-control-input" onclick="leisureFunc1()" required>
+                                            <label class="custom-control-label" for="leisure_ques1">@lang('caseMgmt.attr.yes')</label>
+                                        </div>
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="leisure_ques2" name="leisure_ques" class="custom-control-input" onclick="leisureFunc2()" required>
+                                            <label class="custom-control-label" for="leisure_ques2">@lang('caseMgmt.attr.no')</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

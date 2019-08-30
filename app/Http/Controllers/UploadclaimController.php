@@ -61,7 +61,7 @@ class UploadclaimController extends Controller
             {
                 $docname = $caserefno.'_'.$doctype.'_'.$date.'.pdf';
                 $dataSet[$cnt++] = [
-                    'caserefno' => '',
+                    'caserefno' => $caserefno,
                     'uniquerefno' => $uniquerefno,
                     'idno' =>$idno,
                     'docdate' =>$date,
@@ -103,6 +103,7 @@ class UploadclaimController extends Controller
         
         $jsondata = json_encode($docrepo);
         //return $jsondata;
+        //dd($jsondata);
 
         $url = 'http://'.env('WS_IP', 'localhost').'/api/wsmotion/upddoc';
 
@@ -123,7 +124,7 @@ class UploadclaimController extends Controller
         curl_close($ch);
         
         $jsondecode = json_decode($result);
-        
+        //dd($jsondecode);
         
         $errorcode = $jsondecode->{'errorcode'};
         if ($errorcode == 0)

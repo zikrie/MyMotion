@@ -92,7 +92,7 @@ Route::post('/noticeaccident', 'NoticeAccidentController@postAccident');
 Route::post('/updmc', 'NoticeAccidentController@UpdMC');
 Route::post('/accsubmit', 'NoticeAccidentController@Submit');
 Route::get('/success','CommonController@success');
-Route::get('/viewdoc', 'UploadclaimController@viewstorage');
+// Route::get('/viewdoc', 'UploadclaimController@viewstorage');
 
 
 /* ------------------ UPLOAD FILE -------------------- */

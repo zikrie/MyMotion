@@ -46,7 +46,7 @@
                                 <tr>
                                     <th style="display:none;">Doctype </th>
                                     
-                                    <th>Document Type</th>
+                                   
                                     <th>Document Description</th>
                                     <th>Document Path</th>   
                                     <th>View</th>
@@ -65,6 +65,7 @@
                                                         <td style="display:none;"><input type="hidden"name="doctype[{{$cnt}}]" value="{{ $data -> doctype}}"></td>
                                                         
                                                         <td><input type="hidden" name="doccat[{{$cnt}}]"value="{{ $data -> doctype}}|{{ $data -> doccat}}">{{ $data -> docdescen}}</td>
+                                                        
                                                         <td></td>
                                                         <td><a href='/viewdoc?docname={{$d->docname}}'target="_blank"><i class="far fa-file-alt"></i></a></td>
                                                         <?php $docfound = true; $cnt++;?>
@@ -86,7 +87,7 @@
                                                             <i class=" preview btn_cancel_{{$cnt}} icon-close"></i>
                                                         </span>
                                                     </td>
-                                                    <td><a href='/viewdoc?docname='target="_blank"><i class="far fa-file-alt"></i></a></td>
+                                                  
                                                    
                                                    
                                                 </tr>
@@ -101,6 +102,7 @@
                                                 <td style="display:none;"><input type="hidden" class="number"value="{{$cnt}}"></td>
                                                 <td style="display:none;"><input type="hidden"name="doctype[{{$cnt}}]" value="{{ $d -> doctype}}"></td>
                                                 <td><input type="hidden" name="doccat[{{$cnt}}]"value="{{ $d -> doctype}}|{{ $d -> doccat}}">{{ $d-> docdescen}}</td>
+                                               
                                                 <td></td>
                                                 <td><a href='/viewdoc?docname={{$d->docname}}'target="_blank"><i class="far fa-file-alt"></i></a></td>
                                             </tr>
@@ -130,7 +132,7 @@
 
                     <div class="form-action">
                         <button type="submit" class="btn btn waves-effect waves-light btn-success">Upload </button>
-                        <button type="button" id="add_doc" class="btn btn-secondary">Add Document</button>
+                        <button type="button" id="add_doc1" class="btn btn waves-effect waves-light btn-success">Add Document</button>
                     </div>
                 
                     

@@ -25,16 +25,21 @@ class RtwCaseController extends Controller
             return redirect('/login');
         }
         $caserefno = $req->query('caserefno');
+        
         //dd($caserefno);
         $jsondecodeData="";
         $this->getDatartwOb($jsondecodeData, $caserefno); 
 
         //dd($jsondecodeData);
         //dd($caserefno);
+        $uniquerefno = "2019070001";
         $casertw = $jsondecodeData->{'data'};
+        // dd($casertw);
+         $idno=$casertw->idno;
+        session(['caserefno'=>$caserefno,'idno'=>$idno]);
         //dd($casertw);
         
-
+        $docinfo =DB::select('Select r.notes, r.docid, r.date, r.time, r.doccat, r.doctype, r.docname, r.doccount, t.docdescen from docrepository r,doctype t where r.doctype=t.doctype AND caserefno=? AND idno=?', [$caserefno,$uniquerefno]);
         $state=DB::select('Select refcode, descen from reftable where tablerefcode=? order by refcode', ['state']);
         $national=DB::select('Select refcode, descen from reftable where tablerefcode=? order by refcode', ['national']);
         $idtype=DB::select('Select refcode, descen from reftable where tablerefcode=? order by refcode', ['idtype']);
@@ -49,7 +54,7 @@ class RtwCaseController extends Controller
 
         // dd($workbasketrtw);
         //
-      return view ('cmrtw.index', ['casertw'=>$casertw , 'race' => $race, 'state' => $state, 'national' => $national, 'idtype'=>$idtype, 'doclist' => $doclist ,'alldoclist' => $alldoclist]);
+      return view ('cmrtw.index', ['casertw'=>$casertw , 'race' => $race, 'state' => $state, 'national' => $national, 'idtype'=>$idtype, 'doclist' => $doclist ,'alldoclist' => $alldoclist,'docinfo' => $docinfo]);
       // 
 
     }

@@ -2,7 +2,7 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-body">
-                <h5 class=card-title>Case Note</h5>
+                        <h5 class=card-title>Case Note</h5>
                     <form action="#">
                         <div class="form-body">
 
@@ -13,7 +13,7 @@
                                     <div class="card">
                                             <div class="form-group row">
                                                     <div class="col-12">
-                                                        <button class="btn btn-info btn-lg" type="button"  data-toggle="modal" data-target="#exampleModal12"><i class="fa fa-plus"></i> </button>
+                                                        <button class="btn btn-info btn-lg" type="button"  data-toggle="modal" data-target="#caseNoteModal"><i class="fa fa-plus"></i> </button>
                                                     </div>
                                                 </div>
                                         <div class="table-responsive m-t-40">
@@ -89,7 +89,7 @@
 
                             {{-- <div class="form-group row">
                                 <div class="col-12">
-                                    <button style="margin:5px;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal12">Add Case Note</button>
+                                    <button style="margin:5px;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#caseNoteModal">Add Case Note</button>
                                 </div>
                             </div> --}}
                         </div>
@@ -99,7 +99,7 @@
         </div>
     </div>
 
-    <div id="exampleModal12" class="modal fade" role="dialog">
+    <div id="caseNoteModal" class="modal fade" role="dialog">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">

@@ -132,7 +132,7 @@
 
                     <div class="form-action">
                         <button type="submit" class="btn btn waves-effect waves-light btn-success">Upload </button>
-                        <button type="button" id="add_doc" class="btn btn-secondary">Add Document</button>
+                        <button type="button" id="add_doc1" class="btn btn waves-effect waves-light btn-success">Add Document</button>
                     </div>
                 
                     

@@ -8,7 +8,9 @@ $(document).ready(function () {
         $('#table_add_emp_info > tbody:last-child').append('<tr data-expanded="true" id="tr_add_emp_info"> <td><input type="hidden" value="' + no_index + '">' + no + '</td><td> <textarea type="text"  name="empname[' + no_index + ']" class="form-control"></textarea></td><td> <textarea type="text" name="empadd[' + no_index + ']" class="form-control"></textarea></td><td> <textarea type="text" name="duration[' + no_index + ']" class="form-control"></textarea></td><td> <textarea type="text" name="designation[' + no_index + ']" class="form-control"></textarea></td> <td> <textarea type="text" name="wages[' + no_index + ']" class="form-control"></textarea></td></tr>');
     });
 
-    $('#add_doc').click(function () {
+    $('#add_doc1').click(function () {
+        // alert('try');
+        
         var no_doc = $('#table_upload_doc tr:last td:first').find("input").val();
 
         no_doc++;

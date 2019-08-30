@@ -61,7 +61,7 @@ class UploadclaimController extends Controller
             {
                 $docname = $caserefno.'_'.$doctype.'_'.$date.'.pdf';
                 $dataSet[$cnt++] = [
-                    'caserefno' => '',
+                    'caserefno' => $caserefno,
                     'uniquerefno' => $uniquerefno,
                     'idno' =>$idno,
                     'docdate' =>$date,
